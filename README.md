@@ -1,10 +1,24 @@
-# Sistema de reconocimiento y segmentación del iris
+# Plantilla LaTeX
 
-###### Arquitectura *Big Data* de colas para el procesado de vídeo en tiempo real
-Trabajo de fin de máster, del Máster universitario de **Inteligencia de Negocio y *Big-Data* en Entornos Seguros** en las **Universidades de Burgos, León y Valladolid**
+La plantilla se compone de un documento maestro que engloba tanto la memoria como los anexos.
 
-Tutores: **Dr. José Francisco Diez Pastor** y **Dr.Pedro Latorre Carmona**
+En la carpeta tex se encuentran los distintos documentos que forman los documentos maestros. 
+Dichos documentos contienen las secciones y subsecciones a completar.
+En el documento 3_Conceptos_teoricos.tex se encuentra una breve guía de como usar LaTeX y los comandos propios de esta plantilla.
 
----
+# Creación y edición de documentos en LaTeX
 
-Trabajo final de master sobre el reconocimiento y la segmentación del iris, como seguimiento del Trabajo Final de Grado de **Johnson Bolívar Arrobo Acaro** [link](https://github.com/jaa0124/iris_classifier).
+LaTeX es un lenguaje de marcado. Para crear y editar documentos en latex se necesita un editor de LaTeX, que puede estar instalado en nuestro ordenador http://www.xm1math.net/texmaker/ o puede tratarse de un servicio web http://sharelatex.com/.
+
+Un videotutorial de la instalación de Miktex + TexMaker en windows puede verse en 
+https://www.youtube.com/watch?v=DIdHfVpIiAk
+
+# Petición de cambios y sugerencias
+
+Se ruega a los alumnos y tutores que detecten fallos, o que quieran proponer una sugerencia, que lo notifiquen mediante la creación de una issue https://github.com/bbaruque/plantillaTFM_MUINBDES.git
+
+# Gracias a los contribuidores
+César Ignacio García Osorio, Álvar Arnaiz Gonzalez, José Francisco Díez Pastor, Carlos Lopez Nozal.
+Álvaro López Cantero, Roberto Izquierdo Amo, David Miguel Lozano.
+
+
