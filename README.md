@@ -1,1 +1,1 @@
-# tfm-iris-recognition
+# Sistema de reconocimiento y segmentación del iris
