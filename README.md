@@ -3,7 +3,7 @@
 ###### Arquitectura *Big Data* de colas para el procesado de vídeo en tiempo real
 Trabajo de fin de máster, del Máster universitario de **Inteligencia de Negocio y *Big-Data* en Entornos Seguros** en las **Universidades de Burgos, León y Valladolid**
 
-Tutores: **Dr. José Francisco Diez Pastor** y ** Dr.Pedro Latorre Carmona **
+Tutores: **Dr. José Francisco Diez Pastor** y **Dr.Pedro Latorre Carmona**
 
 ---
 
