@@ -9,6 +9,10 @@ Tutores: **Dr. José Francisco Diez Pastor** y **Dr. Pedro Latorre Carmona**
 
 Trabajo final de master sobre el reconocimiento y la segmentación del iris, como seguimiento del [Trabajo Final de Grado](https://github.com/jaa0124/iris_classifier) de **Johnson Bolívar Arrobo Acaro**.
 
+# Workflow
+
+![](img/01_general_workflow.png)
+
 ---
 
 El template de la memoria se puede encontrar en el siguiente [enlace](https://github.com/bbaruque/plantillaTFM_MUINBDES).
