@@ -11,7 +11,7 @@ Trabajo final de master sobre el reconocimiento y la segmentación del iris, com
 
 # Workflow
 
-![](img/01_general_workflow.jpg)
+![](img/01_general_workflow.png)
 
 ---
 
