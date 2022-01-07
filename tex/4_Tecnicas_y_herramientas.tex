@@ -1,6 +1,22 @@
 \capitulo{4}{Técnicas y herramientas}
 
-Esta parte de la memoria tiene como objetivo presentar las técnicas metodológicas y las herramientas de desarrollo que se han utilizado para llevar a cabo el proyecto. Si se han estudiado diferentes alternativas de metodologías, herramientas, bibliotecas se puede hacer un resumen de los aspectos más destacados de cada alternativa, incluyendo comparativas entre las distintas opciones y una justificación de las elecciones realizadas. 
-No se pretende que este apartado se convierta en un capítulo de un libro dedicado a cada una de las alternativas, sino comentar los aspectos más destacados de cada opción, con un repaso somero a los fundamentos esenciales y referencias bibliográficas para que el lector pueda ampliar su conocimiento sobre el tema.
+Se ha utilizado el dataset de CASIA para la imágenes de ojos.
+
+Así mismo, se ha utilizado la red neuronal preentrenada Basada en U-Net y accesible desde https://github.com/jus390/U-net-Iris-segmentation, la cual ya había sido
+entrenada para la segmentación del iris.
+
+Finalmente, para el último proceso del proyecto, se utiliza imagenet como red neuronal preentrenada central.
+
+Además se ha utilizado python para todo el proyecto, esto quiere decir preprocesado, creación y utilización de redes neuronales y clasificación contécnicas de 
+machine learning.
+
+Entre las principales librerías utilizadas se encuentran:
+
+* os, para el acceso a los directorios
+* numpy, para trabajar con las imágenes a nivel de arrays
+* scikit-image, para la transformación de las imágenes y el uso de dataset
+* tensorflow, para la modificación de las redes neuronales
+* keras, para el manejo de las redes neuronales
+* matplot, para las gráficas
 
 

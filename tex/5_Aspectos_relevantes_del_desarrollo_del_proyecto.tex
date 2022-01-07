@@ -1,7 +1,19 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto}
 
-Este apartado pretende recoger los aspectos más interesantes del desarrollo del proyecto, comentados por los autores del mismo.
-Debe incluir desde la exposición del ciclo de vida utilizado, hasta los detalles de mayor relevancia de las fases de análisis, diseño e implementación.
-Se busca que no sea una mera operación de copiar y pegar diagramas y extractos del código fuente, sino que realmente se justifiquen los caminos de solución que se han tomado, especialmente aquellos que no sean triviales.
-Puede ser el lugar más adecuado para documentar los aspectos más interesantes del diseño y de la implementación, con un mayor hincapié en aspectos tales como el tipo de arquitectura elegido, los índices de las tablas de la base de datos, normalización y desnormalización, distribución en ficheros3, reglas de negocio dentro de las bases de datos (EDVHV GH GDWRV DFWLYDV), aspectos de desarrollo relacionados con el WWW...
-Este apartado, debe convertirse en el resumen de la experiencia práctica del proyecto, y por sí mismo justifica que la memoria se convierta en un documento útil, fuente de referencia para los autores, los tutores y futuros alumnos.
+El proyecto puede dividirse en una fase previa y tres propuestas diferentes para la identificación biomédica de personas a través de una imagen de su ojo.
+
+La primera fase trata de la optimización del código previo y la creación de un pipeline con una configuración que permitiese un mejor control de las funciones. 
+También del  data augnmentation, en el cual se aplica tanto ruido gausseano (de 2.5, 5 y 7.5) como transformaciones afines (), siendo realizadas de 
+forma aleatoria, con lo cual los supuestos pueden ser a) imagen sin data augnmentation, b)imagen con ruido gausseano, c)imagen con transformaciones afines y 
+d)imagen con ruido gausseano y transformaciones afines. Este dataset será el base para todo el proyecto.
+
+La segunda fase se trata de la elección de la mejor forma de clasificar las imagenes de entrada:
+
+1.La propuesta en el TFG anterior, en la cual se realiza un preprocesamiento de las imágenes del dataset original. Este preprocesamiento consiste primer lugar 
+en la segmentación de las imágenes del iris con una red neuronal preentrenada precisamente para realizar esta acción. En segundo lugar, se realiza una extracción
+del iris a través de una binarización de las partes del ojo y una extracción del iris, a la que se le aplica una normalización para que quede proyectado.
+La siguiente fase de esta primera propuesta es la extracción de características (quitandole las dos últimas capas a una red neuronal) de la imagen normalizada
+ para posteriormente utilizar una red neuronal preentrenada con imagenet (de hecho 3 redes de la cual se elige la mejor). Posteriormente, estas características
+ extraidas se pasan a modelos de ML, que son los que realizarán la clasificación. 
+
+ Todo el proyecto queda establecido en una pipeline
