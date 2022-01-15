@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  9 JAN 2022 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  13 JAN 2022 16:27
 entering extended mode
 **c:/Users/na-ch/Desktop/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
 (c:/Users/na-ch/Desktop/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
@@ -898,111 +898,138 @@ l.1 \capitulo{3}{Conceptos teóricos}
 
 
 
-] [7]
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
- [8]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [9])
+]
+<img/02_ojo_raw.png, id=397, 321.2pt x 281.05pt>
+File: img/02_ojo_raw.png Graphic file (type png)
+<use img/02_ojo_raw.png>
+Package pdftex.def Info: img/02_ojo_raw.png  used on input line 21.
+(pdftex.def)             Requested size: 344.69766pt x 301.6211pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [8 <./img/02_ojo_raw.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+ [9]
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [10])
 LaTeX Info: Redefining \. on input line 484.
 LaTeX Info: Redefining \% on input line 484.
- [10]
+ [11]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
- (tex/4_Tecnicas_y_herramientas.tex [11
+ (tex/4_Tecnicas_y_herramientas.tex [12
+
+
+
+
+] [13])
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
+ [14]
+\openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
+
+ (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
+<img/03_workflow.png, id=448, 757.02824pt x 436.029pt>
+File: img/03_workflow.png Graphic file (type png)
+<use img/03_workflow.png>
+Package pdftex.def Info: img/03_workflow.png  used on input line 13.
+(pdftex.def)             Requested size: 344.69766pt x 198.53987pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [16 <./img/03_workflow.png>]
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+ [17])
+LaTeX Info: Redefining \. on input line 486.
+LaTeX Info: Redefining \% on input line 486.
+ [18]
+\openout2 = `./tex/6_Trabajos_relacionados.aux'.
+
+ (tex/6_Trabajos_relacionados.tex
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [19
 
 
 
 
 ])
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
- [12]
-\openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
-
- (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
-Underfull \vbox (badness 7468) has occurred while \output is active []
-
- [13
-
-
-
-
-]
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
- [14])
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
- [15]
-\openout2 = `./tex/6_Trabajos_relacionados.aux'.
-
- (tex/6_Trabajos_relacionados.tex [16
-
-
-
-
-]
-Underfull \vbox (badness 3354) has occurred while \output is active []
-
- [17])
 LaTeX Info: Redefining \. on input line 487.
 LaTeX Info: Redefining \% on input line 487.
- [18]
+ [20]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
- (tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex) [19
+ (tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex) [21
 
 
 
 
-] [20
+] [22
 
 
 
-] [21] [22]
+] [23] [24]
 \openout2 = `./tex/A_Plan_proyecto.aux'.
 
  (tex/A_Plan_proyecto.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 1.
-) [23
+) [25
 
 
 ]
 \openout2 = `./tex/B_Requisitos.aux'.
 
- (tex/B_Requisitos.tex [24
-
-
-
-
-]) [25]
-\openout2 = `./tex/C_Diseno.aux'.
-
- (tex/C_Diseno.tex [26
+ (tex/B_Requisitos.tex [26
 
 
 
 
 ]) [27]
-\openout2 = `./tex/D_Manual_programador.aux'.
+\openout2 = `./tex/C_Diseno.aux'.
 
- (tex/D_Manual_programador.tex [28
+ (tex/C_Diseno.tex [28
 
 
 
 
 ]) [29]
+\openout2 = `./tex/D_Manual_programador.aux'.
+
+ (tex/D_Manual_programador.tex [30
+
+
+
+
+]) [31]
 \openout2 = `./tex/E_Manual_usuario.aux'.
 
- (tex/E_Manual_usuario.tex [30
+ (tex/E_Manual_usuario.tex [32
 
 
 
 
-]) [31] (memoria.bbl [32
+]) [33] (memoria.bbl [34
 
 
 
@@ -1015,7 +1042,7 @@ Class memoir Warning: The material used in the headers is too large
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 510.
 
-[33]
+[35]
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
@@ -1039,17 +1066,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13386 strings out of 479799
- 208185 string characters out of 2869723
- 603168 words of memory out of 3000000
- 29754 multiletter control sequences out of 15000+200000
+ 13409 strings out of 479799
+ 208594 string characters out of 2869723
+ 603417 words of memory out of 3000000
+ 29771 multiletter control sequences out of 15000+200000
  634814 words of font info for 164 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,13n,72p,512b,794s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb>
-Output written on memoria.pdf (47 pages, 892440 bytes).
+Output written on memoria.pdf (49 pages, 1303061 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 59880 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 59890 words of extra memory for PDF output out of 61914 (max. 10000000)
 

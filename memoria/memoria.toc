@@ -10,68 +10,68 @@
 \contentsline {chapter}{3. Conceptos teóricos}{7}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Elementos biométricos}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Dataset CASIA}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Preprocesamiento}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Preprocesamiento}{8}{section.3.3}%
 \contentsline {subsection}{Segmentación}{8}{section*.9}%
 \contentsline {subsection}{Normalización}{8}{section*.10}%
-\contentsline {section}{\numberline {3.4}Data augmentation}{8}{section.3.4}%
-\contentsline {subsection}{Ruido gausseano}{8}{section*.11}%
-\contentsline {subsection}{Transformaciones afines}{8}{section*.12}%
-\contentsline {subsubsection}{Transformación de identidad}{9}{section*.13}%
-\contentsline {subsubsection}{Escalamiento}{9}{section*.14}%
-\contentsline {subsubsection}{Traducción}{9}{section*.15}%
-\contentsline {subsubsection}{Inclincación}{9}{section*.16}%
-\contentsline {subsubsection}{Rotación}{9}{section*.17}%
-\contentsline {section}{\numberline {3.5}Fine tunning}{9}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Referencias}{9}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Imágenes}{9}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Listas de items}{9}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Tablas}{10}{section.3.9}%
-\contentsline {chapter}{4. Técnicas y herramientas}{11}{chapter*.18}%
-\contentsline {section}{\numberline {4.1}Dataset}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Redes neuronales preentrenadas}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Github}{11}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Python}{11}{section.4.4}%
-\contentsline {subsection}{Visual Studio}{12}{section*.19}%
-\contentsline {section}{\numberline {4.5}Scrum}{12}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Recursos}{12}{section.4.6}%
-\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{13}{chapter*.20}%
-\contentsline {section}{\numberline {5.1}Optimización de los notbooks previos}{13}{section.5.1}%
-\contentsline {subsection}{Pipeline y configuración}{13}{section*.21}%
-\contentsline {section}{\numberline {5.2}Data agumentation}{14}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Clasificación de las imágenes}{14}{section.5.3}%
-\contentsline {subsection}{Preprocesamiento y Machine Learning}{14}{section*.22}%
-\contentsline {subsection}{Preprocesamiento y Deep Learning}{15}{section*.23}%
-\contentsline {subsection}{Deep Learning}{15}{section*.24}%
-\contentsline {chapter}{6. Trabajos relacionados}{17}{chapter*.25}%
-\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{19}{chapter*.26}%
-\contentsline {section}{\numberline {7.1}Conclusiones}{19}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{19}{section.7.2}%
-\contentsline {part}{Apéndices}{20}{section.7.2}%
-\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{23}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Introducción}{23}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Planificación temporal}{23}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{23}{section.Alph1.3}%
-\contentsline {subsection}{Viabilidad económica}{23}{section*.29}%
-\contentsline {subsection}{Viabilidad legal}{23}{section*.30}%
-\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{25}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Introducción}{25}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Objetivos generales}{25}{section.Alph2.2}%
-\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{25}{section.Alph2.3}%
-\contentsline {section}{\numberline {B.4}Especificación de requisitos}{25}{section.Alph2.4}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{27}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{27}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de datos}{27}{section.Alph3.2}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{27}{section.Alph3.3}%
-\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{27}{section.Alph3.4}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{29}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{29}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{29}{section.Alph4.2}%
-\contentsline {section}{\numberline {D.3}Manual del programador}{29}{section.Alph4.3}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{29}{section.Alph4.4}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{29}{section.Alph4.5}%
-\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{31}{appendix.Alph5}%
-\contentsline {section}{\numberline {E.1}Introducción}{31}{section.Alph5.1}%
-\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{31}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación}{31}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Manual del usuario}{31}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.31}%
+\contentsline {section}{\numberline {3.4}Data augmentation}{9}{section.3.4}%
+\contentsline {subsection}{Ruido gausseano}{9}{section*.11}%
+\contentsline {subsection}{Transformaciones afines}{9}{section*.12}%
+\contentsline {subsubsection}{Transformación de identidad}{10}{section*.13}%
+\contentsline {subsubsection}{Escalamiento}{10}{section*.14}%
+\contentsline {subsubsection}{Traducción}{10}{section*.15}%
+\contentsline {subsubsection}{Inclincación}{10}{section*.16}%
+\contentsline {subsubsection}{Rotación}{10}{section*.17}%
+\contentsline {section}{\numberline {3.5}Fine tunning}{10}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Referencias}{10}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Imágenes}{10}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Listas de items}{10}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Tablas}{11}{section.3.9}%
+\contentsline {chapter}{4. Técnicas y herramientas}{13}{chapter*.18}%
+\contentsline {section}{\numberline {4.1}Dataset}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Redes neuronales preentrenadas}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Github}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Python}{13}{section.4.4}%
+\contentsline {subsection}{Visual Studio}{14}{section*.19}%
+\contentsline {section}{\numberline {4.5}Scrum}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Recursos}{14}{section.4.6}%
+\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{15}{chapter*.20}%
+\contentsline {section}{\numberline {5.1}Optimización de los notbooks previos}{15}{section.5.1}%
+\contentsline {subsection}{Pipeline y configuración}{16}{section*.21}%
+\contentsline {section}{\numberline {5.2}Data agumentation}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Clasificación de las imágenes}{17}{section.5.3}%
+\contentsline {subsection}{Preprocesamiento y Machine Learning}{17}{section*.22}%
+\contentsline {subsection}{Preprocesamiento y Deep Learning}{17}{section*.23}%
+\contentsline {subsection}{Deep Learning}{17}{section*.24}%
+\contentsline {chapter}{6. Trabajos relacionados}{19}{chapter*.25}%
+\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{21}{chapter*.26}%
+\contentsline {section}{\numberline {7.1}Conclusiones}{21}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{21}{section.7.2}%
+\contentsline {part}{Apéndices}{22}{section.7.2}%
+\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{25}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Introducción}{25}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Planificación temporal}{25}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{25}{section.Alph1.3}%
+\contentsline {subsection}{Viabilidad económica}{25}{section*.29}%
+\contentsline {subsection}{Viabilidad legal}{25}{section*.30}%
+\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{27}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Introducción}{27}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Objetivos generales}{27}{section.Alph2.2}%
+\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{27}{section.Alph2.3}%
+\contentsline {section}{\numberline {B.4}Especificación de requisitos}{27}{section.Alph2.4}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{29}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{29}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de datos}{29}{section.Alph3.2}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{29}{section.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{29}{section.Alph3.4}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{31}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{31}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{31}{section.Alph4.2}%
+\contentsline {section}{\numberline {D.3}Manual del programador}{31}{section.Alph4.3}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{31}{section.Alph4.4}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{31}{section.Alph4.5}%
+\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{33}{appendix.Alph5}%
+\contentsline {section}{\numberline {E.1}Introducción}{33}{section.Alph5.1}%
+\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{33}{section.Alph5.2}%
+\contentsline {section}{\numberline {E.3}Instalación}{33}{section.Alph5.3}%
+\contentsline {section}{\numberline {E.4}Manual del usuario}{33}{section.Alph5.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{35}{appendix*.31}%
