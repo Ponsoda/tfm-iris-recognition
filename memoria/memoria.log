@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  13 FEB 2022 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  1 JUN 2022 21:18
 entering extended mode
 **e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
 (e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
@@ -776,7 +776,7 @@ File: img/escudoULE.png Graphic file (type png)
 <use img/escudoULE.png>
 Package pdftex.def Info: img/escudoULE.png  used on input line 384.
 (pdftex.def)             Requested size: 46.6355pt x 85.35826pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 410.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 411.
  (C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4] [5] [6
@@ -788,7 +788,7 @@ Package microtype Info: Character `029' is missing
  [1] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 467.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 468.
  (C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -828,8 +828,8 @@ either increase the head height or redesign the header
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
  [4])
-LaTeX Info: Redefining \. on input line 468.
-LaTeX Info: Redefining \% on input line 468.
+LaTeX Info: Redefining \. on input line 469.
+LaTeX Info: Redefining \% on input line 469.
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
@@ -853,40 +853,49 @@ LaTeX Info: Redefining \% on input line 2.
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.480 \part*{Memoria}
+l.481 \part*{Memoria}
                       [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.480 \part*{Memoria}
+l.481 \part*{Memoria}
                       [2]
 \openout2 = `./tex/1_Introduccion.aux'.
 
- (tex/1_Introduccion.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+ (tex/1_Introduccion.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 16.
+
+Underfull \vbox (badness 4266) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.482 \include{./tex/1_Introduccion}
-                                     [3
+l.21 \section
+             {Outline} [3
+
+
+])
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.483 \include{./tex/1_Introduccion}
+                                     [4]
+\openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
+
+ (tex/2_Objetivos_del_proyecto.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.484 \include{./tex/2_Objetivos_del_proyecto}
+                                               [5
+
+
 
 
 ]
-\openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
-
- (tex/2_Objetivos_del_proyecto.texpdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \capitulo{2}{Objetivos del proyecto}
-                                         [4
-
-
-
-
-])pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.483 \include{./tex/2_Objetivos_del_proyecto}
-                                               [5]
 \openout2 = `./tex/3_Conceptos_teoricos.aux'.
 
  (tex/3_Conceptos_teoricos.texpdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
@@ -899,7 +908,7 @@ l.1 \capitulo{3}{Conceptos teóricos}
 
 
 ]
-<img/02_ojo_raw.png, id=402, 321.2pt x 281.05pt>
+<img/02_ojo_raw.png, id=411, 321.2pt x 281.05pt>
 File: img/02_ojo_raw.png Graphic file (type png)
 <use img/02_ojo_raw.png>
 Package pdftex.def Info: img/02_ojo_raw.png  used on input line 21.
@@ -924,11 +933,11 @@ Underfull \vbox (badness 1242) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
  [10])
-LaTeX Info: Redefining \. on input line 484.
-LaTeX Info: Redefining \% on input line 484.
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
  [11]
-LaTeX Info: Redefining \. on input line 484.
-LaTeX Info: Redefining \% on input line 484.
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
  [12]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
@@ -938,13 +947,13 @@ LaTeX Info: Redefining \% on input line 484.
 
 
 ])
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
+LaTeX Info: Redefining \. on input line 486.
+LaTeX Info: Redefining \% on input line 486.
  [14]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
  (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
-<img/03_workflow.png, id=455, 757.02824pt x 436.029pt>
+<img/03_workflow.png, id=463, 757.02824pt x 436.029pt>
 File: img/03_workflow.png Graphic file (type png)
 <use img/03_workflow.png>
 Package pdftex.def Info: img/03_workflow.png  used on input line 13.
@@ -959,14 +968,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
  [16 <./img/03_workflow.png>]
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
  [17])
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
+LaTeX Info: Redefining \. on input line 487.
+LaTeX Info: Redefining \% on input line 487.
  [18]
 \openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
@@ -979,8 +988,8 @@ Underfull \vbox (badness 3354) has occurred while \output is active []
 
 
 ])
-LaTeX Info: Redefining \. on input line 487.
-LaTeX Info: Redefining \% on input line 487.
+LaTeX Info: Redefining \. on input line 488.
+LaTeX Info: Redefining \% on input line 488.
  [20]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
@@ -1006,8 +1015,8 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 LaTeX Info: Redefining \. on input line 63.
 LaTeX Info: Redefining \% on input line 63.
  [26])
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
  [27]
 \openout2 = `./tex/B_Requisitos.aux'.
 
@@ -1051,7 +1060,7 @@ bibitemlist
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 510.
+(in both cases you will find help in the memoir manual). on input line 511.
 
 [37]
 \tf@toc=\write5
@@ -1077,17 +1086,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13436 strings out of 479799
- 207900 string characters out of 2869723
- 602421 words of memory out of 3000000
- 29779 multiletter control sequences out of 15000+200000
- 635087 words of font info for 167 fonts, out of 3000000 for 9000
+ 13477 strings out of 479799
+ 208434 string characters out of 2869723
+ 602457 words of memory out of 3000000
+ 29794 multiletter control sequences out of 15000+200000
+ 645544 words of font info for 182 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,12n,72p,492b,769s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb>
-Output written on memoria.pdf (51 pages, 1310455 bytes).
+ 66i,12n,72p,519b,769s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb>
+Output written on memoria.pdf (51 pages, 1334451 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
- 59898 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 66042 words of extra memory for PDF output out of 74296 (max. 10000000)
 

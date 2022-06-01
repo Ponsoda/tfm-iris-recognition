@@ -760,6 +760,13 @@ INPUT .\tex\1_Introduccion.tex
 INPUT tex\1_Introduccion.tex
 INPUT .\tex\1_Introduccion.tex
 INPUT tex\1_Introduccion.tex
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
 INPUT .\tex\2_Objetivos_del_proyecto.tex
 INPUT .\tex\2_Objetivos_del_proyecto.tex
 INPUT .\tex\2_Objetivos_del_proyecto.tex
@@ -794,7 +801,6 @@ INPUT .\img\02_ojo_raw.png
 INPUT .\img\02_ojo_raw.png
 INPUT .\img\02_ojo_raw.png
 INPUT .\img\02_ojo_raw.png
-INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
@@ -933,7 +939,6 @@ INPUT .\memoria.bbl
 INPUT memoria.bbl
 INPUT .\memoria.bbl
 INPUT memoria.bbl
-INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 OUTPUT memoria.toc
 OUTPUT memoria.lof
 OUTPUT memoria.lot
@@ -990,6 +995,8 @@ INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.p
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
