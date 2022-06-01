@@ -1,0 +1,146 @@
+\capitulo{3}{Conceptos teóricos}
+
+Explicación de la sección
+
+
+\section{Elementos biométricos}
+
+De entre todos los elementos biometricos, que incluyenn huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el metodo con mayor eficiencia a la hora de determinar la identidad
+de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo de la vida de una persona y es único, incluso entre gemelos. Esto es incluso utilizado en los procesos 
+post-mortem para poder determinar la pertenencia del cuerpo 06 Post-mortem iris recognition. El iris humanos es un organo del ojo, que tiene como funciona controlar el tamaño
+de la pupila en función de la cantidad de luz que llega hasta este 06 Post-mortem iris recognition.
+
+\section{Dataset CASIA}	
+
+El dataset de CASIA es un dataset que contine x imágenes del iris
+
+Se han hecho estas fotos a un total de x sujetos hechas de x e y manera.
+
+
+
+\imagen{img/02_ojo_raw}{Ejemplo de una imagen del dataset CASIA}
+
+\section{Preprocesamiento}
+
+La fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios (referencia), la parte del iris es la que 
+permite identificar a las personas.
+
+\subsection{Segmentación}
+
+Detección de las distintas zonas del ojo.
+
+\subsection{Normalización}
+
+Normalización del iris y desenrollamiento en coordenadas polares
+
+
+\section{Data augmentation}
+
+El data augmentation es un proceso común en el análisis de imágenes y de datos en general. En el caso de los procesos de entrenamiento de las redes neuronales es común
+la utilización de técnicas de data augmentation, principalmente por dos situaciones, aunque estas no son excluyentes:
+
+\begin{itemize}
+	\item Número insuficiente de datos: en este caso, el data augmentation se aplica porque el dataset no es lo suficientemente grande como para conseguir unos resultados 
+positivos en la creación de una red neuronal.
+	\item Aumento de la robustez del modelo: el segundo supuesto principal por el cual se utiliza data augmentation es la utilización de elementos que añadan dificultades a La
+red neuronal para cumplir su propósito, lo cual permitirá una mayor robustez del modelo.
+\end{itemize}
+
+\subsection{Ruido gausseano}
+
+La primera de las técnicas de data augmentation utilizadas ha sido el ruido gausseano, también conocido como ruido blanco. Este ruido provoca que los píxeles de una imagen cambien
+su valor siguiendo una distribución gausseana.
+
+\subsection{Transformaciones afines}
+
+Las transformaciones afines son transformaciones de las imágenes que conservan el paralelismo de sus líneas rectas y paralelas y de alguna forma simulan una nueva perspectiva para esta.
+En cuanto a los tipos de transformaciones afines encontramos las siguientes: transformación de identidad, escalamiento, traducción, inclinación (de X o Y), rotación.
+
+\subsubsection{Transformación de identidad}
+
+\subsubsection{Escalamiento}
+
+\subsubsection{Traducción}
+
+\subsubsection{Inclincación}
+
+\subsubsection{Rotación}
+
+\section{Fine tunning}
+El fine tunning es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
+el dataset con el que se trabaja.
+
+\section{Inteligencia Artificial}
+
+La Real Academia Española define la inteligencia artificial como "Disciplina científica que se ocupa de crear programas informáticos que ejecutan 
+operaciones comparables a las que realiza la mente humana, como el aprendizaje o el razonamiento lógico."
+
+\subsection{Machine Learning}
+
+El machine learning se divide en, clasificaciones supervisadas y no supervisadas.
+
+\subsection{Deep Learning}
+
+El deep learning intenta replicar la forma en la que los humanos toman las decisiones en las máquinas a través de redes neuronales.
+
+
+
+\section{Referencias}
+
+Las referencias se incluyen en el texto usando cite \cite{wiki:latex}. Para citar webs, artículos o libros \cite{koza92}.
+
+\section{Imágenes}
+
+Se pueden incluir imágenes con los comandos standard de \LaTeX, pero esta plantilla dispone de comandos propios como por ejemplo el siguiente:
+
+\section{Listas de items}
+
+Existen tres posibilidades:
+
+\begin{itemize}
+	\item primer item.
+	\item segundo item.
+\end{itemize}
+
+\begin{enumerate}
+	\item primer item.
+	\item segundo item.
+\end{enumerate}
+
+\begin{description}
+	\item[Primer item] más información sobre el primer item.
+	\item[Segundo item] más información sobre el segundo item.
+\end{description}
+	
+\begin{itemize}
+\item 
+\end{itemize}
+
+\section{Tablas}
+
+Igualmente se pueden usar los comandos específicos de \LaTeX o bien usar alguno de los comandos de la plantilla.
+
+\tablaSmall{Herramientas y tecnologías utilizadas en cada parte del proyecto}{l c c c c}{herramientasportipodeuso}
+{ \multicolumn{1}{l}{Herramientas} & App AngularJS & API REST & BD & Memoria \\}{ 
+HTML5 & X & & &\\
+CSS3 & X & & &\\
+BOOTSTRAP & X & & &\\
+JavaScript & X & & &\\
+AngularJS & X & & &\\
+Bower & X & & &\\
+PHP & & X & &\\
+Karma + Jasmine & X & & &\\
+Slim framework & & X & &\\
+Idiorm & & X & &\\
+Composer & & X & &\\
+JSON & X & X & &\\
+PhpStorm & X & X & &\\
+MySQL & & & X &\\
+PhpMyAdmin & & & X &\\
+Git + BitBucket & X & X & X & X\\
+Mik\TeX{} & & & & X\\
+\TeX{}Maker & & & & X\\
+Astah & & & & X\\
+Balsamiq Mockups & X & & &\\
+VersionOne & X & X & X & X\\
+} 
