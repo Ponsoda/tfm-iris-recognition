@@ -1,4 +1,4 @@
-\capitulo{3}{Conceptos teóricos}
+\capitulo{3}{Conceptos teóricos} \label{capitulo3}
 
 Explicación de la sección
 
@@ -7,14 +7,15 @@ Explicación de la sección
 
 De entre todos los elementos biometricos, que incluyenn huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el metodo con mayor eficiencia a la hora de determinar la identidad
 de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo de la vida de una persona y es único, incluso entre gemelos. Esto es incluso utilizado en los procesos 
-post-mortem para poder determinar la pertenencia del cuerpo 06 Post-mortem iris recognition. El iris humanos es un organo del ojo, que tiene como funciona controlar el tamaño
-de la pupila en función de la cantidad de luz que llega hasta este 06 Post-mortem iris recognition.
+post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humanos es un organo del ojo, que tiene como funciona controlar el tamaño
+de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
 \section{Dataset CASIA}	
 
-El dataset de CASIA es un dataset que contine x imágenes del iris
-
-Se han hecho estas fotos a un total de x sujetos hechas de x e y manera.
+El dataset de CASIA hace referencia a una base de datos que contine 756 imágenes del iris de un total de 108 sujetos. 
+Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada indivíduo. 
+La pupila fue automáticamente remplazada para evitar que se reflejasen las luces de las fotografías 
+\footnote{El proceso de toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
 
 
@@ -46,9 +47,9 @@ positivos en la creación de una red neuronal.
 red neuronal para cumplir su propósito, lo cual permitirá una mayor robustez del modelo.
 \end{itemize}
 
-\subsection{Ruido gausseano}
+\subsection{Ruido gaussiano}
 
-La primera de las técnicas de data augmentation utilizadas ha sido el ruido gausseano, también conocido como ruido blanco. Este ruido provoca que los píxeles de una imagen cambien
+La primera de las técnicas de data augmentation utilizadas ha sido el ruido gaussiano, también conocido como ruido blanco. Este ruido provoca que los píxeles de una imagen cambien
 su valor siguiendo una distribución gausseana.
 
 \subsection{Transformaciones afines}
