@@ -39,43 +39,43 @@ Warning--empty journal in malgheet_iris_2021
 Warning--empty year in malgheet_iris_2021
 You've used 7 entries,
             2118 wiz_defined-function locations,
-            542 strings with 5477 characters,
-and the built_in function-call counts, 2171 in all, are:
-= -- 192
-> -- 122
+            540 strings with 5632 characters,
+and the built_in function-call counts, 2290 in all, are:
+= -- 200
+> -- 144
 < -- 1
-+ -- 49
-- -- 42
-* -- 148
-:= -- 373
++ -- 58
+- -- 50
+* -- 162
+:= -- 391
 add.period$ -- 20
 call.type$ -- 7
-change.case$ -- 41
+change.case$ -- 46
 chr.to.int$ -- 0
 cite$ -- 15
-duplicate$ -- 74
+duplicate$ -- 69
 empty$ -- 161
-format.name$ -- 42
-if$ -- 431
+format.name$ -- 50
+if$ -- 452
 int.to.chr$ -- 0
 int.to.str$ -- 7
-missing$ -- 6
+missing$ -- 4
 newline$ -- 37
 num.names$ -- 14
-pop$ -- 71
+pop$ -- 80
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 39
 quote$ -- 0
-skip$ -- 49
+skip$ -- 48
 stack$ -- 0
-substring$ -- 98
+substring$ -- 99
 swap$ -- 8
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 26
+type$ -- 28
 warning$ -- 8
 while$ -- 19
 width$ -- 8
-write$ -- 65
+write$ -- 63
 (There were 8 warnings)

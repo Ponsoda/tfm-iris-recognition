@@ -10,6 +10,12 @@ Dr~Hadeel~N Abdullah.
 Johnson~Bolívar Arrobo~Acaro.
 \newblock Sistema clasificador de iris.
 
+\bibitem{boyd_deep_2020}
+Aidan Boyd, Adam Czajka, and Kevin Bowyer.
+\newblock Deep learning-based feature extraction in iris recognition: Use
+  existing models, fine-tune or train from scratch?
+\newblock Number: {arXiv}:2002.08916.
+
 \bibitem{boyd_post-mortem_2020}
 Aidan Boyd, Shivangi Yadav, Thomas Swearingen, Andrey Kuehlkamp, Mateusz
   Trokielewicz, Eric Benjamin, Piotr Maciejewicz, Dennis Chute, Arun Ross,
@@ -17,12 +23,6 @@ Aidan Boyd, Shivangi Yadav, Thomas Swearingen, Andrey Kuehlkamp, Mateusz
 \newblock Post-mortem iris recognition—a survey and assessment of the state
   of the art.
 \newblock 8:136570--136593.
-
-\bibitem{koza92}
-John~R. Koza.
-\newblock {\em Genetic Programming: On the Programming of Computers by Means of
-  Natural Selection}.
-\newblock MIT Press, 1992.
 
 \bibitem{malgheet_iris_2021}
 Jasem~Rahman Malgheet, Noridayu~Bt Manshor, and Lilly~Suriani Affendey.
@@ -34,9 +34,10 @@ Shervin Minaee and Amirali Abdolrashidi.
 \newblock {DeepIris}: Iris recognition using a deep learning approach.
 \newblock Number: {arXiv}:1907.09380.
 
-\bibitem{wiki:latex}
-Wikipedia.
-\newblock Latex --- wikipedia{,} la enciclopedia libre, 2015.
-\newblock [Internet; descargado 30-septiembre-2015].
+\bibitem{minaee_experimental_2017}
+Shervin Minaee, Amirali Abdolrashidi, and Yao Wang.
+\newblock An experimental study of deep convolutional features for iris
+  recognition.
+\newblock Number: {arXiv}:1702.01334.
 
 \end{thebibliography}

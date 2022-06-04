@@ -6,54 +6,47 @@
 \BOOKMARK [1][-]{section.1.1}{Outline}{chapter*.6}% 6
 \BOOKMARK [0][-]{chapter*.7}{2. Objetivos del proyecto}{section*.3}% 7
 \BOOKMARK [0][-]{chapter*.8}{3. Conceptos te\363ricos}{section*.3}% 8
-\BOOKMARK [1][-]{section.3.1}{Elementos biom\351tricos}{chapter*.8}% 9
-\BOOKMARK [1][-]{section.3.2}{Dataset CASIA}{chapter*.8}% 10
-\BOOKMARK [1][-]{section.3.3}{Preprocesamiento}{chapter*.8}% 11
-\BOOKMARK [1][-]{section.3.4}{Data augmentation}{chapter*.8}% 12
-\BOOKMARK [1][-]{section.3.5}{Fine tunning}{chapter*.8}% 13
-\BOOKMARK [1][-]{section.3.6}{Inteligencia Artificial}{chapter*.8}% 14
-\BOOKMARK [1][-]{section.3.7}{Referencias}{chapter*.8}% 15
-\BOOKMARK [1][-]{section.3.8}{Im\341genes}{chapter*.8}% 16
-\BOOKMARK [1][-]{section.3.9}{Listas de items}{chapter*.8}% 17
-\BOOKMARK [1][-]{section.3.10}{Tablas}{chapter*.8}% 18
-\BOOKMARK [0][-]{chapter*.20}{4. T\351cnicas y herramientas}{section*.3}% 19
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter*.20}% 20
-\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter*.20}% 21
-\BOOKMARK [1][-]{section.4.3}{Github}{chapter*.20}% 22
-\BOOKMARK [1][-]{section.4.4}{Python}{chapter*.20}% 23
-\BOOKMARK [1][-]{section.4.5}{Scrum}{chapter*.20}% 24
-\BOOKMARK [0][-]{chapter*.23}{5. Aspectos relevantes del desarrollo del proyecto}{section*.3}% 25
-\BOOKMARK [1][-]{section.5.1}{Optimizaci\363n de los notbooks previos}{chapter*.23}% 26
-\BOOKMARK [1][-]{section.5.2}{Data agumentation}{chapter*.23}% 27
-\BOOKMARK [1][-]{section.5.3}{Clasificaci\363n de las im\341genes}{chapter*.23}% 28
-\BOOKMARK [0][-]{chapter*.28}{6. Trabajos relacionados}{section*.3}% 29
-\BOOKMARK [0][-]{chapter*.29}{7. Conclusiones y L\355neas de trabajo futuras}{section*.3}% 30
-\BOOKMARK [1][-]{section.7.1}{Conclusiones}{chapter*.29}% 31
-\BOOKMARK [1][-]{section.7.2}{L\355neas de trabajo futuras}{chapter*.29}% 32
-\BOOKMARK [-1][-]{section.7.2}{Ap\351ndices}{}% 33
-\BOOKMARK [0][-]{appendix.Alph1}{Plan de Proyecto Software}{section.7.2}% 34
-\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 35
-\BOOKMARK [1][-]{section.Alph1.2}{Planificaci\363n temporal}{appendix.Alph1}% 36
-\BOOKMARK [1][-]{section.Alph1.3}{Estudio de viabilidad}{appendix.Alph1}% 37
-\BOOKMARK [0][-]{appendix.Alph2}{Especificaci\363n de Requisitos}{section.7.2}% 38
-\BOOKMARK [1][-]{section.Alph2.1}{Introducci\363n}{appendix.Alph2}% 39
-\BOOKMARK [1][-]{section.Alph2.2}{Objetivos generales}{appendix.Alph2}% 40
-\BOOKMARK [1][-]{section.Alph2.3}{Catalogo de requisitos}{appendix.Alph2}% 41
-\BOOKMARK [1][-]{section.Alph2.4}{Especificaci\363n de requisitos}{appendix.Alph2}% 42
-\BOOKMARK [0][-]{appendix.Alph3}{Especificaci\363n de dise\361o}{section.7.2}% 43
-\BOOKMARK [1][-]{section.Alph3.1}{Introducci\363n}{appendix.Alph3}% 44
-\BOOKMARK [1][-]{section.Alph3.2}{Dise\361o de datos}{appendix.Alph3}% 45
-\BOOKMARK [1][-]{section.Alph3.3}{Dise\361o procedimental}{appendix.Alph3}% 46
-\BOOKMARK [1][-]{section.Alph3.4}{Dise\361o arquitect\363nico}{appendix.Alph3}% 47
-\BOOKMARK [0][-]{appendix.Alph4}{Documentaci\363n t\351cnica de programaci\363n}{section.7.2}% 48
-\BOOKMARK [1][-]{section.Alph4.1}{Introducci\363n}{appendix.Alph4}% 49
-\BOOKMARK [1][-]{section.Alph4.2}{Estructura de directorios}{appendix.Alph4}% 50
-\BOOKMARK [1][-]{section.Alph4.3}{Manual del programador}{appendix.Alph4}% 51
-\BOOKMARK [1][-]{section.Alph4.4}{Compilaci\363n, instalaci\363n y ejecuci\363n del proyecto}{appendix.Alph4}% 52
-\BOOKMARK [1][-]{section.Alph4.5}{Pruebas del sistema}{appendix.Alph4}% 53
-\BOOKMARK [0][-]{appendix.Alph5}{Documentaci\363n de usuario}{section.7.2}% 54
-\BOOKMARK [1][-]{section.Alph5.1}{Introducci\363n}{appendix.Alph5}% 55
-\BOOKMARK [1][-]{section.Alph5.2}{Requisitos de usuarios}{appendix.Alph5}% 56
-\BOOKMARK [1][-]{section.Alph5.3}{Instalaci\363n}{appendix.Alph5}% 57
-\BOOKMARK [1][-]{section.Alph5.4}{Manual del usuario}{appendix.Alph5}% 58
-\BOOKMARK [0][-]{appendix*.42}{Bibliograf\355a}{section.7.2}% 59
+\BOOKMARK [1][-]{section.3.1}{Biometr\355a}{chapter*.8}% 9
+\BOOKMARK [1][-]{section.3.2}{Inteligencia Artificial}{chapter*.8}% 10
+\BOOKMARK [1][-]{section.3.3}{Fine tunning}{chapter*.8}% 11
+\BOOKMARK [0][-]{chapter*.23}{4. T\351cnicas y herramientas}{section*.3}% 12
+\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter*.23}% 13
+\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter*.23}% 14
+\BOOKMARK [1][-]{section.4.3}{Github}{chapter*.23}% 15
+\BOOKMARK [1][-]{section.4.4}{Python}{chapter*.23}% 16
+\BOOKMARK [1][-]{section.4.5}{Scrum}{chapter*.23}% 17
+\BOOKMARK [0][-]{chapter*.26}{5. Aspectos relevantes del desarrollo del proyecto}{section*.3}% 18
+\BOOKMARK [1][-]{section.5.1}{Optimizaci\363n de los notbooks previos}{chapter*.26}% 19
+\BOOKMARK [1][-]{section.5.2}{Data agumentation}{chapter*.26}% 20
+\BOOKMARK [1][-]{section.5.3}{Clasificaci\363n de las im\341genes}{chapter*.26}% 21
+\BOOKMARK [0][-]{chapter*.31}{6. Trabajos relacionados}{section*.3}% 22
+\BOOKMARK [0][-]{chapter*.32}{7. Conclusiones y L\355neas de trabajo futuras}{section*.3}% 23
+\BOOKMARK [1][-]{section.7.1}{Conclusiones}{chapter*.32}% 24
+\BOOKMARK [1][-]{section.7.2}{L\355neas de trabajo futuras}{chapter*.32}% 25
+\BOOKMARK [-1][-]{section.7.2}{Ap\351ndices}{}% 26
+\BOOKMARK [0][-]{appendix.Alph1}{Plan de Proyecto Software}{section.7.2}% 27
+\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 28
+\BOOKMARK [1][-]{section.Alph1.2}{Planificaci\363n temporal}{appendix.Alph1}% 29
+\BOOKMARK [1][-]{section.Alph1.3}{Estudio de viabilidad}{appendix.Alph1}% 30
+\BOOKMARK [0][-]{appendix.Alph2}{Especificaci\363n de Requisitos}{section.7.2}% 31
+\BOOKMARK [1][-]{section.Alph2.1}{Introducci\363n}{appendix.Alph2}% 32
+\BOOKMARK [1][-]{section.Alph2.2}{Objetivos generales}{appendix.Alph2}% 33
+\BOOKMARK [1][-]{section.Alph2.3}{Catalogo de requisitos}{appendix.Alph2}% 34
+\BOOKMARK [1][-]{section.Alph2.4}{Especificaci\363n de requisitos}{appendix.Alph2}% 35
+\BOOKMARK [0][-]{appendix.Alph3}{Especificaci\363n de dise\361o}{section.7.2}% 36
+\BOOKMARK [1][-]{section.Alph3.1}{Introducci\363n}{appendix.Alph3}% 37
+\BOOKMARK [1][-]{section.Alph3.2}{Dise\361o de datos}{appendix.Alph3}% 38
+\BOOKMARK [1][-]{section.Alph3.3}{Dise\361o procedimental}{appendix.Alph3}% 39
+\BOOKMARK [1][-]{section.Alph3.4}{Dise\361o arquitect\363nico}{appendix.Alph3}% 40
+\BOOKMARK [0][-]{appendix.Alph4}{Documentaci\363n t\351cnica de programaci\363n}{section.7.2}% 41
+\BOOKMARK [1][-]{section.Alph4.1}{Introducci\363n}{appendix.Alph4}% 42
+\BOOKMARK [1][-]{section.Alph4.2}{Estructura de directorios}{appendix.Alph4}% 43
+\BOOKMARK [1][-]{section.Alph4.3}{Manual del programador}{appendix.Alph4}% 44
+\BOOKMARK [1][-]{section.Alph4.4}{Compilaci\363n, instalaci\363n y ejecuci\363n del proyecto}{appendix.Alph4}% 45
+\BOOKMARK [1][-]{section.Alph4.5}{Pruebas del sistema}{appendix.Alph4}% 46
+\BOOKMARK [0][-]{appendix.Alph5}{Documentaci\363n de usuario}{section.7.2}% 47
+\BOOKMARK [1][-]{section.Alph5.1}{Introducci\363n}{appendix.Alph5}% 48
+\BOOKMARK [1][-]{section.Alph5.2}{Requisitos de usuarios}{appendix.Alph5}% 49
+\BOOKMARK [1][-]{section.Alph5.3}{Instalaci\363n}{appendix.Alph5}% 50
+\BOOKMARK [1][-]{section.Alph5.4}{Manual del usuario}{appendix.Alph5}% 51
+\BOOKMARK [0][-]{appendix*.45}{Bibliograf\355a}{section.7.2}% 52
