@@ -8,20 +8,26 @@ normalización con Daugmands rubber. Luego, tras eliminar el ruido, la extració
 utilizando el mean-squared error para calcular los pesos en la red.
 
 En \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de deep learning para el reconocimiento del iris basado en convolutional neural network residual. utilizando una red preentrenada 
-de ResNet50 y fine-tuning, entrenado con una cross-entropy loss function (but they are not using data augmentation, they are using another dataset IIT Delhi dataset and they are 
-not doing the preprocessing step).
+de ResNet50 y fine-tuning, entrenado con una \textit{cross-entropy loss function} (aunque no utilizan \textit{data augmentation}, ni preprocesan las imágenes, y además, utilizan otro dataset, el IIT Delhi). 
 
-In 13 ImageNet Deep CNN they use the ImageNet dataset with data augmentation, dropout to train a nerual network to detect images of the feed (maybe we can remove it as
-it is not related with iris).
-
-En 14 experimental deep convolutional iris recognition, utilizaron el dataset CASIA - 10000 y la arquitectura VGG-Net, lo cual realiza un PCA para extraer los elementos
+En \cite{minaee_experimental_2017}, utilizaron el dataset CASIA - 10000 y la arquitectura VGG-Net, lo cual realiza un PCA para extraer los elementos
 más característicos de las imágenes . Después utilizan algoritmos de clasificación para clasificar las imágenes, como el SVM (esto es similar al TFG) y consiguen unos percentajes
 de reconocimiento muy altos.
 
-05 techniques review habla de siete pasos en los que se divide un sistema de reconocimiento del iris, 1)adquisición, 2)preprocesamiento, 3)segmentación
- 4)normalización, 5)extracción de características, 6) selección de features únicos y característicos, 7)clasificación. Este paper también describe una falta de
- trabajos entorno a datasets de baja cualidad (revisar para sacar más papers). El paper también realza que los sistemas de reconocimiento del iris (IRS) se vuelven 
- poco efectivos cuando las imagenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el data augmentation.
+En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sistema de reconocimiento del iris:
+\begin{enumerate}
+\item adquisición
+\item preprocesamiento
+\item segmentación
+\item normalización
+\item extracción de características
+\item selección de features únicos y característicos
+\item clasificación. 
+\end{enumerate}
+ 
+ Este paper también describe una falta de
+ trabajos entorno a datasets de baja cualidad y realza que los sistemas de reconocimiento del iris (IRS) se vuelven 
+ poco efectivos cuando las imagenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el \textit{data augmentation}.
 
  Este mismo paper también comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
  los tipos de segmentación tradicional y actual utilizados (habitualmente con redes neuronales), técnicas de normalización y extracciñon de caracterñisticas, así 
@@ -35,7 +41,7 @@ de reconocimiento muy altos.
  Bakshi et al. [72] utiliza filtro gausseano combinado con Hough detección de líneas pero nadie utiliza solo gausseano y/o transformaciones afines (al menos en este
  recopilatorio).
 
- 15 finetunning or raw utiliza técnicas de deep learning para clasificar imagenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
+ \cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imagenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
  llamada OSIRIS y prueban deep learning, fine tunning y raw para ver que clasifica mejor. ( It is better to take the best-performing model trained on either general-purpose or face images and
   fine-tune it to iris recognition task, rather than train own network)
  from scratch.
@@ -47,6 +53,6 @@ de reconocimiento muy altos.
 
 .... (utilizando Machine learning y deep learning)
 
-Y para el tema de clasificación de personas con el ojo, se ha encontrado.
+Y para el tema de clasificación de personas con el ojo, se ha encontrado ...
 
-Por otro lado, en temas de fine tunning con redes neuronales, se tiene
+Por otro lado, en temas de fine tunning con redes neuronales, se tiene ...

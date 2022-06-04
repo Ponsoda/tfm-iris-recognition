@@ -36,12 +36,30 @@ Las fases del pipeline anterior, y por lo tanto las funciones creadas en el pipe
 1.Tratar el dataset, de forma que las imágenes, distribuidas en distintos directorios, se guardan en uno solo. Posteriormente, se realiza en mezclado de las imágenes, el dataset se divide en dos partes, 
 una que será utilizada en el proceso (70 por ciento) y, finalmente, se guarda una parte del dataset que será utilizada para obtener los resultados finales.
 
-
 La segunda fase se trata de la elección de la mejor forma de clasificar las imagenes de entrada:
 
 \section{Clasificación de las imágenes}
 
-(añadir el tiempo de ejecucción y el acuracy de cada uno de los procesos)
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+    \hline
+     & \multicolumn{2}{|c|}{Sin normalización} & \multicolumn{2}{|c|}{Con normalización} \\
+    \hline
+    Modelo& Con data augmentation & Sin data augmentation &Con data augmentation&Sin data augmentation\\
+    \hline
+    \textit{Accuracy} & 0.94298244   & 0.93421054    & 0.719704 &   0.679926\\
+    \hline
+   \end{tabular}
+
+
+Estos resultados muestran, en primer lugar, que el data augmentation no supone sino un decrimento del \textit{accuracy}, tanto en los casos donde se normaliza el iris
+como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez, al calcularse este parámetro utilizando datos sin ninguna modificación, que 
+tienen un gran parecido a las imágenes originales, el \textit{data augmentation} disminuya ligeramente los resultados. No obstante, la mejora de la robustez previsiblemente
+permitirá al sistema funcionar de forma más eficiente en un contexto no academico.
+
+Por otro lado, en cuanto a los mejores resultados utilizando imágenes no normalizadas, se debe de tener en cuenta que, por la forma en la que funcionan las redes neuronales,
+en cuanto a la reducción de imágenes para quedarse con sus características más representativas, tiene sentido que al proporcionar más elementos representativos del indivíduo,
+y no solo el iris, la propia red neuronal haya sido capaz de encontrar características en la imagen que son más eficientes para su clasificación, y que, de alguna forma, son
+agenos a la zona propiamente del iris.
 
 \subsection{Preprocesamiento y Machine Learning}
 

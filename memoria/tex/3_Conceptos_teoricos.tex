@@ -3,41 +3,40 @@
 Explicación de la sección
 
 
-\section{Elementos biométricos}
+\section{Biometría}
 
 De entre todos los elementos biometricos, que incluyenn huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el metodo con mayor eficiencia a la hora de determinar la identidad
 de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo de la vida de una persona y es único, incluso entre gemelos. Esto es incluso utilizado en los procesos 
 post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humanos es un organo del ojo, que tiene como funciona controlar el tamaño
 de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
-\section{Dataset CASIA}	
+\subsection{Análisis del Iris}	
+
+\subsubsection{Dataset CASIA}	
 
 El dataset de CASIA hace referencia a una base de datos que contine 756 imágenes del iris de un total de 108 sujetos. 
 Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada indivíduo. 
 La pupila fue automáticamente remplazada para evitar que se reflejasen las luces de las fotografías 
 \footnote{El proceso de toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
-
-
 \imagen{img/02_ojo_raw}{Ejemplo de una imagen del dataset CASIA}
 
-\section{Preprocesamiento}
+\section{Inteligencia Artificial}
 
-La fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios (referencia), la parte del iris es la que 
-permite identificar a las personas.
+La Real Academia Española define la inteligencia artificial como una "Disciplina científica que se ocupa de crear programas informáticos que ejecutan 
+operaciones comparables a las que realiza la mente humana, como el aprendizaje o el razonamiento lógico."
 
-\subsection{Segmentación}
+\subsection{Deep Learning}
 
-Detección de las distintas zonas del ojo.
+El deep learning intenta replicar la forma en la que los humanos toman las decisiones en las máquinas a través de redes neuronales.
 
-\subsection{Normalización}
+\subsubsection{Data augmentation}
 
-Normalización del iris y desenrollamiento en coordenadas polares
+El data augmentation es un proceso común en el análisis de imágenes y de datos en general. 
 
+Consiste en aumentar el tamaño de dataset con nuevas imágenes producidas a partir del dataset original, modificando la misma para conseguir un modelo más robusto.	
 
-\section{Data augmentation}
-
-El data augmentation es un proceso común en el análisis de imágenes y de datos en general. En el caso de los procesos de entrenamiento de las redes neuronales es común
+En el caso de los procesos de entrenamiento de las redes neuronales es común
 la utilización de técnicas de data augmentation, principalmente por dos situaciones, aunque estas no son excluyentes:
 
 \begin{itemize}
@@ -46,6 +45,21 @@ positivos en la creación de una red neuronal.
 	\item Aumento de la robustez del modelo: el segundo supuesto principal por el cual se utiliza data augmentation es la utilización de elementos que añadan dificultades a La
 red neuronal para cumplir su propósito, lo cual permitirá una mayor robustez del modelo.
 \end{itemize}
+
+\subsubsection{Preprocesamiento}
+
+El preprocesamiento es la manipulación de los datos para que estos tengan el formato requerido para llevar a cabo su procesamiento.
+
+En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios (referencia), la parte del iris es la que 
+permite identificar a las personas.
+
+\subsubsection{Segmentación}
+
+Detección de las distintas zonas del ojo.
+
+\subsubsection{Normalización}
+
+Normalización del iris y desenrollamiento en coordenadas polares
 
 \subsection{Ruido gaussiano}
 
@@ -67,81 +81,16 @@ En cuanto a los tipos de transformaciones afines encontramos las siguientes: tra
 
 \subsubsection{Rotación}
 
+\begin{tabular}{ |p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|  }
+	\hline
+	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
+	\hline
+	Identidad & Escalamiento & Traducción & Inclinación & Rotación\\
+	\hline
+	Imagen   & Imagen    &Imagen&   Imagen &   Imagen\\
+	\hline
+   \end{tabular}
+
 \section{Fine tunning}
-El fine tunning es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
-el dataset con el que se trabaja.
-
-\section{Inteligencia Artificial}
-
-La Real Academia Española define la inteligencia artificial como "Disciplina científica que se ocupa de crear programas informáticos que ejecutan 
-operaciones comparables a las que realiza la mente humana, como el aprendizaje o el razonamiento lógico."
-
-\subsection{Machine Learning}
-
-El machine learning se divide en, clasificaciones supervisadas y no supervisadas.
-
-\subsection{Deep Learning}
-
-El deep learning intenta replicar la forma en la que los humanos toman las decisiones en las máquinas a través de redes neuronales.
-
-
-
-\section{Referencias}
-
-Las referencias se incluyen en el texto usando cite \cite{wiki:latex}. Para citar webs, artículos o libros \cite{koza92}.
-
-\section{Imágenes}
-
-Se pueden incluir imágenes con los comandos standard de \LaTeX, pero esta plantilla dispone de comandos propios como por ejemplo el siguiente:
-
-\section{Listas de items}
-
-Existen tres posibilidades:
-
-\begin{itemize}
-	\item primer item.
-	\item segundo item.
-\end{itemize}
-
-\begin{enumerate}
-	\item primer item.
-	\item segundo item.
-\end{enumerate}
-
-\begin{description}
-	\item[Primer item] más información sobre el primer item.
-	\item[Segundo item] más información sobre el segundo item.
-\end{description}
-	
-\begin{itemize}
-\item 
-\end{itemize}
-
-\section{Tablas}
-
-Igualmente se pueden usar los comandos específicos de \LaTeX o bien usar alguno de los comandos de la plantilla.
-
-\tablaSmall{Herramientas y tecnologías utilizadas en cada parte del proyecto}{l c c c c}{herramientasportipodeuso}
-{ \multicolumn{1}{l}{Herramientas} & App AngularJS & API REST & BD & Memoria \\}{ 
-HTML5 & X & & &\\
-CSS3 & X & & &\\
-BOOTSTRAP & X & & &\\
-JavaScript & X & & &\\
-AngularJS & X & & &\\
-Bower & X & & &\\
-PHP & & X & &\\
-Karma + Jasmine & X & & &\\
-Slim framework & & X & &\\
-Idiorm & & X & &\\
-Composer & & X & &\\
-JSON & X & X & &\\
-PhpStorm & X & X & &\\
-MySQL & & & X &\\
-PhpMyAdmin & & & X &\\
-Git + BitBucket & X & X & X & X\\
-Mik\TeX{} & & & & X\\
-\TeX{}Maker & & & & X\\
-Astah & & & & X\\
-Balsamiq Mockups & X & & &\\
-VersionOne & X & X & X & X\\
-} 
+   El fine tunning es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
+   el dataset con el que se trabaja.
