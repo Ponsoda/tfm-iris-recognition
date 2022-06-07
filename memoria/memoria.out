@@ -8,21 +8,21 @@
 \BOOKMARK [0][-]{chapter*.8}{3. Conceptos te\363ricos}{section*.3}% 8
 \BOOKMARK [1][-]{section.3.1}{Biometr\355a}{chapter*.8}% 9
 \BOOKMARK [1][-]{section.3.2}{Inteligencia Artificial}{chapter*.8}% 10
-\BOOKMARK [1][-]{section.3.3}{Fine tunning}{chapter*.8}% 11
-\BOOKMARK [0][-]{chapter*.23}{4. T\351cnicas y herramientas}{section*.3}% 12
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter*.23}% 13
-\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter*.23}% 14
-\BOOKMARK [1][-]{section.4.3}{Github}{chapter*.23}% 15
-\BOOKMARK [1][-]{section.4.4}{Python}{chapter*.23}% 16
-\BOOKMARK [1][-]{section.4.5}{Scrum}{chapter*.23}% 17
-\BOOKMARK [0][-]{chapter*.26}{5. Aspectos relevantes del desarrollo del proyecto}{section*.3}% 18
-\BOOKMARK [1][-]{section.5.1}{Optimizaci\363n de los notbooks previos}{chapter*.26}% 19
-\BOOKMARK [1][-]{section.5.2}{Data agumentation}{chapter*.26}% 20
-\BOOKMARK [1][-]{section.5.3}{Clasificaci\363n de las im\341genes}{chapter*.26}% 21
-\BOOKMARK [0][-]{chapter*.31}{6. Trabajos relacionados}{section*.3}% 22
-\BOOKMARK [0][-]{chapter*.32}{7. Conclusiones y L\355neas de trabajo futuras}{section*.3}% 23
-\BOOKMARK [1][-]{section.7.1}{Conclusiones}{chapter*.32}% 24
-\BOOKMARK [1][-]{section.7.2}{L\355neas de trabajo futuras}{chapter*.32}% 25
+\BOOKMARK [1][-]{section.3.3}{fine-tuning}{chapter*.8}% 11
+\BOOKMARK [0][-]{chapter*.22}{4. T\351cnicas y herramientas}{section*.3}% 12
+\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter*.22}% 13
+\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter*.22}% 14
+\BOOKMARK [1][-]{section.4.3}{Github}{chapter*.22}% 15
+\BOOKMARK [1][-]{section.4.4}{Python}{chapter*.22}% 16
+\BOOKMARK [1][-]{section.4.5}{Scrum}{chapter*.22}% 17
+\BOOKMARK [0][-]{chapter*.25}{5. Aspectos relevantes del desarrollo del proyecto}{section*.3}% 18
+\BOOKMARK [1][-]{section.5.1}{Optimizaci\363n de los notebooks previos}{chapter*.25}% 19
+\BOOKMARK [1][-]{section.5.2}{data augmentation}{chapter*.25}% 20
+\BOOKMARK [1][-]{section.5.3}{Clasificaci\363n de las im\341genes}{chapter*.25}% 21
+\BOOKMARK [0][-]{chapter*.30}{6. Trabajos relacionados}{section*.3}% 22
+\BOOKMARK [0][-]{chapter*.31}{7. Conclusiones y L\355neas de trabajo futuras}{section*.3}% 23
+\BOOKMARK [1][-]{section.7.1}{Conclusiones}{chapter*.31}% 24
+\BOOKMARK [1][-]{section.7.2}{L\355neas de trabajo futuras}{chapter*.31}% 25
 \BOOKMARK [-1][-]{section.7.2}{Ap\351ndices}{}% 26
 \BOOKMARK [0][-]{appendix.Alph1}{Plan de Proyecto Software}{section.7.2}% 27
 \BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 28
@@ -49,4 +49,4 @@
 \BOOKMARK [1][-]{section.Alph5.2}{Requisitos de usuarios}{appendix.Alph5}% 49
 \BOOKMARK [1][-]{section.Alph5.3}{Instalaci\363n}{appendix.Alph5}% 50
 \BOOKMARK [1][-]{section.Alph5.4}{Manual del usuario}{appendix.Alph5}% 51
-\BOOKMARK [0][-]{appendix*.45}{Bibliograf\355a}{section.7.2}% 52
+\BOOKMARK [0][-]{appendix*.44}{Bibliograf\355a}{section.7.2}% 52

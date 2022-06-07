@@ -39,11 +39,11 @@
 
 % Imagenes
 \usepackage{graphicx}
-\newcommand{\imagen}[2]{
+\newcommand{\imagen}[3]{
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.9\textwidth]{#1}
-		\caption{#2}\label{fig:#1}
+		\caption[{#3}]{#2}\label{fig:#1}
 	\end{figure}
 	\FloatBarrier
 }
@@ -360,7 +360,7 @@
 % Datos de portada
 \title{Clasificación del iris}
 \author{\nombre}
-\tutor{Dr. José Francisco Diez Pastor y Dr. Pedro Latorre Carmona}
+\tutor{Dr. José Francisco Díez Pastor y Dr. Pedro Latorre Carmona}
 \date{\today}
 
 \begin{document}
@@ -440,13 +440,25 @@ D. Pedro Latorre Carmona
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-Cada vez se utilizan más elementos biomédicos para poder identificar a las personas. En este trabajo vamos a utilizar técnicas de Inteligencia Artificial para
-segmentar el iris y hacer una clasificación del mismo, optimizando procesos anteriores y haciendolos reproducibles.
+La utilización de la biometría para mejorar la seguridad de los aparatos electrónicos es un recurso ampliamente utilizado hoy en día.
+El iris es uno de los elementos biométricos con los que cuenta el ser humano. Este trabajo compara la capacidad de reconocimiento de 
+individuos que tienen las redes neuronales. Para ello, utilizando \textit{fine-tuning}, adaptaremos cuatro variaciones de nuestro dataset 
+a la red VGG16. Estas variaciones son por la utilización de \textit{data augmentation}, tanto a imágenes del ojo sin pre-procesar como a 
+imágenes del ojo donde se ha normalizado el iris.
+
+Los resultado muestra que la red neuronal ha funcionado de forma más eficiente en las imágenes donde no se había aislado la zona del iris.
+Así mismo, las red ha tenido una mejor capacidad de clasificación cuando no se le ha aplicado el \textit{data augmentation}, algo que puede
+deberse a que las imágenes no han sido testadas en situaciones reales. 
+
+En base a estos resultados, se puede extraer la capacidad de las propias redes neuronales para encontrar características del ojo humano más 
+allá del iris, y así mejorar su capacidad de clasificación.
+
+
 \end{abstract}
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-Palabras separadas por comas que identifiquen el contenido del proyecto Ej: servidor web, buscador de vuelos, android \ldots
+biometría, iris, redes neuronales, \textit{fine-tuning}, \textit{data augmentation}
 \end{abstract}
 
 \clearpage

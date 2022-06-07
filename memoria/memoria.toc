@@ -9,57 +9,56 @@
 \contentsline {chapter}{2. Objetivos del proyecto}{5}{chapter*.7}%
 \contentsline {chapter}{3. Conceptos teóricos}{7}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Biometría}{7}{section.3.1}%
-\contentsline {subsection}{Análisis del Iris}{7}{section*.9}%
-\contentsline {subsubsection}{Dataset CASIA}{7}{section*.10}%
+\contentsline {subsection}{Dataset CASIA}{7}{section*.9}%
 \contentsline {section}{\numberline {3.2}Inteligencia Artificial}{8}{section.3.2}%
-\contentsline {subsection}{Deep Learning}{8}{section*.11}%
-\contentsline {subsubsection}{Data augmentation}{8}{section*.12}%
-\contentsline {subsubsection}{Preprocesamiento}{9}{section*.13}%
-\contentsline {subsubsection}{Segmentación}{9}{section*.14}%
-\contentsline {subsubsection}{Normalización}{9}{section*.15}%
-\contentsline {subsection}{Ruido gaussiano}{9}{section*.16}%
-\contentsline {subsection}{Transformaciones afines}{10}{section*.17}%
-\contentsline {subsubsection}{Transformación de identidad}{10}{section*.18}%
-\contentsline {subsubsection}{Escalamiento}{10}{section*.19}%
-\contentsline {subsubsection}{Traducción}{10}{section*.20}%
-\contentsline {subsubsection}{Inclincación}{10}{section*.21}%
-\contentsline {subsubsection}{Rotación}{10}{section*.22}%
-\contentsline {section}{\numberline {3.3}Fine tunning}{10}{section.3.3}%
-\contentsline {chapter}{4. Técnicas y herramientas}{11}{chapter*.23}%
+\contentsline {subsection}{Deep Learning}{8}{section*.10}%
+\contentsline {subsubsection}{Data augmentation}{8}{section*.11}%
+\contentsline {subsubsection}{Preprocesamiento}{9}{section*.12}%
+\contentsline {subsubsection}{Segmentación}{9}{section*.13}%
+\contentsline {subsubsection}{Normalización}{9}{section*.14}%
+\contentsline {subsection}{Ruido gaussiano}{9}{section*.15}%
+\contentsline {subsection}{Transformaciones afines}{10}{section*.16}%
+\contentsline {subsubsection}{Transformación de identidad}{10}{section*.17}%
+\contentsline {subsubsection}{Escalamiento}{10}{section*.18}%
+\contentsline {subsubsection}{Traducción}{10}{section*.19}%
+\contentsline {subsubsection}{Inclincación}{10}{section*.20}%
+\contentsline {subsubsection}{Rotación}{10}{section*.21}%
+\contentsline {section}{\numberline {3.3}\textit {fine-tuning}}{10}{section.3.3}%
+\contentsline {chapter}{4. Técnicas y herramientas}{11}{chapter*.22}%
 \contentsline {section}{\numberline {4.1}Hardware}{11}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Dataset}{11}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Github}{11}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Python}{11}{section.4.4}%
-\contentsline {subsection}{Redes neuronales preentrenadas}{12}{section*.24}%
-\contentsline {subsection}{Visual Studio}{12}{section*.25}%
+\contentsline {subsection}{Redes neuronales pre-entrenadas}{12}{section*.23}%
+\contentsline {subsection}{Visual Studio}{12}{section*.24}%
 \contentsline {section}{\numberline {4.5}Scrum}{12}{section.4.5}%
-\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{13}{chapter*.26}%
-\contentsline {section}{\numberline {5.1}Optimización de los notbooks previos}{13}{section.5.1}%
-\contentsline {subsection}{Pipeline y configuración}{14}{section*.27}%
-\contentsline {section}{\numberline {5.2}Data agumentation}{14}{section.5.2}%
+\contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{13}{chapter*.25}%
+\contentsline {section}{\numberline {5.1}Optimización de los notebooks previos}{13}{section.5.1}%
+\contentsline {subsection}{Pipeline y configuración}{14}{section*.26}%
+\contentsline {section}{\numberline {5.2}\textit {data augmentation}}{14}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Clasificación de las imágenes}{15}{section.5.3}%
-\contentsline {subsection}{Preprocesamiento y Machine Learning}{15}{section*.28}%
-\contentsline {subsection}{Preprocesamiento y Deep Learning}{16}{section*.29}%
-\contentsline {subsection}{Deep Learning}{16}{section*.30}%
-\contentsline {chapter}{6. Trabajos relacionados}{17}{chapter*.31}%
-\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{21}{chapter*.32}%
+\contentsline {subsection}{Preprocesamiento y Machine Learning}{15}{section*.27}%
+\contentsline {subsection}{Preprocesamiento y Deep Learning}{16}{section*.28}%
+\contentsline {subsection}{Deep Learning}{16}{section*.29}%
+\contentsline {chapter}{6. Trabajos relacionados}{17}{chapter*.30}%
+\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{21}{chapter*.31}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{21}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{21}{section.7.2}%
 \contentsline {part}{Apéndices}{22}{section.7.2}%
 \contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{25}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Introducción}{25}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Planificación temporal}{25}{section.Alph1.2}%
-\contentsline {subsection}{Sprint 1}{25}{section*.35}%
-\contentsline {subsection}{Sprint 2}{26}{section*.36}%
-\contentsline {subsection}{Sprint 3}{26}{section*.37}%
-\contentsline {subsection}{Sprint 4}{26}{section*.38}%
-\contentsline {subsection}{Sprint 5}{26}{section*.39}%
-\contentsline {subsection}{Sprint 6 y 7}{26}{section*.40}%
-\contentsline {subsection}{Sprint 8}{26}{section*.41}%
-\contentsline {subsection}{Sprint 9}{27}{section*.42}%
+\contentsline {subsection}{Sprint 1}{25}{section*.34}%
+\contentsline {subsection}{Sprint 2}{26}{section*.35}%
+\contentsline {subsection}{Sprint 3}{26}{section*.36}%
+\contentsline {subsection}{Sprint 4}{26}{section*.37}%
+\contentsline {subsection}{Sprint 5}{26}{section*.38}%
+\contentsline {subsection}{Sprint 6 y 7}{26}{section*.39}%
+\contentsline {subsection}{Sprint 8}{26}{section*.40}%
+\contentsline {subsection}{Sprint 9}{27}{section*.41}%
 \contentsline {section}{\numberline {A.3}Estudio de viabilidad}{27}{section.Alph1.3}%
-\contentsline {subsection}{Viabilidad económica}{27}{section*.43}%
-\contentsline {subsection}{Viabilidad legal}{27}{section*.44}%
+\contentsline {subsection}{Viabilidad económica}{27}{section*.42}%
+\contentsline {subsection}{Viabilidad legal}{27}{section*.43}%
 \contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{29}{appendix.Alph2}%
 \contentsline {section}{\numberline {B.1}Introducción}{29}{section.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Objetivos generales}{29}{section.Alph2.2}%
@@ -81,4 +80,4 @@
 \contentsline {section}{\numberline {E.2}Requisitos de usuarios}{35}{section.Alph5.2}%
 \contentsline {section}{\numberline {E.3}Instalación}{35}{section.Alph5.3}%
 \contentsline {section}{\numberline {E.4}Manual del usuario}{35}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{37}{appendix*.45}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{37}{appendix*.44}%
