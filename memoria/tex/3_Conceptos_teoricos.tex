@@ -1,25 +1,24 @@
 \capitulo{3}{Conceptos teóricos} \label{capitulo3}
 
-Explicación de la sección
+En esta sección se explican los principales conceptos teóricos relacionados con el proyecto, relacionados con la biometría, la inteligencia
+ artificial y el \textit{fine-tuning}.
 
 
 \section{Biometría}
 
-De entre todos los elementos biometricos, que incluyenn huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el metodo con mayor eficiencia a la hora de determinar la identidad
+De entre todos los elementos biométricos, que incluyen huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el método con mayor eficiencia a la hora de determinar la identidad
 de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo de la vida de una persona y es único, incluso entre gemelos. Esto es incluso utilizado en los procesos 
-post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humanos es un organo del ojo, que tiene como funciona controlar el tamaño
+post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humano es un órgano del ojo, que tiene como función, controlar el tamaño
 de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
-\subsection{Análisis del Iris}	
+\subsection{Dataset CASIA}	
 
-\subsubsection{Dataset CASIA}	
-
-El dataset de CASIA hace referencia a una base de datos que contine 756 imágenes del iris de un total de 108 sujetos. 
-Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada indivíduo. 
+El dataset de CASIA hace referencia a una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
+Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo. 
 La pupila fue automáticamente remplazada para evitar que se reflejasen las luces de las fotografías 
 \footnote{El proceso de toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
-\imagen{img/02_ojo_raw}{Ejemplo de una imagen del dataset CASIA}
+\imagen{img/02_ojo_raw}{Ejemplo de una imagen del dataset CASIA}{Imagen de CASIA}
 
 \section{Inteligencia Artificial}
 
@@ -30,7 +29,7 @@ operaciones comparables a las que realiza la mente humana, como el aprendizaje o
 
 El deep learning intenta replicar la forma en la que los humanos toman las decisiones en las máquinas a través de redes neuronales.
 
-\subsubsection{Data augmentation}
+\subsubsection{Data augmentation}\label{dataaugmentation}
 
 El data augmentation es un proceso común en el análisis de imágenes y de datos en general. 
 
@@ -59,12 +58,12 @@ Detección de las distintas zonas del ojo.
 
 \subsubsection{Normalización}
 
-Normalización del iris y desenrollamiento en coordenadas polares
+Normalización del iris y proyección en coordenadas polares.
 
 \subsection{Ruido gaussiano}
 
 La primera de las técnicas de data augmentation utilizadas ha sido el ruido gaussiano, también conocido como ruido blanco. Este ruido provoca que los píxeles de una imagen cambien
-su valor siguiendo una distribución gausseana.
+su valor siguiendo una distribución gaussiana.
 
 \subsection{Transformaciones afines}
 
@@ -91,6 +90,6 @@ En cuanto a los tipos de transformaciones afines encontramos las siguientes: tra
 	\hline
    \end{tabular}
 
-\section{Fine tunning}
-   El fine tunning es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
+\section{\textit{fine-tuning}}
+   El \textit{fine-tuning} es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
    el dataset con el que se trabaja.

@@ -3,15 +3,15 @@
 El principal apartado anterior se puede  encontrar en el TFG de extracción del iris \cite{tfg_iris_2020}, en el cual se basa este trabajo, puesto se realiza a grandes rasgos
 todo lo relativo a la primera de las opciones del trabajo.
 
-Sobre temas de extracción del iris encontramos \cite{abdullah_iris_2015}, donde se hace un preprocesamiento con extración del iris utilizando Hough Transform y la 
-normalización con Daugmands rubber. Luego, tras eliminar el ruido, la extración se realiza con transformaciones de wavelet. Finalmente, se crea una red neutornal
+Sobre temas de extracción del iris encontramos \cite{abdullah_iris_2015}, donde se hace un preprocesamiento con extracción del iris utilizando Hough Transform y la 
+normalización con Daugmands rubber. Luego, tras eliminar el ruido, la extracción se realiza con transformaciones de wavelet. Finalmente, se crea una red neuronal
 utilizando el mean-squared error para calcular los pesos en la red.
 
-En \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de deep learning para el reconocimiento del iris basado en convolutional neural network residual. utilizando una red preentrenada 
-de ResNet50 y fine-tuning, entrenado con una \textit{cross-entropy loss function} (aunque no utilizan \textit{data augmentation}, ni preprocesan las imágenes, y además, utilizan otro dataset, el IIT Delhi). 
+En \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de deep learning para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. utilizando una red preentrenada 
+de ResNet50 y fine-tuning, entrenado con una \textit{cross-entropy loss function} (aunque no utilizan \textit{data augmentation}, ni pre-procesan las imágenes, y además, utilizan otro dataset, el IIT Delhi). 
 
 En \cite{minaee_experimental_2017}, utilizaron el dataset CASIA - 10000 y la arquitectura VGG-Net, lo cual realiza un PCA para extraer los elementos
-más característicos de las imágenes . Después utilizan algoritmos de clasificación para clasificar las imágenes, como el SVM (esto es similar al TFG) y consiguen unos percentajes
+más característicos de las imágenes . Después utilizan algoritmos de clasificación para clasificar las imágenes, como el SVM (esto es similar al TFG) y consiguen unos percentages
 de reconocimiento muy altos.
 
 En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sistema de reconocimiento del iris:
@@ -27,10 +27,10 @@ En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sis
  
  Este paper también describe una falta de
  trabajos entorno a datasets de baja cualidad y realza que los sistemas de reconocimiento del iris (IRS) se vuelven 
- poco efectivos cuando las imagenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el \textit{data augmentation}.
+ poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el \textit{data augmentation}.
 
  Este mismo paper también comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
- los tipos de segmentación tradicional y actual utilizados (habitualmente con redes neuronales), técnicas de normalización y extracciñon de caracterñisticas, así 
+ los tipos de segmentación tradicional y actual utilizados (habitualmente con redes neuronales), técnicas de normalización y extracción de características, así 
  como los tipos de accuracy de los métodos de iris recognition.
 
  De Marsico et al. [44] utiliza también el dataset de casia V! (parece que también Susitha and Subban [81]) para medir el accuracy y Lozej et al. [176] junto con Unet para El
@@ -38,11 +38,11 @@ En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sis
 
 (esto casi se podría quitar pues no es tanto el foco de nuestro trabajo) Varkarakis et al. [179] también utiliza una cnn para segmentar el iris
 
- Bakshi et al. [72] utiliza filtro gausseano combinado con Hough detección de líneas pero nadie utiliza solo gausseano y/o transformaciones afines (al menos en este
+ Bakshi et al. [72] utiliza filtro gaussiano combinado con Hough detección de líneas pero nadie utiliza solo gaussiano y/o transformaciones afines (al menos en este
  recopilatorio).
 
- \cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imagenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
- llamada OSIRIS y prueban deep learning, fine tunning y raw para ver que clasifica mejor. ( It is better to take the best-performing model trained on either general-purpose or face images and
+ \cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imágenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
+ llamada OSIRIS y prueban deep learning, \textit{fine-tuning} y raw para ver que clasifica mejor. ( It is better to take the best-performing model trained on either general-purpose or face images and
   fine-tune it to iris recognition task, rather than train own network)
  from scratch.
  
@@ -55,4 +55,4 @@ En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sis
 
 Y para el tema de clasificación de personas con el ojo, se ha encontrado ...
 
-Por otro lado, en temas de fine tunning con redes neuronales, se tiene ...
+Por otro lado, en temas de \textit{fine-tuning} con redes neuronales, se tiene ...

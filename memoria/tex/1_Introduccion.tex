@@ -1,25 +1,30 @@
 \capitulo{1}{Introducción}
 
-El \textit{Oxford Learners Dictionaries} define la biometría como la utilización de características humanas parar poder identificar a las personas.
+El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas.
 
 Esta cualidad de la biometría se encuentra principalmente para los humanos en el reconocimiento facial y del iris y huellas dactilares, y hoy en día
 se ha convertido en un elemento fundamental en la seguridad de nuestros dispositivos electrónicos, lo cual supone indirectamente,
 que de la biometría depende el acceso a nuestra información privada.
 
-Dentro de la biomtería, el iris se utiliza como elemento de reconocimiento biométrico de gran eficacia, tanto por su inmutabilidad a lo largo del tiempo como por resultar un valor único y 
+Dentro de la biometría, el iris se utiliza como elemento de reconocimiento biométrico de gran eficacia, tanto por su inmutabilidad a lo largo del tiempo como por resultar un valor único y 
 personal, que supone que dos personas no tendrían un iris idéntico \cite{malgheet_iris_2021}. 
 
-En este estudio, se han comparado técnicas que permitan la identificación de indivíduos a través de imágenes de su iris. 
-En concreto, la comparación se ha llevado a cabo, utilizando la precisión de los modelos a la hora de clasificar. Por un lado, la adaptación de una red neuronal 
-a el dataset, sin ningún preprocesamiento, y por el otro, esta misma adaptación con un proceso previo de normalización del iris .
+En este estudio, se han comparado técnicas que permitan la identificación de individuos a través de imágenes de su iris. 
+En concreto, la comparación se ha llevado a cabo, utilizando la tasa de acierto de los modelos a la hora de clasificar. 
 
-Para la primera fase, se ha empleado una red neuronal preentrenada de ImageNet\footnote{ImageNet es un proyecto donde se proporciona una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}} a la que se le ha aplicado \textit{fine-tuning} con una parte del dataset de imágenes del iris.
-Para la segunda fase, a la red neuronal preentrenada, se le ha aplicado \textit{fine-tuning} de un dataset donde el iris ya ha sido normalizado \cite{tfg_iris_2020}.
+El proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal pre-entrenada ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
+una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning} \footnote{El \textit{fine-tuning} 
+permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada.}.
 
-El objetivo de este proyecto ha sido el de analizar cual de estas perspectivas es más óptima para el reconocimiento de un indivíduo a través de su iris.
+En una segunda fase, se ha aplicado el proceso de extracción y normalización del iris a el mismo \textit{dataset} de imágenes, utilizado en \cite{tfg_iris_2020}, para luego seguir el mismo proceso de adaptación de la red neuronal
+a el \textit{dataset}.
+
+Así mismo, en ambos enfoques, se han utilizado técnicas de \textit{data augmentation} \footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes por dataset, algo que a priori mejora la robustez de los modelos.
+
+El objetivo de este proyecto ha sido el de analizar cual de estas perspectivas es más óptima para el reconocimiento de un individuo a través de su iris así como analizar la razón de que la tasa de acierto de una perspectiva sea mayor en uno de los casos.
 
 \section{Outline}
 
-El resto del documento se estructura de la siguiente manera. El capítulo 2 \nameref{capitulo2} contiene los objetivos del proyecto. El capítulo 3 \nameref{capitulo3} contiene los conceptos teóricos necesarios
-para entender el proyecto. El capítulo 4 \nameref{capitulo5} muestra las técnicas y herramientas utilizadas en el desarrollo de este trabajo. En el capítulo 5 \nameref{capitulo5} se muestran los Aspectos
+El resto del documento se estructura de la siguiente manera. El capítulo 2 \nameref{capitulo2} define las principales finalidades del proyecto. El capítulo 3 \nameref{capitulo3} contiene los conceptos teóricos necesarios
+para entender el proyecto. El capítulo 4 \nameref{capitulo4} muestra las técnicas y herramientas utilizadas en el desarrollo de este trabajo. En el capítulo 5 \nameref{capitulo5} se muestran los Aspectos
 más relevantes que se han desarrollado. En el capítulo 6 \nameref{capitulo6} los trabajos relacionados y en el capítulo 7 \nameref{capitulo7} las conclusiones y las líneas de trabajo futuras.

@@ -1,8 +1,11 @@
 \capitulo{2}{Objetivos del proyecto} \label{capitulo2}
 
-Los objetivos del trabajo son principalmente tres:
+Son los objetivos en los que principalmente se ha enfocado este trabajo.
+
 \begin{itemize}
-    \item Optimizar el código del TFG \cite{tfg_iris_2020} y hacerlo reproducible.
-    \item Aplicar \textit{data augmentation} para constatar si ello mejora la robustez del modelo.
-    \item Comparar la utilización de una única red neuronal para reconocimiento de personas con la combinación de redes neuronales y técnicas de \textit{machine learning}.                                                                                                                                                                                                           
+    \item Al tratarse de una continuación de \cite{tfg_iris_2020}, un primer objetivo ha sido el optimizar el código ya existente para 
+    mejorar su reproducibilidad y que ello permitiera una mayor flexibilidad a la hora de ejecutar el mismo.
+    \item Utilización de técnicas de \textit{fine-tuning} con el fin de adaptar el dataset a una red neuronal pre-entrenada.
+    \item Aplicación de técnicas de \textit{data augmentation} para comprobar si ello supone una mejora en la robustez del modelo.
+    \item Finalmente, comparar la capacidad de clasificación de los modelos utilizando cuatro variables distintas en su creación. Estas son, la utilización de un dataset donde se utiliza una imagen completa del ojo o una donde el iris ha sido extraído y como afecta la utilización de \textit{data augmentation} en estos modelos.                                                                                                                                                                                                           
 \end{itemize}
