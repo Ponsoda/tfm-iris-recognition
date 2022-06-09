@@ -12,7 +12,7 @@ personal, que supone que dos personas no tendrían un iris idéntico \cite{malgh
 En este estudio, se han comparado técnicas que permitan la identificación de individuos a través de imágenes de su iris. 
 En concreto, la comparación se ha llevado a cabo, utilizando la tasa de acierto de los modelos a la hora de clasificar. 
 
-El proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal pre-entrenada ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
+El proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal VGG16 \footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
 una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning} \footnote{El \textit{fine-tuning} 
 permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada.}.
 

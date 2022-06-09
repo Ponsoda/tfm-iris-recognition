@@ -22,16 +22,15 @@
 \contentsline {paragraph}{Rotación}{12}{section*.18}%
 \contentsline {subsection}{Preprocesamiento}{13}{section*.19}%
 \contentsline {subsubsection}{Segmentación}{13}{section*.20}%
-\contentsline {subsubsection}{Normalización}{13}{section*.21}%
-\contentsline {subsection}{\textit {Fine-tuning}}{13}{section*.22}%
+\contentsline {subsubsection}{Normalización}{14}{section*.21}%
+\contentsline {subsection}{\textit {Fine-tuning}}{14}{section*.22}%
 \contentsline {chapter}{4. Técnicas y herramientas}{15}{chapter*.23}%
 \contentsline {section}{\numberline {4.1}Hardware}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Dataset}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Github}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Python}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.2}Github}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Python}{16}{section.4.3}%
 \contentsline {subsection}{Redes neuronales pre-entrenadas}{16}{section*.24}%
 \contentsline {subsection}{Visual Studio}{16}{section*.25}%
-\contentsline {section}{\numberline {4.5}Scrum}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.4}Scrum}{16}{section.4.4}%
 \contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{17}{chapter*.26}%
 \contentsline {section}{\numberline {5.1}Optimización de los notebooks previos}{17}{section.5.1}%
 \contentsline {subsection}{Pipeline y configuración}{18}{section*.27}%

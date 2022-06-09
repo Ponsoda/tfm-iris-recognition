@@ -173,17 +173,30 @@ Esta transformación aplica una transformación de $\theta$ grados del plano.
 
 El preprocesamiento es la manipulación de los datos para que estos tengan el formato requerido para llevar a cabo su procesamiento.
 
-En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios (referencia), la parte del iris es la que 
+En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{boyd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018}, la parte del iris es la que 
 permite identificar a las personas.
 
 \subsubsection{Segmentación}
 
-Detección de las distintas zonas del ojo.
+Detección de los bordes \textit{límbico} y \textit{pupilar} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}, tal como se observa en la figura \ref{img:segmentacion-ojo}.
+
+\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraido de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}\label{img:segmentacion-ojo}
+
+
+Una vez detectados los bordes, se procede a una binarización de la imagen \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
+
+\imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}\label{img:segmentacion-binarizacion-ojo}
+
 
 \subsubsection{Normalización}
 
-Normalización del iris y proyección en coordenadas polares.
+Normalización proyección del iris a coordenadas polares (figura )\ref{img:normalizacion-ojo}, utilizando el método Daugman \cite{daugman_normalization_1993}, de manera que se igualen los tamaños de las diferentes imágenes y permitan su comparación.
+
+\imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}\label{img:normalizacion-ojo}
+
 
 \subsection{\textit{Fine-tuning}}
-   El \textit{fine-tuning} es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales pre-entrenadas a los necesarios en relación con
-   el dataset con el que se trabaja.
+ Se trata de un método que permite adaptar redes neuronales previamente entrenadas con datos diferentes para un conjunto de datos personalizados. En el caso de este proyecto,
+ el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el dataset de CASIA sin tener que crear una red neuronal desde cero, sino adaptando la red
+  neuronal VGG16.
+

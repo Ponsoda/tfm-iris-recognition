@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  9 JUN 2022 08:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  9 JUN 2022 20:46
 entering extended mode
 **e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
 (e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
@@ -722,17 +722,17 @@ LaTeX Info: Redefining \nameref on input line 366.
 \@outlinefile=\write4
 \openout4 = `memoria.out'.
 
-<img/escudoUBU.png, id=205, 1204.5pt x 2007.5pt>
+<img/escudoUBU.png, id=201, 1204.5pt x 2007.5pt>
 File: img/escudoUBU.png Graphic file (type png)
 <use img/escudoUBU.png>
 Package pdftex.def Info: img/escudoUBU.png  used on input line 368.
 (pdftex.def)             Requested size: 51.20435pt x 85.35826pt.
-<img/escudoUVA.png, id=207, 401.5pt x 401.5pt>
+<img/escudoUVA.png, id=203, 401.5pt x 401.5pt>
 File: img/escudoUVA.png Graphic file (type png)
 <use img/escudoUVA.png>
 Package pdftex.def Info: img/escudoUVA.png  used on input line 368.
 (pdftex.def)             Requested size: 85.35896pt x 85.35826pt.
-<img/escudoULE.png, id=208, 212.83514pt x 389.5353pt>
+<img/escudoULE.png, id=204, 212.83514pt x 389.5353pt>
 File: img/escudoULE.png Graphic file (type png)
 <use img/escudoULE.png>
 Package pdftex.def Info: img/escudoULE.png  used on input line 368.
@@ -872,11 +872,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 [][] [][][]\T1/lmr/m/n/10 (+20) Definici�n con-sul-ta-da en [][]$\T1/lmtt/m/n/10 https : / / www . oxfordlearnersdictionaries . com /
  []
 
+
+Underfull \vbox (badness 7796) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 A
-      sí mismo, en ambos enfoques, se han utilizado técnicas de \textit{da... [3
+l.19 E
+      n una segunda fase, se ha aplicado el proceso de extracción y normali... [3
 
 
 ])
@@ -911,7 +914,7 @@ l.1 \capitulo{3}{Conceptos teóricos}
 
 
 ]
-<img/02_ojo_raw_vs_ojo_reflejo.png, id=398, 390.86024pt x 168.63pt>
+<img/02_ojo_raw_vs_ojo_reflejo.png, id=403, 390.86024pt x 168.63pt>
 File: img/02_ojo_raw_vs_ojo_reflejo.png Graphic file (type png)
 <use img/02_ojo_raw_vs_ojo_reflejo.png>
 Package pdftex.def Info: img/02_ojo_raw_vs_ojo_reflejo.png  used on input line 24.
@@ -923,7 +926,7 @@ Underfull \vbox (badness 3942) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
  [8 <./img/02_ojo_raw_vs_ojo_reflejo.png>]
-<img/03_rudio_gaussiano.png, id=424, 479.99326pt x 207.77625pt>
+<img/03_rudio_gaussiano.png, id=429, 479.99326pt x 207.77625pt>
 File: img/03_rudio_gaussiano.png Graphic file (type png)
 <use img/03_rudio_gaussiano.png>
 Package pdftex.def Info: img/03_rudio_gaussiano.png  used on input line 56.
@@ -936,12 +939,12 @@ Overfull \hbox (3.83075pt too wide) in paragraph at lines 67--67
 LaTeX Info: Redefining \. on input line 75.
 LaTeX Info: Redefining \% on input line 75.
 [9 <./img/03_rudio_gaussiano.png>]
-<img/05_transformacion_identidad.png, id=437, 304.7385pt x 139.11975pt>
+<img/05_transformacion_identidad.png, id=442, 304.7385pt x 139.11975pt>
 File: img/05_transformacion_identidad.png Graphic file (type png)
 <use img/05_transformacion_identidad.png>
 Package pdftex.def Info: img/05_transformacion_identidad.png  used on input line 81.
 (pdftex.def)             Requested size: 344.69766pt x 157.37117pt.
-<img/06_transformacion_reflejo.png, id=438, 304.7385pt x 130.086pt>
+<img/06_transformacion_reflejo.png, id=443, 304.7385pt x 130.086pt>
 File: img/06_transformacion_reflejo.png Graphic file (type png)
 <use img/06_transformacion_reflejo.png>
 Package pdftex.def Info: img/06_transformacion_reflejo.png  used on input line 101.
@@ -959,12 +962,12 @@ LaTeX Warning: Command \' invalid in math mode on input line 113.
 
 LaTeX Warning: Command \' invalid in math mode on input line 113.
 
-<img/07_transformacion_escala.png, id=452, 298.716pt x 130.68825pt>
+<img/07_transformacion_escala.png, id=457, 298.716pt x 130.68825pt>
 File: img/07_transformacion_escala.png Graphic file (type png)
 <use img/07_transformacion_escala.png>
 Package pdftex.def Info: img/07_transformacion_escala.png  used on input line 119.
 (pdftex.def)             Requested size: 344.69766pt x 150.81874pt.
-<img/08_transformacion_traslacion.png, id=453, 298.716pt x 130.68825pt>
+<img/08_transformacion_traslacion.png, id=458, 298.716pt x 130.68825pt>
 File: img/08_transformacion_traslacion.png Graphic file (type png)
 <use img/08_transformacion_traslacion.png>
 Package pdftex.def Info: img/08_transformacion_traslacion.png  used on input line 138.
@@ -978,7 +981,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 150.
 
 LaTeX Warning: Command \' invalid in math mode on input line 150.
 
-<img/09_transformacion_rotacion.png, id=461, 296.90926pt x 130.68825pt>
+<img/09_transformacion_rotacion.png, id=466, 296.90926pt x 130.68825pt>
 File: img/09_transformacion_rotacion.png Graphic file (type png)
 <use img/09_transformacion_rotacion.png>
 Package pdftex.def Info: img/09_transformacion_rotacion.png  used on input line 156.
@@ -991,19 +994,42 @@ LaTeX Warning: Command \' invalid in math mode on input line 169.
 
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
-[12 <./img/08_transformacion_traslacion.png> <./img/09_transformacion_rotacion.png>])
+[12 <./img/08_transformacion_traslacion.png> <./img/09_transformacion_rotacion.png>]
+<img/10_segmentacion_ojo.png, id=484, 594.42075pt x 174.6525pt>
+File: img/10_segmentacion_ojo.png Graphic file (type png)
+<use img/10_segmentacion_ojo.png>
+Package pdftex.def Info: img/10_segmentacion_ojo.png  used on input line 183.
+(pdftex.def)             Requested size: 344.69766pt x 101.27986pt.
+<img/11_segmentacion_binario_ojo.png, id=488, 390.86024pt x 168.63pt>
+File: img/11_segmentacion_binario_ojo.png Graphic file (type png)
+<use img/11_segmentacion_binario_ojo.png>
+Package pdftex.def Info: img/11_segmentacion_binario_ojo.png  used on input line 188.
+(pdftex.def)             Requested size: 344.69766pt x 148.71906pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
+[13 <./img/10_segmentacion_ojo.png>]
+<img/12_normalizacion_ojo.png, id=504, 358.33875pt x 168.02776pt>
+File: img/12_normalizacion_ojo.png Graphic file (type png)
+<use img/12_normalizacion_ojo.png>
+Package pdftex.def Info: img/12_normalizacion_ojo.png  used on input line 195.
+(pdftex.def)             Requested size: 344.69766pt x 161.64067pt.
+)
 LaTeX Info: Redefining \. on input line 498.
 LaTeX Info: Redefining \% on input line 498.
- [13]
+ [14 <./img/11_segmentacion_binario_ojo.png> <./img/12_normalizacion_ojo.png>]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
- (tex/4_Tecnicas_y_herramientas.tex [14
+ (tex/4_Tecnicas_y_herramientas.tex [15
 
 
 
 
-] [15]
-Overfull \hbox (7.37523pt too wide) in paragraph at lines 36--38
+]
+Overfull \hbox (7.37523pt too wide) in paragraph at lines 44--46
 \T1/lmr/m/n/12 (-20) y ac-ce-si-ble des-de [][]$\T1/lmtt/m/n/12 https : / / github . com / jus390 / U-[]net-[]Iris-[]segmentation$[][]\T1/lmr/m/n/12 (-20) ,
  []
 
@@ -1014,7 +1040,7 @@ LaTeX Info: Redefining \% on input line 499.
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
  (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
-<img/03_workflow.png, id=495, 757.02824pt x 436.029pt>
+<img/03_workflow.png, id=529, 757.02824pt x 436.029pt>
 File: img/03_workflow.png Graphic file (type png)
 <use img/03_workflow.png>
 Package pdftex.def Info: img/03_workflow.png  used on input line 13.
@@ -1130,14 +1156,16 @@ LaTeX Info: Redefining \% on input line 514.
 
 ]
 bibitemlist
-)
+[41])
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 524.
 
-[41]
+LaTeX Info: Redefining \. on input line 524.
+LaTeX Info: Redefining \% on input line 524.
+[42]
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
@@ -1154,24 +1182,24 @@ LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  (tex/1_Introduccion.aux) (tex/2_Objetivos_del_proyecto.aux) (tex/3_Conceptos_teoricos.aux) (tex/4_Tecnicas_y_herramientas.aux) (tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux) (tex/6_Trabajos_relacionados.aux) (tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux) (tex/A_Plan_proyecto.aux) (tex/B_Requisitos.aux) (tex/C_Diseno.aux) (tex/D_Manual_programador.aux) (tex/E_Manual_usuario.aux))
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: DF2FA44F45CF66C0E3939C09690C0D27;3686.
+(rerunfilecheck)             Checksum: 691643AF5E2453926F4729D25D30DC3E;3630.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13663 strings out of 479799
- 212183 string characters out of 2869723
- 601247 words of memory out of 3000000
- 29882 multiletter control sequences out of 15000+200000
- 666886 words of font info for 218 fonts, out of 3000000 for 9000
+ 13710 strings out of 479799
+ 213332 string characters out of 2869723
+ 601064 words of memory out of 3000000
+ 29909 multiletter control sequences out of 15000+200000
+ 667189 words of font info for 221 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,72p,671b,690s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (53 pages, 2277819 bytes).
+Output written on memoria.pdf (54 pages, 2752780 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 75216 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 75223 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,23 +1,31 @@
 \capitulo{4}{Técnicas y herramientas} \label{capitulo4}
 
-Explicación de la sección
+En esta sección se describen los instrumentos y recursos con los cuales se ha llevado a cabo el proyecto. 
 
 \section{Hardware}
 
-Para la ejecución de los notebooks de este proyecto se ha contado con una máquina de la UBU de x e y características.
+Para la ejecución de los notebooks de este proyecto se ha contado con una máquina de la UBU, cuyas características se recogen en la tabla \ref{caracteristicaspc}.
 
-Se ha utilizado conexión ssh con ella y putty para la modificación de los notebooks a través de jupyter notebook.
+\begin{table}
+\begin{tabular}{l c}
+Elemento & Característica \\
+\hline
+Procesador & Intel Xeon E5-2630 v4 @ 2.20GHz (4 núcleos)\\
+Memoria & 128GB\\
+GPUs & 3 x Titan XP\\
+Discos & SSD 500Gb, 2 x HDD 2TB\\
+\end{tabular}
+\caption{\label{caracteristicaspc} Características del equipo}
+\end{table}
 
-\section{Dataset} 
-
-Se ha utilizado el dataset de CASIA para la imágenes de ojos.
+Para interactuar con la máquina, se ha utilizado una conexión ssh \footnote{Protocolo que permite el acceso remoto a través de un canal seguro \url{https://www.openssh.com/}.} así como putty, para la modificación de los notebooks a través de Jupyter notebooks, dentro del ecosistema de Anaconda.
 
 \section{Github}
 Para el control de versiones y el seguimiento de fases del proyecto
 
 \section{Python}
 
-Además se ha utilizado python para todo el proyecto, esto quiere decir pre-procesado, creación y utilización de redes neuronales y clasificación contécnicas de 
+Además se ha utilizado python para todo el proyecto, esto quiere decir pre-procesado, creación y utilización de redes neuronales y clasificación con técnicas de 
 machine learning.
 
 Entre las principales librerías utilizadas se encuentran:
