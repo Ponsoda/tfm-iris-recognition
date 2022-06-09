@@ -6,46 +6,170 @@ En esta sección se explican los principales conceptos teóricos relacionados co
 
 \section{Biometría}
 
+Como se ha comentado en \nameref{capitulo1}, la biometría permite la identificación de un individuo a través de determinadas características que 
+se asocian a su persona. 
+
 De entre todos los elementos biométricos, que incluyen huellas, cara, iris o voz, el \textit{iris recognition system} (IRS) es el método con mayor eficiencia a la hora de determinar la identidad
 de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo de la vida de una persona y es único, incluso entre gemelos. Esto es incluso utilizado en los procesos 
 post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humano es un órgano del ojo, que tiene como función, controlar el tamaño
 de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
-\subsection{Dataset CASIA}	
+\subsection{\textit{Dataset} CASIA}	
 
-El dataset de CASIA hace referencia a una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
+Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
 Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo. 
-La pupila fue automáticamente remplazada para evitar que se reflejasen las luces de las fotografías 
-\footnote{El proceso de toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
+La pupila fue automáticamente remplazada para evitar que en ella se reflejasen las luces de las fotografías, tal como podemos observar en la figura \ref{img:ojo-reflejo} 
+\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
-\imagen{img/02_ojo_raw}{Ejemplo de una imagen del dataset CASIA}{Imagen de CASIA}
-
+\imagen{img/02_ojo_raw_vs_ojo_reflejo.png}{Eliminación del reflejo de la pupila \cite{tfg_iris_2020}.}{Eliminación del reflejo de la pupila.} \label{img:ojo-reflejo}
 \section{Inteligencia Artificial}
 
-La Real Academia Española define la inteligencia artificial como una "Disciplina científica que se ocupa de crear programas informáticos que ejecutan 
-operaciones comparables a las que realiza la mente humana, como el aprendizaje o el razonamiento lógico."
+La Real Academia Española define la inteligencia artificial como una disciplina cuyo objetivo principal es la creación de programas capaces de realizar funciones similares a los de la mente humana \footnote{En base a la definición de \url{https://dle.rae.es/inteligencia}.}.
 
-\subsection{Deep Learning}
+\subsection{\textit{Deep Learning}}
 
-El deep learning intenta replicar la forma en la que los humanos toman las decisiones en las máquinas a través de redes neuronales.
+El \textit{deep learning} es un tipo de \textit{machine learning}, que utilizando redes neuronales, intenta replicar la forma en la que los humanos toman las decisiones. \footnote{En base a la definición de \url{https://www.ibm.com/cloud/learn/deep-learning}.}
 
-\subsubsection{Data augmentation}\label{dataaugmentation}
+\subsection{\textit{Data augmentation}}\label{dataaugmentation}
 
-El data augmentation es un proceso común en el análisis de imágenes y de datos en general. 
+El \textit{data augmentation} es un proceso común en el análisis de imágenes, y en aquellos proyectos donde se utilicen procesos estadísticos. 
 
-Consiste en aumentar el tamaño de dataset con nuevas imágenes producidas a partir del dataset original, modificando la misma para conseguir un modelo más robusto.	
+Este consiste en aumentar el tamaño de los \textit{dataset} con la creación artificial de nuevas imágenes, que son producidas a partir de imágenes del \textit{dataset} original.
+Para ello, la imagen original se modifica, comúnmente con la aplicación de aumento gaussiano o transformaciones afines, teniendo como resultado, una imagen que deriva de la original, pero que cuenta con ciertas diferencias, que serán más o menos pronunciada dependiendo de las técnicas 
+de \textit{data augmentation} que se le apliquen, así como de los valores utilizados para realizar las modificaciones \footnote{Por ejemplo, si se rota una imagen 2 grados, la diferencia con la original será mucho menor que si se rota 180 grados.}.	
 
 En el caso de los procesos de entrenamiento de las redes neuronales es común
-la utilización de técnicas de data augmentation, principalmente por dos situaciones, aunque estas no son excluyentes:
+la utilización de técnicas de data augmentation, principalmente por dos situaciones, aunque estas no son limitantes:
 
 \begin{itemize}
 	\item Número insuficiente de datos: en este caso, el data augmentation se aplica porque el dataset no es lo suficientemente grande como para conseguir unos resultados 
 positivos en la creación de una red neuronal.
-	\item Aumento de la robustez del modelo: el segundo supuesto principal por el cual se utiliza data augmentation es la utilización de elementos que añadan dificultades a La
+	\item Aumento de la robustez del modelo: el segundo supuesto principal por el cual se utiliza data augmentation es la utilización de elementos que añadan dificultades a la
 red neuronal para cumplir su propósito, lo cual permitirá una mayor robustez del modelo.
 \end{itemize}
 
-\subsubsection{Preprocesamiento}
+\subsubsection{Ruido gaussiano}
+
+La primera de las técnicas de data augmentation utilizadas ha sido el ruido gaussiano, también conocido como ruido blanco. 
+Este técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la figura \ref{img:ruido-gaussiano} .
+
+\imagen{img/03_rudio_gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}\label{img:ruido-gaussiano}
+
+\subsubsection{Transformaciones afines}
+
+Las transformaciones afines permiten aumentar el tamaño del dataset mediante la transformación de imágenes, donde conservan el paralelismo de sus líneas rectas y paralelas y de alguna forma, simulan una nueva perspectiva de la imagen original.
+En cuanto a los tipos de transformaciones afines encontramos la transformación de identidad, reflexión, escalamiento, traslación y finalmente, la rotación, como puede comprobarse en la tabla \ref{tabla:transformaciones-afines}.
+\begin{table}
+\begin{tabular}{ |p{2cm}|p{1.8cm}|p{2.2cm} |p{2cm}|p{1.8cm}|}
+	\hline
+	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
+	\hline
+	Identidad & Reflexión &Escalamiento & Traslación  & Rotación\\
+	\hline
+	Figura \ref{img:transformacion-identidad} & Figura \ref{img:transformacion-reflejo}     & Figura \ref{img:transformacion-escalamiento} &   Figura \ref{img:transformacion-traslacion} &   Figura \ref{img:transformacion-rotacion}\\
+	\hline
+\end{tabular}
+\caption{Transformaciones afines aplicadas en el trabajo.}
+\end{table}
+\label{tabla:transformaciones-afines}
+
+\paragraph{Identidad}
+
+La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para la  
+la reutilización de los datasets.
+
+\imagen{img/05_transformacion_identidad.png}{Ejemplo de transformacion de identidad.}{Ejemplo de transformacion de identidad.}\label{img:transformacion-identidad}
+
+\begin{gather}
+	Identidad:
+	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+	\equiv
+	 \begin{bmatrix}
+	  1 & 0 & 0 \\
+	  0 & 1 & 0 \\
+	  0 & 0 & 1 \\
+	  \end{bmatrix}
+	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
+\end{gather}
+
+%https://subscription.packtpub.com/book/data/9781789537147/1/ch01lvl1sec04/applying-affine-transformation
+
+\paragraph{Reflexión}
+
+Se trata de un mapeo aplicado a la misma imagen a partir de un eje.
+
+\imagen{img/06_transformacion_reflejo.png}{Ejemplo de transformacion por reflexión.}{Ejemplo de transformacion por reflexión.}\label{img:transformacion-reflejo}
+
+\begin{gather}
+	Reflexión:
+	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+	\equiv
+	 \begin{bmatrix}
+	  1 & 0 & 0 \\
+	  0 & -1 & 0 \\
+	  0 & 0 & 1 \\
+	  \end{bmatrix}
+	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
+\end{gather}
+
+\paragraph{Escalamiento} 
+
+Esta transformación modifica la escala de la imagen original, ya sea ampliándola o disminuyéndola.
+
+\imagen{img/07_transformacion_escala.png}{Ejemplo de transformacion por escalamiento.}{Ejemplo de transformacion por escalamiento.}\label{img:transformacion-escalamiento}
+
+
+\begin{gather}
+	Escalamiento:
+	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+	\equiv
+	 \begin{bmatrix}
+	  Sx & 0 & 0 \\
+	  0 & Sy & 0 \\
+	  0 & 0 & 1 \\
+	  \end{bmatrix}
+	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
+\end{gather}
+
+\paragraph{Traslación}
+
+La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni su forma ni su orientación.
+
+\imagen{img/08_transformacion_traslacion.png}{Ejemplo de transformacion por traslación.}{Ejemplo de transformacion por traslación.}\label{img:transformacion-traslacion}
+
+\begin{gather}
+	Traducción:
+	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+	\equiv
+	 \begin{bmatrix}
+	  1 & 0 & dx \\
+	  0 & 1 & dy \\
+	  0 & 0 & 1 \\
+	  \end{bmatrix}
+	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
+\end{gather}
+
+\paragraph{Rotación}
+
+Esta transformación aplica una transformación de $\theta$ grados del plano.
+
+\imagen{img/09_transformacion_rotacion.png}{Ejemplo de transformacion por rotación.}{Ejemplo de transformacion por rotación.}\label{img:transformacion-rotacion}
+
+
+\begin{gather}
+	Rotación:
+	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+	\equiv
+	 \begin{bmatrix}
+	  \cos(\theta) &-\sin(\theta) & 0 \\
+	  \sin(\theta) & \cos(\theta) & 0 \\
+	  0 & 0 & 1 \\
+	  \end{bmatrix}
+	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
+\end{gather}
+
+
+\subsection{Preprocesamiento}
 
 El preprocesamiento es la manipulación de los datos para que estos tengan el formato requerido para llevar a cabo su procesamiento.
 
@@ -60,36 +184,6 @@ Detección de las distintas zonas del ojo.
 
 Normalización del iris y proyección en coordenadas polares.
 
-\subsection{Ruido gaussiano}
-
-La primera de las técnicas de data augmentation utilizadas ha sido el ruido gaussiano, también conocido como ruido blanco. Este ruido provoca que los píxeles de una imagen cambien
-su valor siguiendo una distribución gaussiana.
-
-\subsection{Transformaciones afines}
-
-Las transformaciones afines son transformaciones de las imágenes que conservan el paralelismo de sus líneas rectas y paralelas y de alguna forma simulan una nueva perspectiva para esta.
-En cuanto a los tipos de transformaciones afines encontramos las siguientes: transformación de identidad, escalamiento, traducción, inclinación (de X o Y), rotación.
-
-\subsubsection{Transformación de identidad}
-
-\subsubsection{Escalamiento}
-
-\subsubsection{Traducción}
-
-\subsubsection{Inclincación}
-
-\subsubsection{Rotación}
-
-\begin{tabular}{ |p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|  }
-	\hline
-	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
-	\hline
-	Identidad & Escalamiento & Traducción & Inclinación & Rotación\\
-	\hline
-	Imagen   & Imagen    &Imagen&   Imagen &   Imagen\\
-	\hline
-   \end{tabular}
-
-\section{\textit{fine-tuning}}
-   El \textit{fine-tuning} es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales preentrenadas a los necesarios en relación con
+\subsection{\textit{Fine-tuning}}
+   El \textit{fine-tuning} es una técnica que se utiliza para poder ajustar los parámetros de las redes neuronales pre-entrenadas a los necesarios en relación con
    el dataset con el que se trabaja.
