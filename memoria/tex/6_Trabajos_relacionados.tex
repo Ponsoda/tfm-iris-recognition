@@ -25,34 +25,18 @@ En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sis
 \item clasificación. 
 \end{enumerate}
  
- Este paper también describe una falta de
+ Este \textit{paper} también describe una falta de
  trabajos entorno a datasets de baja cualidad y realza que los sistemas de reconocimiento del iris (IRS) se vuelven 
  poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el \textit{data augmentation}.
 
- Este mismo paper también comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
+ Este mismo \textit{paper} también comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
  los tipos de segmentación tradicional y actual utilizados (habitualmente con redes neuronales), técnicas de normalización y extracción de características, así 
  como los tipos de accuracy de los métodos de iris recognition.
 
- De Marsico et al. [44] utiliza también el dataset de casia V! (parece que también Susitha and Subban [81]) para medir el accuracy y Lozej et al. [176] junto con Unet para El
+ \cite{DeMarsico2016IrisRT} utiliza también el dataset de casia V! (parece que también \cite{10.1016/j.cogsys.2018.09.029}) para medir el accuracy y \cite{lozej_end--end_2018} junto con Unet para el
  iris segmentation.
 
-(esto casi se podría quitar pues no es tanto el foco de nuestro trabajo) Varkarakis et al. [179] también utiliza una cnn para segmentar el iris
-
- Bakshi et al. [72] utiliza filtro gaussiano combinado con Hough detección de líneas pero nadie utiliza solo gaussiano y/o transformaciones afines (al menos en este
- recopilatorio).
+ \cite{7498983} utiliza filtro gaussiano combinado con Hough detección de líneas pero nadie utiliza solo gaussiano y/o transformaciones afines.
 
  \cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imágenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
- llamada OSIRIS y prueban deep learning, \textit{fine-tuning} y raw para ver que clasifica mejor. ( It is better to take the best-performing model trained on either general-purpose or face images and
-  fine-tune it to iris recognition task, rather than train own network)
- from scratch.
- 
-
- Existen varios papers que utilizan fully CNN, y lo mismo para feature extraction.
-
-
-
-.... (utilizando Machine learning y deep learning)
-
-Y para el tema de clasificación de personas con el ojo, se ha encontrado ...
-
-Por otro lado, en temas de \textit{fine-tuning} con redes neuronales, se tiene ...
+ llamada OSIRIS y prueban deep learning, \textit{fine-tuning} y raw para ver que clasifica mejor. (mejor adaptar una red neuronal con \textit{fine-tuning} antes que crear la nuestra propia.

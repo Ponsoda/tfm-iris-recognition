@@ -6,7 +6,7 @@ En esta sección se describen los instrumentos y recursos con los cuales se ha l
 
 Para la ejecución de los notebooks de este proyecto se ha contado con una máquina de la UBU, cuyas características se recogen en la tabla \ref{caracteristicaspc}.
 
-\begin{table}
+\begin{table}[h!]
 \begin{tabular}{l c}
 Elemento & Característica \\
 \hline
@@ -18,37 +18,49 @@ Discos & SSD 500Gb, 2 x HDD 2TB\\
 \caption{\label{caracteristicaspc} Características del equipo}
 \end{table}
 
-Para interactuar con la máquina, se ha utilizado una conexión ssh \footnote{Protocolo que permite el acceso remoto a través de un canal seguro \url{https://www.openssh.com/}.} así como putty, para la modificación de los notebooks a través de Jupyter notebooks, dentro del ecosistema de Anaconda.
+Para interactuar con la máquina, se ha utilizado una conexión SSH \footnote{El \textit{security shell} es un protocolo que permite el acceso remoto a través de un canal seguro \url{https://www.openssh.com/}.} así como un cliente Putty \footnote{Putty es una implementación libre de SSH para Windows \url{https://www.putty.org/}.}, para la modificación de los \textit{notebooks} a través de Jupyter \textit{notebooks} \footnote{Se trata de una aplicación que permite editar y lanzar \textit{notebooks} a través del buscador, \url{https://jupyter.org/}.}, dentro del ecosistema de Anaconda \footnote{Anaconda es una distribución libre, accesible a través del buscador, que es ampliamente utilizada en la ciencia de datos \url{https://www.anaconda.com/}.}.
 
 \section{Github}
-Para el control de versiones y el seguimiento de fases del proyecto
+
+Github es una compañía que ofrece repositorios Git\footnote{Sistema de control de versiones \url{https://git-scm.com/}.} en la nube. 
+Estos repositorios se han utilizado en el proyecto\footnote{Repositorio del proyecto es accesible desde \url{https://github.com/Ponsoda/tfm-iris-recognition}.} para:
+
+\begin{enumerate}
+    \item Control de versiones.
+    \item Seguimiento de las fases del proyecto.
+    \item Documentación de las reuniones y de los problemas a resolver.
+\end{enumerate}
 
 \section{Python}
 
-Además se ha utilizado python para todo el proyecto, esto quiere decir pre-procesado, creación y utilización de redes neuronales y clasificación con técnicas de 
-machine learning.
+Se ha utilizado el lenguaje de programación \href{https://www.python.org/}{Python} para las distintas fases del proyecto.
 
 Entre las principales librerías utilizadas se encuentran:
 
 \begin{itemize}
-    \item os, para el acceso a los directorios
-    \item numpy, para trabajar con las imágenes a nivel de arrays
-    \item scikit-image, para la transformación de las imágenes y el uso de dataset
-    \item tensorflow, para la modificación de las redes neuronales
-    \item keras, para el manejo de las redes neuronales
-    \item matplot, para las gráficas
+    \item \href{https://imageio.readthedocs.io/en/stable/}{imageio} - leer y escribir imágenes.
+    \item \href{https://keras.io/}{keras} - manejo de las redes neuronales.
+    \item \href{https://matplotlib.org/}{matplot} - visualización de datos e imágenes.
+    \item \href{https://numpy.org/}{numpy} - trabajo con las imágenes a nivel de arrays.
+    \item \href{https://docs.python.org/3/library/os.html}{os} - acceso a los directorios.
+    \item \href{https://opencv.org/}{opencv} - trabajo con las imágenes.
+    \item \href{https://scikit-image.org/}{scikit-image} - transformación de las imágenes y el uso de dataset.
+    \item \href{https://docs.python.org/3/library/shutil.html}{shutil} - copia de directorios.
+    \item \href{https://www.tensorflow.org/}{tensorflow} - modificación de las redes neuronales.
 \end{itemize}
 
-\subsection{Redes neuronales pre-entrenadas}
+\subsection{Redes neuronales}
 
-Así mismo, se ha utilizado la red neuronal pre-entrenada, basada en U-Net y accesible desde \url{https://github.com/jus390/U-net-Iris-segmentation}, la cual ya había sido
-entrenada para la segmentación del iris.
+En el proyecto, dos redes neuronales han sido utilizadas. En primer lugar, en el código optimizado \cite{tfg_iris_2020}, se ha utilizado la red neuronal previamente entrenada, basada en U-Net\footnote{Red neuronal para la segmentación de imágenes biomédicas desarrollada por la Universidad de Freiburg \url{https://arxiv.org/abs/1505.04597}.} y accesible desde el \href{https://github.com/jus390/U-net-Iris-segmentation}{repositorio} del \textit{paper} \cite{lozej_end--end_2018}. Esta red neuronal, ya había sido
+entrenada para la segmentación del iris, por lo que se pudo utilizar directamente para dicha fase, al proveerle de imágenes del \textit{dataset}.
 
-Finalmente, para el último proceso del proyecto, se utiliza imagenet como red neuronal pre-entrenada central.
+Para el proceso de \textit{fine-tuning}, se ha utilizado la red neuronal VGG16, que ha sido entrenada con el \textit{dataset} de ImageNet.
 
-\subsection{Visual Studio}
+\subsection{Visual Studio Code}
 
-Tanto para la redacción de la memoria con latex como para el la creación de los notebooks.
+Tanto para la redacción de la memoria con \LaTeX como para el la creación de los \textit{notebooks} a nivel local, se ha utilizado \href{https://code.visualstudio.com/}{Visual Studio Code}.
+
+Se trata de un IDE\footnote{Entorno de desarrollo integrado.} con licencia \textit{open-source}, desarrollado por Microsoft que permite funciones de desarrollo, como la edición de código o su depuración.
 
 \section{Scrum}
 Scrum es un marco que ayuda a la organización de los equipos entorno a un proyecto, en base a Sprints de una determinada duración y permite una retroalimentación

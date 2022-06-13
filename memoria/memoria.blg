@@ -44,45 +44,45 @@ Warning--empty journal in malgheet_iris_2021
 Warning--empty year in malgheet_iris_2021
 Warning--empty journal in szymkowski_iris-based_2021
 Warning--empty year in szymkowski_iris-based_2021
-You've used 12 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            570 strings with 6543 characters,
-and the built_in function-call counts, 4031 in all, are:
-= -- 362
-> -- 232
-< -- 2
-+ -- 95
-- -- 80
-* -- 305
-:= -- 680
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 76
+            594 strings with 7207 characters,
+and the built_in function-call counts, 5138 in all, are:
+= -- 468
+> -- 281
+< -- 3
++ -- 115
+- -- 96
+* -- 385
+:= -- 857
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 131
-empty$ -- 292
-format.name$ -- 80
-if$ -- 803
+cite$ -- 30
+duplicate$ -- 174
+empty$ -- 383
+format.name$ -- 96
+if$ -- 1042
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 9
-newline$ -- 62
-num.names$ -- 24
-pop$ -- 118
+int.to.str$ -- 15
+missing$ -- 12
+newline$ -- 77
+num.names$ -- 30
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 78
 quote$ -- 0
-skip$ -- 85
+skip$ -- 117
 stack$ -- 0
-substring$ -- 200
-swap$ -- 16
-text.length$ -- 2
+substring$ -- 278
+swap$ -- 27
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 60
 warning$ -- 15
-while$ -- 36
-width$ -- 14
-write$ -- 112
+while$ -- 46
+width$ -- 17
+write$ -- 145
 (There were 15 warnings)

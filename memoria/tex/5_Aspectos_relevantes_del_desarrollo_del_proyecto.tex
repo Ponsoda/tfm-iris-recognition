@@ -1,46 +1,95 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto} \label{capitulo5}
 
-El proyecto se divide en una fase preliminar, consistente en la adecuación del código previo, correspondiente en el TFG
-el cual se ha hecho extensible en este trabajo y tres propuestas diferentes para la identificación biomédica de personas 
-a través de una imagen de su ojo utilizando el iris como parte central de este reconocimiento.
+El proyecto se ha dividido en dos fases principales. La primera fase, ha consistido primeramente en la asimilación, adecuación y optimización del código perteneciente
+al proyecto de partida\cite{tfg_iris_2020}, así como en la aplicación de las técnicas de \textit{data augmentation}, para posteriormente poder utilizar el proceso de normalización del iris en la segunda fase. 
+Por otro lado, en la segunda fase se ha desarrollado la personalización de la red neuronal VGG16 a las imágenes (tanto normalizadas como no procesadas) del \textit{dataset} utilizado en el proyecto.
 
-\section{Optimización de los notebooks previos}
 
-La primera fase trata de la optimización del código previo y la creación de un pipeline con una configuración que permitiese un mejor control de las funciones.
-Se han creado funciones correspondientes a cada una de las fases y se han encapsulado en forma de partes de una pipeline, con el único argumento de entrada de la 
-configuración. 
+\section{Preparación del dataset}
 
-\imagen{img/03_workflow}{Ejemplo de workflow del paper \cite{malgheet_iris_2021}}{Workflow utilizado}
+El dataset inicial, se ha dividido en un 70\% para llevar a cabo el proyecto, y un 30\% para comprobar la tasa de acierto del modelo para su clasificación. 
+Este dataset del 70\% será el que se utilizará para la creación de modelos, dividiéndose a su ver en 70-30 para ello. 
 
-\subsection{Pipeline y configuración} 
+\section{Preprocesamiento de los datos}
 
-Así pues, esta configuración permite establecer cuales van a ser los parámetros de la pipeline, principalmente (aunque puede ser fácilmente extensible),
- la ubicación del directorio del dataset. el tamaño del dataset de entrenamiento para la creación de los modelos de redes neuronales o los valores
- de data augmentation que se aplican.
+\subsection{Adecuación del código previo}
 
- Si se desea correr con raw, se deberá de establecer raw en la configuración del pipeline 4.
+-Dataset previo donde se segmentaba y se normalizaba el iris (explicar en otros trabajos) 
+-tres fases, asimilación del dataset, optimizacion del mismo
 
-\section{\textit{data augmentation}}
+\subsection{Creación de la \textit{pipeline}}
 
-También del  data augmentation, en el cual se aplica tanto ruido gaussiano (de 2.5, 5 y 7.5) como transformaciones afines (mat reflexion, mat scale, rotación y shear), siendo realizadas de 
-forma aleatoria, con lo cual los supuestos pueden ser:
+Para el manejo del Código, se ha encapsulado cada sección en el pipeline, y se ha creado un diccionario de configuración, donde se establecen los siguientes criterios
 
-\begin{itemize}
-    \item Imagen sin data augmentation
-    \item Imagen con ruido gaussiano
-    \item Imagen con transformaciones afines y 
-    \item Imagen con ruido gaussiano y transformaciones afines. Este dataset será el base para todo el proyecto.
-\end{itemize}
+%tabla con el nombre y lo que hace la configuración/razón de ser
+-cual es el directorio root
+-tamaño del dataset de entrenamiento
+-si se aplica dsta augmentation o no
+- que tipo de data augmentation se quiere utilizar, y que standar deviation utilizar, en el caso del ruido gaussiano
+-que imagenes y gráficas se quieren plotear
+-donde se guardara el modelo y con que nombre
+-numero de epochs para cada fase de la red neuronal  
+-weight utilizado por la red neuronal
+- dataset utilizado para el fine-tuning
+-tamaño del train y del test
+-tamaño del batch
+-tamaño del random seed
 
-Las fases del pipeline anterior, y por lo tanto las funciones creadas en el pipeline son:
-1.Tratar el dataset, de forma que las imágenes, distribuidas en distintos directorios, se guardan en uno solo. Posteriormente, se realiza en mezclado de las imágenes, el dataset se divide en dos partes, 
-una que será utilizada en el proceso (70 por ciento) y, finalmente, se guarda una parte del dataset que será utilizada para obtener los resultados finales.
+\subsection{Aplicación del \textit{data augmentation} sobre el dataset}
 
-La segunda fase se trata de la elección de la mejor forma de clasificar las imágenes de entrada:
+La aplicación del data augmentation se ha hecho de forma alternativa, primero con el ruido gaussiano, donde aleatoriamente se aplica ruido gaussiano de 2.5, 5 y 7.5 de desviación. 
 
-\section{Clasificación de las imágenes}
+Además, con las transformaciones afines, que no son excluyentes del ruido gaussiano, ni entre ellas mismas, se aplican aleatoriamente entre cada una de ellas. 
 
-\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
+Como resultado, los datasets con data augmentation aplicado cuentan con un total de x imágenes, y más que el dataset original, con una media de z más imagenes por individuo. 
+
+\section{Adaptación de la red neuronal}
+
+En la configuración del pipeline se establece a que dataset se aplica el \textit{fine-tuning}. En este caso se ha aplicado a cuatro datasets. 
+Por un lado, a dos datasets sin preprocesamiento, uno condata augmentation y otro sin. Por otro lado, a dos datasets con el preprocesamiento, uno con data augmentation y otro sin. 
+
+\subsection{Aplicación del \textit{fine-tuning}}
+
+%Explicar xomo se splica, con el ejemplo de las tres cnn https://www.tensorflow.org/guide/keras/transfer_learning#fine-tuning
+%https://stackoverflow.com/questions/54059391/why-we-include-top-false-while-using-pretrained-models-like-inceptionresnetv2-in
+
+Para llevar a cabo la aplicación del \textit{fine-tuning}, se han creado 3 redes neuronales.
+
+\subsubsection{Primera fase}
+
+%https://mitxpc.com/pages/ai-inference-applying-deep-neural-network-training
+
+En primer lugar, se ha creado una primera red neuronal que permita encontrar las características principales de las imágenes.
+Para ello, se ha eliminado la capa final, correspondiente a la clasificación de la imagen.
+A la hora de crear el modelo, se establece como `training=false` para que funcione como un \textit{interference model}.
+
+A la hora de lanzar este primer modelo, que será el modelo base para la red neuronal final, se establece como  ´traning=false´, para mantenerlo en \textit{inference mode}.
+
+
+\subsubsection{Segunda fase}
+
+Para la segunda fase, se ha entrenado una nueva capa, que será la que determine el \textit{output}, para luego hacer un \textit{unfreeze} del modelo creado anteriormente.
+
+\subsubsection{Tercera fase}
+
+En esta tercera fase, se entrena el modelo completo, manteniendo al modelo base como \textit{iterference model} para evitar que se vuelta a entrenar.
+
+
+\subsection{Clasificación de imágenes}
+
+Las imagenes se han clasificado utilizando los modelos creados en la sección anterior, utilizando como dataset de entrada, el 30\% reservado en la primera fase. 
+
+Para las imágenes normalizadas, se les aplica la fase de preprocesamiento, para que puedan ser manejadas por el modelo. 
+
+\subsection{Tasa de acierto} 
+
+La tasa de acierto depresenta el número de veces que el modelo a determinado correctamente la clase de la imagen. 
+
+En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tasa de acierto que han tenido los modelos, a la hora de relacionar las imágenes
+ con los indivíduos.
+
+\begin{table}[h!]
+\begin{tabular}{ |p{2cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}|  }
     \hline
      & \multicolumn{2}{|c|}{Sin normalización} & \multicolumn{2}{|c|}{Con normalización} \\
     \hline
@@ -49,6 +98,8 @@ La segunda fase se trata de la elección de la mejor forma de clasificar las im�
     \textit{Accuracy} & 0.94298244   & 0.93421054    & 0.719704 &   0.679926\\
     \hline
    \end{tabular}
+   \caption{\label{tabla:tasa-acierto-modelos}Tasa de acierto de los modelos.}
+\end{table}
 
 
 Estos resultados muestran, en primer lugar, que el data augmentation no supone sino un decremento del \textit{accuracy}, tanto en los casos donde se normaliza el iris
@@ -61,25 +112,7 @@ en cuanto a la reducción de imágenes para quedarse con sus características m�
 y no solo el iris, la propia red neuronal haya sido capaz de encontrar características en la imagen que son más eficientes para su clasificación, y que, de alguna forma, son
 ajenos a la zona propiamente del iris.
 
-\subsection{Preprocesamiento y Machine Learning}
-
-La propuesta en el TFG anterior, en la cual se realiza un preprocesamiento de las imágenes del dataset original. Este preprocesamiento consiste primer lugar 
-en la segmentación de las imágenes del iris con una red neuronal pre-entrenada precisamente para realizar esta acción. En segundo lugar, se realiza una extracción
-del iris a través de una binarización de las partes del ojo y una extracción del iris, a la que se le aplica una normalización para que quede proyectado.
-La siguiente fase de esta primera propuesta es la extracción de características (quitándole las dos últimas capas a una red neuronal) de la imagen normalizada
- para posteriormente utilizar una red neuronal pre-entrenada con imagenet (de hecho 3 redes de la cual se elige la mejor). Posteriormente, estas características
- extraídas se pasan a modelos de ML, que son los que realizarán la clasificación. 
-
-\subsection{Preprocesamiento y Deep Learning}
-
-La segunda propuesta es la utilización de una red neuronal de VGG16, pre-entrenada con imagenet, a la que se le aplica un \textit{fine-tuning} del dataset de CASIAV1 para
-que sea capaz de clasificar las imágenes de acuerdo a las clases establecidas en el dataset.
-
-\subsection{Deep Learning}
-
-La tercera propuesta se basa en la utilización del dataset, directo sin preprocesamiento, para la fase del \textit{fine-tuning} y su posterior clasificación (para la clasificación de imágenes en las fases
-que han sufrido preprocesamiento, le deberían de pasar imágenes que primero hayan entrado al pipeline hasta la fase de normalización!!).
-(temporal) Los resultados arrojan un acierto mayor en el caso del pre-proceso + red neuronal, por lo que se puede concluir que, en base a los parámetros establecidos en este estudio, la utilización de 
-una fase de preprocesamiento que elimine las partes que los estudios determinan no tan útiles para la clasificación humana (vease, todo aquello que no es parte del iris)
- y posteriormente utiliza el \textit{fine-tuning} para adecuar una red neuronal pre-entrenada a las clases de las que se compone el dataset.
+Además, cabe de tener en cuenta que, tal como se explica en \nameref{casia}, el \textit{dataset} utilizado ha sido sometido a un preprocesamiento previo, en el que se elimió la pupila 
+para evitar que el brillo emitido por las cámaras para tomer las propias imágenes pudiera afectar a la misma. Por lo tanto, realmente la normalización practicada solo ha afectado a la 
+parte exterior al iris, y esto puede haber reducido su efecto.
 

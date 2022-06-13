@@ -1,5 +1,9 @@
 \documentclass[a4paper,12pt,twoside]{memoir}
 
+%otros
+\usepackage{listings}
+
+
 % Castellano
 \usepackage[spanish,es-tabla]{babel}
 \selectlanguage{spanish}
@@ -39,11 +43,11 @@
 
 % Imagenes
 \usepackage{graphicx}
-\newcommand{\imagen}[3]{
+\newcommand{\imagen}[4]{
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.9\textwidth]{#1}
-		\caption[{#3}]{#2}\label{fig:#1}
+		\caption[{#3}]{#2}\label{#4}
 	\end{figure}
 	\FloatBarrier
 }

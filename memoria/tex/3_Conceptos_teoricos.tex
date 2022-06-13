@@ -14,14 +14,14 @@ de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo
 post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humano es un órgano del ojo, que tiene como función, controlar el tamaño
 de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
-\subsection{\textit{Dataset} CASIA}	
+\subsection{\textit{Dataset} CASIA}	\label{casia}
 
 Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
 Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo. 
 La pupila fue automáticamente remplazada para evitar que en ella se reflejasen las luces de las fotografías, tal como podemos observar en la figura \ref{img:ojo-reflejo} 
 \footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
-\imagen{img/02_ojo_raw_vs_ojo_reflejo.png}{Eliminación del reflejo de la pupila \cite{tfg_iris_2020}.}{Eliminación del reflejo de la pupila.} \label{img:ojo-reflejo}
+\imagen{img/02_ojo_raw_vs_ojo_reflejo.png}{Eliminación del reflejo de la pupila \cite{tfg_iris_2020}.}{Eliminación del reflejo de la pupila.}{img:ojo-reflejo}
 \section{Inteligencia Artificial}
 
 La Real Academia Española define la inteligencia artificial como una disciplina cuyo objetivo principal es la creación de programas capaces de realizar funciones similares a los de la mente humana \footnote{En base a la definición de \url{https://dle.rae.es/inteligencia}.}.
@@ -29,6 +29,11 @@ La Real Academia Española define la inteligencia artificial como una disciplina
 \subsection{\textit{Deep Learning}}
 
 El \textit{deep learning} es un tipo de \textit{machine learning}, que utilizando redes neuronales, intenta replicar la forma en la que los humanos toman las decisiones. \footnote{En base a la definición de \url{https://www.ibm.com/cloud/learn/deep-learning}.}
+
+\subsection{\textit{Pipeline}}
+
+Los \textit{pipelines} son secuencias de procesos encadenados, donde el \textit{output} del proceso anterior funciona como \textit{input} del siguiente proceso. La utilización de \textit{pipelines} ha permitido un mayor control de los distintos procesos, al poder 
+establecer una configuración general para la cadena de procesos, y para poder modificar de una maner más sencilla el orden de las procesos, a la hora de experimentar con nuevas combinaciones.
 
 \subsection{\textit{Data augmentation}}\label{dataaugmentation}
 
@@ -53,13 +58,14 @@ red neuronal para cumplir su propósito, lo cual permitirá una mayor robustez d
 La primera de las técnicas de data augmentation utilizadas ha sido el ruido gaussiano, también conocido como ruido blanco. 
 Este técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la figura \ref{img:ruido-gaussiano} .
 
-\imagen{img/03_rudio_gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}\label{img:ruido-gaussiano}
+\imagen{img/03_rudio_gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{img:ruido-gaussiano}
 
 \subsubsection{Transformaciones afines}
 
 Las transformaciones afines permiten aumentar el tamaño del dataset mediante la transformación de imágenes, donde conservan el paralelismo de sus líneas rectas y paralelas y de alguna forma, simulan una nueva perspectiva de la imagen original.
 En cuanto a los tipos de transformaciones afines encontramos la transformación de identidad, reflexión, escalamiento, traslación y finalmente, la rotación, como puede comprobarse en la tabla \ref{tabla:transformaciones-afines}.
-\begin{table}
+
+\begin{table}[h!]
 \begin{tabular}{ |p{2cm}|p{1.8cm}|p{2.2cm} |p{2cm}|p{1.8cm}|}
 	\hline
 	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
@@ -69,16 +75,16 @@ En cuanto a los tipos de transformaciones afines encontramos la transformación 
 	Figura \ref{img:transformacion-identidad} & Figura \ref{img:transformacion-reflejo}     & Figura \ref{img:transformacion-escalamiento} &   Figura \ref{img:transformacion-traslacion} &   Figura \ref{img:transformacion-rotacion}\\
 	\hline
 \end{tabular}
-\caption{Transformaciones afines aplicadas en el trabajo.}
+\caption{\label{tabla:transformaciones-afines}Transformaciones afines aplicadas en el trabajo.}
 \end{table}
-\label{tabla:transformaciones-afines}
+
 
 \paragraph{Identidad}
 
 La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para la  
 la reutilización de los datasets.
 
-\imagen{img/05_transformacion_identidad.png}{Ejemplo de transformacion de identidad.}{Ejemplo de transformacion de identidad.}\label{img:transformacion-identidad}
+\imagen{img/05_transformacion_identidad.png}{Ejemplo de transformacion de identidad.}{Ejemplo de transformacion de identidad.}{img:transformacion-identidad}
 
 \begin{gather}
 	Identidad:
@@ -98,7 +104,7 @@ la reutilización de los datasets.
 
 Se trata de un mapeo aplicado a la misma imagen a partir de un eje.
 
-\imagen{img/06_transformacion_reflejo.png}{Ejemplo de transformacion por reflexión.}{Ejemplo de transformacion por reflexión.}\label{img:transformacion-reflejo}
+\imagen{img/06_transformacion_reflejo.png}{Ejemplo de transformacion por reflexión.}{Ejemplo de transformacion por reflexión.}{img:transformacion-reflejo}
 
 \begin{gather}
 	Reflexión:
@@ -116,7 +122,7 @@ Se trata de un mapeo aplicado a la misma imagen a partir de un eje.
 
 Esta transformación modifica la escala de la imagen original, ya sea ampliándola o disminuyéndola.
 
-\imagen{img/07_transformacion_escala.png}{Ejemplo de transformacion por escalamiento.}{Ejemplo de transformacion por escalamiento.}\label{img:transformacion-escalamiento}
+\imagen{img/07_transformacion_escala.png}{Ejemplo de transformacion por escalamiento.}{Ejemplo de transformacion por escalamiento.}{img:transformacion-escalamiento}
 
 
 \begin{gather}
@@ -135,7 +141,7 @@ Esta transformación modifica la escala de la imagen original, ya sea ampliándo
 
 La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni su forma ni su orientación.
 
-\imagen{img/08_transformacion_traslacion.png}{Ejemplo de transformacion por traslación.}{Ejemplo de transformacion por traslación.}\label{img:transformacion-traslacion}
+\imagen{img/08_transformacion_traslacion.png}{Ejemplo de transformacion por traslación.}{Ejemplo de transformacion por traslación.}{img:transformacion-traslacion}
 
 \begin{gather}
 	Traducción:
@@ -153,7 +159,7 @@ La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni
 
 Esta transformación aplica una transformación de $\theta$ grados del plano.
 
-\imagen{img/09_transformacion_rotacion.png}{Ejemplo de transformacion por rotación.}{Ejemplo de transformacion por rotación.}\label{img:transformacion-rotacion}
+\imagen{img/09_transformacion_rotacion.png}{Ejemplo de transformacion por rotación.}{Ejemplo de transformacion por rotación.}{img:transformacion-rotacion}
 
 
 \begin{gather}
@@ -180,19 +186,19 @@ permite identificar a las personas.
 
 Detección de los bordes \textit{límbico} y \textit{pupilar} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}, tal como se observa en la figura \ref{img:segmentacion-ojo}.
 
-\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraido de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}\label{img:segmentacion-ojo}
+\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraido de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}{img:segmentacion-ojo}
 
 
 Una vez detectados los bordes, se procede a una binarización de la imagen \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
 
-\imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}\label{img:segmentacion-binarizacion-ojo}
+\imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}{img:segmentacion-binarizacion-ojo}
 
 
 \subsubsection{Normalización}
 
 Normalización proyección del iris a coordenadas polares (figura )\ref{img:normalizacion-ojo}, utilizando el método Daugman \cite{daugman_normalization_1993}, de manera que se igualen los tamaños de las diferentes imágenes y permitan su comparación.
 
-\imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}\label{img:normalizacion-ojo}
+\imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}{img:normalizacion-ojo}
 
 
 \subsection{\textit{Fine-tuning}}
