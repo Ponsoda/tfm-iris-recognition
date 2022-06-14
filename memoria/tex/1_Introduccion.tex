@@ -14,12 +14,18 @@ En concreto, la comparación se ha llevado a cabo, utilizando la tasa de acierto
 
 El proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal VGG16 \footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
 una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning} \footnote{El \textit{fine-tuning} 
-permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada.}.
+permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada.}, tal como se muestra en la imágen \ref{img:enfoque-sin-normalizacion}.
+
+\imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
+
 
 En una segunda fase, se ha aplicado el proceso de extracción y normalización del iris a el mismo \textit{dataset} de imágenes, utilizado en \cite{tfg_iris_2020}, para luego seguir el mismo proceso de adaptación de la red neuronal
-a el \textit{dataset}.
+a el \textit{dataset}, como se muestra en la imágen \ref{img:enfoque-normalizacion}.
+
+\imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
 Así mismo, en ambos enfoques, se han utilizado técnicas de \textit{data augmentation} \footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes por dataset, algo que a priori mejora la robustez de los modelos.
+
 
 El objetivo de este proyecto ha sido el de analizar cual de estas perspectivas es más óptima para el reconocimiento de un individuo a través de su iris así como analizar la razón de que la tasa de acierto de una perspectiva sea mayor en uno de los casos.
 

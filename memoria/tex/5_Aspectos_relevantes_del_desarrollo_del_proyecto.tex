@@ -12,28 +12,36 @@ Este dataset del 70\% será el que se utilizará para la creación de modelos, d
 
 \section{Preprocesamiento de los datos}
 
+En la primera fase del proyecto, se ha llevado a cabo un procesamiento de datos previo.
+
 \subsection{Adecuación del código previo}
 
--Dataset previo donde se segmentaba y se normalizaba el iris (explicar en otros trabajos) 
--tres fases, asimilación del dataset, optimizacion del mismo
+En el código previo\footnote{Accesible desde \url{https://github.com/jaa0124/iris_classifier}.}, correspondiente a \cite{tfg_iris_2020} cuenta con un código donde el iris se segmenta y se normaliza.
+
+Durante esta fase, se han llevado a cabo tres aspectos. La primera ha sido la asimilación del \textit{dataset} y del código previo. La segunda ha sido la adecuación del código previo para que fuese funcional,
+
+y seguidamente, se ha llevado a cabo una asimilación del código. 
 
 \subsection{Creación de la \textit{pipeline}}
 
-Para el manejo del Código, se ha encapsulado cada sección en el pipeline, y se ha creado un diccionario de configuración, donde se establecen los siguientes criterios
+Para el manejo del Código, se ha encapsulado cada sección en el pipeline, y se ha creado un diccionario de configuración, donde se establecen los criterios que se muestran en la tabla \ref{tabla:configuracion-pipeline}.
 
 %tabla con el nombre y lo que hace la configuración/razón de ser
--cual es el directorio root
--tamaño del dataset de entrenamiento
--si se aplica dsta augmentation o no
-- que tipo de data augmentation se quiere utilizar, y que standar deviation utilizar, en el caso del ruido gaussiano
--que imagenes y gráficas se quieren plotear
--donde se guardara el modelo y con que nombre
--numero de epochs para cada fase de la red neuronal  
--weight utilizado por la red neuronal
-- dataset utilizado para el fine-tuning
--tamaño del train y del test
--tamaño del batch
--tamaño del random seed
+
+\tablaSmall{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
+{ \multicolumn{1}{l}{Nombre} & Configuración \\}{ 
+Raíz & Establecimiento del directorio raíz\\
+Tamaño dataset & Tamaño de los \textit{datasets} de entrenamiento y validación\\
+\textit{Data augmentation} & Tipo a aplicar\\
+Imágenes y gráficas &  Mostrar imágenes y gráficas (configurado individualmente)\\
+Modelo &  Nombre y ubicación donde guardar la red neuronal\\
+Epochs & Número de epochs por cada red neuronal entrenada\\
+\textit{Batch} & Tamaño\\
+\textit{Random seed} & Tamaño\\
+Peso & Peso utilizado para la red neuronal\\
+\textit{Fine-tuning} & \textit{Dataset} utilizado\\
+} 
+  
 
 \subsection{Aplicación del \textit{data augmentation} sobre el dataset}
 

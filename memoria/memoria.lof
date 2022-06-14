@@ -1,15 +1,17 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Eliminación del reflejo de la pupila.}}{8}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo de \textit {data augmentation} por ruido gaussiano.}}{10}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de transformacion de identidad.}}{11}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de transformacion por reflexión.}}{11}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de transformacion por escalamiento.}}{12}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de transformacion por traslación.}}{12}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de transformacion por rotación.}}{13}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de segmentación del ojo.}}{14}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplo de binarización del ojo durante la segmentación.}}{14}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de normalización del ojo.}}{15}{figure.3.10}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Enfoque utilizando las imágenes sin preprocesamiento.}}{4}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Enfoque utilizando la normalización y segmentación del iris.}}{5}{figure.1.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Eliminación del reflejo de la pupila.}}{10}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de \textit {data augmentation} por ruido gaussiano.}}{12}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de transformacion de identidad.}}{13}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de transformacion por reflexión.}}{13}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de transformacion por escalamiento.}}{14}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de transformacion por traslación.}}{14}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplo de transformacion por rotación.}}{15}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de segmentación del ojo.}}{16}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Ejemplo de binarización del ojo durante la segmentación.}}{16}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Ejemplo de normalización del ojo.}}{17}{figure.3.12}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
