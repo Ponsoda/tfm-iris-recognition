@@ -2,6 +2,7 @@
 
 %otros
 \usepackage{listings}
+\interfootnotelinepenalty=10000
 
 
 % Castellano
@@ -351,7 +352,7 @@
     \noindent\LARGE
     Presentado por \@author{}\\ 
     en Universidad de Burgos --- \@date{}\\
-    Tutor: \@tutor{}\\
+    Tutores: \@tutor{}\\
   }%
   \end{center}%
   \null
@@ -394,15 +395,15 @@
 
 
 
-\noindent D. José Francisco Díez Pastor, profesor del departamento de Ingeniería Informática, área de Lenguajes y Sistemas Informáticos.
+\noindent D. José Francisco Díez Pastor, profesor del departamento de Ingeniería Informática, área de Lenguajes y Sistemas Informáticos, y
 \noindent D. Pedro Latorre Carmona, profesor del departamento de Ingeniería Informática, área de Lenguajes y Sistemas Informáticos.
 
-\noindent Expone:
+\noindent Exponen:
 
 \noindent Que el alumno  \nombre, con DNI 21698927Z, ha realizado el Trabajo final de Máster en Inteligencia de Negocio y Big Data en Entornos Seguros 
           titulado título de TFM. 
 
-\noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección del que suscribe, en virtud de lo cual se autoriza su presentación y defensa.
+\noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección de los que suscriben, en virtud de lo cual se autoriza su presentación y defensa.
 
 \begin{center} %\large
 En Burgos, {\large \today}
@@ -444,11 +445,11 @@ D. Pedro Latorre Carmona
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-La utilización de la biometría para mejorar la seguridad de los aparatos electrónicos es un recurso ampliamente utilizado hoy en día.
-El iris es uno de los elementos biométricos con los que cuenta el ser humano. Este trabajo compara la capacidad de reconocimiento de 
-individuos que tienen las redes neuronales. Para ello, utilizando \textit{fine-tuning}, adaptaremos cuatro variaciones de nuestro dataset 
-a la red VGG16. Estas variaciones son por la utilización de \textit{data augmentation}, tanto a imágenes del ojo sin pre-procesar como a 
-imágenes del ojo donde se ha normalizado el iris.
+La utilización de la biometría para mejorar la seguridad, principalmente de acceso, de los aparatos electrónicos es un recurso ampliamente utilizado hoy en día.
+El iris es uno de los elementos biométricos del ser humano, de mayor dificultad de "suplantación". Es por ello que ha atraído la atención de la comunidad científica estas últimas dos décadas. Este trabajo analiza la capacidad de reconocimiento de 
+individuos que tienen las redes neuronales personalizadas. Para ello, utilizando \textit{fine-tuning}, se han adaptado cuatro variaciones del \textit{dataset} 
+a la red VGG16. Dos de estas variaciones corresponden, por un lado, al \textit{dataset} sin preprocesosy por otro, a imágenes donde se ha segmentado y normalizado el iris.
+Las dos variaciones restantes, han sido determinadas por la utilización de \textit{data augmentation} sobre las dos descritas anteriormente.
 
 Los resultado muestra que la red neuronal ha funcionado de forma más eficiente en las imágenes donde no se había aislado la zona del iris.
 Así mismo, las red ha tenido una mejor capacidad de clasificación cuando no se le ha aplicado el \textit{data augmentation}, algo que puede
@@ -470,12 +471,21 @@ biometría, iris, redes neuronales, \textit{fine-tuning}, \textit{data augmentat
 % Abstract en inglés 
 \renewcommand*\abstractname{Abstract}
 \begin{abstract}
-A \textbf{brief} presentation of the topic addressed in the project.
+  The use of biometrics to improve the security of electronic devices is a widely used resource nowadays. The iris is one of the biometric elements available to the human being.
+  This work analyzes the recognition capacity of individuals of adapted neural networks. To do this, using fine-tuning, four variations of the dataset have been adapted to the VGG16 network.
+  Two of these variations correspond, on the one hand, to the dataset without preprocessing, and on the other, to images where the iris has been segmented and normalized.
+  The two remaining variations have been determined by the use of data augmentation on the two previously described.
+
+  The results show that the neural network has worked more efficiently in the images where the iris area had not been isolated.
+  Likewise, the network has had a better classification capacity when the data augmentation has not been applied, something that can
+  This may be because the images have not been tested in real scenarios. 
+
+  Based on these results, it is possible to extract the capacity of the neural networks themselves to find features of the human eye beyond the iris, and thus improve their classification capacity.
 \end{abstract}
 
 \renewcommand*\abstractname{Keywords}
 \begin{abstract}
-keywords separated by commas.
+biometrics, iris, neural networks, fine-tuning, data augmentation
 \end{abstract}
 
 \clearpage

@@ -14,10 +14,10 @@ de las personas \cite{malgheet_iris_2021}, ya que el iris es el mismo a lo largo
 post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}. El iris humano es un órgano del ojo, que tiene como función, controlar el tamaño
 de la pupila en función de la cantidad de luz que llega hasta este \cite{boyd_post-mortem_2020}.
 
-\subsection{\textit{Dataset} CASIA}	\label{casia}
+\subsection{\textit{Dataset} CASIA-IrisV1 }	\label{casia}
 
 Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
-Dichas fotos se han realizado en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo. 
+Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{Center for Biometrics and Security Research} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de 320x280. 
 La pupila fue automáticamente remplazada para evitar que en ella se reflejasen las luces de las fotografías, tal como podemos observar en la figura \ref{img:ojo-reflejo} 
 \footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
 
@@ -40,7 +40,7 @@ establecer una configuración general para la cadena de procesos, y para poder m
 El \textit{data augmentation} es un proceso común en el análisis de imágenes, y en aquellos proyectos donde se utilicen procesos estadísticos. 
 
 Este consiste en aumentar el tamaño de los \textit{dataset} con la creación artificial de nuevas imágenes, que son producidas a partir de imágenes del \textit{dataset} original.
-Para ello, la imagen original se modifica, comúnmente con la aplicación de aumento gaussiano o transformaciones afines, teniendo como resultado, una imagen que deriva de la original, pero que cuenta con ciertas diferencias, que serán más o menos pronunciada dependiendo de las técnicas 
+Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido gaussiano o transformaciones geométricas de tipo afín, teniendo como resultado, una imagen que deriva de la original, pero que cuenta con ciertas diferencias, que serán más o menos pronunciada dependiendo de las técnicas 
 de \textit{data augmentation} que se le apliquen, así como de los valores utilizados para realizar las modificaciones \footnote{Por ejemplo, si se rota una imagen 2 grados, la diferencia con la original será mucho menor que si se rota 180 grados.}.	
 
 En el caso de los procesos de entrenamiento de las redes neuronales es común
@@ -182,7 +182,7 @@ El preprocesamiento es la manipulación de los datos para que estos tengan el fo
 En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{boyd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018}, la parte del iris es la que 
 permite identificar a las personas.
 
-\subsubsection{Segmentación}
+\subsubsection{Segmentación} \label{subsubsec:segmentacion}
 
 Detección de los bordes \textit{límbico} y \textit{pupilar} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}, tal como se observa en la figura \ref{img:segmentacion-ojo}.
 
@@ -194,14 +194,14 @@ Una vez detectados los bordes, se procede a una binarización de la imagen \ref{
 \imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}{img:segmentacion-binarizacion-ojo}
 
 
-\subsubsection{Normalización}
+\subsubsection{Normalización}\label{subsubsec:normalizacion}
 
-Normalización proyección del iris a coordenadas polares (figura )\ref{img:normalizacion-ojo}, utilizando el método Daugman \cite{daugman_normalization_1993}, de manera que se igualen los tamaños de las diferentes imágenes y permitan su comparación.
+Se puede definir como la proyección del iris a coordenadas polares (figura \ref{img:normalizacion-ojo}), utilizando el método Daugman \cite{daugman_normalization_1993}, de manera que se igualen los tamaños de las diferentes imágenes y permitan su comparación.
 
 \imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}{img:normalizacion-ojo}
 
 
-\subsection{\textit{Fine-tuning}}
+\subsection{\textit{Fine-tuning}}\label{subsec:fine-tuning}
  Se trata de un método que permite adaptar redes neuronales previamente entrenadas con datos diferentes para un conjunto de datos personalizados. En el caso de este proyecto,
  el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el dataset de CASIA sin tener que crear una red neuronal desde cero, sino adaptando la red
   neuronal VGG16.

@@ -9,7 +9,7 @@
 \contentsline {chapter}{2. Objetivos del proyecto}{7}{chapter*.7}%
 \contentsline {chapter}{3. Conceptos teóricos}{9}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Biometría}{9}{section.3.1}%
-\contentsline {subsection}{\textit {Dataset} CASIA}{9}{section*.9}%
+\contentsline {subsection}{\textit {Dataset} CASIA-IrisV1 }{9}{section*.9}%
 \contentsline {section}{\numberline {3.2}Inteligencia Artificial}{10}{section.3.2}%
 \contentsline {subsection}{\textit {Deep Learning}}{10}{section*.10}%
 \contentsline {subsection}{\textit {Pipeline}}{10}{section*.11}%
