@@ -1037,6 +1037,7 @@ INPUT .\memoria.bbl
 INPUT memoria.bbl
 INPUT .\memoria.bbl
 INPUT memoria.bbl
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 OUTPUT memoria.toc
 OUTPUT memoria.lof
 OUTPUT memoria.lot
@@ -1123,3 +1124,5 @@ INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.p
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb

@@ -12,7 +12,7 @@
 \contentsline {subsection}{\textit {Dataset} CASIA-IrisV1 }{9}{section*.9}%
 \contentsline {section}{\numberline {3.2}Inteligencia Artificial}{10}{section.3.2}%
 \contentsline {subsection}{\textit {Deep Learning}}{10}{section*.10}%
-\contentsline {subsection}{\textit {Pipeline}}{10}{section*.11}%
+\contentsline {subsection}{\textit {Pipeline}}{11}{section*.11}%
 \contentsline {subsection}{\textit {Data augmentation}}{11}{section*.12}%
 \contentsline {subsubsection}{Ruido gaussiano}{11}{section*.13}%
 \contentsline {subsubsection}{Transformaciones afines}{12}{section*.14}%

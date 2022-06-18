@@ -363,7 +363,7 @@
 \newcommand{\nombre}{Ignacio Ponsoda Llorens} %%% cambio de comando
 
 % Datos de portada
-\title{Clasificación del iris}
+\title{Clasificación de individuos a partir de imágenes oculares y redes neuronales pre-entrenadas.}
 \author{\nombre}
 \tutor{Dr. José Francisco Díez Pastor y Dr. Pedro Latorre Carmona}
 \date{\today}
@@ -401,7 +401,7 @@
 \noindent Exponen:
 
 \noindent Que el alumno  \nombre, con DNI 21698927Z, ha realizado el Trabajo final de Máster en Inteligencia de Negocio y Big Data en Entornos Seguros 
-          titulado título de TFM. 
+          titulado "Clasificación de indivíduos a partir de imágenes oculares y redes neuronales pre-entrenadas". 
 
 \noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección de los que suscriben, en virtud de lo cual se autoriza su presentación y defensa.
 
@@ -445,25 +445,24 @@ D. Pedro Latorre Carmona
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-La utilización de la biometría para mejorar la seguridad, principalmente de acceso, de los aparatos electrónicos es un recurso ampliamente utilizado hoy en día.
-El iris es uno de los elementos biométricos del ser humano, de mayor dificultad de "suplantación". Es por ello que ha atraído la atención de la comunidad científica estas últimas dos décadas. Este trabajo analiza la capacidad de reconocimiento de 
-individuos que tienen las redes neuronales personalizadas. Para ello, utilizando \textit{fine-tuning}, se han adaptado cuatro variaciones del \textit{dataset} 
-a la red VGG16. Dos de estas variaciones corresponden, por un lado, al \textit{dataset} sin preprocesosy por otro, a imágenes donde se ha segmentado y normalizado el iris.
-Las dos variaciones restantes, han sido determinadas por la utilización de \textit{data augmentation} sobre las dos descritas anteriormente.
+La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de los dispositivos electrónicos, es un recurso ampliamente utilizado hoy en día, siendo el iris uno de los elementos biométricos que mayores dificultades presentan para su suplantación. 
+Es por ello que su utilización en este campo ha atraído la atención de la comunidad científica estas últimas dos décadas. 
 
-Los resultado muestra que la red neuronal ha funcionado de forma más eficiente en las imágenes donde no se había aislado la zona del iris.
-Así mismo, las red ha tenido una mejor capacidad de clasificación cuando no se le ha aplicado el \textit{data augmentation}, algo que puede
-deberse a que las imágenes no han sido testadas en situaciones reales. 
+En este proyecto se han adaptado redes neuronales inicialmente entrenadas para clasificar objetos, con el fin de que fueran capaces de clasificar individuos a partir sus imágenes oculares.
+Para ello, se han utilizado dos enfoques. En un primer enfoque, se ha adaptado la red neuronal utilizando imágenes oculares completas, mientras que para el segundo enfoque, se ha aislado la zona del iris.
 
-En base a estos resultados, se puede extraer la capacidad de las propias redes neuronales para encontrar características del ojo humano más 
-allá del iris, y así mejorar su capacidad de clasificación.
+Además, se han utilizado técnicas de ampliación del \textit{dataset} original, a fin de contar con un mayor número de muestras de cada indivíduo y mejorar la robustez de las redes neuronales adaptadas.
+
+Los resultados muestran que las mejores tasas de clasificación se han dado en el enfoque donde se utilizaba la imagen ocular completa, sin que las técnicas de ampliación del \textit{dataset} hayan permitido mejorar la tasa de clasificación. 
+Como futuras líneas de trabajo, se establecen la utilización de distintas redes neuronales pre-entrenadas así como la aplicación de el proceso de adaptación de la red neuronal 
+a imágenes realizadas fuera de un entorno académico.
 
 
 \end{abstract}
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-biometría, iris, redes neuronales, \textit{fine-tuning}, \textit{data augmentation}
+biometría, iris, redes neuronales
 \end{abstract}
 
 \clearpage

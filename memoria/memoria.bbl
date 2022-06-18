@@ -43,6 +43,12 @@ John~G. Daugman.
   statistical independ-ence.
 \newblock 15(11).
 
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
 \bibitem{liu_efficient_2021}
 Guoyang Liu, Weidong Zhou, Lan Tian, Wei Liu, Yingjian Liu, and Hanwen Xu.
 \newblock An efficient and accurate iris recognition algorithm based on a novel
