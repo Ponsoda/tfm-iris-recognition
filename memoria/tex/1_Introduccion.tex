@@ -1,18 +1,22 @@
 \capitulo{1}{Introducción} \label{capitulo1}
 
-El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas.
+El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas, lo cual es de gran utilidad en el campo de la seguridad personal.
 
-Hoy en día, las características principales utilizadas para identificación son la cara, el iris, y las huellas dactilares, convirtiéndose en elementos fundamentales     en la seguridad de nuestros dispositivos electrónicos, lo cual supone indirectamente,
-que de la biometría depende el acceso a nuestra información privada.
+Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos fundamentales en la seguridad de los dispositivos electrónicos de la población a nivel mundial. 
+
+Esta dependencia de la biometría para acceder a los dispositivos, supone indirectamente una dependencia de la misma para la protección de la información privada de la población, ya que hoy en día existe multitud de información privada accesible desde los dispositivos electrónicos, y cuya principal llave de entrada es una característica biométrica.
 
 Dentro de la biometría, el iris se utiliza como elemento de reconocimiento biométrico de gran eficacia, tanto por su inmutabilidad a lo largo del tiempo como por resultar un valor único y 
 personal, que supone que dos personas no tendrían un iris idéntico \cite{malgheet_iris_2021}. 
 
-En este estudio, se han comparado técnicas que permitan la identificación de individuos a través de imágenes de su iris. 
-En concreto, la comparación se ha llevado a cabo, utilizando la tasa de acierto de los modelos a la hora de clasificar. 
+En este estudio, se ha adaptado una red neuronal pre-entrenada para permitirle la identificación de individuos a través de sus imágenes oculares con dos enfoques distintos. Por un lado, se ha adaptado la red neuronal utilizando imágenes oculares completas, mientras que, por otro lado, 
+se han utilizado imágenes oculares donde se ha aislado el iris, que como se ha comentado, es uno de los principales elementos biométricos con los que cuenta el ser humano.
 
-El proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal VGG16 \footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
-una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning} \footnote{El \textit{fine-tuning} 
+
+Para determinar que enfoque ha sido capaz de identificar mejor a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
+
+Por lo tanto, el proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
+una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
 permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imágen \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}.
 
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
@@ -23,7 +27,7 @@ a el \textit{dataset}, como se muestra en la imágen \ref{img:enfoque-normalizac
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
-Así mismo, en ambos enfoques, se han utilizado técnicas de \textit{data augmentation} \footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes por dataset, algo que a priori mejora la robustez de los modelos.
+Así mismo, en ambos enfoques, se han utilizado técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes por dataset, algo que a priori mejora la robustez de los modelos.
 
 
 El objetivo de este proyecto ha sido el de analizar cual de estas perspectivas es más óptima para el reconocimiento de un individuo a través de su iris así como analizar la razón de que la tasa de acierto de una perspectiva sea mayor en uno de los casos.

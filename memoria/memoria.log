@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  18 JUN 2022 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  20 JUN 2022 20:51
 entering extended mode
 **e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
 (e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
@@ -894,57 +894,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 [][] [][][]\T1/lmr/m/n/10 (+20) Definici�n con-sul-ta-da en [][]$\T1/lmtt/m/n/10 https : / / www . oxfordlearnersdictionaries . com /
  []
 
-<img/14_enfoque_sin_normalizacion.png, id=368, 327.2225pt x 337.26pt>
-File: img/14_enfoque_sin_normalizacion.png Graphic file (type png)
-<use img/14_enfoque_sin_normalizacion.png>
-Package pdftex.def Info: img/14_enfoque_sin_normalizacion.png  used on input line 18.
-(pdftex.def)             Requested size: 344.69766pt x 355.27075pt.
-
-Underfull \vbox (badness 7796) has occurred while \output is active []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...esamiento.}{img:enfoque-sin-normalizacion}
-                                                   [3
+l.18 P
+      or lo tanto, el proyecto se ha llevado a cabo en dos fases. En una pri... [3
 
 
 ]
-<img/13_enfoque_normalizacion.png, id=386, 721.69624pt x 337.26pt>
+<img/14_enfoque_sin_normalizacion.png, id=377, 327.2225pt x 337.26pt>
+File: img/14_enfoque_sin_normalizacion.png Graphic file (type png)
+<use img/14_enfoque_sin_normalizacion.png>
+Package pdftex.def Info: img/14_enfoque_sin_normalizacion.png  used on input line 22.
+(pdftex.def)             Requested size: 344.69766pt x 355.27075pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 ...esamiento.}{img:enfoque-sin-normalizacion}
+                                                   [4]
+<img/13_enfoque_normalizacion.png, id=391, 721.69624pt x 337.26pt>
 File: img/13_enfoque_normalizacion.png Graphic file (type png)
 <use img/13_enfoque_normalizacion.png>
-Package pdftex.def Info: img/13_enfoque_normalizacion.png  used on input line 24.
+Package pdftex.def Info: img/13_enfoque_normalizacion.png  used on input line 28.
 (pdftex.def)             Requested size: 344.69766pt x 161.08015pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 ...ión del iris.}{img:enfoque-normalizacion}
-                                                   [4 <./img/14_enfoque_sin_normalizacion.png>])
-LaTeX Info: Redefining \. on input line 509.
-LaTeX Info: Redefining \% on input line 509.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.509 \include{./tex/1_Introduccion}
-                                     [5 <./img/13_enfoque_normalizacion.png>]
-\openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
-
- (tex/2_Objetivos_del_proyecto.texpdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+l.28 ...ión del iris.}{img:enfoque-normalizacion}
+                                                   [5 <./img/14_enfoque_sin_normalizacion.png>])
+LaTeX Info: Redefining \. on input line 509.
+LaTeX Info: Redefining \% on input line 509.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \capitulo{2}{Objetivos del proyecto}
-                                         \label{capitulo2} [6
+l.509 \include{./tex/1_Introduccion}
+                                     [6 <./img/13_enfoque_normalizacion.png>]
+\openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
+
+ (tex/2_Objetivos_del_proyecto.tex) [7
 
 
 
 
-]) [7]
+]
 \openout2 = `./tex/3_Conceptos_teoricos.aux'.
 
  (tex/3_Conceptos_teoricos.tex [8
@@ -1262,15 +1266,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15105 strings out of 479799
- 233240 string characters out of 2869723
+ 15111 strings out of 479799
+ 233306 string characters out of 2869723
  623373 words of memory out of 3000000
  31244 multiletter control sequences out of 15000+200000
- 663565 words of font info for 228 fonts, out of 3000000 for 9000
+ 663814 words of font info for 231 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,72p,927b,690s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoria.pdf (60 pages, 2501978 bytes).
+Output written on memoria.pdf (60 pages, 2502579 bytes).
 PDF statistics:
  887 PDF objects out of 1000 (max. 8388607)
  209 named destinations out of 1000 (max. 500000)

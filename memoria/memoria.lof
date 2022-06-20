@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Enfoque utilizando las imágenes sin preprocesamiento.}}{4}{figure.1.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Enfoque utilizando la normalización y segmentación del iris.}}{5}{figure.1.2}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Enfoque utilizando las imágenes sin preprocesamiento.}}{5}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Enfoque utilizando la normalización y segmentación del iris.}}{6}{figure.1.2}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Eliminación del reflejo de la pupila.}}{10}{figure.3.3}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de \textit {data augmentation} por ruido gaussiano.}}{12}{figure.3.4}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de transformacion de identidad.}}{13}{figure.3.5}%
