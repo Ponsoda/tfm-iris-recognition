@@ -834,6 +834,13 @@ INPUT .\tex\3_Conceptos_teoricos.tex
 INPUT tex\3_Conceptos_teoricos.tex
 INPUT .\tex\3_Conceptos_teoricos.tex
 INPUT tex\3_Conceptos_teoricos.tex
+INPUT .\img\15_partes_ojo.png
+INPUT .\img\15_partes_ojo.png
+INPUT img\15_partes_ojo.png
+INPUT .\img\15_partes_ojo.png
+INPUT .\img\15_partes_ojo.png
+INPUT .\img\15_partes_ojo.png
+INPUT .\img\15_partes_ojo.png
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
 INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
@@ -842,6 +849,13 @@ INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
 INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
 INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
 INPUT .\img\02_ojo_raw_vs_ojo_reflejo.png
+INPUT .\img\16_red_neuronal.jpg
+INPUT .\img\16_red_neuronal.jpg
+INPUT img\16_red_neuronal.jpg
+INPUT .\img\16_red_neuronal.jpg
+INPUT .\img\16_red_neuronal.jpg
+INPUT .\img\16_red_neuronal.jpg
+INPUT .\img\16_red_neuronal.jpg
 INPUT .\img\03_rudio_gaussiano.png
 INPUT .\img\03_rudio_gaussiano.png
 INPUT img\03_rudio_gaussiano.png
@@ -919,6 +933,7 @@ INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT tex\4_Tecnicas_y_herramientas.tex
 INPUT .\tex\4_Tecnicas_y_herramientas.tex
 INPUT tex\4_Tecnicas_y_herramientas.tex
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
 INPUT .\tex\5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex
@@ -1037,7 +1052,6 @@ INPUT .\memoria.bbl
 INPUT memoria.bbl
 INPUT .\memoria.bbl
 INPUT memoria.bbl
-INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 OUTPUT memoria.toc
 OUTPUT memoria.lof
 OUTPUT memoria.lot

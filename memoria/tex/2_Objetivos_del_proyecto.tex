@@ -1,13 +1,12 @@
 \capitulo{2}{Objetivos del proyecto} \label{capitulo2}
 
-Son los objetivos en los que principalmente se ha enfocado este trabajo.
-
+En este apartado se detallan los objetivos principales para el desarrollo del proyecto:
 \begin{itemize}
-    \item Al tratarse de una continuación de \cite{tfg_iris_2020}, un primer objetivo ha sido el optimizar el código ya existente para 
+    \item Al re-utilizar los procesos de segmentación y normalización de \cite{tfg_iris_2020}, un primer objetivo ha sido optimizar el código ya existente para 
     mejorar su reproducibilidad y que ello permitiera una mayor flexibilidad a la hora de ejecutar el mismo.
-    \item Utilización de técnicas de \textit{fine-tuning} con el fin de adaptar el dataset a una red neuronal pre-entrenada.
-    \item Aplicación de técnicas de \textit{data augmentation} para comprobar si ello supone una mejora en la robustez del modelo.
-    \item Finalmente, comparar la capacidad de clasificación de los modelos utilizando cuatro variables distintas del \textit{dataset} principal en su creación. Estas son, la utilización de un dataset donde se utiliza una imagen completa del ojo o una donde el iris ha sido extraído y como afecta la utilización de \textit{data augmentation} en estos modelos.                                                                                                                                                                                                           
+    \item El segundo objetivo ha sido el de utilizar técnicas de \textit{fine-tuning} con el fin de adaptar los resultados de clasificación de una red neuronal pre-entrenada al \textit{dataset} utilizado en el proyecto, y comprobar la capacidad de la red adaptada para identificar indivíduos a partir de sus imágenes oculares.
+    \item El tercer objetivo ha sido la aplicación de técnicas de \textit{data augmentation} para comprobar si su utilización supone una mejora en la robustez del modelo.
+    \item Como objetivo final, comparar la capacidad de clasificación de los modelos creados utilizando \textit{fine-tuning} con cuatro variaciones distintas del \textit{dataset} principal en su creación. Estas variaciones son, la utilización de un \textit{dataset} donde se utiliza una imagen ocular completa y otro con el iris extraido. Además, para estas dos variantes, se han creado dos nuevas variantes para comprobar como afecta la utilización de \textit{data augmentation} en la creación de sus modelos.                                                                                                                                                                                                           
 \end{itemize}
 
 %icons utilizados provenientes de https://www.flaticon.com/

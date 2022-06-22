@@ -1,38 +1,42 @@
 \capitulo{1}{Introducción} \label{capitulo1}
 
-El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas, lo cual es de gran utilidad en el campo de la seguridad personal.
+El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas, lo cual es piedra angular de muchos sistemas de seguridad.
 
 Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos fundamentales en la seguridad de los dispositivos electrónicos de la población a nivel mundial. 
 
-Esta dependencia de la biometría para acceder a los dispositivos, supone indirectamente una dependencia de la misma para la protección de la información privada de la población, ya que hoy en día existe multitud de información privada accesible desde los dispositivos electrónicos, y cuya principal llave de entrada es una característica biométrica.
+Esta dependencia de la biometría para acceder a los dispositivos, supone indirectamente una dependencia en ella para la protección de la información privada de la población, ya que hoy en día, los dispositivos electrónicos cuentan con gran cantidad de información sensible de sus propietarios.
 
 Dentro de la biometría, el iris se utiliza como elemento de reconocimiento biométrico de gran eficacia, tanto por su inmutabilidad a lo largo del tiempo como por resultar un valor único y 
-personal, que supone que dos personas no tendrían un iris idéntico \cite{malgheet_iris_2021}. 
+personal, que supone que dos personas no puedan ser identificadas con un mismo iris \cite{malgheet_iris_2021}. Tanto es así, que el iris es incluso utilizado en los procesos 
+post-mortem para poder determinar la pertenencia del cuerpo \cite{boyd_post-mortem_2020}.
 
-En este estudio, se ha adaptado una red neuronal pre-entrenada para permitirle la identificación de individuos a través de sus imágenes oculares con dos enfoques distintos. Por un lado, se ha adaptado la red neuronal utilizando imágenes oculares completas, mientras que, por otro lado, 
-se han utilizado imágenes oculares donde se ha aislado el iris, que como se ha comentado, es uno de los principales elementos biométricos con los que cuenta el ser humano.
+En este estudio, se ha adaptado una red neuronal pre-entrenada para permitirle la identificación de individuos a través de sus imágenes oculares. Como resultado de la adaptación se crea un modelo capaz de identificar individuos a partir de una imagen ocular sin etiquetar.
+Para llevar a cabo dicha adaptación, se han utilizado dos enfoques distintos.
 
+En ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
+una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}} para poder clasificar distintos objetos en base a una imagen. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
+permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imágen \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
+ con un \textit{dataset} de imágenes oculares etiquetadas con la referencia a la persona a la que pertenece dicho ojo.
 
-Para determinar que enfoque ha sido capaz de identificar mejor a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
-
-Por lo tanto, el proyecto se ha llevado a cabo en dos fases. En una primera fase, se ha empleado la red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
-una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}, a la que, para que los resultados de clasificación de la red neuronal se adapten a nuestro \textit{dataset} de imágenes, se le ha aplicado \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
-permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imágen \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}.
+En un primer enfoque, para adaptar la red neuronal se han utilizado las imagenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}}, siguiendo el proceso que se muestra en la imagen \ref{img:enfoque-sin-normalizacion}
 
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
 
 
-En una segunda fase, se ha aplicado el proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris a el mismo \textit{dataset} de imágenes, utilizado en \cite{tfg_iris_2020}, para luego seguir el mismo proceso de adaptación de la red neuronal
-a el \textit{dataset}, como se muestra en la imágen \ref{img:enfoque-normalizacion}.
+En un segundo enfoque, se ha aplicado el proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para posteriormente seguir el mismo proceso de adaptación de la red neuronal, como se muestra en la imágen \ref{img:enfoque-normalizacion}.
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
-Así mismo, en ambos enfoques, se han utilizado técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes por dataset, algo que a priori mejora la robustez de los modelos.
 
+Así mismo, para ambos enfoques se han creado dos nuevos modelos utilizado técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes oculares por individuo y entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
 
-El objetivo de este proyecto ha sido el de analizar cual de estas perspectivas es más óptima para el reconocimiento de un individuo a través de su iris así como analizar la razón de que la tasa de acierto de una perspectiva sea mayor en uno de los casos.
+El resultado de esta adaptación de la red neuronal, es la creación de un modelo capaz de identificar al individuo que hay detrás de una imagen ocular no etiquetada. 
+
+Para determinar que enfoque ha sido capaz de identificar de forma más eficiente a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
+
+El objetivo principal de este proyecto ha sido el de analizar cual de estos enfoques es más óptimo para el reconocimiento de individuos a través de sus imágenes oculares, así como analizar las tasas de acierto de los modelos resultantes.
 
 \section{Outline}
 
-El resto del documento se estructura de la siguiente manera. El capítulo 2 \nameref{capitulo2} define las principales motivaciones del proyecto. El capítulo 3 \nameref{capitulo3} se concentra en los aspectos teóricos del proyecto. En el capítulo 5 \nameref{capitulo5} se muestran los Aspectos
+El resto del documento se estructura de la siguiente manera. El capítulo 2 \nameref{capitulo2} define las principales motivaciones del proyecto. El capítulo 3 \nameref{capitulo3} se concentra en los aspectos teóricos del proyecto. En el capítulo 5 \nameref{capitulo5} se muestran los aspectos
 más relevantes que se han desarrollado. En el capítulo 6 \nameref{capitulo6} los trabajos relacionados y en el capítulo 7 \nameref{capitulo7} las conclusiones y las líneas de trabajo futuras.
