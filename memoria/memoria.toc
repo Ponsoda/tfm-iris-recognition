@@ -35,15 +35,15 @@
 \contentsline {section}{\numberline {4.4}Scrum}{25}{section.4.4}%
 \contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{27}{chapter*.28}%
 \contentsline {section}{\numberline {5.1}Preparación del dataset}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Preprocesamiento de los datos}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Pre-procesamiento de los datos}{28}{section.5.2}%
 \contentsline {subsection}{Adecuación del código previo}{28}{section*.29}%
 \contentsline {subsection}{Creación de la \textit {pipeline}}{28}{section*.30}%
-\contentsline {subsection}{Aplicación del \textit {data augmentation} sobre el dataset}{28}{section*.31}%
+\contentsline {subsection}{Aplicación del \textit {data augmentation} sobre el dataset}{29}{section*.31}%
 \contentsline {section}{\numberline {5.3}Adaptación de la red neuronal}{29}{section.5.3}%
 \contentsline {subsection}{Aplicación del \textit {fine-tuning}}{29}{section*.32}%
 \contentsline {subsubsection}{Primera fase}{29}{section*.33}%
-\contentsline {subsubsection}{Segunda fase}{29}{section*.34}%
-\contentsline {subsubsection}{Tercera fase}{29}{section*.35}%
+\contentsline {subsubsection}{Segunda fase}{30}{section*.34}%
+\contentsline {subsubsection}{Tercera fase}{30}{section*.35}%
 \contentsline {subsection}{Clasificación de imágenes}{30}{section*.36}%
 \contentsline {subsection}{Tasa de acierto}{30}{section*.37}%
 \contentsline {chapter}{6. Trabajos relacionados}{33}{chapter*.38}%

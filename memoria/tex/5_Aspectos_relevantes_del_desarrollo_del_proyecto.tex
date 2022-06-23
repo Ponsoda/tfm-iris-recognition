@@ -1,18 +1,21 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto} \label{capitulo5}
 
-El proyecto se ha dividido en dos fases principales. La primera fase, ha consistido primeramente en la asimilación, adecuación y optimización del código perteneciente
-al proyecto de partida \cite{tfg_iris_2020}, así como en la aplicación de las técnicas de \textit{data augmentation}, para posteriormente poder utilizar el proceso de normalización del iris en la segunda fase. 
-Por otro lado, en la segunda fase se ha desarrollado la personalización de la red neuronal VGG16 a las imágenes (tanto normalizadas como no procesadas) del \textit{dataset} utilizado en el proyecto.
+El proyecto se ha dividido en dos fases principales. La primera fase ha consistido en la asimilación, adecuación y optimización del código perteneciente
+a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-procesamiento, estas son la segmentación y la normalización del iris. También se incluye en esta fase la aplicación de las técnicas de \textit{data augmentation}. 
+Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los cuatro conjuntos de imágenes derivadas del \textit{dataset} creadas en la primera fase, estas son los conjuntos con/sin pre-procesamiento y con/sin \textit{data augmentation}.
 
 
 \section{Preparación del dataset}
 
-En los proyectos de inteligencia artificial, el procedimiento habitual es el de dividir el \textit{dataset} en dos subconjuntos. El subconjunto de mayor tamaño se utiliza para entrenar el modelo, 
-mientras que el subconjunto de menor tamaño se utiliza para la validación del mismo. En este caso, el  \textit{dataset} inicial, ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para la validación. 
+En los proyectos de inteligencia artificial, el procedimiento habitual para entrenar las redes neuronales es el de dividir los datos que se van a utilizar para entrenar a la red en dos subconjuntos. El subconjunto de mayor tamaño se utiliza para entrenar el modelo \emph{per se}, 
+mientras que el subconjunto de menor tamaño se utiliza en la validación del mismo. 
 
-\section{Preprocesamiento de los datos}
+En el caso de este proyecto caso, el \textit{dataset} inicial ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para calcular la tasa de acierto, siendo estos los porcentajes más comunmente utilizados. 
 
-En la primera fase del proyecto, se ha llevado a cabo un procesamiento de datos previo, que se explicará a continuación .
+\section{Pre-procesamiento de los datos}
+
+En la primera fase del proyecto, se ha llevado a cabo un pre-procesamiento del \textit{dataset} para crear los cuatro subconjuntos de datos que se utilizarán para crear los modelos.
+Estos son, el \textit{dataset} con las imágenes oculares completas, el \textit{dataset} con las imágenes pre-procesadas, y los dos \textit{datasets} mencionados con técnicas de \textit{data augmentation} aplicadas a ellos.
 
 \subsection{Adecuación del código previo}
 
@@ -28,7 +31,7 @@ Para el manejo del Código, se ha encapsulado cada sección en el pipeline, y se
 
 %tabla con el nombre y lo que hace la configuración/razón de ser
 
-\tablaSmall{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
+\tablaSmallSinColores{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
 { \multicolumn{1}{l}{Nombre} & Configuración \\}{ 
 Raíz & Establecimiento del directorio raíz\\
 Tamaño dataset & Tamaño de los \textit{datasets} de entrenamiento y validación\\

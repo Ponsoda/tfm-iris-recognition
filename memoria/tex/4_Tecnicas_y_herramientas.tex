@@ -53,10 +53,10 @@ Entre las principales librerías utilizadas se encuentran:
 
 \subsection{Redes neuronales}
 
-En el proyecto, dos redes neuronales han sido utilizadas. En primer lugar, en el código optimizado \cite{tfg_iris_2020}, se ha utilizado la red neuronal previamente entrenada, basada en U-Net\footnote{Red neuronal para la segmentación de imágenes biomédicas desarrollada por la Universidad de Freiburg \url{https://arxiv.org/abs/1505.04597}.} y accesible desde el \href{https://github.com/jus390/U-net-Iris-segmentation}{repositorio} del \textit{paper} \cite{lozej_end--end_2018}. Esta red neuronal, ya había sido
-entrenada para la segmentación del iris, por lo que se pudo utilizar directamente para dicha fase, al proveerle de imágenes del \textit{dataset}.
+En el desarrollo del proyecto, se ha utilizado dos redes neuronales. En primer lugar, durante el proceso de adecuación del código procedente de \cite{tfg_iris_2020}, se ha utilizado una red neuronal basada en U-Net\footnote{Red neuronal para la segmentación de imágenes biomédicas desarrollada por la Universidad de Freiburg \url{https://arxiv.org/abs/1505.04597}.} y accesible desde el \href{https://github.com/jus390/U-net-Iris-segmentation}{repositorio} del \textit{paper} \cite{lozej_end--end_2018}. Esta red neuronal, ya había sido
+específicamente entrenada para la segmentar el iris en imágenes oculares. Al tratarse de una red neuronal ya adaptada para dicho fin, se pudo utilizar directamente para la fase de extracción.
 
-Para el proceso de \textit{fine-tuning}, se ha utilizado la red neuronal VGG16, que ha sido entrenada con el \textit{dataset} de ImageNet.
+Para el proceso de \textit{fine-tuning}, se ha utilizado la red neuronal VGG16, entrenada con el \textit{dataset} de ImageNet para el reconocimiento de objetos, ya descrita en la sección de \nameref{capitulo1}.
 
 \subsection{Visual Studio Code}
 
