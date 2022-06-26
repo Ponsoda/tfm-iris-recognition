@@ -2,9 +2,14 @@
 \babel@toc {spanish}{}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Transformaciones afines aplicadas en el trabajo.}}{16}{table.3.1}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Características del equipo}}{23}{table.4.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Configuración del \textit {pipeline}}}{28}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Tasa de acierto de los modelos.}}{30}{table.5.4}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces \textit {Datasets} utilizados para el \textit {fine-tuning}.}}{27}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Configuración del \textit {pipeline}}}{30}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tasa de acierto de los modelos.}}{31}{table.5.5}%
 \addvspace {10pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Gastos de contratación del estudiante.}}{42}{table.Alph1.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Gastos de contratación de los tutores (por tutor).}}{42}{table.Alph1.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Gastos totales del proyecto.}}{42}{table.Alph1.3}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Licencias de las librerías utilizadas.}}{43}{table.Alph1.4}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

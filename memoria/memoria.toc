@@ -22,7 +22,7 @@
 \contentsline {paragraph}{Escalamiento}{18}{section*.18}%
 \contentsline {paragraph}{Traslación}{18}{section*.19}%
 \contentsline {paragraph}{Rotación}{19}{section*.20}%
-\contentsline {subsection}{Preprocesamiento}{19}{section*.21}%
+\contentsline {subsection}{Pre-procesamiento}{19}{section*.21}%
 \contentsline {subsubsection}{Segmentación}{20}{section*.22}%
 \contentsline {subsubsection}{Normalización}{20}{section*.23}%
 \contentsline {subsection}{\textit {Fine-tuning}}{21}{section*.24}%
@@ -34,18 +34,18 @@
 \contentsline {subsection}{Visual Studio Code}{25}{section*.27}%
 \contentsline {section}{\numberline {4.4}Scrum}{25}{section.4.4}%
 \contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{27}{chapter*.28}%
-\contentsline {section}{\numberline {5.1}Preparación del dataset}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Preparación del dataset}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Pre-procesamiento de los datos}{28}{section.5.2}%
 \contentsline {subsection}{Adecuación del código previo}{28}{section*.29}%
-\contentsline {subsection}{Creación de la \textit {pipeline}}{28}{section*.30}%
-\contentsline {subsection}{Aplicación del \textit {data augmentation} sobre el dataset}{29}{section*.31}%
+\contentsline {subsection}{Aplicación del \textit {data augmentation}}{28}{section*.30}%
+\contentsline {subsection}{Creación de la \textit {pipeline}}{29}{section*.31}%
 \contentsline {section}{\numberline {5.3}Adaptación de la red neuronal}{29}{section.5.3}%
-\contentsline {subsection}{Aplicación del \textit {fine-tuning}}{29}{section*.32}%
-\contentsline {subsubsection}{Primera fase}{29}{section*.33}%
-\contentsline {subsubsection}{Segunda fase}{30}{section*.34}%
-\contentsline {subsubsection}{Tercera fase}{30}{section*.35}%
-\contentsline {subsection}{Clasificación de imágenes}{30}{section*.36}%
-\contentsline {subsection}{Tasa de acierto}{30}{section*.37}%
+\contentsline {subsection}{Aplicación del \textit {fine-tuning}}{30}{section*.32}%
+\contentsline {subsubsection}{Primera fase}{30}{section*.33}%
+\contentsline {subsubsection}{Segunda fase}{31}{section*.34}%
+\contentsline {subsubsection}{Tercera fase}{31}{section*.35}%
+\contentsline {subsection}{Clasificación de imágenes}{31}{section*.36}%
+\contentsline {subsection}{Tasa de acierto}{31}{section*.37}%
 \contentsline {chapter}{6. Trabajos relacionados}{33}{chapter*.38}%
 \contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{35}{chapter*.39}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{35}{section.7.1}%
@@ -64,26 +64,30 @@
 \contentsline {subsection}{Sprint 9}{41}{section*.49}%
 \contentsline {section}{\numberline {A.3}Estudio de viabilidad}{41}{section.Alph1.3}%
 \contentsline {subsection}{Viabilidad económica}{41}{section*.50}%
-\contentsline {subsection}{Viabilidad legal}{41}{section*.51}%
-\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{43}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Introducción}{43}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Objetivos generales}{43}{section.Alph2.2}%
-\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{43}{section.Alph2.3}%
-\contentsline {section}{\numberline {B.4}Especificación de requisitos}{43}{section.Alph2.4}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{45}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{45}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de datos}{45}{section.Alph3.2}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{45}{section.Alph3.3}%
-\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{45}{section.Alph3.4}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{47}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{47}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{47}{section.Alph4.2}%
-\contentsline {section}{\numberline {D.3}Manual del programador}{47}{section.Alph4.3}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{47}{section.Alph4.4}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{47}{section.Alph4.5}%
-\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{49}{appendix.Alph5}%
-\contentsline {section}{\numberline {E.1}Introducción}{49}{section.Alph5.1}%
-\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{49}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación}{49}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Manual del usuario}{49}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{51}{appendix*.52}%
+\contentsline {subsubsection}{\textit {Software}}{41}{section*.51}%
+\contentsline {subsubsection}{\textit {Hardware}}{41}{section*.52}%
+\contentsline {subsubsection}{Personal}{41}{section*.53}%
+\contentsline {subsection}{Gasto total}{42}{section*.54}%
+\contentsline {subsection}{Viabilidad legal}{42}{section*.55}%
+\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{45}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Introducción}{45}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Objetivos generales}{45}{section.Alph2.2}%
+\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{45}{section.Alph2.3}%
+\contentsline {section}{\numberline {B.4}Especificación de requisitos}{45}{section.Alph2.4}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{47}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{47}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de datos}{47}{section.Alph3.2}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{47}{section.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{47}{section.Alph3.4}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{49}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{49}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{49}{section.Alph4.2}%
+\contentsline {section}{\numberline {D.3}Manual del programador}{49}{section.Alph4.3}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{49}{section.Alph4.4}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{49}{section.Alph4.5}%
+\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{51}{appendix.Alph5}%
+\contentsline {section}{\numberline {E.1}Introducción}{51}{section.Alph5.1}%
+\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{51}{section.Alph5.2}%
+\contentsline {section}{\numberline {E.3}Instalación}{51}{section.Alph5.3}%
+\contentsline {section}{\numberline {E.4}Manual del usuario}{51}{section.Alph5.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{53}{appendix*.56}%

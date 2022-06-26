@@ -3,6 +3,7 @@
 %otros
 \usepackage{listings}
 \interfootnotelinepenalty=10000
+\usepackage{makecell}
 
 
 % Castellano
@@ -106,7 +107,7 @@
 %
 % Nuevo comando para tablas pequeñas (menos de una página).
 \newcommand{\tablaSmall}[5]{%
- \begin{table}
+ \begin{table}[h!]
   \begin{center}
    \rowcolors {2}{gray!35}{}
    \begin{tabular}{#2}

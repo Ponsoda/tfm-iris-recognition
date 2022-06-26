@@ -4,6 +4,16 @@ El proyecto se ha dividido en dos fases principales. La primera fase ha consisti
 a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-procesamiento, estas son la segmentación y la normalización del iris. También se incluye en esta fase la aplicación de las técnicas de \textit{data augmentation}. 
 Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los cuatro conjuntos de imágenes derivadas del \textit{dataset} creadas en la primera fase, estas son los conjuntos con/sin pre-procesamiento y con/sin \textit{data augmentation}.
 
+El objetivo de estas dos fases, es el de crear los cuatro \textit{datasets} que se utilizarán en la fase de \textit{fine-tuning} para crear los modelos finales, con los que se calculará la tasa de acierto relativa a su capacidad de clasificación.
+Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
+
+\tablaSmall{\textit{Datasets} utilizados para el \textit{fine-tuning}.}{l c c}{datasets}
+{ \multicolumn{1}{l}{\textit{Dataset}} & Pre-procesamiento &  \textit{Data augmentation}\\}{ 
+1 &   & \\
+2 & x  & \\
+3 &   & x \\
+4 &  x & x \\
+} 
 
 \section{Preparación del dataset}
 
@@ -14,83 +24,80 @@ En el caso de este proyecto caso, el \textit{dataset} inicial ha sido dividido e
 
 \section{Pre-procesamiento de los datos}
 
-En la primera fase del proyecto, se ha llevado a cabo un pre-procesamiento del \textit{dataset} para crear los cuatro subconjuntos de datos que se utilizarán para crear los modelos.
-Estos son, el \textit{dataset} con las imágenes oculares completas, el \textit{dataset} con las imágenes pre-procesadas, y los dos \textit{datasets} mencionados con técnicas de \textit{data augmentation} aplicadas a ellos.
+En la primera fase del proyecto, se ha llevado a cabo un pre-procesamiento del \textit{dataset} para crear el conjunto de datos de imágenes del iris aisladas.
 
 \subsection{Adecuación del código previo}
 
-En el código previo\footnote{Accesible desde \url{https://github.com/jaa0124/iris_classifier}.}, correspondiente a \cite{tfg_iris_2020} cuenta con un código donde el iris se segmenta y se normaliza.
+Como se ha mencionado anteriormente, el código desarrollado en \cite{tfg_iris_2020} para la segmentación y naturalización del iris en una imagen ocular ha sido adaptado para el proyecto. 
 
-Durante esta fase, se han llevado a cabo tres aspectos. La primera ha sido la asimilación del \textit{dataset} y del código previo. La segunda ha sido la adecuación del código previo para que fuese funcional,
+Para ello, en una primera fase se ha asimilado el código completo del trabajo, de forma que se comprendiese a fondo el mismo, para seguidamente, en una segunda fase, se ha pasado a limpiar el código y adecuarlo a las necesidades del proyecto. 
 
-y seguidamente, se ha llevado a cabo una asimilación del código. 
+Este código permite la creación del segundo dataset utilizado en el proyecto, que siguiendo con la idea de que el iris es la mejor parte del ojo para identificar a una persona, lo aisla para entrenar a la red neuronal y evitar el ruido que pueda causar la imagen completa. 
+
+
+\subsection{Aplicación del \textit{data augmentation}}
+
+El proceso de data augmentstion permite ampliar el número de imagenes y la robustez de los dos datasets anteriormente mencionados. Estos son las imágenes ocularrs completas y las imágenes con el iris aislado. 
+
+Por lo tanto, este proceso utiliza las tecnicas de ruido gaussiano y transformaciones afines, explicadas en la seccion \ref{transformacionesafines} para cear dos nuevos conjuntos de datos. 
+
+Para la aplicación del ruido gaussiano, se han aplicado aleatoriamente valores de la desviacion estándar de 2.5, 5 y 7.5.
+
+Por su lado, las transformaciones afines se han aplicado de forma independiente al ruido gaussiano, es decir, una no es excluyente de la otra, ni las transformaciones afines son excluyentes entre ellas mismas. 
+
+Como resultado del data augmentation, los datasets, que originalmente contaban con 756 imágenes, cuentan ahora con 1158.
 
 \subsection{Creación de la \textit{pipeline}}
 
-Para el manejo del Código, se ha encapsulado cada sección en el pipeline, y se ha creado un diccionario de configuración, donde se establecen los criterios que se muestran en la tabla \ref{tabla:configuracion-pipeline}.
+Con el fin de mejorar el manejo de las diferentes secciones de código elaboradas, se ha optado por la utilización de una pipeline que permitiese controlar fácilmente la secuencia de ejecución del código así como la configuración del mismo. 
 
-%tabla con el nombre y lo que hace la configuración/razón de ser
+Para ello, se ha encapsulado cada uno de los procesos del proyecto en funciones independientes y se ha creado un diccionario donde se ha establecido la configuración inicial. 
+
+Este diccionario era el único elemento de entrada y salida en la pipeline y permitía que en cada proceso se pudiese modificar o ampliar el diccionario, haciendo posible el cambio del orden de los procesos en el pipeline. 
+
+Los criterios de la configuración de la pipeline se muestran en la siguiente tabla \ref{tabla:configuracion-pipeline}.
 
 \tablaSmallSinColores{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
 { \multicolumn{1}{l}{Nombre} & Configuración \\}{ 
 Raíz & Establecimiento del directorio raíz\\
 Tamaño dataset & Tamaño de los \textit{datasets} de entrenamiento y validación\\
-\textit{Data augmentation} & Tipo a aplicar\\
-Imágenes y gráficas &  Mostrar imágenes y gráficas (configurado individualmente)\\
-Modelo &  Nombre y ubicación donde guardar la red neuronal\\
-Epochs & Número de epochs por cada red neuronal entrenada\\
-\textit{Batch} & Tamaño\\
-\textit{Random seed} & Tamaño\\
-Peso & Peso utilizado para la red neuronal\\
-\textit{Fine-tuning} & \textit{Dataset} utilizado\\
+\textit{Data augmentation} & Tipo de \textit{data augmentation} a aplicar\\
+Imágenes y gráficas & \makecell{Mostrar imágenes y gráficas, configurado individualmente \\ para cada elemento.}\\
+Modelo &  Nombre y ubicación donde guardar la red neuronal.\\
+Epochs & Número de epochs por cada red neuronal entrenada.\\
+\textit{Batch} & Tamaño del \textit{batch}.\\
+\textit{Random seed} & Tamaño del \textit{random seed}.\\
+Peso & Peso utilizado para el entrenamiento la red neuronal.\\
+\textit{Fine-tuning} & \textit{Dataset} ha utilizar para el \textit{fine-tuning}.\\
 } 
   
-
-\subsection{Aplicación del \textit{data augmentation} sobre el dataset}
-
-La aplicación del data augmentation se ha hecho de forma alternativa, primero con el ruido gaussiano, donde aleatoriamente se aplica ruido gaussiano de 2.5, 5 y 7.5 de desviación. 
-
-Además, con las transformaciones afines, que no son excluyentes del ruido gaussiano, ni entre ellas mismas, se aplican aleatoriamente entre cada una de ellas. 
-
-Como resultado, los datasets con data augmentation aplicado cuentan con un total de x imágenes, y más que el dataset original, con una media de z más imagenes por individuo. 
-
 \section{Adaptación de la red neuronal}
 
-En la configuración del pipeline se establece a que dataset se aplica el \textit{fine-tuning}. En este caso se ha aplicado a cuatro datasets. 
-Por un lado, a dos datasets sin preprocesamiento, uno condata augmentation y otro sin. Por otro lado, a dos datasets con el preprocesamiento, uno con data augmentation y otro sin. 
+La adaptación de la red neuronal VGG16 es una parte central del proyecto, puesto que el objetivo principal del proyecto es comparar como comporta la red neuronal al ser adaptada por uno de los datasets desarrollados en el proyecto, en cuanto a tasa de acierto en la clasificación de individuos a través de sus imágenes oculares. 
 
+La adaptación de la red neuronal se ha aplicado a los cuatro \textit{datasets}, estos son, por un lado, lo dos \textit{datasets} sin pre-procesamiento (uno de ellos con \textit{data augmentation}) y, por otro lado, a los dos datasets a los que se les ha aplicado el pre-procesamiento (de nuevo, a uno de ellos también se le han aplicado técnicas de \textit{data augmentation}). 
 \subsection{Aplicación del \textit{fine-tuning}}
 
-%Explicar xomo se splica, con el ejemplo de las tres cnn https://www.tensorflow.org/guide/keras/transfer_learning#fine-tuning
-%https://stackoverflow.com/questions/54059391/why-we-include-top-false-while-using-pretrained-models-like-inceptionresnetv2-in
-
-Para llevar a cabo la aplicación del \textit{fine-tuning}, se han creado 3 redes neuronales.
+En la  utilización de técnicas de fine-tuning para la adaptación de la red neuronal VGG16 a los datasets del proyecto, se han seguido tres fases. 
 
 \subsubsection{Primera fase}
+En una primera fase, se ha definido una primera red neuronal cuyo objetivo es el de determinar las características que mejor definen a las imágenes, siendo la base del nuevo modelo. 
 
-%https://mitxpc.com/pages/ai-inference-applying-deep-neural-network-training
-
-En primer lugar, se ha creado una primera red neuronal que permita encontrar las características principales de las imágenes.
-Para ello, se ha eliminado la capa final, correspondiente a la clasificación de la imagen.
-A la hora de crear el modelo, se establece como `training=false` para que funcione como un \textit{interference model}.
-
-A la hora de lanzar este primer modelo, que será el modelo base para la red neuronal final, se establece como  ´traning=false´, para mantenerlo en \textit{inference mode}.
-
+Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a la clasificación de la imagen, a una red neuronal que entrenada con ImageNet, menos la capa final, puesto que el modelo será utilizado como modelo base. El modelo se establece en este punto como no entrenable para que no se re-entrene en las siguiente fase, de forma que el modelo resultante funcione como un \textit{inference model}\footnote{Este modelo aprovecha el conocimiento de una red neuronal ya entrenada para clasificar imágenes pero interfiere en el resultado final, que es modificado por un nuevo \textit{dataset}, que suele ser de un tamaño no lo suficientemente grande para entrenar la red neuronal desde cero.}. 
 
 \subsubsection{Segunda fase}
 
-Para la segunda fase, se ha entrenado una nueva capa, que será la que determine el \textit{output}, para luego hacer un \textit{unfreeze} del modelo creado anteriormente.
+En la segunda fase, se ha creado una nueva capa a partir de el modelo base , que es capaz de clasificar a las imágenes en base a las imágenes oculares y sus etiquetas. 
 
 \subsubsection{Tercera fase}
 
-En esta tercera fase, se entrena el modelo completo, manteniendo al modelo base como \textit{iterference model} para evitar que se vuelta a entrenar.
-
+En esta tercera fase, se pasa a entrena el modelo completo, descongelando el modelo base pero manteniendolo como \textit{inference model} para evitar que se vuelta a entrenar,  por lo que la extradición de características se hará sobre el nuevo \textit{dataset} pero las textit {hidden layers} utilizadas serán principalmente las de VGG16.
 
 \subsection{Clasificación de imágenes}
 
-Las imagenes se han clasificado utilizando los modelos creados en la sección anterior, utilizando como dataset de entrada, el 30\% reservado en la primera fase. 
+Las imagenes se han clasificado utilizando los cuatro modelos creados en la sección anterior. Para ello, utilizando como dataset de entrada, el 30\% reservado en la primera fase.
 
-Para las imágenes normalizadas, se les aplica la fase de preprocesamiento, para que puedan ser manejadas por el modelo. 
+En el caso las imágenes normalizadas, antes de ser clasificars, se les aplica la fase de pre-procesamiento \ref{preprocesamiento}, de forma que estas se ajusten a la entrada requerida por el modelo.
 
 \subsection{Tasa de acierto} 
 
