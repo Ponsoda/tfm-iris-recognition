@@ -2,10 +2,39 @@
 
 \section{Introducción}
 
+Se detalla el diseño del proyecto.
+
 \section{Diseño de datos}
+
+\subsection{\textit{Dataset}}
+
+Tal como se ha explicado en la memoria, se ha utilizado el dataset CASIA-V1.
+
+La estructura de datos es la siguiente, por persona y sesión. Imagen \ref{img:casia-dir}.
+
+\imagen{img/17_CASIA_dir.png}{Estructura de directorios de CASIA-V1.}{Estructura de directorios de CASIA-V1.}{img:casia-dir}
+
+\subsection{\textit{Notebooks}}
+
+El código del proyecto se ha reducido a dos \textit{notebooks}:
+
+
+\begin{itemize}
+    \item El primero es el, \texttt{9-pipelines\_v7.ipynb}, en el cual se ha reducido todas las secciones del proyecto, encapsuladas en una \textit{pipeline}.
+    \item El segundo es el, \texttt{Accuracy.ipynb}, donde se lleva a cabo el cálculo de la tasa de acierto de los modelos.
+\end{itemize}
+
 
 \section{Diseño procedimental}
 
+\begin{enumerate}
+    \item Crga de datos
+    \item \textit{Data augmentation}
+    \item Segmentación y clasificación
+    \item \textit{fine-tuning}
+    \item Tasa de acierto
+    \end{enumerate}
+
 \section{Diseño arquitectónico}
 
-
+Con la utilización de una \textit{pipeline} configurable, se ha intentado que el código sea reutilizable y fácil de manejar.

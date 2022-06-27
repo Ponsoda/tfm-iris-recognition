@@ -73,21 +73,27 @@
 \contentsline {section}{\numberline {B.1}Introducción}{45}{section.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Objetivos generales}{45}{section.Alph2.2}%
 \contentsline {section}{\numberline {B.3}Catalogo de requisitos}{45}{section.Alph2.3}%
-\contentsline {section}{\numberline {B.4}Especificación de requisitos}{45}{section.Alph2.4}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{47}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{47}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de datos}{47}{section.Alph3.2}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{47}{section.Alph3.3}%
-\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{47}{section.Alph3.4}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{49}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{49}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{49}{section.Alph4.2}%
-\contentsline {section}{\numberline {D.3}Manual del programador}{49}{section.Alph4.3}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{49}{section.Alph4.4}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{49}{section.Alph4.5}%
-\contentsline {appendix}{\chapternumberline {E}Documentación de usuario}{51}{appendix.Alph5}%
-\contentsline {section}{\numberline {E.1}Introducción}{51}{section.Alph5.1}%
-\contentsline {section}{\numberline {E.2}Requisitos de usuarios}{51}{section.Alph5.2}%
-\contentsline {section}{\numberline {E.3}Instalación}{51}{section.Alph5.3}%
-\contentsline {section}{\numberline {E.4}Manual del usuario}{51}{section.Alph5.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{53}{appendix*.56}%
+\contentsline {section}{\numberline {B.4}Especificación de requisitos}{46}{section.Alph2.4}%
+\contentsline {subsection}{Optimizar el código previo}{46}{section*.56}%
+\contentsline {subsection}{Crear los modelos para la clasificación de imágenes oculares}{46}{section*.57}%
+\contentsline {subsubsection}{Dividir el \textit {dataset} en entrenamiento y test}{46}{section*.58}%
+\contentsline {subsubsection}{Aplicar de \textit {data augmentation}}{46}{section*.59}%
+\contentsline {subsubsection}{Segmentar de las imágenes}{46}{section*.60}%
+\contentsline {subsubsection}{Normalizar de las imágenes}{46}{section*.61}%
+\contentsline {subsection}{Aplicar \textit {fine-tuning} a los distintos \textit {datasets}}{47}{section*.62}%
+\contentsline {subsection}{Crear una configuración donde el usuario pueda modificar los parámetros y visualizar los distintos \textit {outputs}}{47}{section*.63}%
+\contentsline {subsection}{Determinar que proceso de \textit {fine-tuning} proporciona una tasa de acierto más alta}{47}{section*.64}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{49}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{49}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de datos}{49}{section.Alph3.2}%
+\contentsline {subsection}{\textit {Dataset}}{49}{section*.65}%
+\contentsline {subsection}{\textit {Notebooks}}{51}{section*.66}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{51}{section.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{51}{section.Alph3.4}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{53}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{53}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{53}{section.Alph4.2}%
+\contentsline {section}{\numberline {D.3}Manual del programador}{53}{section.Alph4.3}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{54}{section.Alph4.4}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{54}{section.Alph4.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{55}{appendix*.67}%

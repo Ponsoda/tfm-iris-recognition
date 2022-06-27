@@ -2,10 +2,41 @@
 
 \section{Introducción}
 
+En este apartado se determinará la forma de proceder para poder replicar el proyecto.
+
 \section{Estructura de directorios}
+
+\begin{itemize}
+    \item 06\_Models contiene los modelos finales
+    \item img contiene las imágenes utilizadas en el propio repositorio
+    \item memoria, incluye la memoria
+    \begin{itemize}
+        \item tex, contiene los archivos tex
+        \item img, contiene las imágenes del proyecto
+    \end{itemize}
+        \item src, incluye el código del proyecto con distintas versiones
+\end{itemize}
 
 \section{Manual del programador}
 
+
+Los \textit{notebooks} del proyecto se pueden explorar en cualquier plataforma compatible con Jupyter notebooks,
+
+
 \section{Compilación, instalación y ejecución del proyecto}
 
+Pasos para la ejecución del proyecto:
+
+\begin{itemize}
+    \item Clonar el repositorio del proyecto \url{https://github.com/Ponsoda/tfm-iris-recognition}.
+    \item Descargar el \textit{dataset} de CASIA-V1. En el proyecto se ha utilizado el \textit{dataset} a partir de \url{https://github.com/jaa0124/iris_classifier/tree/master/notebooks/CASIA-IrisV1}.
+    \item Abrir el \textit{notebook} \texttt{9-pipelines\_v7.ipynb}.
+    \item Determinar la ubicación del \textit{dataset} de CASIA-V1 en la configuración del \textit{pipeline}, así como el resto de parámetros y el directorio de salida para los modelos.
+    \item Correr todas las celdas del proyecto en el orden definido en el proyecto para la creación de cada uno de los modelos.
+    \item Abrir el \textit{notebook} \texttt{Accuracy.ipynb}.
+    \item Establecer la ubicación del \textit{dataset} reservado para el testeo y del modelo a utilizar y lanzar todas las celdas del \textit{notebook}.
+\end{itemize}
+
 \section{Pruebas del sistema}
+
+Las diferentes pruebas que se han ido realizando están accesible en el directorio en forma de \textit{notebooks} de Jupyter que pueden ser descargados y ejecutados.

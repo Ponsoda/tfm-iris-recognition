@@ -2,10 +2,68 @@
 
 \section{Introducción}
 
+En este apartado se especifican los objetivos y requisitos del proyecto.
+
 \section{Objetivos generales}
+
+Los objetivos generales son, el ser capaz de asimilar el trabajo de \cite{tfg_iris_2020}, modificar el código para hacerlo reutilizable y, finalmente, ser capaz de 
+utilizar técnicas de \textit{fine-tuning} con el \textit{dataset} de imágenes sobre una red neuronal ya pre-entrenada.
 
 \section{Catalogo de requisitos}
 
+Los requisitos del proyecto son los siguientes.
+
+\begin{enumerate}
+    \item Optimizar del código previo.
+    \item Crear los modelos para la clasificación de imágenes oculares.
+        \begin{enumerate}
+            \item Dividir el \textit{dataset} en entrenamiento y test.
+            \item Aplicar de \textit{data augmentation}.
+            \item Segmentar de las imágenes.
+            \item Normalizar de las imágenes.
+        \end{enumerate}
+    \item Aplicar \textit{fine-tuning} a los distintos \textit{datasets}.
+    \item Crear una configuración donde el usuario pueda modificar los parámetros y visualizar los distintos \textit{outputs}.
+    \item Determinar que proceso de \textit{fine-tuning} proporciona una tasa de acierto más alta.
+  \end{enumerate}
+
 \section{Especificación de requisitos}
+
+\subsection{Optimizar el código previo}
+
+Asimilar y optimizar el código previo para que sea funcional. Para llevar a cabo este apartado es necesario contar con el código y el \textit{dataset}, ambos accesibles desde \url{https://github.com/jaa0124/iris_classifier/}.
+
+\subsection{Crear los modelos para la clasificación de imágenes oculares}
+
+La clasificiación de las imágenes oculares se lleva a cabo utilizando modelos adaptados utilizando distintos \textit{datasets}. Su creación se lleva a cabo en las siguientes fases:
+
+\subsubsection{Dividir el \textit{dataset} en entrenamiento y test}
+
+División del \textit{dataset} de CASIA en entrenamiento y test, para poder validar los modelos. Los requisitos previos son el 1.
+
+\subsubsection{Aplicar de \textit{data augmentation}}
+
+Aplicación de \textit{data augmentation} sobre dos de los modelos. Los requisitos previos son el 1 y el 2a. Este paso solo se aplica a dos de los \textit{datasets}.
+
+\subsubsection{Segmentar de las imágenes}
+
+Segmentación de las imágenes donde el iris será aislado. Los requisitos previos son 1, 2a y 2b. Este paso solo se aplica a dos de los \textit{datasets}.
+
+\subsubsection{Normalizar de las imágenes}
+
+Normalización de las imágenes donde el iris será aislado. Los requisitos previos son 1, 2a, 2b y 2c. Este paso solo se aplica a dos de los \textit{datasets}.
+
+\subsection{Aplicar \textit{fine-tuning} a los distintos \textit{datasets}}
+
+Aplicación de \textit{fine-tuning} sobre los datasets. Los requisitos previos son  Los requisitos previos son 1, 2a, 2b, 2c y 2d. Dependiendo del \textit{dataset}, alguno de los pasos previos puede no ser necesario.
+
+\subsection{Crear una configuración donde el usuario pueda modificar los parámetros y visualizar los distintos \textit{outputs}}
+
+Creación de una \textit{pipeline} y establecimiento de su configuración para permitir al usuario adaptar el código a sus necesidades. Todos los pasos anteriores son requisitos previos.
+
+\subsection{Determinar que proceso de \textit{fine-tuning} proporciona una tasa de acierto más alta}
+
+Determinación de los valores más altos de la tasa de acierto en los distintos modelos.
+
 
 
