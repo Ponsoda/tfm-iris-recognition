@@ -1,20 +1,21 @@
 \capitulo{6}{Trabajos relacionados} \label{capitulo6}
 
-El principal apartado anterior se puede  encontrar en el TFG de extracción del iris \cite{tfg_iris_2020}, en el cual se basa este trabajo, puesto se realiza a grandes rasgos
-todo lo relativo a la primera de las opciones del trabajo.
+La utilización del iris como elemento biométrico que permite el acceso a los dispositivos electrónicos es un tema de estudio candente en los últimos años, 
+tal como se explica en la \nameref{capitulo1}.
 
-Sobre temas de extracción del iris encontramos \cite{abdullah_iris_2015}, donde se hace un preprocesamiento con extracción del iris utilizando Hough Transform y la 
-normalización con Daugmands rubber. Luego, tras eliminar el ruido, la extracción se realiza con transformaciones de wavelet. Finalmente, se crea una red neuronal
-utilizando el mean-squared error para calcular los pesos en la red.
+A continuación se describen algunos de los trabajos centrados en la identificación de individuos a través de su iris en los que se ha basado este proyecto.
 
-En \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de deep learning para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. utilizando una red preentrenada 
-de ResNet50 y fine-tuning, entrenado con una \textit{cross-entropy loss function} (aunque no utilizan \textit{data augmentation}, ni pre-procesan las imágenes, y además, utilizan otro dataset, el IIT Delhi). 
+\section{Sistema clasificador de iris}
 
-En \cite{minaee_experimental_2017}, utilizaron el dataset CASIA - 10000 y la arquitectura VGG-Net, lo cual realiza un PCA para extraer los elementos
-más característicos de las imágenes . Después utilizan algoritmos de clasificación para clasificar las imágenes, como el SVM (esto es similar al TFG) y consiguen unos percentages
-de reconocimiento muy altos.
+En este trabajo de final de grado\cite{tfg_iris_2020} de la Universidad de Burgos, se desarrolla un sistema de clasificación basado en el iris. Utiliza el \textit{dataset} 
+de CASIA-V1 para el proyecto, al cual somete a segmentación, utilizando el método de Wildes, y luego a normalización. Posteriormente, se extraen los atributos utilizando diversas redes 
+neuronales utilizando una red pre-entrenada para dicho fin\cite{lozej_end--end_2018} y finalmente, se procede a la clasificación de individuos utilizando técnicas de \textit{machine learning}.
 
-En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sistema de reconocimiento del iris:
+Como se ha comentado anteriormente, el código para la carga de imágenes y los procesos de segmentación y normalización del iris han sido extraidos de este trabajo,
+
+\section{Iris Recognition Development Techniques: A Comprehensive Review}
+
+En este artículo\cite{malgheet_iris_2021}, los investigadores de la Universiti Putra Malaysia hablan de siete pasos en los que se divide un sistema de reconocimiento del iris:
 \begin{enumerate}
 \item adquisición
 \item preprocesamiento
@@ -29,14 +30,34 @@ En \cite{malgheet_iris_2021} se habla de siete pasos en los que se divide un sis
  trabajos entorno a datasets de baja cualidad y realza que los sistemas de reconocimiento del iris (IRS) se vuelven 
  poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que intentamos de mejorar en nuestro proceso, añadiendo ruido con el \textit{data augmentation}.
 
- Este mismo \textit{paper} también comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
+ El mismo articulo comenta los distintos dataset utilizados para estos estudios de reconocimiento de iris, el tipo de ruido utilizado así como su método,
  los tipos de segmentación tradicional y actual utilizados (habitualmente con redes neuronales), técnicas de normalización y extracción de características, así 
- como los tipos de accuracy de los métodos de iris recognition.
+ como los tipos de accuracy de los métodos de \textit{iris recognition}.
 
- \cite{DeMarsico2016IrisRT} utiliza también el dataset de casia V! (parece que también \cite{10.1016/j.cogsys.2018.09.029}) para medir el accuracy y \cite{lozej_end--end_2018} junto con Unet para el
- iris segmentation.
+\section{Iris Recognition Using Wavelet Transform and Artificial Neural Networks}
 
- \cite{7498983} utiliza filtro gaussiano combinado con Hough detección de líneas pero nadie utiliza solo gaussiano y/o transformaciones afines.
+En este artículo de Hadeel N Abdullah\cite{abdullah_iris_2015}, perteneciente a la University of Technology de Iraq, se lleva a cabo un pre-procesamiento con extracción del iris utilizando Hough Transform y la 
+normalización con Daugmands rubber. 
 
- \cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imágenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta
- llamada OSIRIS y prueban deep learning, \textit{fine-tuning} y raw para ver que clasifica mejor. (mejor adaptar una red neuronal con \textit{fine-tuning} antes que crear la nuestra propia.
+Luego, tras eliminar el ruido, la extracción se realiza con transformaciones de Wavelet. Finalmente, se crea una red neuronal
+utilizando el \textit{mean-squared error} para calcular los pesos en la red.
+
+\section{Reliable pupil detection and iris segmentation algorithm based on sps}
+
+En este \textit{paper}\cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de deep learning para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. utilizando una red preentrenada 
+de ResNet50 y fine-tuning, entrenado con una \textit{cross-entropy loss function} (aunque no utilizan \textit{data augmentation}, ni pre-procesan las imágenes, y además, utilizan otro dataset, el IIT Delhi). 
+
+\section{ An experimentalstudy of deep convolutional features for iris recognition}
+
+En este artículo\cite{minaee_experimental_2017}, se hizo uso del \textit{dataset} CASIA - 10000 y la arquitectura VGG-Net, para realizar una PCA y extraer los elementos
+más característicos de las imágenes . Después utilizan algoritmos de clasificación para clasificar las imágenes, como el SVM y consiguiendo unos porcentajes de acierto muy altos.
+
+\section{Otros trabajos relacionados}
+
+Se han consultado una serie de artículos para la elaboración del proyecto que vale la pena mencionar aquí.
+
+El primero es \textit{Iris recognition through machine learning techniques: A survey}\cite{DeMarsico2016IrisRT}, utiliza el \textit{dataset} de casia V (parece que también \cite{10.1016/j.cogsys.2018.09.029}) para medir la tasa de acierto.
+
+\textit{An efficient iris code storing and searching technique for Iris Recognition using non-homogeneous K-d tree}\cite{7498983} utiliza filtro gaussiano combinado con Hough detección de líneas pero nadie utiliza solo gaussiano y/o transformaciones afines.
+
+\textit{Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}\cite{boyd_deep_2020} utiliza técnicas de deep learning para clasificar imágenes de ojos de el casia iris 300 dataset, no utiliza data augmentation. Para segmentation utilizan una herramienta  llamada OSIRIS y prueban deep learning, \textit{fine-tuning} y raw para ver que clasifica mejor. (mejor adaptar una red neuronal con \textit{fine-tuning} antes que crear la nuestra propia.

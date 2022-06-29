@@ -1063,6 +1063,12 @@ INPUT .\tex\D_Manual_programador.tex
 INPUT tex\D_Manual_programador.tex
 INPUT .\tex\D_Manual_programador.tex
 INPUT tex\D_Manual_programador.tex
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtk10.tfm
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtti10.tfm
 INPUT .\memoria.bbl
 INPUT memoria.bbl
 INPUT .\memoria.bbl
@@ -1148,7 +1154,11 @@ INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtk10.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtk10.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtti10.pfb
+INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtti10.pfb

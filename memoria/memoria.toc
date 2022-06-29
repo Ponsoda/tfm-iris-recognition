@@ -1,11 +1,11 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}{section*.1}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.2}%
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vi}}{section*.3}%
-\contentsline {part}{Memoria}{1}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vi}}{section*.2}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vii}}{section*.3}%
 \contentsline {chapter}{1. Introducción}{3}{chapter*.6}%
 \contentsline {section}{\numberline {1.1}Outline}{6}{section.1.1}%
+\contentsline {part}{Memoria}{3}{section*.5}%
 \contentsline {chapter}{2. Objetivos del proyecto}{9}{chapter*.7}%
 \contentsline {chapter}{3. Conceptos teóricos}{11}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Biometría}{11}{section.3.1}%
@@ -47,53 +47,64 @@
 \contentsline {subsection}{Clasificación de imágenes}{31}{section*.36}%
 \contentsline {subsection}{Tasa de acierto}{31}{section*.37}%
 \contentsline {chapter}{6. Trabajos relacionados}{33}{chapter*.38}%
-\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{35}{chapter*.39}%
-\contentsline {section}{\numberline {7.1}Conclusiones}{35}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{35}{section.7.2}%
-\contentsline {part}{Apéndices}{36}{section.7.2}%
-\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{39}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Introducción}{39}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Planificación temporal}{39}{section.Alph1.2}%
-\contentsline {subsection}{Sprint 1}{39}{section*.42}%
-\contentsline {subsection}{Sprint 2}{40}{section*.43}%
-\contentsline {subsection}{Sprint 3}{40}{section*.44}%
-\contentsline {subsection}{Sprint 4}{40}{section*.45}%
-\contentsline {subsection}{Sprint 5}{40}{section*.46}%
-\contentsline {subsection}{Sprint 6 y 7}{40}{section*.47}%
-\contentsline {subsection}{Sprint 8}{40}{section*.48}%
-\contentsline {subsection}{Sprint 9}{41}{section*.49}%
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{41}{section.Alph1.3}%
-\contentsline {subsection}{Viabilidad económica}{41}{section*.50}%
-\contentsline {subsubsection}{\textit {Software}}{41}{section*.51}%
-\contentsline {subsubsection}{\textit {Hardware}}{41}{section*.52}%
-\contentsline {subsubsection}{Personal}{41}{section*.53}%
-\contentsline {subsection}{Gasto total}{42}{section*.54}%
-\contentsline {subsection}{Viabilidad legal}{42}{section*.55}%
-\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{45}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Introducción}{45}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Objetivos generales}{45}{section.Alph2.2}%
-\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{45}{section.Alph2.3}%
-\contentsline {section}{\numberline {B.4}Especificación de requisitos}{46}{section.Alph2.4}%
-\contentsline {subsection}{Optimizar el código previo}{46}{section*.56}%
-\contentsline {subsection}{Crear los modelos para la clasificación de imágenes oculares}{46}{section*.57}%
-\contentsline {subsubsection}{Dividir el \textit {dataset} en entrenamiento y test}{46}{section*.58}%
-\contentsline {subsubsection}{Aplicar de \textit {data augmentation}}{46}{section*.59}%
-\contentsline {subsubsection}{Segmentar de las imágenes}{46}{section*.60}%
-\contentsline {subsubsection}{Normalizar de las imágenes}{46}{section*.61}%
-\contentsline {subsection}{Aplicar \textit {fine-tuning} a los distintos \textit {datasets}}{47}{section*.62}%
-\contentsline {subsection}{Crear una configuración donde el usuario pueda modificar los parámetros y visualizar los distintos \textit {outputs}}{47}{section*.63}%
-\contentsline {subsection}{Determinar que proceso de \textit {fine-tuning} proporciona una tasa de acierto más alta}{47}{section*.64}%
-\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{49}{appendix.Alph3}%
-\contentsline {section}{\numberline {C.1}Introducción}{49}{section.Alph3.1}%
-\contentsline {section}{\numberline {C.2}Diseño de datos}{49}{section.Alph3.2}%
-\contentsline {subsection}{\textit {Dataset}}{49}{section*.65}%
-\contentsline {subsection}{\textit {Notebooks}}{51}{section*.66}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{51}{section.Alph3.3}%
-\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{51}{section.Alph3.4}%
-\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{53}{appendix.Alph4}%
-\contentsline {section}{\numberline {D.1}Introducción}{53}{section.Alph4.1}%
-\contentsline {section}{\numberline {D.2}Estructura de directorios}{53}{section.Alph4.2}%
-\contentsline {section}{\numberline {D.3}Manual del programador}{53}{section.Alph4.3}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{54}{section.Alph4.4}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{54}{section.Alph4.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{55}{appendix*.67}%
+\contentsline {section}{\numberline {6.1}Sistema clasificador de iris}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Iris Recognition Development Techniques: A Comprehensive Review}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Iris Recognition Using Wavelet Transform and Artificial Neural Networks}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Reliable pupil detection and iris segmentation algorithm based on sps}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5} An experimentalstudy of deep convolutional features for iris recognition}{35}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Otros trabajos relacionados}{35}{section.6.6}%
+\contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{37}{chapter*.39}%
+\contentsline {section}{\numberline {7.1}Conclusiones}{37}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{37}{section.7.2}%
+\contentsline {part}{Apéndices}{38}{section.7.2}%
+\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{41}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Introducción}{41}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Planificación temporal}{41}{section.Alph1.2}%
+\contentsline {subsection}{Sprint 1}{41}{section*.42}%
+\contentsline {subsection}{Sprint 2}{42}{section*.43}%
+\contentsline {subsection}{Sprint 3}{42}{section*.44}%
+\contentsline {subsection}{Sprint 4}{42}{section*.45}%
+\contentsline {subsection}{Sprint 5}{42}{section*.46}%
+\contentsline {subsection}{Sprint 6 y 7}{42}{section*.47}%
+\contentsline {subsection}{Sprint 8}{42}{section*.48}%
+\contentsline {subsection}{Sprint 9}{43}{section*.49}%
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{43}{section.Alph1.3}%
+\contentsline {subsection}{Viabilidad económica}{43}{section*.50}%
+\contentsline {subsubsection}{\textit {Software}}{43}{section*.51}%
+\contentsline {subsubsection}{\textit {Hardware}}{43}{section*.52}%
+\contentsline {subsubsection}{Personal}{43}{section*.53}%
+\contentsline {subsection}{Gasto total}{44}{section*.54}%
+\contentsline {subsection}{Viabilidad legal}{44}{section*.55}%
+\contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{47}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Introducción}{47}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Objetivos generales}{47}{section.Alph2.2}%
+\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{47}{section.Alph2.3}%
+\contentsline {section}{\numberline {B.4}Especificación de requisitos}{48}{section.Alph2.4}%
+\contentsline {subsection}{Optimizar el código previo}{48}{section*.56}%
+\contentsline {subsection}{Crear los modelos para la clasificación de imágenes oculares}{48}{section*.57}%
+\contentsline {subsubsection}{Dividir el \textit {dataset} en entrenamiento y test}{48}{section*.58}%
+\contentsline {subsubsection}{Aplicar de \textit {data augmentation}}{48}{section*.59}%
+\contentsline {subsubsection}{Segmentar de las imágenes}{48}{section*.60}%
+\contentsline {subsubsection}{Normalizar de las imágenes}{48}{section*.61}%
+\contentsline {subsection}{Aplicar \textit {fine-tuning} a los distintos \textit {datasets}}{49}{section*.62}%
+\contentsline {subsection}{Crear una configuración donde el usuario pueda modificar los parámetros y visualizar los distintos \textit {outputs}}{49}{section*.63}%
+\contentsline {subsection}{Determinar que proceso de \textit {fine-tuning} proporciona una tasa de acierto más alta}{49}{section*.64}%
+\contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{51}{appendix.Alph3}%
+\contentsline {section}{\numberline {C.1}Introducción}{51}{section.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Diseño de datos}{51}{section.Alph3.2}%
+\contentsline {subsection}{\textit {Dataset}}{51}{section*.65}%
+\contentsline {subsection}{\textit {Notebooks}}{53}{section*.66}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{53}{section.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Diseño arquitectónico}{53}{section.Alph3.4}%
+\contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{55}{appendix.Alph4}%
+\contentsline {section}{\numberline {D.1}Introducción}{55}{section.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Estructura de directorios}{55}{section.Alph4.2}%
+\contentsline {section}{\numberline {D.3}Manual del programador}{55}{section.Alph4.3}%
+\contentsline {subsection}{\textit {Notebook} \texttt {9-pipelines\_v7.ipynb}}{56}{section*.67}%
+\contentsline {subsubsection}{Configuración}{56}{section*.68}%
+\contentsline {subsubsection}{Secciones}{58}{section*.69}%
+\contentsline {subsubsection}{Ejecucción del \textit {pipeline}}{59}{section*.70}%
+\contentsline {subsection}{\textit {Notebook} \textit {Accuracy.ipynb}}{60}{section*.71}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{60}{section.Alph4.4}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{61}{section.Alph4.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{63}{appendix*.72}%

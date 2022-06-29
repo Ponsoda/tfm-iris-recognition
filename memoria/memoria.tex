@@ -5,6 +5,13 @@
 \interfootnotelinepenalty=10000
 \usepackage{makecell}
 \usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
 \usepackage{dirtree}
 
 % Castellano
@@ -505,8 +512,8 @@ biometrics, iris, neural networks, fine-tuning, data augmentation
 
 \mainmatter
 
-\addcontentsline{toc}{part}{Memoria}
 \part*{Memoria}
+\addcontentsline{toc}{part}{Memoria}
 
 \include{./tex/1_Introduccion}
 \include{./tex/2_Objetivos_del_proyecto}

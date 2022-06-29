@@ -20,8 +20,175 @@ En este apartado se determinará la forma de proceder para poder replicar el pro
 \section{Manual del programador}
 
 
-Los \textit{notebooks} del proyecto se pueden explorar en cualquier plataforma compatible con Jupyter notebooks,
+Los \textit{notebooks} del proyecto se pueden explorar en cualquier plataforma compatible con Jupyter notebooks.
 
+\subsection{\textit{Notebook} \texttt{9-pipelines\_v7.ipynb}} \label{anx:pipeline}
+
+El {\textit{notebook} \texttt{9-pipelines\_v7.ipynb} contiene el código principal del proyecto. A continuación se detallan sus partes.
+
+\subsubsection{Configuración}
+
+La configuración de la \textit{pipeline}se muestra a continuación. En ella, se establece primero una configuración general, es decir, que es aplicable a
+las distintas secciones. En ella se han configurado las rutas en las que se guardan los distintos \textit{datasets}. Si todo el código es ejecutado, solo el
+\textit{'root-dir'} se mantendrá, y el resto se irán sobreescribiendo cuando se cree el propio \textit{dataset}. No obstante, la capacidad de establecer todas
+las rutas en la configuración es lo que nos permite cambiar el orden de las secciones en la \textit{pipeline}. 
+
+\begin{itemize}
+    \item \textit{tratardDataset}
+    \begin{itemize}
+        \item \textit{general\_train\_size}, tamaño del \textit{dataset} que será utilizado para el entrenamiento [Valor del 0-1].
+        \item \textit{show\_first}, mostrar primera imagen [boolean].
+    \end{itemize}
+    \item \textit{dataAugmentation}
+    \begin{itemize}
+        \item \textit{gaussianNoise}, aplicación del ruido gaussiano [boolean].
+        \item \textit{stdGN}, valores de ruido gaussiano a aplicar en las imágenes [valores menores de 10].
+        \item \textit{afinTransformation}, aplicación de transformaciones afines [boolean].
+    \end{itemize}
+    \item \textit{segmentation}
+    \begin{itemize}
+        \item \textit{redNeuronal}, nombre de la red neuronal a utilizar [extensión .h5].
+        \item \textit{verImagenV1}, ver la imagen producida [boolean].
+    \end{itemize}
+    \item \textit{CNN\_classification}
+    \begin{itemize}
+        \item \textit{dataset\_dir}, directorio a utilizar ['raw',para la imagen ocular completa o 'normalizado', para la imagen del iris aislada].
+        \item \textit{verImagenV1}, ver la imagen producida [boolean].
+        \item \textit{CNN\_weights}, establecer de donde utilizar los pesos para la red neuronal [imagenet, None, o se le pasa un directorio con los pesos].
+        \item \textit{train\_size}, tamaño del \textit{dataset} de entrenamiento [0-1].
+        \item \textit{test\_size}, tamaño del \textit{dataset} de testeo [0-1].
+        \item \textit{batch\_size}, tamaño del \textit{batch} [debe de ser menor del tamaño del \textit{dataset}].
+        \item \textit{epochs1}, establecer el tamaño del \textit{epochs} para entrenar al primer modelo [10-100].
+        \item \textit{plt\_accuracy1}, mostrar gráfica con el \textit{accuracy} del primer modelo [boolean].
+        \item \textit{epochs2}, establecer el tamaño del \textit{epochs} para entrenar al segundo modelo [8-80].
+        \item \textit{plt\_accuracy2}, mostrar gráfica con el \textit{accuracy} del segundo modelo[boolean].
+        \item \textit{epochs3}, establecer el tamaño del \textit{epochs} para entrenar al tercer modelo [8-50].
+        \item \textit{plt\_accuracy3}, mostrar gráfica con el \textit{accuracy} del tercer modelo[boolean].
+        \item \textit{results\_array}, mostrar el \textit{array} de resultados [boolean].
+        \item \textit{save\_model}, guardar el modelo [boolean].
+        \item \textit{save\_model\_name}, nombre con el que guardar el modelo [texto].
+    \end{itemize}
+\end{itemize}
+
+
+\begin{lstlisting}[language=Python] 
+
+confi_dict = {
+
+    'general':{
+        'root_dir':r"/home/root_folder",
+        'dataset_dir': "CASIA-IrisV1",
+        'dataset_unif_dir': r"./CASIA-IrisV1_unif",
+        'dataset_unif_dir_aug':r"./CASIA-IrisV1_unif_aug",
+        'dataset_unif_segv2_edg_norm_dir' : r"./CASIA-IrisV1_unif_segv2_edg_norm",
+        'dataset_unif_dir':r"./CASIA-IrisV1_unif_aug",
+        'dataset_unif_segv2_edg_norm_dir' : r"./CASIA-IrisV1_unif_aug_segv2_edg_norm",
+        'dataset_unif_dir': r"./CASIA-IrisV1_reservado"
+    },
+
+    '1_tratarDataset':{
+        'general_train_size': 0.7,
+        'show_first' : False
+    },
+
+    '1.1_dataAugmentation':{
+        'gaussianNoise' : True,
+        'stdGN': [2.5, 5, 7.5],
+        'afinTransformation': True
+    },
+
+    '2.1_segmentation':{
+        'redNeuronal' : "Iris_unet_d5.h5", 
+        'verImagenV1' : False
+    },
+    
+    # Dataset dir can be "normalizado" or "raw"
+
+    '4_CNN_classification' :{
+        'dataset_dir' : "normalizado",
+        'CNN_weights' : "imagenet",
+        'train_size' : 0.7, 
+        'test_size' : 0.3, 
+        'batch_size' : 10,
+        'epochs1' : 50, 
+        'plt_accuracy1' : True,
+        'epochs2' : 40, 
+        'plt_accuracy2' : True,
+        'epochs3' : 25, 
+        'plt_accuracy3' : True,
+        'results_array' : True,
+        'save_model' : False, 
+        'save_model_name' : "models/normalizado_aug_modelv1"
+    }
+
+}
+\end{lstlisting}
+
+\subsubsection{Secciones}
+
+Las secciones con las que cuenta el \textit{pipeline} son las siguientes:
+
+\begin{enumerate}
+    \item \textit{tratar\_dataset\_casia}
+    \begin{itemize}
+        \item Modificación de la configuración de archivos vista en el Anexo \ref{anx:dataset} a una configuración de directorio único.
+    \end{itemize}
+    \item \textit{data\_augmentation}
+    \begin{itemize}
+        \item Aplicación de transformaciones afines.
+        \item Aplicación del ruido gaussiano.
+    \end{itemize}
+    \item \textit{segmentation}
+    \begin{itemize}
+        \item Genera las muestras que se le pasaran a la red pre-entrenada.
+        \item Segmenta el iris.
+    \end{itemize}
+    \item \textit{normalization}
+    \begin{itemize}
+        \item Establece los circulos correspondientes a los bordes del objetos.
+        \item Binarización de las imágenes.
+        \item Proyección de la seccción del iris.
+    \end{itemize}
+    \item \textit{extraction} (parte del código adaptado, no utilizado en este proyecto).
+    \item \textit{clasification} (parte del código adaptado, no utilizado en este proyecto).
+    \item \textit{clasificacionCNN}
+    \begin{itemize}
+        \item Adaptación del \textit{dataset} al modelo de entrada de la red neuronal.
+        \item División del \textit{dataset} para el entrenamiento y el testeo.
+        \item Construcción de los tres modelos.
+        \item Muestra de resultados y de un ejemplo de clasificación.
+    \end{itemize}
+\end{enumerate}
+
+
+\subsubsection{Ejecucción del \textit{pipeline}}
+
+Cada una de las secciones anteriores ha sido encapsulada en una única función, con la configuración del \textit{pipeline} como único parámetro de entrada.
+Para ejecutar el \textit{pipeline} se establece cada función dentro de un \textit{FunctionTransformer} y se coloca en el orden requerido dentro de la función \textit{Pipeline}.
+Finalmente, se ejecuta la \textit{pipeline}, pasandole la configuración como parámetro.
+
+
+\begin{lstlisting}[language=Python] 
+
+_1_tratar_dataset_pip = FunctionTransformer(tratar_dataset_casia)
+_1_1_data_augmentation_pip = FunctionTransformer(data_augmentation)
+_2_1_segmentation_pip = FunctionTransformer(segmentation)
+_2_2_normalization_pip = FunctionTransformer(normalization)
+_4_clasificationCNN_pip = FunctionTransformer(clasificationCNN)
+
+iris_recognition_pipeline = Pipeline([('_1_tratarDataset', _1_tratar_dataset_pip), 
+('_1_1_dataAugmentation', _1_1_data_augmentation_pip), 
+('_2_1_segmentation', _2_1_segmentation_pip), 
+('_2_2_normalization', _2_2_normalization_pip),
+('_3_1_extraction', _3_1_extraction_pip),
+('_3_2_clasification', _3_2_clasification_pip), 
+('_4_clasificationCNN', _4_clasificationCNN_pip) ])
+
+iris_recognition_pipeline.transform(confi_dict)
+
+\end{lstlisting} 
+
+\subsection{\textit{Notebook} \textit{Accuracy.ipynb}} \label{anx:accuracy}
 
 \section{Compilación, instalación y ejecución del proyecto}
 

@@ -27,12 +27,11 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "boyd_post-mortem_2020"
 Warning--empty journal in abdullah_iris_2015
 Warning--empty year in abdullah_iris_2015
 Warning--empty journal in tfg_iris_2020
 Warning--empty year in tfg_iris_2020
-Warning--empty journal in boyd_post-mortem_2020
-Warning--empty year in boyd_post-mortem_2020
 Warning--empty journal in daugman_normalization_1993
 Warning--empty year in daugman_normalization_1993
 Warning--empty journal in liu_efficient_2021
@@ -42,45 +41,45 @@ Warning--empty journal in malgheet_iris_2021
 Warning--empty year in malgheet_iris_2021
 Warning--empty journal in szymkowski_iris-based_2021
 Warning--empty year in szymkowski_iris-based_2021
-You've used 16 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            599 strings with 7334 characters,
-and the built_in function-call counts, 5429 in all, are:
-= -- 494
-> -- 299
+            595 strings with 7010 characters,
+and the built_in function-call counts, 4737 in all, are:
+= -- 435
+> -- 236
 < -- 3
-+ -- 122
-- -- 102
-* -- 402
-:= -- 909
-add.period$ -- 49
-call.type$ -- 16
-change.case$ -- 98
++ -- 97
+- -- 78
+* -- 330
+:= -- 790
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 186
-empty$ -- 405
-format.name$ -- 102
-if$ -- 1102
+cite$ -- 28
+duplicate$ -- 175
+empty$ -- 373
+format.name$ -- 78
+if$ -- 975
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 14
-newline$ -- 83
-num.names$ -- 32
-pop$ -- 143
+int.to.str$ -- 15
+missing$ -- 13
+newline$ -- 78
+num.names$ -- 30
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 69
 quote$ -- 0
-skip$ -- 123
+skip$ -- 117
 stack$ -- 0
-substring$ -- 283
+substring$ -- 235
 swap$ -- 28
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
-warning$ -- 15
-while$ -- 48
-width$ -- 18
-write$ -- 157
-(There were 15 warnings)
+type$ -- 58
+warning$ -- 13
+while$ -- 44
+width$ -- 17
+write$ -- 148
+(There were 14 warnings)
