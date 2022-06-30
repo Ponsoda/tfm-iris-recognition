@@ -4,7 +4,9 @@ En este apartado se explican las conclusiones así como se establecen las posibl
 
 \section{Conclusiones}
 Como conclusion de este proyecto, la utilización de técnicas de machine learning, contando con ordenadores de pocos recursos, demuestra que el preprocesamiento
-es necesario para centrar los procesos en los elementos de las imágenes verdaderamente importantes. Por otro lado, una vez que la imagen está pre-procesada, la utilización 
+es necesario para centrar los procesos en los elementos de las imágenes verdaderamente importantes. 
+
+Por otro lado, una vez que la imagen está pre-procesada, la utilización 
 de redes neuronales con \textit{fine-tuning} para clasificar las imágenes se ha resuelto como un mayor accuracy que el modelo que aplica machine learning en la última fase
 pero este último ha demostrado ser más rápido, por lo tanto, la utilización de una u otra técnica variará según los recursos que se tengan y el contexto en el que se 
 vaya a utilizar (inmediatez con que se necesiten los resultados).
@@ -12,6 +14,10 @@ vaya a utilizar (inmediatez con que se necesiten los resultados).
 
 \section{Líneas de trabajo futuras}
 
-Las líneas de trabajo futuras se podrían determinan con la utilización de estas técnicas con nuevos datasets, consiguiendo un modelo lo suficientemente robusto
+Las líneas de trabajo futuras se podrían determinan con la utilización de estas técnicas con distintos \textit{datasets}, utilizando imágenes que no estén específicamente preparadas
+para este tipo de estudios. Además, sería interesante probar distintos modelos para el \textit{fine-tuning} de los distintos \textit{datasets} así como la utilización de redes neuronales
+para llevar a cabo el proceso de segmentación del iris.
+
+El objetivo de todo ellos sería el conseguir un modelo lo suficientemente robusto
 que permitiese su utilización en un programa de escritorio, con una primera fase de \textit{fine-tuning} con imágenes del ojo del usuario y una segunda fase donde este 
 se utilizase como método de seguridad para el acceso a ciertos documentos de los aparatos electrónicos.

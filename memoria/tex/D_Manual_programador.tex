@@ -190,6 +190,48 @@ iris_recognition_pipeline.transform(confi_dict)
 
 \subsection{\textit{Notebook} \textit{Accuracy.ipynb}} \label{anx:accuracy}
 
+El \textit{notebook} \textit{Accuracy.ipynb} permite el cálculo de la tasa de acierto de los modelos, utilizando los modelos creados en el apartado anterior,
+así como el \textit{dataset} reservado para realizar el testeo.
+
+\subsubsection{Código}
+
+El código de el \textit{notebook} está dispuesto de la siguiente forma:
+
+\begin{itemize}
+    \item \textit{model}, ruta del modelo a utilizar.
+    \item \textit{test\_path\_dir}, ruta del \textit{dataset} de testeo.
+    \item \textit{size} y \textit{\_parse\_image}, configuración para adaptar la imagen al formato requerido por el modelo.
+    \item \textit{realClass\_array}, \textit{array} con la clase real de las imágenes.
+    \item \textit{predicted\_array}, \textit{array} con la clase predecida de las imágenes.
+    \item \textit{m.update\_state}, obtiene las dos \textit{arrays} anteriores de entrada y determina la tasa de acierto del modelo.
+\end{itemize}
+
+\begin{lstlisting}[language=Python] 
+
+model = keras.models.load_model(r"root_folder/models/normalizado_aug_modelv1")
+test_path_dir = r'root_folder/CASIA-IrisV1_unif_aug_segv2_edg_norm'
+size = (224, 224)
+
+def _parse_image(filename):
+    img = tf.io.read_file(filename)
+    img = tf.image.decode_bmp(img, channels = 3)
+    img = tf.image.resize(img, size)
+    img = tf.expand_dims(img, 0)
+    return img
+
+paths_array = np.array([x.__str__() for x in pathlib.Path(test_path_dir).rglob('*.bmp')])
+realClass_array = np.array([x.split("/")[-1].split("_")[0] for x in paths_array]).astype(int)
+predicted_array = np.array([])
+for i in paths_array:
+    result = model.predict(_parse_image(i))
+    predicted_array = np.append(predicted_array, np.argmax(result) + 1)
+
+m = tf.keras.metrics.Accuracy()
+m.update_state(realClass_array, predicted_array)
+m.result().numpy()
+
+\end{lstlisting}
+
 \section{Compilación, instalación y ejecución del proyecto}
 
 Pasos para la ejecución del proyecto:

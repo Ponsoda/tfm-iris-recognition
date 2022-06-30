@@ -49,14 +49,14 @@
 \contentsline {chapter}{6. Trabajos relacionados}{33}{chapter*.38}%
 \contentsline {section}{\numberline {6.1}Sistema clasificador de iris}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Iris Recognition Development Techniques: A Comprehensive Review}{34}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Iris Recognition Using Wavelet Transform and Artificial Neural Networks}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Reliable pupil detection and iris segmentation algorithm based on sps}{35}{section.6.4}%
-\contentsline {section}{\numberline {6.5} An experimentalstudy of deep convolutional features for iris recognition}{35}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Otros trabajos relacionados}{35}{section.6.6}%
+\contentsline {section}{\numberline {6.3}Iris Recognition Using Wavelet Transform and Artificial Neural Networks}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Reliable pupil detection and iris segmentation algorithm based on SPS}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5} An experimentalstudy of deep convolutional features for iris recognition}{36}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}{36}{section.6.6}%
 \contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{37}{chapter*.39}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{37}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{37}{section.7.2}%
-\contentsline {part}{Apéndices}{38}{section.7.2}%
+\contentsline {part}{Apéndices}{39}{section.7.2}%
 \contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{41}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Introducción}{41}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Planificación temporal}{41}{section.Alph1.2}%
@@ -105,6 +105,7 @@
 \contentsline {subsubsection}{Secciones}{58}{section*.69}%
 \contentsline {subsubsection}{Ejecucción del \textit {pipeline}}{59}{section*.70}%
 \contentsline {subsection}{\textit {Notebook} \textit {Accuracy.ipynb}}{60}{section*.71}%
-\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{60}{section.Alph4.4}%
-\contentsline {section}{\numberline {D.5}Pruebas del sistema}{61}{section.Alph4.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{63}{appendix*.72}%
+\contentsline {subsubsection}{Código}{60}{section*.72}%
+\contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{61}{section.Alph4.4}%
+\contentsline {section}{\numberline {D.5}Pruebas del sistema}{62}{section.Alph4.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{63}{appendix*.73}%

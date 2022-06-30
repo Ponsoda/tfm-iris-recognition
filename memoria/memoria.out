@@ -21,9 +21,9 @@
 \BOOKMARK [1][-]{section.6.1}{Sistema clasificador de iris}{chapter*.38}% 21
 \BOOKMARK [1][-]{section.6.2}{Iris Recognition Development Techniques: A Comprehensive Review}{chapter*.38}% 22
 \BOOKMARK [1][-]{section.6.3}{Iris Recognition Using Wavelet Transform and Artificial Neural Networks}{chapter*.38}% 23
-\BOOKMARK [1][-]{section.6.4}{Reliable pupil detection and iris segmentation algorithm based on sps}{chapter*.38}% 24
+\BOOKMARK [1][-]{section.6.4}{Reliable pupil detection and iris segmentation algorithm based on SPS}{chapter*.38}% 24
 \BOOKMARK [1][-]{section.6.5}{ An experimentalstudy of deep convolutional features for iris recognition}{chapter*.38}% 25
-\BOOKMARK [1][-]{section.6.6}{Otros trabajos relacionados}{chapter*.38}% 26
+\BOOKMARK [1][-]{section.6.6}{Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}{chapter*.38}% 26
 \BOOKMARK [0][-]{chapter*.39}{7. Conclusiones y L\355neas de trabajo futuras}{section*.5}% 27
 \BOOKMARK [1][-]{section.7.1}{Conclusiones}{chapter*.39}% 28
 \BOOKMARK [1][-]{section.7.2}{L\355neas de trabajo futuras}{chapter*.39}% 29
@@ -48,4 +48,4 @@
 \BOOKMARK [1][-]{section.Alph4.3}{Manual del programador}{appendix.Alph4}% 48
 \BOOKMARK [1][-]{section.Alph4.4}{Compilaci\363n, instalaci\363n y ejecuci\363n del proyecto}{appendix.Alph4}% 49
 \BOOKMARK [1][-]{section.Alph4.5}{Pruebas del sistema}{appendix.Alph4}% 50
-\BOOKMARK [0][-]{appendix*.72}{Bibliograf\355a}{section.7.2}% 51
+\BOOKMARK [0][-]{appendix*.73}{Bibliograf\355a}{section.7.2}% 51

@@ -10,13 +10,6 @@ Dr~Hadeel~N Abdullah.
 Johnson~Bolívar Arrobo~Acaro.
 \newblock Sistema clasificador de iris.
 
-\bibitem{7498983}
-Kavitha~Amit Bakshi, B.G. Prasad, and Sneha K.
-\newblock An efficient iris code storing and searching technique for iris
-  recognition using non-homogeneous k-d tree.
-\newblock In {\em 2015 International Conference on Emerging Research in
-  Electronics, Computer Science and Technology (ICERECT)}, pages 34--38, 2015.
-
 \bibitem{boyd_deep_2020}
 Aidan Boyd, Adam Czajka, and Kevin Bowyer.
 \newblock Deep learning-based feature extraction in iris recognition: Use
@@ -58,11 +51,6 @@ Jasem~Rahman Malgheet, Noridayu~Bt Manshor, and Lilly~Suriani Affendey.
 \newblock Iris recognition development techniques: A comprehensive review.
 \newblock 2021:1--32.
 
-\bibitem{DeMarsico2016IrisRT}
-M.~De Marsico, Alfredo Petrosino, and Stefano Ricciardi.
-\newblock Iris recognition through machine learning techniques: A survey.
-\newblock {\em Pattern Recognit. Lett.}, 82:106--115, 2016.
-
 \bibitem{minaee_deepiris_2019}
 Shervin Minaee and Amirali Abdolrashidi.
 \newblock {DeepIris}: Iris recognition using a deep learning approach.
@@ -73,12 +61,6 @@ Shervin Minaee, Amirali Abdolrashidi, and Yao Wang.
 \newblock An experimental study of deep convolutional features for iris
   recognition.
 \newblock Number: {arXiv}:1702.01334.
-
-\bibitem{10.1016/j.cogsys.2018.09.029}
-N.~Susitha and Ravi Subban.
-\newblock Reliable pupil detection and iris segmentation algorithm based on
-  sps.
-\newblock {\em Cogn. Syst. Res.}, 57(C):78–84, oct 2019.
 
 \bibitem{szymkowski_iris-based_2021}
 Maciej Szymkowski, Piotr Jasiński, and Khalid Saeed.
