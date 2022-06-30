@@ -6,9 +6,9 @@ En esta sección se desarrollan los conceptos teóricos utilizados necesarios pa
 
 Como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el estudio que permite la identificación de un individuo a través de determinadas características asociadas a su persona, principalmente la cara, las huellas dactilares y el iris. 
 
-\subsection{Partes del ojo} \label{partesojo}
+\subsection{Partes del ojo} \label{partesojo} 
 
-El ojo se divide en tres capas principales, la capa externa llamada esclereótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
+El ojo se divide en tres capas principales, la capa externa llamada esclerótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que, en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
 Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}
 
 \imagen{img/15_partes_ojo.png}{Partes del ojo.}{Partes del ojo.}{img:partes-ojo}
@@ -34,9 +34,9 @@ Al basarse en la experiencia, el \textit{deep learning} no necesita que se le de
 al basarlos en conceptos más fáciles de entender \cite{Goodfellow-et-al-2016}.
 
 En el \textit{deep learning}, la red neuronal cuenta con una capa de entrada y una capa de salida, y entre ellas cuenta con una o varias capas ocultas. 
-Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de indiiduos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la imagen \ref{img:red-neuronal}.
+Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la imagen \ref{img:red-neuronal}.
 
-\imagen{img/16_red_neuronal.jpg}{Representación del funcionamiento de una red neuronal extraida del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal extraida del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
+\imagen{img/16_red_neuronal.jpg}{Representación del funcionamiento de una red neuronal extraída del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal extraída del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
 
 \subsection{\textit{Pipeline}}
 
@@ -96,7 +96,7 @@ Las transformaciones afines utilizadas en el proyecto han sido recogidas en la t
 La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para la  
 la reutilización de los datasets.
 
-\imagen{img/05_transformacion_identidad.png}{Ejemplo de transformacion de identidad.}{Ejemplo de transformacion de identidad.}{img:transformacion-identidad}
+\imagen{img/05_transformacion_identidad.png}{ejemplo de transformación de identidad.}{ejemplo de transformación de identidad.}{img:transformacion-identidad}
 
 \begin{gather}
 	Identidad:
@@ -116,7 +116,7 @@ la reutilización de los datasets.
 
 Se trata de un mapeo aplicado a la imagen a partir de un eje.
 
-\imagen{img/06_transformacion_reflejo.png}{Ejemplo de transformacion por reflexión.}{Ejemplo de transformacion por reflexión.}{img:transformacion-reflejo}
+\imagen{img/06_transformacion_reflejo.png}{ejemplo de transformación por reflexión.}{ejemplo de transformación por reflexión.}{img:transformacion-reflejo}
 
 \begin{gather}
 	Reflexión:
@@ -134,7 +134,7 @@ Se trata de un mapeo aplicado a la imagen a partir de un eje.
 
 Esta transformación modifica la escala de la imagen original, ya sea ampliándola o disminuyéndola.
 
-\imagen{img/07_transformacion_escala.png}{Ejemplo de transformacion por escalamiento.}{Ejemplo de transformacion por escalamiento.}{img:transformacion-escalamiento}
+\imagen{img/07_transformacion_escala.png}{ejemplo de transformación por escalamiento.}{ejemplo de transformación por escalamiento.}{img:transformacion-escalamiento}
 
 
 \begin{gather}
@@ -153,7 +153,7 @@ Esta transformación modifica la escala de la imagen original, ya sea ampliándo
 
 La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni su forma, ni su orientación.
 
-\imagen{img/08_transformacion_traslacion.png}{Ejemplo de transformacion por traslación.}{Ejemplo de transformacion por traslación.}{img:transformacion-traslacion}
+\imagen{img/08_transformacion_traslacion.png}{ejemplo de transformación por traslación.}{ejemplo de transformación por traslación.}{img:transformacion-traslacion}
 
 \begin{gather}
 	Traducción:
@@ -171,7 +171,7 @@ La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni
 
 Esta transformación aplica una transformación de $\theta$ grados del plano.
 
-\imagen{img/09_transformacion_rotacion.png}{Ejemplo de transformacion por rotación.}{Ejemplo de transformacion por rotación.}{img:transformacion-rotacion}
+\imagen{img/09_transformacion_rotacion.png}{ejemplo de transformación por rotación.}{ejemplo de transformación por rotación.}{img:transformacion-rotacion}
 
 
 \begin{gather}
@@ -191,14 +191,14 @@ Esta transformación aplica una transformación de $\theta$ grados del plano.
 
 El preprocesamiento es la manipulación de los datos para que estos tengan el formato requerido para llevar a cabo su procesamiento.
 
-En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{boyd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018}, dentro de la imagen ocular, es el iris el que  
+En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{dd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018}, dentro de la imagen ocular, es el iris el que  
 permite identificar a las personas de una forma eficiente.
 
 \subsubsection{Segmentación} \label{subsubsec:segmentacion}
 
 Detección de los bordes \textit{límbico} y \textit{pupilar}\footnote{Definidos en la sección \ref{partesojo}.} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}, tal como se observa en la figura \ref{img:segmentacion-ojo}.
 
-\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraido de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}{img:segmentacion-ojo}
+\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraído de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}{img:segmentacion-ojo}
 
 
 Una vez detectados los bordes, se procede a una binarización de la imagen \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.

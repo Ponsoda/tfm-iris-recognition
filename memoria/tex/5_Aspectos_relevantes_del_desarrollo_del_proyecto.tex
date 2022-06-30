@@ -20,7 +20,7 @@ Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
 En los proyectos de inteligencia artificial, el procedimiento habitual para entrenar las redes neuronales es el de dividir los datos que se van a utilizar para entrenar a la red en dos subconjuntos. El subconjunto de mayor tamaño se utiliza para entrenar el modelo \emph{per se}, 
 mientras que el subconjunto de menor tamaño se utiliza en la validación del mismo. 
 
-En el caso de este proyecto caso, el \textit{dataset} inicial ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para calcular la tasa de acierto, siendo estos los porcentajes más comunmente utilizados. 
+En el caso de este proyecto caso, el \textit{dataset} inicial ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para calcular la tasa de acierto, siendo estos los porcentajes más comúnmente utilizados. 
 
 \section{Pre-procesamiento de los datos}
 
@@ -32,22 +32,22 @@ Como se ha mencionado anteriormente, el código desarrollado en \cite{tfg_iris_2
 
 Para ello, en una primera fase se ha asimilado el código completo del trabajo, de forma que se comprendiese a fondo el mismo, para seguidamente, en una segunda fase, se ha pasado a limpiar el código y adecuarlo a las necesidades del proyecto. 
 
-Este código permite la creación del segundo dataset utilizado en el proyecto, que siguiendo con la idea de que el iris es la mejor parte del ojo para identificar a una persona, lo aisla para entrenar a la red neuronal y evitar el ruido que pueda causar la imagen completa. 
+Este código permite la creación del segundo dataset utilizado en el proyecto, que siguiendo con la idea de que el iris es la mejor parte del ojo para identificar a una persona, lo aísla para entrenar a la red neuronal y evitar el ruido que pueda causar la imagen completa. 
 
 
 \subsection{Aplicación del \textit{data augmentation}}
 
-El proceso de data augmentstion permite ampliar el número de imagenes y la robustez de los dos datasets anteriormente mencionados. Estos son las imágenes ocularrs completas y las imágenes con el iris aislado. 
+El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez del los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son las imágenes oculares completas y las imágenes con el iris aislado. 
 
-Por lo tanto, este proceso utiliza las tecnicas de ruido gaussiano y transformaciones afines, explicadas en la seccion \ref{transformacionesafines} para cear dos nuevos conjuntos de datos. 
+Por lo tanto, este proceso utiliza las técnicas de ruido gaussiano y transformaciones afines, explicadas en la sección \ref{transformacionesafines} para crear dos nuevos conjuntos de datos. 
 
-Para la aplicación del ruido gaussiano, se han aplicado aleatoriamente valores de la desviacion estándar de 2.5, 5 y 7.5.
+Para la aplicación del ruido gaussiano, se han aplicado aleatoriamente valores de la desviación estándar de 2.5, 5 y 7.5.
 
 Por su lado, las transformaciones afines se han aplicado de forma independiente al ruido gaussiano, es decir, una no es excluyente de la otra, ni las transformaciones afines son excluyentes entre ellas mismas. 
 
-Como resultado del data augmentation, los datasets, que originalmente contaban con 756 imágenes, cuentan ahora con 1158.
+Como resultado del \textit{data augmentation}, los \textit{datasets}, que originalmente contaban con 756 imágenes, cuentan tras este proceso con 1158 imágenes.
 
-\subsection{Creación de la \textit{pipeline}}
+\subsection{Creación de el \textit{pipeline}}
 
 Con el fin de mejorar el manejo de las diferentes secciones de código elaboradas, se ha optado por la utilización de una pipeline que permitiese controlar fácilmente la secuencia de ejecución del código así como la configuración del mismo. 
 
@@ -55,7 +55,7 @@ Para ello, se ha encapsulado cada uno de los procesos del proyecto en funciones 
 
 Este diccionario era el único elemento de entrada y salida en la pipeline y permitía que en cada proceso se pudiese modificar o ampliar el diccionario, haciendo posible el cambio del orden de los procesos en el pipeline. 
 
-Los criterios de la configuración de la pipeline se muestran en la siguiente tabla \ref{tabla:configuracion-pipeline}. La \textit{pipeline} se explica más detalladamente en el Anexo \ref{anx:pipeline}.
+Los criterios de la configuración de la pipeline se muestran en la siguiente tabla \ref{tabla:configuracion-pipeline}. El \textit{pipeline} se explica más detalladamente en el Anexo \ref{anx:pipeline}.
 
 \tablaSmallSinColores{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
 { \multicolumn{1}{l}{Nombre} & Configuración \\}{ 
@@ -87,24 +87,24 @@ Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a
 
 \subsubsection{Segunda fase}
 
-En la segunda fase, se ha creado una nueva capa a partir de el modelo base , que es capaz de clasificar a las imágenes en base a las imágenes oculares y sus etiquetas. 
+En la segunda fase, se ha creado una nueva capa a partir del modelo base, que es capaz de clasificar a las imágenes en base a las imágenes oculares y sus etiquetas. 
 
 \subsubsection{Tercera fase}
 
-En esta tercera fase, se pasa a entrena el modelo completo, descongelando el modelo base pero manteniendolo como \textit{inference model} para evitar que se vuelta a entrenar,  por lo que la extradición de características se hará sobre el nuevo \textit{dataset} pero las textit {hidden layers} utilizadas serán principalmente las de VGG16.
+En esta tercera fase, se pasa a entrena el modelo completo, descongelando el modelo base, pero manteniéndolo como \textit{inference model} para evitar que se vuelta a entrenar, por lo que la extradición de características se hará sobre el nuevo \textit{dataset} pero las \textit{hidden layers} utilizadas serán principalmente las de VGG16.
 
 \subsection{Clasificación de imágenes}
 
-Las imagenes se han clasificado utilizando los cuatro modelos creados en la sección anterior. Para ello, utilizando como dataset de entrada, el 30\% reservado en la primera fase.
+Las imágenes se han clasificado utilizando los cuatro modelos creados en la sección anterior. Para ello, utilizando como dataset de entrada, el 30\% reservado en la primera fase.
 
-En el caso las imágenes normalizadas, antes de ser clasificars, se les aplica la fase de pre-procesamiento \ref{preprocesamiento}, de forma que estas se ajusten a la entrada requerida por el modelo.
+En el caso las imágenes normalizadas, antes de ser clasificadas, se les aplica la fase de pre-procesamiento \ref{preprocesamiento}, de forma que estas se ajusten a la entrada requerida por el modelo.
 
 \subsection{Tasa de acierto} 
 
-La tasa de acierto depresenta el número de veces que el modelo a determinado correctamente la clase de la imagen. 
+La tasa de acierto representa el número de veces que el modelo a determinado correctamente la clase de la imagen. 
 
 En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tasa de acierto que han tenido los modelos, a la hora de relacionar las imágenes
- con los indivíduos. El cálculo de este valor se explica detalladamente en el Anexo \ref{anx:accuracy}.
+ con los individuos. El cálculo de este valor se explica detalladamente en el Anexo \ref{anx:accuracy}.
 
 \begin{table}[h!]
 \begin{tabular}{ |p{2cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}|  }
@@ -120,17 +120,17 @@ En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tas
 \end{table}
 
 
-Estos resultados muestran, en primer lugar, que el data augmentation no supone sino un decremento del \textit{accuracy}, tanto en los casos donde se normaliza el iris
+Estos resultados muestran, en primer lugar, que el \textit{data augmentation} no supone sino un decremento del \textit{accuracy}, tanto en los casos donde se normaliza el iris
 como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez, al calcularse este parámetro utilizando datos sin ninguna modificación, que 
 tienen un gran parecido a las imágenes originales, el \textit{data augmentation} disminuya ligeramente los resultados. No obstante, la mejora de la robustez previsiblemente
 permitirá al sistema funcionar de forma más eficiente en un contexto no académico.
 
 Por otro lado, en cuanto a los mejores resultados utilizando imágenes no normalizadas, se debe de tener en cuenta que, por la forma en la que funcionan las redes neuronales,
-en cuanto a la reducción de imágenes para quedarse con sus características más representativas, tiene sentido que al proporcionar más elementos representativos del indivíduo,
+en cuanto a la reducción de imágenes para quedarse con sus características más representativas, tiene sentido que al proporcionar más elementos representativos del individuo,
 y no solo el iris, la propia red neuronal haya sido capaz de encontrar características en la imagen que son más eficientes para su clasificación, y que, de alguna forma, son
 ajenos a la zona propiamente del iris.
 
-Además, cabe de tener en cuenta que, tal como se explica en \nameref{casia}, el \textit{dataset} utilizado ha sido sometido a un preprocesamiento previo, en el que se elimió la pupila 
-para evitar que el brillo emitido por las cámaras para tomer las propias imágenes pudiera afectar a la misma. Por lo tanto, realmente la normalización practicada solo ha afectado a la 
+Además, cabe de tener en cuenta que, tal como se explica en \nameref{casia}, el \textit{dataset} utilizado ha sido sometido a un preprocesamiento previo, en el que se eliminó la pupila 
+para evitar que el brillo emitido por las cámaras para tomar las propias imágenes pudiera afectar a la misma. Por lo tanto, realmente la normalización practicada solo ha afectado a la 
 parte exterior al iris, y esto puede haber reducido su efecto.
 

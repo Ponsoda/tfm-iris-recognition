@@ -4,7 +4,7 @@ El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \ur
 
 Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos fundamentales en la seguridad de los dispositivos electrónicos de la población a nivel mundial. 
 
-Esta dependencia de la biometría para acceder a los dispositivos, supone indirectamente una dependencia en ella para la protección de la información privada de la población, ya que hoy en día, los dispositivos electrónicos cuentan con gran cantidad de información sensible de sus propietarios.
+Esta dependencia de la biometría para acceder a los dispositivos supone indirectamente una dependencia en ella para la protección de la información privada de la población, ya que hoy en día, los dispositivos electrónicos cuentan con gran cantidad de información sensible de sus propietarios.
 
 Dentro de la biometría, el iris se utiliza como elemento de reconocimiento biométrico de gran eficacia, tanto por su inmutabilidad a lo largo del tiempo como por resultar un valor único y 
 personal, que supone que dos personas no puedan ser identificadas con un mismo iris \cite{malgheet_iris_2021}. Tanto es así, que el iris es incluso utilizado en los procesos 
@@ -15,22 +15,22 @@ Para llevar a cabo dicha adaptación, se han utilizado dos enfoques distintos.
 
 En ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
 una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}} para poder clasificar distintos objetos en base a una imagen. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
-permite adaptar el modelo para que, al llevarse a cabo la clasificación clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imágen \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
+permite adaptar el modelo para que, al llevarse a cabo la clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imagen\ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
  con un \textit{dataset} de imágenes oculares etiquetadas con la referencia a la persona a la que pertenece dicho ojo.
 
-En un primer enfoque, para adaptar la red neuronal se han utilizado las imagenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}}, siguiendo el proceso que se muestra en la imagen \ref{img:enfoque-sin-normalizacion}
+En un primer enfoque, para adaptar la red neuronal se han utilizado las imágenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}}, siguiendo el proceso que se muestra en la imagen \ref{img:enfoque-sin-normalizacion}
 
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
 
 
-En un segundo enfoque, se ha aplicado el proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para posteriormente seguir el mismo proceso de adaptación de la red neuronal, como se muestra en la imágen \ref{img:enfoque-normalizacion}.
+En un segundo enfoque, se ha aplicado el proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para posteriormente seguir el mismo proceso de adaptación de la red neuronal, como se muestra en la imagen\ref{img:enfoque-normalizacion}.
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
 
 Así mismo, para ambos enfoques se han creado dos modelos más utilizado técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes oculares por individuo y entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
 
-El resultado de esta adaptación de la red neuronal, es la creación de un modelo capaz de identificar al individuo que hay detrás de una imagen ocular no etiquetada. 
+El resultado de esta adaptación de la red neuronal es la creación de un modelo capaz de identificar al individuo que hay detrás de una imagen ocular no etiquetada. 
 
 Para determinar que enfoque ha sido capaz de identificar de forma más eficiente a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
 

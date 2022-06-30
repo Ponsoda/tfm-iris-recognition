@@ -16,6 +16,14 @@ Aidan Boyd, Adam Czajka, and Kevin Bowyer.
   existing models, fine-tune or train from scratch?
 \newblock Number: {arXiv}:2002.08916.
 
+\bibitem{dd_post-mortem_2020}
+Aidan Boyd, Shivangi Yadav, Thomas Swearingen, Andrey Kuehlkamp, Mateusz
+  Trokielewicz, Eric Benjamin, Piotr Maciejewicz, Dennis Chute, Arun Ross,
+  Patrick Flynn, Kevin Bowyer, and Adam Czajka.
+\newblock Post-mortem iris recognition—a survey and assessment of the state
+  of the art.
+\newblock 8:136570--136593.
+
 \bibitem{4767851}
 John Canny.
 \newblock A computational approach to edge detection.

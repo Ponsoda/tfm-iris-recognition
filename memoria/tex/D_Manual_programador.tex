@@ -28,10 +28,10 @@ El {\textit{notebook} \texttt{9-pipelines\_v7.ipynb} contiene el código princip
 
 \subsubsection{Configuración}
 
-La configuración de la \textit{pipeline}se muestra a continuación. En ella, se establece primero una configuración general, es decir, que es aplicable a
+La configuración del \textit{pipeline} se muestra a continuación. En ella, se establece primero una configuración general, es decir, que es aplicable a
 las distintas secciones. En ella se han configurado las rutas en las que se guardan los distintos \textit{datasets}. Si todo el código es ejecutado, solo el
-\textit{'root-dir'} se mantendrá, y el resto se irán sobreescribiendo cuando se cree el propio \textit{dataset}. No obstante, la capacidad de establecer todas
-las rutas en la configuración es lo que nos permite cambiar el orden de las secciones en la \textit{pipeline}. 
+\textit{'root-dir'} se mantendrá, y el resto se irán sobrescribiendo cuando se cree el propio \textit{dataset}. No obstante, la capacidad de establecer todas
+las rutas en la configuración es lo que nos permite cambiar el orden de las secciones en el \textit{pipeline}. 
 
 \begin{itemize}
     \item \textit{tratardDataset}
@@ -52,7 +52,7 @@ las rutas en la configuración es lo que nos permite cambiar el orden de las sec
     \end{itemize}
     \item \textit{CNN\_classification}
     \begin{itemize}
-        \item \textit{dataset\_dir}, directorio a utilizar ['raw',para la imagen ocular completa o 'normalizado', para la imagen del iris aislada].
+        \item \textit{dataset\_dir}, directorio a utilizar ['raw', para la imagen ocular completa o 'normalizado', para la imagen del iris aislada].
         \item \textit{verImagenV1}, ver la imagen producida [boolean].
         \item \textit{CNN\_weights}, establecer de donde utilizar los pesos para la red neuronal [imagenet, None, o se le pasa un directorio con los pesos].
         \item \textit{train\_size}, tamaño del \textit{dataset} de entrenamiento [0-1].
@@ -145,9 +145,9 @@ Las secciones con las que cuenta el \textit{pipeline} son las siguientes:
     \end{itemize}
     \item \textit{normalization}
     \begin{itemize}
-        \item Establece los circulos correspondientes a los bordes del objetos.
+        \item Establece los círculos correspondientes a los bordes del ojo.
         \item Binarización de las imágenes.
-        \item Proyección de la seccción del iris.
+        \item Proyección de la sección del iris.
     \end{itemize}
     \item \textit{extraction} (parte del código adaptado, no utilizado en este proyecto).
     \item \textit{clasification} (parte del código adaptado, no utilizado en este proyecto).
@@ -165,7 +165,7 @@ Las secciones con las que cuenta el \textit{pipeline} son las siguientes:
 
 Cada una de las secciones anteriores ha sido encapsulada en una única función, con la configuración del \textit{pipeline} como único parámetro de entrada.
 Para ejecutar el \textit{pipeline} se establece cada función dentro de un \textit{FunctionTransformer} y se coloca en el orden requerido dentro de la función \textit{Pipeline}.
-Finalmente, se ejecuta la \textit{pipeline}, pasandole la configuración como parámetro.
+Finalmente, se ejecuta el \textit{pipeline}, pasándole la configuración como parámetro.
 
 
 \begin{lstlisting}[language=Python] 
@@ -195,14 +195,14 @@ así como el \textit{dataset} reservado para realizar el testeo.
 
 \subsubsection{Código}
 
-El código de el \textit{notebook} está dispuesto de la siguiente forma:
+El código del \textit{notebook} está dispuesto de la siguiente forma:
 
 \begin{itemize}
     \item \textit{model}, ruta del modelo a utilizar.
     \item \textit{test\_path\_dir}, ruta del \textit{dataset} de testeo.
     \item \textit{size} y \textit{\_parse\_image}, configuración para adaptar la imagen al formato requerido por el modelo.
     \item \textit{realClass\_array}, \textit{array} con la clase real de las imágenes.
-    \item \textit{predicted\_array}, \textit{array} con la clase predecida de las imágenes.
+    \item \textit{predicted\_array}, \textit{array} con la clase predicha de las imágenes.
     \item \textit{m.update\_state}, obtiene las dos \textit{arrays} anteriores de entrada y determina la tasa de acierto del modelo.
 \end{itemize}
 

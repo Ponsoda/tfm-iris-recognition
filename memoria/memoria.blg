@@ -32,6 +32,8 @@ Warning--empty journal in abdullah_iris_2015
 Warning--empty year in abdullah_iris_2015
 Warning--empty journal in tfg_iris_2020
 Warning--empty year in tfg_iris_2020
+Warning--empty journal in dd_post-mortem_2020
+Warning--empty year in dd_post-mortem_2020
 Warning--empty journal in daugman_normalization_1993
 Warning--empty year in daugman_normalization_1993
 Warning--empty journal in liu_efficient_2021
@@ -41,45 +43,45 @@ Warning--empty journal in malgheet_iris_2021
 Warning--empty year in malgheet_iris_2021
 Warning--empty journal in szymkowski_iris-based_2021
 Warning--empty year in szymkowski_iris-based_2021
-You've used 12 entries,
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            572 strings with 6350 characters,
-and the built_in function-call counts, 3630 in all, are:
-= -- 329
-> -- 187
+            577 strings with 6693 characters,
+and the built_in function-call counts, 4322 in all, are:
+= -- 388
+> -- 250
 < -- 2
-+ -- 77
-- -- 62
-* -- 250
-:= -- 613
-add.period$ -- 37
-call.type$ -- 12
-change.case$ -- 66
++ -- 102
+- -- 86
+* -- 322
+:= -- 732
+add.period$ -- 40
+call.type$ -- 13
+change.case$ -- 81
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 132
-empty$ -- 282
-format.name$ -- 62
-if$ -- 736
+cite$ -- 28
+duplicate$ -- 143
+empty$ -- 314
+format.name$ -- 86
+if$ -- 863
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 10
-newline$ -- 63
-num.names$ -- 24
-pop$ -- 110
+int.to.str$ -- 13
+missing$ -- 11
+newline$ -- 68
+num.names$ -- 26
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 69
 quote$ -- 0
-skip$ -- 85
+skip$ -- 91
 stack$ -- 0
-substring$ -- 157
+substring$ -- 205
 swap$ -- 17
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
-warning$ -- 13
-while$ -- 34
-width$ -- 14
-write$ -- 115
-(There were 14 warnings)
+type$ -- 50
+warning$ -- 15
+while$ -- 38
+width$ -- 15
+write$ -- 124
+(There were 16 warnings)

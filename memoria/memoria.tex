@@ -410,7 +410,7 @@
 \noindent Exponen:
 
 \noindent Que el alumno  \nombre, con DNI 21698927Z, ha realizado el Trabajo final de Máster en Inteligencia de Negocio y Big Data en Entornos Seguros 
-          titulado "Clasificación de indivíduos a partir de imágenes oculares y redes neuronales pre-entrenadas". 
+          titulado 'Clasificación de individuos a partir de imágenes oculares y redes neuronales pre-entrenadas'. 
 
 \noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección de los que suscriben, en virtud de lo cual se autoriza su presentación y defensa.
 
@@ -454,17 +454,17 @@ D. Pedro Latorre Carmona
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un recurso ampliamente empleado en la actualidad. El iris uno de los elementos biométricos que mayores dificultades presentan para su suplantación, y es por ello que su utilización en este campo ha atraído la atención de la comunidad científica estas últimas dos décadas. 
+La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un recurso ampliamente empleado en la actualidad. El iris uno de los elementos biométricos que mayores dificultades presentan para su suplantación, y es por ello por lo que su utilización en este campo ha atraído la atención de la comunidad científica estas últimas dos décadas. 
 
 En este proyecto se han adaptado redes neuronales, inicialmente entrenadas para clasificar diversos objetos, para que sean capaces de identificar a un individuo utilizando su imagen ocular. 
 
-Para ello, se han utilizado dos enfoques. En un primer enfoque, las redes neuronales se ha adaptado utilizando imágenes oculares completas, mientras que para el segundo enfoque, se ha hecho lo propio, pero aislado la zona del iris, que es apriori la zona de la imagen ocular que mejor permite la identificación de individuos.
+Para ello, se han utilizado dos enfoques. En un primer enfoque, las redes neuronales se han adaptado utilizando imágenes oculares completas, mientras que, para el segundo enfoque, se ha hecho lo propio, pero aislado la zona del iris, que es a priori la zona de la imagen ocular que mejor permite la identificación de individuos.
 
-Además, se han utilizado técnicas de ampliación del \textit{dataset} original, a fin de contar con un mayor número de muestras de cada indivíduo y también, mejorar la robustez de las redes neuronales adaptadas.
+Además, se han utilizado técnicas de ampliación del \textit{dataset} original, a fin de contar con un mayor número de muestras de cada individuo y también, mejorar la robustez de las redes neuronales adaptadas.
 
 Los resultados muestran que las mejores tasas de clasificación se han dado en el enfoque donde se utilizaba la imagen ocular completa, sin que las técnicas de ampliación del \textit{dataset} hayan permitido mejorar la tasa de clasificación. 
 
-Como futuras líneas de trabajo, se establecen la utilización de redes neuronales pre-entrenadas distintas así como testear el modelo con imágenes realizadas fuera del entorno académico.
+Como futuras líneas de trabajo, se establecen la utilización de redes neuronales pre-entrenadas distintas, así como testear el modelo con imágenes realizadas fuera del entorno académico.
 
 
 \end{abstract}
@@ -479,17 +479,20 @@ biometría, iris, redes neuronales
 % Abstract en inglés 
 \renewcommand*\abstractname{Abstract}
 \begin{abstract}
-  The use of biometrics to improve the security of electronic devices is a widely used resource nowadays. The iris is one of the biometric elements available to the human being.
-  This work analyzes the recognition capacity of individuals of adapted neural networks. To do this, using fine-tuning, four variations of the dataset have been adapted to the VGG16 network.
-  Two of these variations correspond, on the one hand, to the dataset without preprocessing, and on the other, to images where the iris has been segmented and normalized.
-  The two remaining variations have been determined by the use of data augmentation on the two previously described.
 
-  The results show that the neural network has worked more efficiently in the images where the iris area had not been isolated.
-  Likewise, the network has had a better classification capacity when the data augmentation has not been applied, something that can
-  This may be because the images have not been tested in real scenarios. 
+  The use of biometrics to improve security, mainly in relation to access to electronic devices, is a widely used resource today. The iris is one of the biometric elements that present the greatest difficulties for its impersonation, and that is why its use in this field has attracted the attention of the scientific community in the last two decades.
 
-  Based on these results, it is possible to extract the capacity of the neural networks themselves to find features of the human eye beyond the iris, and thus improve their classification capacity.
-\end{abstract}
+  In this project, neural networks, initially trained to classify various objects, have been adapted to be able to identify an individual using their eye image.
+
+  To do this, two approaches have been used. In the first approach, the neural networks have been adapted using complete eye images, while, for the second approach, the same has been done, but the iris area has been isolated, which is a priori the area of the eye image that best allows the identification of individuals.
+
+  In addition, extension techniques of the original dataset have been used, in order to have a greater number of samples of each individual and also to improve the robustness of the adapted neural networks.
+
+  The results show that the best classification rates have occurred in the approach where the complete ocular image was used, without improvement in the classification rate by the datasets that had used data augmentation techniques.
+
+  In future lines of work, the use of different pre-trained neural networks is established, as well as testing the model with images taken outside the academic environment.
+
+  \end{abstract}
 
 \renewcommand*\abstractname{Keywords}
 \begin{abstract}
