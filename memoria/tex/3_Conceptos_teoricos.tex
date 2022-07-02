@@ -9,7 +9,7 @@ Como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el est
 \subsection{Partes del ojo} \label{partesojo} 
 
 El ojo se divide en tres capas principales, la capa externa llamada esclerótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que, en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
-Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}
+Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}.
 
 \imagen{img/15_partes_ojo.png}{Partes del ojo.}{Partes del ojo.}{img:partes-ojo}
 
@@ -17,10 +17,8 @@ Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}
 
 El \textit{dataset} CASIA-IrisV1 ha sido el utilizado en el proyecto para adaptar las redes neuronales. Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
 Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{Center for Biometrics and Security Research} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de 320x280. 
-La pupila fue automáticamente remplazada por la propia organización para evitar que en ella se reflejasen las luces de las fotografías, tal como podemos observar en la figura \ref{img:ojo-reflejo} 
-\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}}.
+La pupila fue automáticamente remplazada por la propia organización para evitar que en ella se reflejasen las luces de las fotografías\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}.}.
 
-\imagen{img/02_ojo_raw_vs_ojo_reflejo.png}{Eliminación del reflejo de la pupila \cite{tfg_iris_2020}.}{Eliminación del reflejo de la pupila.}{img:ojo-reflejo}
 \section{Inteligencia Artificial}
 
 La Real Academia Española define la inteligencia artificial como una disciplina cuyo objetivo principal es la creación de programas capaces de realizar funciones similares a los de la mente humana\footnote{En base a la definición de \url{https://dle.rae.es/inteligencia}.}. 
@@ -36,7 +34,7 @@ al basarlos en conceptos más fáciles de entender \cite{Goodfellow-et-al-2016}.
 En el \textit{deep learning}, la red neuronal cuenta con una capa de entrada y una capa de salida, y entre ellas cuenta con una o varias capas ocultas. 
 Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la imagen \ref{img:red-neuronal}.
 
-\imagen{img/16_red_neuronal.jpg}{Representación del funcionamiento de una red neuronal extraída del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal extraída del vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
+\imagen{img/16_red_neuronal.png}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
 
 \subsection{\textit{Pipeline}}
 
@@ -198,7 +196,7 @@ permite identificar a las personas de una forma eficiente.
 
 Detección de los bordes \textit{límbico} y \textit{pupilar}\footnote{Definidos en la sección \ref{partesojo}.} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}, tal como se observa en la figura \ref{img:segmentacion-ojo}.
 
-\imagen{img/10_segmentacion_ojo.png}{Ejemplo de segmentación del ojo extraído de \cite{tfg_iris_2020}.}{Ejemplo de segmentación del ojo.}{img:segmentacion-ojo}
+\imagen{img/10_segmentacion_ojo.png}{Bordes límbico y pupilar.}{Bordes límbico y pupilar.}{img:segmentacion-ojo}
 
 
 Una vez detectados los bordes, se procede a una binarización de la imagen \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.

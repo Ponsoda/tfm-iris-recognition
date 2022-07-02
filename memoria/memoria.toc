@@ -11,10 +11,10 @@
 \contentsline {section}{\numberline {3.1}Biometría}{11}{section.3.1}%
 \contentsline {subsection}{Partes del ojo}{11}{section*.9}%
 \contentsline {subsection}{\textit {Dataset} CASIA-IrisV1 }{12}{section*.10}%
-\contentsline {section}{\numberline {3.2}Inteligencia Artificial}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Inteligencia Artificial}{12}{section.3.2}%
 \contentsline {subsection}{\textit {Deep Learning}}{13}{section*.11}%
 \contentsline {subsection}{\textit {Pipeline}}{14}{section*.12}%
-\contentsline {subsection}{\textit {Data augmentation}}{14}{section*.13}%
+\contentsline {subsection}{\textit {Data augmentation}}{15}{section*.13}%
 \contentsline {subsubsection}{Ruido gaussiano}{15}{section*.14}%
 \contentsline {subsubsection}{Transformaciones afines}{16}{section*.15}%
 \contentsline {paragraph}{Identidad}{16}{section*.16}%
@@ -24,7 +24,7 @@
 \contentsline {paragraph}{Rotación}{19}{section*.20}%
 \contentsline {subsection}{Pre-procesamiento}{19}{section*.21}%
 \contentsline {subsubsection}{Segmentación}{20}{section*.22}%
-\contentsline {subsubsection}{Normalización}{20}{section*.23}%
+\contentsline {subsubsection}{Normalización}{21}{section*.23}%
 \contentsline {subsection}{\textit {Fine-tuning}}{21}{section*.24}%
 \contentsline {chapter}{4. Técnicas y herramientas}{23}{chapter*.25}%
 \contentsline {section}{\numberline {4.1}Hardware}{23}{section.4.1}%
