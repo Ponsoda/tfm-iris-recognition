@@ -4,7 +4,7 @@
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vi}}{section*.2}%
 \contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vii}}{section*.3}%
 \contentsline {chapter}{1. Introducción}{3}{chapter*.6}%
-\contentsline {section}{\numberline {1.1}Outline}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Outline}{7}{section.1.1}%
 \contentsline {part}{Memoria}{3}{section*.5}%
 \contentsline {chapter}{2. Objetivos del proyecto}{9}{chapter*.7}%
 \contentsline {chapter}{3. Conceptos teóricos}{11}{chapter*.8}%
@@ -23,8 +23,8 @@
 \contentsline {paragraph}{Traslación}{18}{section*.19}%
 \contentsline {paragraph}{Rotación}{19}{section*.20}%
 \contentsline {subsection}{Pre-procesamiento}{19}{section*.21}%
-\contentsline {subsubsection}{Segmentación}{20}{section*.22}%
-\contentsline {subsubsection}{Normalización}{21}{section*.23}%
+\contentsline {subsubsection}{Segmentación}{19}{section*.22}%
+\contentsline {subsubsection}{Normalización}{20}{section*.23}%
 \contentsline {subsection}{\textit {Fine-tuning}}{21}{section*.24}%
 \contentsline {chapter}{4. Técnicas y herramientas}{23}{chapter*.25}%
 \contentsline {section}{\numberline {4.1}Hardware}{23}{section.4.1}%

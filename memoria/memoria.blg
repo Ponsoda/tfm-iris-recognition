@@ -27,7 +27,6 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "boyd_post-mortem_2020"
 Warning--empty journal in abdullah_iris_2015
 Warning--empty year in abdullah_iris_2015
 Warning--empty journal in tfg_iris_2020
@@ -45,7 +44,7 @@ Warning--empty journal in szymkowski_iris-based_2021
 Warning--empty year in szymkowski_iris-based_2021
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            577 strings with 6693 characters,
+            576 strings with 6672 characters,
 and the built_in function-call counts, 4322 in all, are:
 = -- 388
 > -- 250
@@ -84,4 +83,4 @@ warning$ -- 15
 while$ -- 38
 width$ -- 15
 write$ -- 124
-(There were 16 warnings)
+(There were 15 warnings)

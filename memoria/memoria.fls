@@ -812,6 +812,13 @@ INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT .\img\10_segmentacion_ojo.png
+INPUT .\img\10_segmentacion_ojo.png
+INPUT img\10_segmentacion_ojo.png
+INPUT .\img\10_segmentacion_ojo.png
+INPUT .\img\10_segmentacion_ojo.png
+INPUT .\img\10_segmentacion_ojo.png
+INPUT .\img\10_segmentacion_ojo.png
 INPUT C:\Users\na-ch\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT .\img\14_enfoque_sin_normalizacion.png
 INPUT .\img\14_enfoque_sin_normalizacion.png
@@ -912,13 +919,6 @@ INPUT .\img\09_transformacion_rotacion.png
 INPUT .\img\09_transformacion_rotacion.png
 INPUT .\img\09_transformacion_rotacion.png
 INPUT .\img\09_transformacion_rotacion.png
-INPUT .\img\10_segmentacion_ojo.png
-INPUT .\img\10_segmentacion_ojo.png
-INPUT img\10_segmentacion_ojo.png
-INPUT .\img\10_segmentacion_ojo.png
-INPUT .\img\10_segmentacion_ojo.png
-INPUT .\img\10_segmentacion_ojo.png
-INPUT .\img\10_segmentacion_ojo.png
 INPUT .\img\11_segmentacion_binario_ojo.png
 INPUT .\img\11_segmentacion_binario_ojo.png
 INPUT img\11_segmentacion_binario_ojo.png
