@@ -24,12 +24,6 @@ Aidan Boyd, Shivangi Yadav, Thomas Swearingen, Andrey Kuehlkamp, Mateusz
   of the art.
 \newblock 8:136570--136593.
 
-\bibitem{4767851}
-John Canny.
-\newblock A computational approach to edge detection.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  PAMI-8(6):679--698, Nov 1986.
-
 \bibitem{daugman_normalization_1993}
 John~G. Daugman.
 \newblock High confidence visual recognition of persons by a test of

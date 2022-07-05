@@ -23,7 +23,7 @@
 \contentsline {paragraph}{Traslación}{18}{section*.19}%
 \contentsline {paragraph}{Rotación}{19}{section*.20}%
 \contentsline {subsection}{Pre-procesamiento}{19}{section*.21}%
-\contentsline {subsubsection}{Segmentación}{19}{section*.22}%
+\contentsline {subsubsection}{Segmentación}{20}{section*.22}%
 \contentsline {subsubsection}{Normalización}{20}{section*.23}%
 \contentsline {subsection}{\textit {Fine-tuning}}{21}{section*.24}%
 \contentsline {chapter}{4. Técnicas y herramientas}{23}{chapter*.25}%

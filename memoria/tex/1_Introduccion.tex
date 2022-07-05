@@ -35,18 +35,18 @@ En un primer enfoque, se han utilizado las imágenes oculares completas del \tex
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
 
 
-En un segundo enfoque, se ha aplicado el proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para posteriormente seguir el mismo proceso de adaptación de la red neuronal, como se muestra en la imagen\ref{img:enfoque-normalizacion}.
+En un segundo enfoque, se ha aplicado un proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para aislar el iris en la imagen. Posteriormente, se ha seguido también un proceso de adaptación de la red neuronal. Este enfoque se muestra en la imagen\ref{img:enfoque-normalizacion}.
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
 
-Así mismo, para ambos enfoques se han creado dos modelos más utilizado técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para aumentar el número de imágenes oculares por individuo y entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
+Para ambos enfoques se han creado dos modelos adicionales, esta vez aplicando técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para, por un lado, incrementar el número de imágenes oculares por individuo y, por otro, entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
 
-El resultado de esta adaptación de la red neuronal es la creación de un modelo capaz de identificar al individuo que hay detrás de una imagen ocular no etiquetada. 
+El resultado de esta adaptación de la red neuronal es la creación de cuatro modelos capaces de identificar a individuos a partir de una imagen ocular. 
 
 Para determinar que enfoque ha sido capaz de identificar de forma más eficiente a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
 
-El objetivo principal de este proyecto ha sido el de analizar cual de estos enfoques es más óptimo para el reconocimiento de individuos a través de sus imágenes oculares, así como analizar las tasas de acierto de los modelos resultantes.
+El objetivo principal de este proyecto ha sido el de analizar cual de estos enfoques es más óptimo para el reconocimiento de individuos a través de sus imágenes oculares, así como comprobar el efecto del \textit{data augmentation } y el aislamiento del iris en las tasas de acierto.
 
 \section{Outline}
 

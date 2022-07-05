@@ -9,6 +9,7 @@ Como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el est
 \subsection{Partes del ojo} \label{partesojo} 
 
 El ojo se divide en tres capas principales, la capa externa llamada esclerótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que, en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
+Dichos bordes son cruciales a la hora de segmentar el iris, proceso que se describe en la sección \nameref{subsubsec:segmentacion}.
 Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}.
 
 \imagen{img/15_partes_ojo.png}{Partes del ojo.}{Partes del ojo.}{img:partes-ojo}
@@ -16,13 +17,13 @@ Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}.
 \subsection{\textit{Dataset} CASIA-IrisV1 }	\label{casia}
 
 El \textit{dataset} CASIA-IrisV1 ha sido el utilizado en el proyecto para adaptar las redes neuronales. Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
-Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{Center for Biometrics and Security Research} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de 320x280. 
+Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{\textit{Center for Biometrics and Security Research}} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de 320x280. 
 La pupila fue automáticamente remplazada por la propia organización para evitar que en ella se reflejasen las luces de las fotografías\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}.}.
 
 \section{Inteligencia Artificial}
 
 La Real Academia Española define la inteligencia artificial como una disciplina cuyo objetivo principal es la creación de programas capaces de realizar funciones similares a los de la mente humana\footnote{En base a la definición de \url{https://dle.rae.es/inteligencia}.}. 
-En este proyecto ha sido utilizada principalmente para la segmentación del iris, definida más adelante, y la adaptación de la red neuronal al \textit{dataset}.
+En este proyecto ha sido utilizada principalmente para la segmentación del iris, definida en la sección \nameref{subsubsec:segmentacion}, y la adaptación de la red neuronal al \textit{dataset}.
 
 \subsection{\textit{Deep Learning}}
 
@@ -43,21 +44,21 @@ Los \textit{pipelines} son secuencias de procesos encadenados, donde el \textit{
 Tomando como ejemplo la imagen \ref{img:enfoque-normalizacion}, un primer proceso sería la segmentación, que tomaría como entrada el \textit{dataset} de CASIA y tendría como salida 
 las imágenes segmentadas. A su vez, estas imágenes segmentadas, serían la entrada del proceso de normalización, y así sucesivamente.
 
-La utilización de \textit{pipelines} en el proyecto ha permitido un mayor control de los distintos procesos, al poder establecer una configuración general en la cadena de procesos, y ha permitido modificar de forma más sencilla el orden de los procesos, permitiendo así experimentar con nuevas combinaciones.
+La utilización de \textit{pipelines} en el proyecto ha permitido un mayor control de los distintos procesos, al poder establecer una configuración general en la cadena de procesos, y ha permitido modificar de forma más sencilla el orden de estos procesos, permitiendo así experimentar con nuevas combinaciones de los procesos.
 
 \subsection{\textit{Data augmentation}}\label{dataaugmentation}
 
-La utilización de técnicas de \textit{data augmentation} es un proceso común en el análisis de imágenes, y en aquellos proyectos donde se utilicen procesos estadísticos. 
+La utilización de técnicas de \textit{data augmentation} es un proceso común en el análisis de imágenes, y en general, en aquellos proyectos donde se utilicen procesos estadísticos. 
 
-Consiste en aumentar el tamaño del \textit{dataset} con la creación artificial de nuevas imágenes, que son producidas a partir de imágenes del \textit{dataset} original.
+El \textit{data augmentation} consiste en incrementar el tamaño del \textit{dataset} con la creación artificial de nuevas imágenes producidas a partir de imágenes del \textit{dataset} original.
 
-Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido gaussiano o transformaciones geométricas de tipo afín, obteniendo como resultado una imagen que deriva de la original, pero que cuenta con ciertas diferencias, que serán más o menos pronunciada dependiendo de las técnicas 
+Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido gaussiano o transformaciones geométricas de tipo afín, obteniendo como resultado una imagen que deriva de la original, pero que cuenta con ciertas diferencias, más o menos pronunciada dependiendo de las técnicas 
 de \textit{data augmentation} que se le apliquen, así como de los parámetros utilizados para realizar las modificaciones\footnote{Por ejemplo, si se rota una imagen 2 grados, la diferencia con la original será mucho menor que si se rota 180 grados.}.	
 
-En el caso de los procesos de entrenamiento de las redes neuronales, es común la utilización de técnicas de data augmentation principalmente por dos situaciones, aunque estas no son limitantes:
+En el caso de los procesos de entrenamiento de las redes neuronales, es común la utilización de técnicas de \textit{data augmentation} principalmente por dos situaciones, aunque estas no son limitantes:
 
 \begin{itemize}
-	\item \textbf{Número insuficiente de datos:} en este caso, el data augmentation se aplica porque el dataset no es lo suficientemente grande como para conseguir unos resultados 
+	\item \textbf{Número insuficiente de datos:} en este caso, el \textit{data augmentation} se aplica porque el dataset no es lo suficientemente grande como para conseguir unos resultados 
 significativos en la creación de una red neuronal.
 	\item \textbf{Aumento de la robustez del modelo:} el segundo supuesto principal por el cual se utiliza \textit{data augmentation} es la utilización de elementos que añadan complejidad a la
 creación del modelo, lo cual le proporcionará una mejor actuación ante la aparición de nuevas complejidades.
@@ -187,14 +188,14 @@ Esta transformación aplica una transformación de $\theta$ grados del plano.
 
 \subsection{Pre-procesamiento} \label{preprocesamiento}
 
-El preprocesamiento es la manipulación de los datos para que estos tengan el formato requerido para llevar a cabo su procesamiento.
+El preprocesamiento es la manipulación de los datos para que se ha de llevar a cabo para que estos tengan el formato requerido por el procesamiento.
 
-En el caso de este proyecto, la fase de preprocesamiento es la fase en la que se extrae el iris de la imagen, puesto que, tal como indican diferentes estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{dd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018}, dentro de la imagen ocular, es el iris el que  
-permite identificar a las personas de una forma eficiente.
+En el caso de este proyecto, la fase de pre-procesamiento se centra en el aislamiento del iris. Múltiples estudios \cite{tfg_iris_2020} \cite{abdullah_iris_2015} \cite{malgheet_iris_2021} \cite{dd_post-mortem_2020} \cite{liu_efficient_2021} \cite{szymkowski_iris-based_2021} \cite{lozej_end--end_2018} donde no se han aplicado redes neuronales para el proceso de clasificación, han demostrado 
+que el aislamiento del iris en base primero a su segmentación y, posteriormente, a su normalización, han permitido una clasificación más eficiente de los individuos a partir de sus imágenes oculares, algo que reafirma el iris como la parte biométrica de la imagen.
 
 \subsubsection{Segmentación} \label{subsubsec:segmentacion}
 
-Detección de los bordes \textit{límbico} y \textit{pupilar}\footnote{Definidos en la sección \ref{partesojo}.} utilizando el detector de bordes de Canny \cite{4767851}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}.
+En la fase de detección de los bordes \textit{límbico} y \textit{pupilar}\footnote{Definidos en la sección \ref{partesojo}.}. La detección se ha llevado a cabo utilizado una red neuronal previamente entrenada para este fin \cite{lozej_end--end_2018}. Estos bordes son clave para el aislamiento del iris \cite{tfg_iris_2020}.
 
 
 
@@ -206,15 +207,15 @@ Una vez detectados los bordes, se procede a una binarización de la imagen \ref{
 
 \subsubsection{Normalización}\label{subsubsec:normalizacion}
 
-Se puede definir como la proyección del iris a coordenadas polares (figura \ref{img:normalizacion-ojo}), utilizando el método Daugman\footnote{Transforma el iris de coordenadas cartesianas a polares.} \cite{daugman_normalization_1993}, de manera que se igualen los tamaños de las diferentes imágenes y permitan su comparación.
+La normalización del iris se puede definir como la proyección del iris segmentado a coordenadas polares (figura \ref{img:normalizacion-ojo}), utilizando el método Daugman\footnote{Transforma el iris de coordenadas cartesianas a polares.} \cite{daugman_normalization_1993}. De esta manera, se igualen los tamaños de las diferentes imágenes y permiten su comparación.
 
 \imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}{img:normalizacion-ojo}
 
 
 \subsection{\textit{Fine-tuning}}\label{subsec:fine-tuning}
- Es un proceso que se basa en adaptar redes neuronales, que previamente han sido entrenadas para reconocer ciertos objetos, con el fin de que pasen a reconocer los objetos de otro \textit{dataset}. 
+ Se basa en adaptar redes neuronales, que previamente han sido entrenadas para reconocer ciertos objetos, con el fin de que pasen a reconocer los objetos de un nuevo \textit{dataset}. 
  Ello permite beneficiarse de las capacidades de la red neuronal a la hora de identificar objetos, teniendo que entrenar solamente las capas relacionadas con la identificación y el etiquetado final. 
  
- En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el dataset de CASIA sin tener que crear una red neuronal desde cero, sino adaptando la red
-  neuronal VGG16 para dicha función.
+ En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el dataset de CASIA-Iris-V1 sin tener que crear una red neuronal desde cero, sino adaptando la red
+  neuronal VGG16 para dicha función, algo que ha demostrado ser más eficiente \cite{boyd_deep_2020}.
 
