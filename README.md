@@ -1,4 +1,4 @@
-# Sistema de reconocimiento y segmentación del iris
+# Clasificación de individuos a partir de imágenes oculares y redes neuronales pre-entrenadas.
 
 ###### Clasificación de individuos a partir de imágenes oculares y redes neuronales pre-entrenadas.
 Trabajo de fin de máster, del Máster universitario de **Inteligencia de Negocio y *Big-Data* en Entornos Seguros** en las **Universidades de Burgos, León y Valladolid**
