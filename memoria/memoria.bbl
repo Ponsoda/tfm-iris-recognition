@@ -53,17 +53,6 @@ Jasem~Rahman Malgheet, Noridayu~Bt Manshor, and Lilly~Suriani Affendey.
 \newblock Iris recognition development techniques: A comprehensive review.
 \newblock 2021:1--32.
 
-\bibitem{minaee_deepiris_2019}
-Shervin Minaee and Amirali Abdolrashidi.
-\newblock {DeepIris}: Iris recognition using a deep learning approach.
-\newblock Number: {arXiv}:1907.09380.
-
-\bibitem{minaee_experimental_2017}
-Shervin Minaee, Amirali Abdolrashidi, and Yao Wang.
-\newblock An experimental study of deep convolutional features for iris
-  recognition.
-\newblock Number: {arXiv}:1702.01334.
-
 \bibitem{szymkowski_iris-based_2021}
 Maciej Szymkowski, Piotr Jasiński, and Khalid Saeed.
 \newblock Iris-based human identity recognition with machine learning methods

@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}{section*.1}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vi}}{section*.2}%
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vii}}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.2}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vi}}{section*.3}%
 \contentsline {chapter}{1. Introducción}{3}{chapter*.6}%
 \contentsline {section}{\numberline {1.1}Outline}{7}{section.1.1}%
 \contentsline {part}{Memoria}{3}{section*.5}%
@@ -49,10 +49,7 @@
 \contentsline {chapter}{6. Trabajos relacionados}{33}{chapter*.38}%
 \contentsline {section}{\numberline {6.1}Sistema clasificador de iris}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Iris Recognition Development Techniques: A Comprehensive Review}{34}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Iris Recognition Using Wavelet Transform and Artificial Neural Networks}{35}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Reliable pupil detection and iris segmentation algorithm based on SPS}{35}{section.6.4}%
-\contentsline {section}{\numberline {6.5} An experimentalstudy of deep convolutional features for iris recognition}{36}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}{36}{section.6.6}%
+\contentsline {section}{\numberline {6.3}Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}{35}{section.6.3}%
 \contentsline {chapter}{7. Conclusiones y Líneas de trabajo futuras}{37}{chapter*.39}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{37}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Líneas de trabajo futuras}{37}{section.7.2}%
@@ -74,7 +71,7 @@
 \contentsline {subsubsection}{\textit {Hardware}}{43}{section*.52}%
 \contentsline {subsubsection}{Personal}{43}{section*.53}%
 \contentsline {subsection}{Gasto total}{44}{section*.54}%
-\contentsline {subsection}{Viabilidad legal}{44}{section*.55}%
+\contentsline {subsection}{Viabilidad legal}{45}{section*.55}%
 \contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{47}{appendix.Alph2}%
 \contentsline {section}{\numberline {B.1}Introducción}{47}{section.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Objetivos generales}{47}{section.Alph2.2}%

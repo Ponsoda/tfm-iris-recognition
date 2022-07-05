@@ -1,24 +1,23 @@
 \capitulo{6}{Trabajos relacionados} \label{capitulo6}
 
-La utilización del iris como elemento biométrico que permite el acceso a los dispositivos electrónicos es un tema de estudio candente en los últimos años, 
-tal como se explica en la \nameref{capitulo1}.
+La utilización del iris como elemento biométrico para el reconocimiento de personas ha sido un tema de estudio recurrente en las últimas dos décadas.
+Además, recientemente han visto la luz estudios que utilizan las redes neuronales para la segmentación y la extracción de características del iris.
 
 A continuación, se describen algunos de los trabajos centrados en la identificación de individuos a través de su iris en los que se ha basado este proyecto.
 
 \section{Sistema clasificador de iris}
 
-En este trabajo final de grado \cite{tfg_iris_2020} de la Universidad de Burgos, se desarrolla un sistema de clasificación basado en el iris. Para ello, se utiliza el \textit{dataset} 
-de CASIA-V1. Este se somete primero a segmentación, utilizando el método de Wildes, y luego a normalización. 
+En este trabajo final de grado \cite{tfg_iris_2020} de la Universidad de Burgos, se desarrolla un sistema de clasificación  de individuos basado en el iris. Para llevar a cabo la calsificación, se utiliza el \textit{dataset} 
+de CASIA-V1. Este se somete primero a segmentación, utilizando la red neuronal desarrollada en \cite{lozej_end--end_2018}, y luego a normalización con el método Daugman. 
 
-Posteriormente, se extraen los atributos más identificativos de cada iris,
- utilizando una red que ya ha sido pre-entrenada para dicho fin \cite{lozej_end--end_2018}. Finalmente, se procede a la clasificación de individuos utilizando técnicas de \textit{machine learning}.
+Posteriormente, se extraen los atributos más identificativos de cada iris utilizando distintas redes neuronales pre-entrenadas y finalmente, se procede a la clasificación de individuos utilizando técnicas de \textit{machine learning}.
 
 Como se ha comentado anteriormente, el código para la carga de imágenes y los procesos de segmentación y normalización del iris, desarrollados en este proyecto, han sido utilizados de este trabajo como 
 base de las mismas secciones en el \textit{pipeline}. El \textit{pipeline} se explica más detalladamente en el Anexo \ref{anx:pipeline}.
 
 \section{Iris Recognition Development Techniques: A Comprehensive Review}
 
-En este artículo \cite{malgheet_iris_2021}, los investigadores de la Universiti Putra Malaysia hablan de siete pasos en los que se divide un sistema de reconocimiento del iris:
+En este artículo \cite{malgheet_iris_2021} de un grupo de investigadores de la Universiti Putra Malaysia, se habla de siete pasos en los que se divide un sistema de reconocimiento del iris:
 \begin{enumerate}
 \item adquisición
 \item preprocesamiento
@@ -30,32 +29,34 @@ En este artículo \cite{malgheet_iris_2021}, los investigadores de la Universiti
 \end{enumerate}
  
  Este \textit{paper} también describe una falta de trabajos entorno a \textit{datasets} de baja calidad y realza que los sistemas de reconocimiento del iris se vuelven 
- poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que intentamos de aplicar a nuestro proyecto, con el \textit{data augmentation} (sección \ref{dataaugmentation}).
+ poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que ha sido aplicado a este proyecto, con el \textit{data augmentation} (sección \ref{dataaugmentation}).
 
- El mismo artículo resume los distintos \textit{dataset} utilizados para estos estudios de reconocimiento de iris en los últimos años, el tipo de ruido utilizado en cada uno de ellos,
- así como describe a grandes rasgos cual es el método seguido en ellos para realizar el reconocimiento de inidivíduos a través de sus imágenes oculares.
+ El mismo artículo se resumen los distintos \textit{dataset} utilizados para los estudios de reconocimiento de iris en los últimos años, el tipo de ruido utilizado en cada uno de ellos,
+ así como a grandes rasgos, cual es el método seguido en ellos para realizar el reconocimiento de inidivíduos a través de sus imágenes oculares.
  
- Los más comunes son los tipos de segmentación tradicional, basado en la creación de círculos estandarizados, y aunque aparece un incremento del uso de las redes neuronales para la segmentación en los últimos años.
- También se describen distintas técnicas de normalización del iris y extracción de sus características, así como distintos enfoques en el cálculo del \textit{accuracy}.
+ Gracias a este artículo, se puede determinar que comunmente, para los pasos mencionados anteriormente, se utiliza por lo general tipos de segmentación tradicional, basado en la creación de círculos estandarizados, aunque aparece un incremento del uso de las redes neuronales para la segmentación en los últimos años.
+ También se describen distintas técnicas de normalización del iris y extracción de sus características, así como distintos enfoques en el cálculo de la tasa de acierto en las clasificaciones.
 
-\section{Iris Recognition Using Wavelet Transform and Artificial Neural Networks}
+% \section{Iris Recognition Using Wavelet Transform and Artificial Neural Networks}
 
-En este artículo de Hadeel N Abdullah \cite{abdullah_iris_2015}, perteneciente a la University of Technology de Iraq, se lleva a cabo un pre-procesamiento de un \textit{dataset} de imágenes oculares que incluye la extracción 
-del iris utilizando la transformada de \textit{Hough}\footnote{Tiene como premisa que los bordes del ojo se pueden considerar círculos y se extrae el iris utilizando dicha forma.} y la normalización con \textit{Daugman}, ya explicado en la sección \ref{subsubsec:normalizacion}. 
+% En este artículo de Hadeel N Abdullah \cite{abdullah_iris_2015}, perteneciente a la University of Technology de Iraq, se lleva a cabo un pre-procesamiento de un \textit{dataset} de imágenes oculares que incluye la extracción 
+% del iris utilizando la transformada de \textit{Hough}\footnote{Tiene como premisa que los bordes del ojo se pueden considerar círculos y se extrae el iris utilizando dicha forma.} y la normalización con \textit{Daugman}. 
 
-Posteriormente, tras eliminar el ruido de la imagen, la extracción se realiza con transformaciones de Wavelet\footnote{Transforma los datos de las imágenes con la transformada de Wavelet.}. Finalmente, se crea una red neuronal, donde se utiliza el \textit{mean-squared error} para calcular los pesos en la red.
+% Posteriormente, tras eliminar el ruido de la imagen, la extracción se realiza con transformaciones de Wavelet\footnote{Transforma los datos de las imágenes con la transformada de Wavelet.}. Finalmente, se crea una red neuronal, donde se utiliza el \textit{mean-squared error} para calcular los pesos en la red.
 
-\section{Reliable pupil detection and iris segmentation algorithm based on SPS}
+% \section{Reliable pupil detection and iris segmentation algorithm based on SPS}
 
-En este \textit{paper} \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de \textit{deep learning} para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. utilizando una red pre-entrenada 
-de ResNet50\footnote{Red neuronal con 50 capas, entrenada para reconocer imágenes de entre mil categorías.} y técnicas de \textit{fine-tuning} con el \textit{dataset} IIT Delhi\footnote{Accesible desde \url{https://www4.comp.polyu.edu.hk/~csajaykr/IITD/Database_Iris.htm}}. 
+% En este \textit{paper} \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de \textit{deep learning} para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. Se utiliza la red pre-entrenada 
+% de ResNet50\footnote{Red neuronal con 50 capas, entrenada para reconocer imágenes de entre mil categorías.} y técnicas de \textit{fine-tuning} con el \textit{dataset} IIT Delhi\footnote{Accesible desde \url{https://www4.comp.polyu.edu.hk/~csajaykr/IITD/Database_Iris.htm}}. 
 
-En este artículo, no se utiliza \textit{data augmentation} ni se pre-procesan las imágenes antes de aplicar el \textit{fine-tuning}. La red neuronal es entrenada con \textit{cross-entropy loss function}. 
+% En este artículo, no se utiliza \textit{data augmentation} ni se pre-procesan las imágenes antes de aplicar el \textit{fine-tuning}. La red neuronal es entrenada con \textit{cross-entropy loss function}. 
 
-\section{ An experimentalstudy of deep convolutional features for iris recognition}
+% \section{ An experimentalstudy of deep convolutional features for iris recognition}
 
-En este artículo \cite{minaee_experimental_2017}, se hizo uso del \textit{dataset} CASIA 10k\footnote{Accesible desde \url{http://www.nlpr.ia.ac.cn/pal/CASIA10K.html}} y la arquitectura VGG16, para realizar una \textit{PCA}\footnote{\textit{Principal Components Analisis} es un método de reducción de dimensiones.} y extraer los elementos
-más característicos de las imágenes. En una segunda fase, los investigadores utilizan algoritmos de \textit{machine learning} para clasificar las imágenes, consiguiendo unos altos porcentajes de acierto.
+% En este artículo \cite{minaee_experimental_2017}, se hizo uso del \textit{dataset} CASIA 10k\footnote{Accesible desde \url{http://www.nlpr.ia.ac.cn/pal/CASIA10K.html}} y la arquitectura VGG16, para realizar una \textit{PCA}\footnote{\textit{Principal Components Analisis} es un método de reducción de dimensiones.} y extraer los elementos
+% más característicos de las imágenes. 
+
+% En una segunda fase, los investigadores utilizan algoritmos de \textit{machine learning} para clasificar las imágenes, consiguiendo unos altos porcentajes de acierto.
 
 \section{Deep Learning-Based Feature Extraction in Iris Recognition: Use Existing Models, Fine-tune or Train From Scratch?}
 
@@ -64,7 +65,7 @@ En este artículo \cite{boyd_deep_2020}, los investigadores de la Universidad de
 entrenar a una red neuronal desde cero o aplicar técnicas de \textit{fine-tuning} sobre una red ya pre-entrenada.
 
 Para contestar a esta pregunta, utilizan técnicas de \textit{deep learning} para clasificar imágenes de ojos del \textit{dataset} CASIA 10k sin aplicar técnicas de \textit{data augmentation} sobre él. 
-Para la segmentación y normalización del iris se utiliza OSIRIS\footnote{Herramienta de código abierto utilizada para el reconocimiento del iris \url{https://github.com/tohki/iris-osiris}.}.
+Para la segmentación y normalización del iris se utilizan OSIRIS\footnote{Herramienta de código abierto utilizada para el reconocimiento del iris \url{https://github.com/tohki/iris-osiris}.}.
 
 Para la parte de \textit{fine-tuning}, se utiliza la red pre-entrenada ResNet50 y posteriormente, se realiza la clasificación con SVM\footnote{Support vector machine es un método de aprendizaje supervisado.}.
 La conclusión que se extrae del artículo es que, al menos en este caso, el clasificador funciona mejor al adaptar una red neuronal con \textit{fine-tuning} antes que crear la nuestra propia, aun siendo el 
