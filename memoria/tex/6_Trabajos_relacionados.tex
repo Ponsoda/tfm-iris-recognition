@@ -7,7 +7,7 @@ A continuación, se describen algunos de los trabajos centrados en la identifica
 
 \section{Sistema clasificador de iris}
 
-En este trabajo final de grado \cite{tfg_iris_2020} de la Universidad de Burgos, se desarrolla un sistema de clasificación  de individuos basado en el iris. Para llevar a cabo la calsificación, se utiliza el \textit{dataset} 
+En este trabajo final de grado \cite{tfg_iris_2020} de la Universidad de Burgos, se desarrolla un sistema de clasificación  de individuos basado en el iris. Para llevar a cabo la clasificación, se utiliza el \textit{dataset} 
 de CASIA-V1. Este se somete primero a segmentación, utilizando la red neuronal desarrollada en \cite{lozej_end--end_2018}, y luego a normalización con el método Daugman. 
 
 Posteriormente, se extraen los atributos más identificativos de cada iris utilizando distintas redes neuronales pre-entrenadas y finalmente, se procede a la clasificación de individuos utilizando técnicas de \textit{machine learning}.
@@ -32,9 +32,9 @@ En este artículo \cite{malgheet_iris_2021} de un grupo de investigadores de la 
  poco efectivos cuando las imágenes tienen rotaciones or reflejos, algo que ha sido aplicado a este proyecto, con el \textit{data augmentation} (sección \ref{dataaugmentation}).
 
  El mismo artículo se resumen los distintos \textit{dataset} utilizados para los estudios de reconocimiento de iris en los últimos años, el tipo de ruido utilizado en cada uno de ellos,
- así como a grandes rasgos, cual es el método seguido en ellos para realizar el reconocimiento de inidivíduos a través de sus imágenes oculares.
+ así como a grandes rasgos, cual es el método seguido en ellos para realizar el reconocimiento de individuos a través de sus imágenes oculares.
  
- Gracias a este artículo, se puede determinar que comunmente, para los pasos mencionados anteriormente, se utiliza por lo general tipos de segmentación tradicional, basado en la creación de círculos estandarizados, aunque aparece un incremento del uso de las redes neuronales para la segmentación en los últimos años.
+ Gracias a este artículo, se puede determinar que comúnmente, para los pasos mencionados anteriormente, se utiliza por lo general tipos de segmentación tradicional, basado en la creación de círculos estandarizados, aunque aparece un incremento del uso de las redes neuronales para la segmentación en los últimos años.
  También se describen distintas técnicas de normalización del iris y extracción de sus características, así como distintos enfoques en el cálculo de la tasa de acierto en las clasificaciones.
 
 % \section{Iris Recognition Using Wavelet Transform and Artificial Neural Networks}
@@ -46,7 +46,7 @@ En este artículo \cite{malgheet_iris_2021} de un grupo de investigadores de la 
 
 % \section{Reliable pupil detection and iris segmentation algorithm based on SPS}
 
-% En este \textit{paper} \cite{minaee_deepiris_2019} encontramos el desarrollo de técnicas de \textit{deep learning} para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. Se utiliza la red pre-entrenada 
+% artículo \cite{minaee_deepiris_2019}, se presenta la aplicación de técnicas de \textit{deep learning} para el reconocimiento del iris basado en una \textit{convolutional neural network} residual. Se utiliza la red pre-entrenada 
 % de ResNet50\footnote{Red neuronal con 50 capas, entrenada para reconocer imágenes de entre mil categorías.} y técnicas de \textit{fine-tuning} con el \textit{dataset} IIT Delhi\footnote{Accesible desde \url{https://www4.comp.polyu.edu.hk/~csajaykr/IITD/Database_Iris.htm}}. 
 
 % En este artículo, no se utiliza \textit{data augmentation} ni se pre-procesan las imágenes antes de aplicar el \textit{fine-tuning}. La red neuronal es entrenada con \textit{cross-entropy loss function}. 

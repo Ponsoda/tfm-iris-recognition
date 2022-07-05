@@ -32,13 +32,13 @@
 \contentsline {section}{\numberline {4.3}Python}{24}{section.4.3}%
 \contentsline {subsection}{Redes neuronales}{25}{section*.26}%
 \contentsline {subsection}{Visual Studio Code}{25}{section*.27}%
-\contentsline {section}{\numberline {4.4}Scrum}{25}{section.4.4}%
+\contentsline {section}{\numberline {4.4}SCRUM}{25}{section.4.4}%
 \contentsline {chapter}{5. Aspectos relevantes del desarrollo del proyecto}{27}{chapter*.28}%
-\contentsline {section}{\numberline {5.1}Preparación del dataset}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Preparación del conjunto de datos}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Pre-procesamiento de los datos}{28}{section.5.2}%
 \contentsline {subsection}{Adecuación del código previo}{28}{section*.29}%
 \contentsline {subsection}{Aplicación del \textit {data augmentation}}{28}{section*.30}%
-\contentsline {subsection}{Creación de el \textit {pipeline}}{29}{section*.31}%
+\contentsline {subsection}{Creación de la \textit {pipeline}}{29}{section*.31}%
 \contentsline {section}{\numberline {5.3}Adaptación de la red neuronal}{29}{section.5.3}%
 \contentsline {subsection}{Aplicación del \textit {fine-tuning}}{30}{section*.32}%
 \contentsline {subsubsection}{Primera fase}{30}{section*.33}%
@@ -97,11 +97,11 @@
 \contentsline {section}{\numberline {D.1}Introducción}{55}{section.Alph4.1}%
 \contentsline {section}{\numberline {D.2}Estructura de directorios}{55}{section.Alph4.2}%
 \contentsline {section}{\numberline {D.3}Manual del programador}{55}{section.Alph4.3}%
-\contentsline {subsection}{\textit {Notebook} \texttt {9-pipelines\_v7.ipynb}}{56}{section*.67}%
+\contentsline {subsection}{\textit {Notebook} \texttt {pipeline.ipynb}}{56}{section*.67}%
 \contentsline {subsubsection}{Configuración}{56}{section*.68}%
 \contentsline {subsubsection}{Secciones}{58}{section*.69}%
 \contentsline {subsubsection}{Ejecucción del \textit {pipeline}}{59}{section*.70}%
-\contentsline {subsection}{\textit {Notebook} \textit {Accuracy.ipynb}}{60}{section*.71}%
+\contentsline {subsection}{\textit {Notebook} \textit {accuracy.ipynb}}{60}{section*.71}%
 \contentsline {subsubsection}{Código}{60}{section*.72}%
 \contentsline {section}{\numberline {D.4}Compilación, instalación y ejecución del proyecto}{61}{section.Alph4.4}%
 \contentsline {section}{\numberline {D.5}Pruebas del sistema}{62}{section.Alph4.5}%

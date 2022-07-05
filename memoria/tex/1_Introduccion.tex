@@ -1,8 +1,8 @@
 \capitulo{1}{Introducción} \label{capitulo1}
 
-El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas, lo cual supone una piedra angular de muchos sistemas de seguridad.
+El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas. Esta idea se ha convertido en la base o principio fundamental de un número considerable de sistemas de seguridad.
 
-Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos fundamentales en la seguridad de los dispositivos electrónicos de la población a nivel mundial. 
+Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos de seguridad fundamentales a nivel mundial para multitud de dispositivos. 
 
 Esta dependencia de la biometría para acceder a los dispositivos supone indirectamente una dependencia en ella para la protección de la información privada de la población, ya que hoy en día, los dispositivos electrónicos cuentan con gran cantidad de información sensible.
 
@@ -10,10 +10,10 @@ Dentro de la biometría, el iris se utiliza como un elemento de reconocimiento b
 personal, que supone que dos personas no puedan ser identificadas con un mismo iris \cite{malgheet_iris_2021}. Tanto es así, que el iris es incluso utilizado en los procesos 
 post-mortem para poder determinar la pertenencia del cuerpo \cite{dd_post-mortem_2020}.
 
-No obstante, contar con técnicas eficientes de segmentación y extracción de atributos del iris hoy en día sigue siendo un problema. En muchos casos se siguen utilizando técnicas clásicas que buscan encontrar bordes en el iris para poder aislarlo, como se muestra en la imagen \ref{img:segmentacion-ojo}, y ocurre algo similar con la extracción de características.
+No obstante, contar con técnicas eficientes de segmentación y extracción de atributos del iris hoy en día sigue siendo un problema. En muchos casos se siguen utilizando técnicas clásicas que buscan encontrar bordes en el iris para poder aislarlo, como se muestra en la figura \ref{img:segmentacion-ojo}, y ocurre algo similar con la extracción de características.
 Pero recientemente, se ha demostrado que las redes neuronales pueden ser utilizadas para la segmentación del iris \cite{lozej_end--end_2018} y la extracción de características \cite{tfg_iris_2020}\cite{boyd_deep_2020}.
 
-Existen dos opciones a la hora de trabajar con las redes neuronales para estos procesos, o bien entrenar una red neuronal desde cero, o bien adaptar una ya existente al conjunto de datos a utilizar. Ha sido demostrado que el uso de redes neuronales adaptadas funcionan mejor que las creadas desde cero cuando se cuenta con \textit{datasets} de un tamaño considerable (10 mil imágenes en el caso de \cite{boyd_deep_2020}) y si se aisla previamente el iris en las imágenes.
+Existen dos opciones a la hora de trabajar con las redes neuronales para estos procesos, o bien entrenar una red neuronal desde cero, o bien adaptar una ya existente al conjunto de datos a utilizar. Ha sido demostrado que el uso de redes neuronales adaptadas funcionan mejor que las creadas desde cero cuando se cuenta con \textit{datasets} de un tamaño considerable (10 mil imágenes en el caso de \cite{boyd_deep_2020}) y si se aísla previamente el iris en las imágenes.
 Con ello surgen dos preguntas:
 
 \begin{enumerate}
@@ -26,16 +26,16 @@ Con ello surgen dos preguntas:
 En este estudio, se ha adaptado una red neuronal pre-entrenada con el fin de identificar distintos objetos para que sea capaz de identificar de individuos a través de sus imágenes oculares. Por ello, proponemos dos enfoques distintos. Ambos llevados a cabo una segunda vez utilizando técnicas de \textit{data augmentation} para comprobar su efecto sobre el modelo.
 
 En ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
-una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}} para poder distingir distintos objetos en base a una imagen. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
-permite adaptar el modelo para que, al llevarse a cabo la clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la imagen\ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
+una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
+permite adaptar el modelo para que, al llevarse a cabo la clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la figura \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
  con un \textit{dataset} de imágenes oculares etiquetadas.
 
-En un primer enfoque, se han utilizado las imágenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}} para adaptar la red neuronal, siguiendo el proceso que se muestra en la imagen \ref{img:enfoque-sin-normalizacion}
+En un primer enfoque, se han utilizado las imágenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}} para adaptar la red neuronal, siguiendo el proceso que se muestra en la figura \ref{img:enfoque-sin-normalizacion}
 
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
 
 
-En un segundo enfoque, se ha aplicado un proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para aislar el iris en la imagen. Posteriormente, se ha seguido también un proceso de adaptación de la red neuronal. Este enfoque se muestra en la imagen\ref{img:enfoque-normalizacion}.
+En un segundo enfoque, se ha aplicado un proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para aislar el iris en la imagen. Posteriormente, se ha seguido también un proceso de adaptación de la red neuronal. Este enfoque se muestra en la figura \ref{img:enfoque-normalizacion}.
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
@@ -44,9 +44,9 @@ Para ambos enfoques se han creado dos modelos adicionales, esta vez aplicando t�
 
 El resultado de esta adaptación de la red neuronal es la creación de cuatro modelos capaces de identificar a individuos a partir de una imagen ocular. 
 
-Para determinar que enfoque ha sido capaz de identificar de forma más eficiente a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
+Para determinar qué enfoque ha sido capaz de identificar de forma más eficiente a los individuos, se ha comparado la tasa de acierto de los modelos resultantes de las adaptaciones a la hora de clasificar nuevas imágenes oculares. 
 
-El objetivo principal de este proyecto ha sido el de analizar cual de estos enfoques es más óptimo para el reconocimiento de individuos a través de sus imágenes oculares, así como comprobar el efecto del \textit{data augmentation } y el aislamiento del iris en las tasas de acierto.
+El objetivo principal de este proyecto ha sido el de analizar cuál de estos enfoques es el óptimo para el reconocimiento de individuos a través de sus imágenes oculares, así como comprobar el efecto del \textit{data augmentation } y el aislamiento del iris en las tasas de acierto.
 
 \section{Outline}
 

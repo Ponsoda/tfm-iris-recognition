@@ -1,7 +1,7 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto} \label{capitulo5}
 
 El proyecto se ha dividido en dos fases principales. La primera fase ha consistido en la asimilación, adecuación y optimización del código perteneciente
-a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-procesamiento, estas son la segmentación y la normalización del iris. También se incluye en esta fase la aplicación de las técnicas de \textit{data augmentation}. 
+a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-procesamiento. Es decir, en la de segmentación y la de normalización del iris. También se incluye en esta fase la aplicación de las técnicas de \textit{data augmentation}. 
 Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los conjuntos de imágenes derivadas del \textit{dataset} creadas en la primera fase.
 
 Los \textit{datasets} que utilizarán en la segunda fase, junto con el \textit{fine-tuning} para crear los modelos finales. Con ellos, se calculará la tasa de acierto relativa a su capacidad de clasificación.
@@ -15,7 +15,7 @@ Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
 4 &  x & x \\
 } 
 
-\section{Preparación del dataset}\label{preparacion-dataset}
+\section{Preparación del conjunto de datos}\label{preparacion-dataset}
 
 En los proyectos de inteligencia artificial, el procedimiento habitual para entrenar las redes neuronales es el de dividir los datos que se van a utilizar para entrenar a la red en dos subconjuntos. El subconjunto de mayor tamaño se utiliza para entrenar el modelo \emph{per se}, 
 mientras que el subconjunto de menor tamaño se utiliza en la validación del mismo. 
@@ -36,7 +36,7 @@ Este código permite la creación de un segundo \textit{dataset} que, sabiendo q
 
 \subsection{Aplicación del \textit{data augmentation}}
 
-El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez del los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son el \textit{datasets} con las imágenes oculares completas y el \textit{dataset} con imágenes del iris aislado. 
+El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez de los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son el \textit{datasets} con las imágenes oculares completas y el \textit{dataset} con imágenes del iris aislado. 
 
 Por lo tanto, este proceso utiliza las técnicas de ruido gaussiano y transformaciones afines, explicadas en la sección \ref{transformacionesafines} para crear dos nuevos conjuntos de datos. 
 
@@ -46,7 +46,7 @@ Por su lado, las transformaciones afines se han aplicado de forma independiente 
 
 Como resultado del \textit{data augmentation}, los \textit{datasets}, que originalmente contaban con 756 imágenes, cuentan tras este proceso con 1158 imágenes.
 
-\subsection{Creación de el \textit{pipeline}}
+\subsection{Creación de la \textit{pipeline}}
 
 Cada fase del proyecto ha sido definida en una sección del código.
 
@@ -74,7 +74,7 @@ Peso & Peso utilizado para el entrenamiento la red neuronal.\\
   
 \section{Adaptación de la red neuronal}
 
-La adaptación de la red neuronal VGG16\footnote{Se ha elegido esta red neuronal puesto que en \cite{tfg_iris_2020} era la que mejores resultados de clasificación devolvía de forma promedio.} es una parte central del proyecto, puesto que el objetivo principal es comparar como se comporta la red neuronal al ser adaptada los distintos \textit{datasets} desarrollados.
+La adaptación de la red neuronal VGG16\footnote{Se ha elegido esta red neuronal puesto que en \cite{tfg_iris_2020} era la que mejores resultados de clasificación devolvía de forma promedio.} es una parte central del proyecto, puesto que el objetivo principal es comparar cómo se comporta la red neuronal al ser adaptada los distintos \textit{datasets} desarrollados.
 
 La adaptación de la red neuronal se ha aplicado a los cuatro \textit{datasets} desarrollados. Estos son, por un lado, lo dos \textit{datasets} sin pre-procesamiento (uno de ellos con \textit{data augmentation}) y, por otro lado, a los dos \textit{datasets} a los que se les ha aplicado el pre-procesamiento (de nuevo, a uno de ellos se le han aplicado técnicas de \textit{data augmentation}). 
 \subsection{Aplicación del \textit{fine-tuning}}
@@ -84,7 +84,7 @@ La utilización de técnicas de \textit{fine-tuning} para la adaptación de la r
 \subsubsection{Primera fase}
 En una primera fase, se ha definido una primera red neuronal cuyo objetivo ha sido el de determinar las características que mejor definen a las imágenes, siendo esta red la que funcionará como la base del nuevo modelo. 
 
-Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a la clasificación de la imagen, a una red neuronal que entrenada con ImageNet. El modelo se establece en este punto como no entrenable para que no se re-entrene en las siguiente fase, de forma que el modelo resultante funcione como un \textit{inference model}\footnote{Este modelo aprovecha el conocimiento de una red neuronal ya entrenada para clasificar imágenes pero interfiere en el resultado final, que es modificado por un nuevo \textit{dataset}, que suele ser de un tamaño no lo suficientemente grande para entrenar la red neuronal desde cero.}. 
+Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a la clasificación de la imagen, a una red neuronal que entrenada con ImageNet. El modelo se establece en este punto como no entrenable para que no se re-entrene en la siguiente fase, de forma que el modelo resultante funcione como un \textit{inference model}\footnote{Este modelo aprovecha el conocimiento de una red neuronal ya entrenada para clasificar imágenes pero interfiere en el resultado final, que es modificado por un nuevo \textit{dataset}, que suele ser de un tamaño no lo suficientemente grande para entrenar la red neuronal desde cero.}. 
 
 \subsubsection{Segunda fase}
 
@@ -110,13 +110,13 @@ En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tas
  con los individuos. El cálculo de este valor se explica detalladamente en el Anexo \ref{anx:accuracy}.
 
 \begin{table}[h!]
-\begin{tabular}{ |p{2cm}||p{2cm}|p{2cm}|p{2cm}|p{2cm}|  }
+\begin{tabular}{ |p{1.2cm}||p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|  }
     \hline
      & \multicolumn{2}{|c|}{Sin normalización} & \multicolumn{2}{|c|}{Con normalización} \\
     \hline
-    Modelo& Con \textit{data augmentation} & Sin \textit{data augmentation} &Con \textit{data augmentation}&Sin \textit{data augmentation}\\
+    Modelo& \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize}& \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize}\\
     \hline
-    \textit{Accuracy} & 0.94   & 0.93    & 0.72 &   0.68\\
+    Acierto & 0.94   & 0.93    & 0.72 &   0.68\\
     \hline
    \end{tabular}
    \caption{\label{tabla:tasa-acierto-modelos}Tasa de acierto de los modelos.}
@@ -124,7 +124,7 @@ En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tas
 
 
 Estos resultados muestran, en primer lugar, que el \textit{data augmentation} no supone sino un decremento en la tasa de acierto, tanto en los casos donde se ha aislado el iris
-como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez, al calcularse este parámetro utilizando imágenes que no han sugrido ningún tipo de transformación, puesto que han sido tomadas en un entorno controlado.
+como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez, al calcularse este parámetro utilizando imágenes que no han surgido ningún tipo de transformación, puesto que han sido tomadas en un entorno controlado.
 Por lo tanto, la mejora de la clasificación cuando las imágenes cuenten con modificaciones respecto a las imágenes originales que se le presupone al \textit{data augmentation} no ha podido ser comprobada. No obstante, la mejora de la robustez previsiblemente
 permitirá al sistema funcionar de forma más eficiente en un contexto no controlado.
 

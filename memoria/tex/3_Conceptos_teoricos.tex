@@ -1,23 +1,23 @@
 \capitulo{3}{Conceptos teóricos} \label{capitulo3}
 
-En esta sección se desarrollan los conceptos teóricos utilizados necesarios para comprender el proyecto.
+En esta sección se desarrollan los conceptos teóricos utilizados, y que son necesarios para comprender el proyecto.
 
 \section{Biometría}
 
-Como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el estudio que permite la identificación de un individuo a través de determinadas características asociadas a su persona, principalmente la cara, las huellas dactilares y el iris. 
+Tal como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el estudio que permite la identificación de un individuo a través de determinadas características asociadas a su persona, principalmente la cara, las huellas dactilares y el iris. 
 
 \subsection{Partes del ojo} \label{partesojo} 
 
 El ojo se divide en tres capas principales, la capa externa llamada esclerótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que, en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
 Dichos bordes son cruciales a la hora de segmentar el iris, proceso que se describe en la sección \nameref{subsubsec:segmentacion}.
-Las partes del ojo han sido etiquetadas en la imagen \ref{img:partes-ojo}.
+Las partes del ojo han sido etiquetadas en la figura \ref{img:partes-ojo}.
 
 \imagen{img/15_partes_ojo.png}{Partes del ojo.}{Partes del ojo.}{img:partes-ojo}
 
 \subsection{\textit{Dataset} CASIA-IrisV1 }	\label{casia}
 
 El \textit{dataset} CASIA-IrisV1 ha sido el utilizado en el proyecto para adaptar las redes neuronales. Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
-Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{\textit{Center for Biometrics and Security Research}} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de 320x280. 
+Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{\textit{Center for Biometrics and Security Research}} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de $320 \times 280$. 
 La pupila fue automáticamente remplazada por la propia organización para evitar que en ella se reflejasen las luces de las fotografías\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}.}.
 
 \section{Inteligencia Artificial}
@@ -27,21 +27,22 @@ En este proyecto ha sido utilizada principalmente para la segmentación del iris
 
 \subsection{\textit{Deep Learning}}
 
-El \textit{deep learning} es un tipo de inteligencia artificial que se dedica a resolver los problemas que, siendo intuitivos para el ser humano, son complejos para la inteligencia artificial. Para resolverlos, la inteligencia artificial intenta replicar la toma de decisiones que hacen los seres humanos a través de la experiencia y la jerarquización de conceptos. 
+El \textit{deep learning} es un campo del \textit{machine learning} y de la inteligencia artificial que imita el funcionamiento del cerebro humano y sus redes neuronales para adquirir conocimiento \cite{Goodfellow-et-al-2016}. 
+Para resolver los problemas que se le plantean, el \textit{deep learning} intenta replicar la toma de decisiones que llevan a cabo los seres humanos a través de la experiencia y la jerarquización de conceptos. 
 
-Al basarse en la experiencia, el \textit{deep learning} no necesita que se le definan todos los parámetros para poder completar la tarea, puesto que es capaz de aprender por sí misma. Por otro lado, la jerarquización de conceptos permite utilizar conceptos complejos 
+Al basarse en la experiencia, el \textit{deep learning} no necesita que se definan todos los parámetros para poder completar la tarea, puesto que es capaz de aprender por sí misma. Por otro lado, la jerarquización de conceptos permite utilizar conceptos complejos 
 al basarlos en conceptos más fáciles de entender \cite{Goodfellow-et-al-2016}.
 
 En el \textit{deep learning}, la red neuronal cuenta con una capa de entrada y una capa de salida, y entre ellas cuenta con una o varias capas ocultas. 
-Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la imagen \ref{img:red-neuronal}.
+Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la figura \ref{img:red-neuronal}.
 
 \imagen{img/16_red_neuronal.png}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
 
 \subsection{\textit{Pipeline}}
 
-Los \textit{pipelines} son secuencias de procesos encadenados, donde el \textit{output} del proceso anterior funciona como \textit{input} del siguiente proceso.
+Los \textit{pipelines} son secuencias de procesos encadenados, donde la salida del proceso anterior funciona como \textit{input} del siguiente proceso.
 
-Tomando como ejemplo la imagen \ref{img:enfoque-normalizacion}, un primer proceso sería la segmentación, que tomaría como entrada el \textit{dataset} de CASIA y tendría como salida 
+Tomando como ejemplo la figura \ref{img:enfoque-normalizacion}, un primer proceso sería la segmentación, que tomaría como entrada el \textit{dataset} de CASIA y tendría como salida 
 las imágenes segmentadas. A su vez, estas imágenes segmentadas, serían la entrada del proceso de normalización, y así sucesivamente.
 
 La utilización de \textit{pipelines} en el proyecto ha permitido un mayor control de los distintos procesos, al poder establecer una configuración general en la cadena de procesos, y ha permitido modificar de forma más sencilla el orden de estos procesos, permitiendo así experimentar con nuevas combinaciones de los procesos.
@@ -77,7 +78,7 @@ Las transformaciones afines permiten aumentar el tamaño del dataset mediante la
 Las transformaciones afines utilizadas en el proyecto han sido recogidas en la tabla \ref{tabla:transformaciones-afines} y se describen a continuación.
 
 \begin{table}[h!]
-\begin{tabular}{ |p{2cm}|p{1.8cm}|p{2.2cm} |p{2cm}|p{1.8cm}|}
+\begin{tabular}{ |p{2cm}|p{1.8cm}|p{2.2cm} |p{2cm}|p{2cm}|}
 	\hline
 	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
 	\hline
@@ -92,8 +93,8 @@ Las transformaciones afines utilizadas en el proyecto han sido recogidas en la t
 
 \paragraph{Identidad}
 
-La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para la  
-la reutilización de los datasets.
+La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para  
+la reutilización del conjunto de datos.
 
 \imagen{img/05_transformacion_identidad.png}{ejemplo de transformación de identidad.}{ejemplo de transformación de identidad.}{img:transformacion-identidad}
 
@@ -200,7 +201,7 @@ En la fase de detección de los bordes \textit{límbico} y \textit{pupilar}\foot
 
 
 
-Una vez detectados los bordes, se procede a una binarización de la imagen \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
+Una vez detectados los bordes, se procede a una binarización de la figura \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
 
 \imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}{img:segmentacion-binarizacion-ojo}
 
@@ -216,6 +217,6 @@ La normalización del iris se puede definir como la proyección del iris segment
  Se basa en adaptar redes neuronales, que previamente han sido entrenadas para reconocer ciertos objetos, con el fin de que pasen a reconocer los objetos de un nuevo \textit{dataset}. 
  Ello permite beneficiarse de las capacidades de la red neuronal a la hora de identificar objetos, teniendo que entrenar solamente las capas relacionadas con la identificación y el etiquetado final. 
  
- En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el dataset de CASIA-Iris-V1 sin tener que crear una red neuronal desde cero, sino adaptando la red
+ En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el \textit{dataset} de CASIA-Iris-V1 sin tener que crear una red neuronal desde cero, sino adaptando la red
   neuronal VGG16 para dicha función, algo que ha demostrado ser más eficiente \cite{boyd_deep_2020}.
 
