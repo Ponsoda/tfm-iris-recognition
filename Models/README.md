@@ -1,3 +1,1 @@
-CASIA-IrisV1_reservado.zip is the test dataset
-
-You can find the models here: https://drive.google.com/drive/folders/11ThYiRoEIPn9deW-iPH7QWuX8sczpwB-?usp=sharing
+CASIA-IrisV1_reservado.zip es el dataset utilizado para testear los modelos. Puedes descomprimir el archivo y utilizar este dataset como input de los modelos. Los modelos están accesibles aquí: https://drive.google.com/drive/folders/11ThYiRoEIPn9deW-iPH7QWuX8sczpwB-?usp=sharing
