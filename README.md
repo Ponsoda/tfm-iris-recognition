@@ -11,8 +11,7 @@ Trabajo final de master sobre el reconocimiento y la segmentación del iris, com
 
 # Resumen
 
-La utilización de la biometría para mejorar la seguridad, princi-
-palmente en lo referente al acceso de dispositivos electrónicos, es un
+La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un
 recurso ampliamente empleado en la actualidad. El iris es uno de los
 elementos biométricos que mayores dificultades presentan para su
 suplantación, y por ello, su utilización en este campo ha atraído la
@@ -23,7 +22,7 @@ características del iris. Esta extracción se puede llevar a cabo no solo
 entrenando una red neuronal desde cero, sino también adaptando una
 ya pre-entrenada. Respecto a la utilización de técnicas de adaptación
 de la red neuronal se plantean dos preguntas. ¿Es necesario aislar el
-iris para llevar a cabo la adaptación de la red neuronal?¿Se puede
+iris para llevar a cabo la adaptación de la red neuronal? ¿Se puede
 aplicar también para conjuntos de datos pequeños?
 
 En este proyecto se han adaptado redes neuronales, inicialmente
@@ -37,14 +36,13 @@ red neuronal con imágenes oculares donde previamente se ha aislado
 el iris, ya que a priori, el iris la zona de la imagen ocular que mejor
 permite la identificación de individuos.
 
-Además, se han utilizado técnicas de ampliación del dataset ori-
-ginal, a fin de contar con un mayor número de muestras de cada
+Además, se han utilizado técnicas de ampliación del conjunto de datos original, a fin de contar con un mayor número de muestras de cada
 individuo y también, mejorar la robustez de las redes neuronales
 adaptadas.
 
 Los resultados muestran que las mejores tasas de clasificación se
 han dado en el enfoque donde se utilizaba la imagen ocular completa,
-sin que las técnicas de ampliación del dataset hayan permitido mejorar
+sin que las técnicas de ampliación del conjunto de datos hayan permitido mejorar
 la tasa de clasificación.
 Como futuras líneas de trabajo, se establecen la utilización de
 redes neuronales pre-entrenadas distintas, así como testear el modelo
