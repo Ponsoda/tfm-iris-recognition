@@ -51,10 +51,10 @@ redes neuronales pre-entrenadas distintas, así como testear el modelo
 con imágenes realizadas fuera del entorno académico.
 
 ### Propuesta con aislamiento de iris
-![](memoria/img/13_enfoque_normalizacion.png)
+![](memoria/img/13_enfoque_normalizacion.jpg)
 
 ### Propuesta con la imagen completa
-![](memoria/img/14_enfoque_sin_normalizacion.png)
+![](memoria/img/14_enfoque_sin_normalizacion.jpg)
 
 ---
 
