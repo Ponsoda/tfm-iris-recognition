@@ -2,13 +2,13 @@
 
 El proyecto se ha dividido en dos fases principales. La primera fase ha consistido en la asimilación, adecuación y optimización del código perteneciente
 a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-procesamiento. Es decir, en la de segmentación y la de normalización del iris. También se incluye en esta fase la aplicación de las técnicas de \textit{data augmentation}. 
-Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los conjuntos de imágenes derivadas del \textit{dataset} creadas en la primera fase.
+Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los conjuntos de imágenes derivadas del conjunto de datos creadas en la primera fase.
 
 Los \textit{datasets} que utilizarán en la segunda fase, junto con el \textit{fine-tuning} para crear los modelos finales. Con ellos, se calculará la tasa de acierto relativa a su capacidad de clasificación.
 Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
 
 \tablaSmall{\textit{Datasets} utilizados para el \textit{fine-tuning}.}{l c c}{datasets}
-{ \multicolumn{1}{l}{\textit{Dataset}} & Pre-procesamiento &  \textit{Data augmentation}\\}{ 
+{ \multicolumn{1}{l}{conjunto de datos} & Pre-procesamiento &  \textit{Data augmentation}\\}{ 
 1 &   & \\
 2 & x  & \\
 3 &   & x \\
@@ -20,11 +20,11 @@ Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
 En los proyectos de inteligencia artificial, el procedimiento habitual para entrenar las redes neuronales es el de dividir los datos que se van a utilizar para entrenar a la red en dos subconjuntos. El subconjunto de mayor tamaño se utiliza para entrenar el modelo \emph{per se}, 
 mientras que el subconjunto de menor tamaño se utiliza en la validación del mismo. 
 
-En el caso de este proyecto caso, el \textit{dataset} inicial ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para calcular la tasa de acierto, siendo estos los porcentajes más comúnmente utilizados. 
+En el caso de este proyecto caso, el conjunto de datos inicial ha sido dividido en un 70\% para la fase de entrenamiento, y un 30\% para calcular la tasa de acierto, siendo estos los porcentajes más comúnmente utilizados. 
 
 \section{Pre-procesamiento de los datos}
 
-En la primera fase del proyecto, se ha llevado a cabo un pre-procesamiento del \textit{dataset} para crear el conjunto de datos de imágenes del iris aisladas.
+En la primera fase del proyecto, se ha llevado a cabo un pre-procesamiento del conjunto de datos para crear el conjunto de imágenes del iris aisladas.
 
 \subsection{Adecuación del código previo}
 
@@ -32,11 +32,11 @@ Como se ha mencionado anteriormente, el código desarrollado en \cite{tfg_iris_2
 
 Para ello, en una fase preliminar, se ha asimilado el código completo del trabajo, de forma que se comprendiese a fondo el mismo, para seguidamente, en una segunda fase, se ha pasado a limpiar el código y adecuarlo a las necesidades del proyecto. 
 
-Este código permite la creación de un segundo \textit{dataset} que, sabiendo que el iris es la parte del ojo que permite identificar mejor a una persona, lo aísla para entrenar solamente con el iris a la red neuronal y evitar así el ruido que pueda causar el resto de la imagen. 
+Este código permite la creación de un segundo conjunto de datos que, sabiendo que el iris es la parte del ojo que permite identificar mejor a una persona, lo aísla para entrenar solamente con el iris a la red neuronal y evitar así el ruido que pueda causar el resto de la imagen. 
 
 \subsection{Aplicación del \textit{data augmentation}}
 
-El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez de los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son el \textit{datasets} con las imágenes oculares completas y el \textit{dataset} con imágenes del iris aislado. 
+El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez de los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son el \textit{datasets} con las imágenes oculares completas y el conjunto de datos con imágenes del iris aislado. 
 
 Por lo tanto, este proceso utiliza las técnicas de ruido gaussiano y transformaciones afines, explicadas en la sección \ref{transformacionesafines} para crear dos nuevos conjuntos de datos. 
 
@@ -69,7 +69,7 @@ Epochs & Número de epochs por cada red neuronal entrenada.\\
 \textit{Batch} & Tamaño del \textit{batch}.\\
 \textit{Random seed} & Tamaño del \textit{random seed}.\\
 Peso & Peso utilizado para el entrenamiento la red neuronal.\\
-\textit{Fine-tuning} & \textit{Dataset} ha utilizar para el \textit{fine-tuning}.\\
+\textit{Fine-tuning} & conjunto de datos ha utilizar para el \textit{fine-tuning}.\\
 } 
   
 \section{Adaptación de la red neuronal}
@@ -84,7 +84,7 @@ La utilización de técnicas de \textit{fine-tuning} para la adaptación de la r
 \subsubsection{Primera fase}
 En una primera fase, se ha definido una primera red neuronal cuyo objetivo ha sido el de determinar las características que mejor definen a las imágenes, siendo esta red la que funcionará como la base del nuevo modelo. 
 
-Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a la clasificación de la imagen, a una red neuronal que entrenada con ImageNet. El modelo se establece en este punto como no entrenable para que no se re-entrene en la siguiente fase, de forma que el modelo resultante funcione como un \textit{inference model}\footnote{Este modelo aprovecha el conocimiento de una red neuronal ya entrenada para clasificar imágenes pero interfiere en el resultado final, que es modificado por un nuevo \textit{dataset}, que suele ser de un tamaño no lo suficientemente grande para entrenar la red neuronal desde cero.}. 
+Para definir esta red neuronal, se ha eliminado la capa final, que corresponde a la clasificación de la imagen, a una red neuronal que entrenada con ImageNet. El modelo se establece en este punto como no entrenable para que no se re-entrene en la siguiente fase, de forma que el modelo resultante funcione como un \textit{inference model}\footnote{Este modelo aprovecha el conocimiento de una red neuronal ya entrenada para clasificar imágenes pero interfiere en el resultado final, que es modificado por un nuevo conjunto de datos, que suele ser de un tamaño no lo suficientemente grande para entrenar la red neuronal desde cero.}. 
 
 \subsubsection{Segunda fase}
 
@@ -92,11 +92,11 @@ En la segunda fase, se ha creado una nueva capa a partir del modelo base, que es
 
 \subsubsection{Tercera fase}
 
-En esta tercera fase, se pasa a entrena el modelo completo, descongelando el modelo base, pero manteniéndolo como \textit{inference model} para evitar que se vuelta a entrenar, por lo que la extradición de características se hará sobre el nuevo \textit{dataset} pero las capas intermedias utilizadas serán principalmente las de VGG16.
+En esta tercera fase, se pasa a entrena el modelo completo, descongelando el modelo base, pero manteniéndolo como \textit{inference model} para evitar que se vuelta a entrenar, por lo que la extradición de características se hará sobre el nuevo conjunto de datos pero las capas intermedias utilizadas serán principalmente las de VGG16.
 
 \subsection{Clasificación de imágenes}
 
-Las imágenes se han clasificado utilizando los cuatro modelos creados en la sección \ref{preprocesamiento}. Para ello, se utiliza como \textit{dataset} de entrada para el modelo, el 30\% reservado en la sección \nameref{preparacion-dataset}.
+Las imágenes se han clasificado utilizando los cuatro modelos creados en la sección \ref{preprocesamiento}. Para ello, se utiliza como conjunto de datos de entrada para el modelo, el 30\% reservado en la sección \nameref{preparacion-dataset}.
 
 Estos modelos reciben una imagen y determinan el porcentaje de que dicha imagen pertenezca a cada una de las clases posibles, que son las clases con las que se ha entrenado el modelo. En este caso, cada clase representa a un individuo. Para calcular la tasa de acierto, se ha tenido que ir más allá de los porcentajes y determinar que clase se asigna a cada imagen. Se ha determinado que la clase con un porcentaje más alto será la clase asignada a la imagen.
 
@@ -112,9 +112,9 @@ En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tas
 \begin{table}[h!]
 \begin{tabular}{ |p{1.2cm}||p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|  }
     \hline
-     & \multicolumn{2}{|c|}{Sin normalización} & \multicolumn{2}{|c|}{Con normalización} \\
+     & \multicolumn{2}{|c|}{Sin pre-procesamiento} & \multicolumn{2}{|c|}{Con pre-procesamiento} \\
     \hline
-    Modelo& \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize}& \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize}\\
+    Modelo& \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize} & \begin{footnotesize}Sin \textit{data \newline augmentation}\end{footnotesize}& \begin{footnotesize}Con \textit{data \newline augmentation}\end{footnotesize}\\
     \hline
     Acierto & 0.94   & 0.93    & 0.72 &   0.68\\
     \hline
@@ -133,7 +133,7 @@ en cuanto a la reducción de imágenes para quedarse con sus características m�
 y no solo el iris, la propia red neuronal haya sido capaz de encontrar características en la imagen que son más eficientes para su clasificación, y que, de alguna forma, son
 ajenos a la zona propiamente del iris.
 
-Además, cabe de tener en cuenta que, tal como se explica en la sección \nameref{casia}, el \textit{dataset} utilizado ha sido sometido a un preprocesamiento previo, en el que se eliminó la pupila 
+Además, cabe de tener en cuenta que, tal como se explica en la sección \nameref{casia}, el conjunto de datos utilizado ha sido sometido a un preprocesamiento previo, en el que se eliminó la pupila 
 para evitar que el brillo emitido por las cámaras para tomar las propias imágenes pudiera afectar a la misma. Por lo tanto, realmente el pre-procesamiento practicado solo ha afectado a la 
 parte exterior al iris, y esto puede haber reducido su efecto.
 

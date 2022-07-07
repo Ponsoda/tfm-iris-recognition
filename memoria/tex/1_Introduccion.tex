@@ -2,7 +2,7 @@
 
 El \textit{Oxford Learners Dictionaries} \footnote{Definición consultada en \url{https://www.oxfordlearnersdictionaries.com/definition/english/biometric}} define la biometría como la utilización de características humanas parar poder identificar a las personas. Esta idea se ha convertido en la base o principio fundamental de un número considerable de sistemas de seguridad.
 
-Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos de seguridad fundamentales a nivel mundial para multitud de dispositivos. 
+Las principales características utilizadas para identificación de individuos son la cara, el iris, y las huellas dactilares. Estas características identificativas se han convertido en elementos de seguridad fundamentales para multitud de dispositivos. 
 
 Esta dependencia de la biometría para acceder a los dispositivos supone indirectamente una dependencia en ella para la protección de la información privada de la población, ya que hoy en día, los dispositivos electrónicos cuentan con gran cantidad de información sensible.
 
@@ -10,37 +10,38 @@ Dentro de la biometría, el iris se utiliza como un elemento de reconocimiento b
 personal, que supone que dos personas no puedan ser identificadas con un mismo iris \cite{malgheet_iris_2021}. Tanto es así, que el iris es incluso utilizado en los procesos 
 post-mortem para poder determinar la pertenencia del cuerpo \cite{dd_post-mortem_2020}.
 
-No obstante, contar con técnicas eficientes de segmentación y extracción de atributos del iris hoy en día sigue siendo un problema. En muchos casos se siguen utilizando técnicas clásicas que buscan encontrar bordes en el iris para poder aislarlo, como se muestra en la figura \ref{img:segmentacion-ojo}, y ocurre algo similar con la extracción de características.
-Pero recientemente, se ha demostrado que las redes neuronales pueden ser utilizadas para la segmentación del iris \cite{lozej_end--end_2018} y la extracción de características \cite{tfg_iris_2020}\cite{boyd_deep_2020}.
+Sin embargo, contar con técnicas eficientes de segmentación y extracción de atributos del iris hoy en día sigue siendo un problema. En muchos casos se siguen utilizando técnicas clásicas que buscan encontrar bordes en el iris para poder aislarlo, como se muestra en la Figura \ref{img:segmentacion-ojo}, y ocurre algo similar con la extracción de características.
+No obstante, se ha demostrado que las redes neuronales pueden ser utilizadas para la segmentación del iris \cite{lozej_end--end_2018} y la extracción de características \cite{tfg_iris_2020}\cite{boyd_deep_2020}.
 
-Existen dos opciones a la hora de trabajar con las redes neuronales para estos procesos, o bien entrenar una red neuronal desde cero, o bien adaptar una ya existente al conjunto de datos a utilizar. Ha sido demostrado que el uso de redes neuronales adaptadas funcionan mejor que las creadas desde cero cuando se cuenta con \textit{datasets} de un tamaño considerable (10 mil imágenes en el caso de \cite{boyd_deep_2020}) y si se aísla previamente el iris en las imágenes.
+Existen dos opciones a la hora de trabajar con las redes neuronales para estos procesos: (a) entrenar una red neuronal desde cero, (b) adaptar una ya existente al conjunto de datos a utilizar. Ha sido demostrado que el uso de redes neuronales adaptadas funcionan mejor que las creadas desde cero cuando se cuenta con \textit{datasets} de un tamaño considerable (10 mil imágenes en el caso de \cite{boyd_deep_2020}) y si se aísla previamente el iris en las imágenes.
 Con ello surgen dos preguntas:
 
 \begin{enumerate}
     \item ¿Como funcionaría la adaptación si se utiliza la imagen ocular completa en vez de una con el iris aislado?
-    \item ¿Este método sería aplicable también a \textit{datasets} pequeños (menos de mil imágenes), donde el entrenamiento de redes neuronales desde cero se dificulta considerablemente?¿Sería beneficioso aplicar \textit{data augmentation} en este caso para ampliar artificialmente su tamaño?
+    \item ¿Este método sería aplicable también a \textit{datasets} pequeños (menos de mil imágenes), donde el entrenamiento de redes neuronales desde cero se dificulta considerablemente? ¿Sería beneficioso aplicar \textit{data augmentation} en este caso para ampliar artificialmente su tamaño?
 \end{enumerate}
 
 \imagen{img/10_segmentacion_ojo.png}{Segmentación de los bordes límbico y pupilar de forma clásica.}{Segmentación de los bordes límbico y pupilar de forma clásica.}{img:segmentacion-ojo}
 
-En este estudio, se ha adaptado una red neuronal pre-entrenada con el fin de identificar distintos objetos para que sea capaz de identificar de individuos a través de sus imágenes oculares. Por ello, proponemos dos enfoques distintos. Ambos llevados a cabo una segunda vez utilizando técnicas de \textit{data augmentation} para comprobar su efecto sobre el modelo.
+En este estudio, se ha adaptado una red neuronal pre-entrenada con el fin de identificar distintos objetos para que sea capaz de identificar de individuos a través de sus imágenes oculares. Para ello, proponemos dos enfoques distintos. Un primer enfoque donde la red neuronal se adapta con un conjunto de datos que contiene imágenes oculares completas y un segundo enfoque donde la red neuroanl se adapta con un conjunto de datos que únicamente contienen el iris. 
+Además, para analizar el efecto de las técnicas de \textit{data augmentation} en la adaptación de los conjuntos de datos, en ambos casos, se han creado dos nuevos conjuntos de datos donde se utiliza esta técnica. Esto supondrá la creación de dos nuevos modelos de clasificación.
 
-En ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
+Por otro lado, en ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
 una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 
-permite adaptar el modelo para que, al llevarse a cabo la clasificación, no muestre resultados relativos al \textit{dataset} con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la figura \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
- con un \textit{dataset} de imágenes oculares etiquetadas.
+permite adaptar el modelo para que, al llevarse a cabo la clasificación, no muestre resultados relativos al conjunto de datos con el que ha sido entrenada, sino con el que ha sido adaptada, tal como se muestra en la Figura \ref{img:enfoque-sin-normalizacion}. El \textit{fine-tuning} está definido en la sección \ref{subsubsec:segmentacion}.}
+ con un conjunto de imágenes oculares etiquetadas.
 
-En un primer enfoque, se han utilizado las imágenes oculares completas del \textit{dataset}\footnote{Revisar sección \ref{casia}} para adaptar la red neuronal, siguiendo el proceso que se muestra en la figura \ref{img:enfoque-sin-normalizacion}
+En un primer enfoque, se han utilizado las imágenes oculares completas del conjunto de datos\footnote{Revisar sección \ref{casia}} para adaptar la red neuronal, siguiendo el proceso que se muestra en la Figura \ref{img:enfoque-sin-normalizacion}
 
 \imagen{img/14_enfoque_sin_normalizacion.png}{Enfoque utilizando las imágenes sin preprocesamiento.}{Enfoque utilizando las imágenes sin preprocesamiento.}{img:enfoque-sin-normalizacion}
 
 
-En un segundo enfoque, se ha aplicado un proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al \textit{dataset} de imágenes, para aislar el iris en la imagen. Posteriormente, se ha seguido también un proceso de adaptación de la red neuronal. Este enfoque se muestra en la figura \ref{img:enfoque-normalizacion}.
+En un segundo enfoque, se ha aplicado un proceso de segmentación\footnote{Definición de segmentación en la sección \ref{subsubsec:segmentacion}.} y normalización\footnote{Definición de normalización en la sección \ref{subsubsec:normalizacion}.} del iris, desarrollado en \cite{tfg_iris_2020}, al conjunto de imágenes, para aislar el iris en la imagen. Posteriormente, se ha seguido también un proceso de adaptación de la red neuronal. Este enfoque se muestra en la Figura \ref{img:enfoque-normalizacion}.
 
 \imagen{img/13_enfoque_normalizacion.png}{Enfoque utilizando la normalización y segmentación del iris.}{Enfoque utilizando la normalización y segmentación del iris.}{img:enfoque-normalizacion}
 
 
-Para ambos enfoques se han creado dos modelos adicionales, esta vez aplicando técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el \textit{dataset} original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para, por un lado, incrementar el número de imágenes oculares por individuo y, por otro, entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
+Para ambos enfoques se han creado dos modelos adicionales, esta vez aplicando técnicas de \textit{data augmentation}\footnote{El término \textit{data augmentation} hace referencia a un conjunto de técnicas que permite ampliar el conjunto de datos original con variaciones de el mismo. En la sección \nameref{dataaugmentation} puede encontrar una explicación más detallada.} para, por un lado, incrementar el número de imágenes oculares por individuo y, por otro, entrenar al modelo con nuevas variaciones de las imágenes, haciendo el modelo más robusto ante estas posibles nuevas variaciones.
 
 El resultado de esta adaptación de la red neuronal es la creación de cuatro modelos capaces de identificar a individuos a partir de una imagen ocular. 
 

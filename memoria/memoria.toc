@@ -10,8 +10,8 @@
 \contentsline {chapter}{3. Conceptos teóricos}{11}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Biometría}{11}{section.3.1}%
 \contentsline {subsection}{Partes del ojo}{11}{section*.9}%
-\contentsline {subsection}{\textit {Dataset} CASIA-IrisV1 }{12}{section*.10}%
-\contentsline {section}{\numberline {3.2}Inteligencia Artificial}{12}{section.3.2}%
+\contentsline {subsection}{conjunto de datos CASIA-IrisV1 }{12}{section*.10}%
+\contentsline {section}{\numberline {3.2}Inteligencia Artificial}{13}{section.3.2}%
 \contentsline {subsection}{\textit {Deep Learning}}{13}{section*.11}%
 \contentsline {subsection}{\textit {Pipeline}}{14}{section*.12}%
 \contentsline {subsection}{\textit {Data augmentation}}{15}{section*.13}%
@@ -79,7 +79,7 @@
 \contentsline {section}{\numberline {B.4}Especificación de requisitos}{48}{section.Alph2.4}%
 \contentsline {subsection}{Optimizar el código previo}{48}{section*.56}%
 \contentsline {subsection}{Crear los modelos para la clasificación de imágenes oculares}{48}{section*.57}%
-\contentsline {subsubsection}{Dividir el \textit {dataset} en entrenamiento y test}{48}{section*.58}%
+\contentsline {subsubsection}{Dividir el conjunto de datos en entrenamiento y test}{48}{section*.58}%
 \contentsline {subsubsection}{Aplicar de \textit {data augmentation}}{48}{section*.59}%
 \contentsline {subsubsection}{Segmentar de las imágenes}{48}{section*.60}%
 \contentsline {subsubsection}{Normalizar de las imágenes}{48}{section*.61}%
@@ -89,9 +89,9 @@
 \contentsline {appendix}{\chapternumberline {C}Especificación de diseño}{51}{appendix.Alph3}%
 \contentsline {section}{\numberline {C.1}Introducción}{51}{section.Alph3.1}%
 \contentsline {section}{\numberline {C.2}Diseño de datos}{51}{section.Alph3.2}%
-\contentsline {subsection}{\textit {Dataset}}{51}{section*.65}%
-\contentsline {subsection}{\textit {Notebooks}}{53}{section*.66}%
-\contentsline {section}{\numberline {C.3}Diseño procedimental}{53}{section.Alph3.3}%
+\contentsline {subsection}{conjunto de datos}{51}{section*.65}%
+\contentsline {subsection}{\textit {Notebooks}}{52}{section*.66}%
+\contentsline {section}{\numberline {C.3}Diseño procedimental}{52}{section.Alph3.3}%
 \contentsline {section}{\numberline {C.4}Diseño arquitectónico}{53}{section.Alph3.4}%
 \contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{55}{appendix.Alph4}%
 \contentsline {section}{\numberline {D.1}Introducción}{55}{section.Alph4.1}%

@@ -30,13 +30,13 @@ El {\textit{notebook} \texttt{pipeline.ipynb} contiene el código principal del 
 
 La configuración del \textit{pipeline} se muestra a continuación. En ella, se establece primero una configuración general, es decir, que es aplicable a
 las distintas secciones. En ella se han configurado las rutas en las que se guardan los distintos \textit{datasets}. Si todo el código es ejecutado, solo el
-\textit{'root-dir'} se mantendrá, y el resto se irán sobrescribiendo cuando se cree el propio \textit{dataset}. No obstante, la capacidad de establecer todas
+\textit{'root-dir'} se mantendrá, y el resto se irán sobrescribiendo cuando se cree el propio conjunto de datos. No obstante, la capacidad de establecer todas
 las rutas en la configuración es lo que nos permite cambiar el orden de las secciones en el \textit{pipeline}. 
 
 \begin{itemize}
     \item \textit{tratardDataset}
     \begin{itemize}
-        \item \textit{general\_train\_size}, tamaño del \textit{dataset} que será utilizado para el entrenamiento [Valor del 0-1].
+        \item \textit{general\_train\_size}, tamaño del conjunto de datos que será utilizado para el entrenamiento [Valor del 0-1].
         \item \textit{show\_first}, mostrar primera imagen [boolean].
     \end{itemize}
     \item \textit{dataAugmentation}
@@ -55,9 +55,9 @@ las rutas en la configuración es lo que nos permite cambiar el orden de las sec
         \item \textit{dataset\_dir}, directorio a utilizar ['raw', para la imagen ocular completa o 'normalizado', para la imagen del iris aislada].
         \item \textit{verImagenV1}, ver la imagen producida [boolean].
         \item \textit{CNN\_weights}, establecer de donde utilizar los pesos para la red neuronal [imagenet, None, o se le pasa un directorio con los pesos].
-        \item \textit{train\_size}, tamaño del \textit{dataset} de entrenamiento [0-1].
-        \item \textit{test\_size}, tamaño del \textit{dataset} de testeo [0-1].
-        \item \textit{batch\_size}, tamaño del \textit{batch} [debe de ser menor del tamaño del \textit{dataset}].
+        \item \textit{train\_size}, tamaño del conjunto de datos de entrenamiento [0-1].
+        \item \textit{test\_size}, tamaño del conjunto de datos de testeo [0-1].
+        \item \textit{batch\_size}, tamaño del \textit{batch} [debe de ser menor del tamaño del conjunto de datos].
         \item \textit{epochs1}, establecer el tamaño del \textit{epochs} para entrenar al primer modelo [10-100].
         \item \textit{plt\_accuracy1}, mostrar gráfica con el \textit{accuracy} del primer modelo [boolean].
         \item \textit{epochs2}, establecer el tamaño del \textit{epochs} para entrenar al segundo modelo [8-80].
@@ -153,8 +153,8 @@ Las secciones con las que cuenta el \textit{pipeline} son las siguientes:
     \item \textit{clasification} (parte del código adaptado, no utilizado en este proyecto).
     \item \textit{clasificacionCNN}
     \begin{itemize}
-        \item Adaptación del \textit{dataset} al modelo de entrada de la red neuronal.
-        \item División del \textit{dataset} para el entrenamiento y el testeo.
+        \item Adaptación del conjunto de datos al modelo de entrada de la red neuronal.
+        \item División del conjunto de datos para el entrenamiento y el testeo.
         \item Construcción de los tres modelos.
         \item Muestra de resultados y de un ejemplo de clasificación.
     \end{itemize}
@@ -191,7 +191,7 @@ iris_recognition_pipeline.transform(confi_dict)
 \subsection{\textit{Notebook} \textit{accuracy.ipynb}} \label{anx:accuracy}
 
 El \textit{notebook} \textit{accuracy.ipynb} permite el cálculo de la tasa de acierto de los modelos, utilizando los modelos creados en el apartado anterior,
-así como el \textit{dataset} reservado para realizar el testeo.
+así como el conjunto de datos reservado para realizar el testeo.
 
 \subsubsection{Código}
 
@@ -199,7 +199,7 @@ El código del \textit{notebook} está dispuesto de la siguiente forma:
 
 \begin{itemize}
     \item \textit{model}, ruta del modelo a utilizar.
-    \item \textit{test\_path\_dir}, ruta del \textit{dataset} de testeo.
+    \item \textit{test\_path\_dir}, ruta del conjunto de datos de testeo.
     \item \textit{size} y \textit{\_parse\_image}, configuración para adaptar la imagen al formato requerido por el modelo.
     \item \textit{realClass\_array}, \textit{array} con la clase real de las imágenes.
     \item \textit{predicted\_array}, \textit{array} con la clase predicha de las imágenes.
@@ -238,12 +238,12 @@ Pasos para la ejecución del proyecto:
 
 \begin{itemize}
     \item Clonar el repositorio del proyecto \url{https://github.com/Ponsoda/tfm-iris-recognition}.
-    \item Descargar el \textit{dataset} de CASIA-V1. En el proyecto se ha utilizado el \textit{dataset} a partir de \url{https://github.com/jaa0124/iris_classifier/tree/master/notebooks/CASIA-IrisV1}.
+    \item Descargar el conjunto de datos de CASIA-V1. En el proyecto se ha utilizado el conjunto de datos a partir de \url{https://github.com/jaa0124/iris_classifier/tree/master/notebooks/CASIA-IrisV1}.
     \item Abrir el \textit{notebook} \texttt{pipelines.ipynb}.
-    \item Determinar la ubicación del \textit{dataset} de CASIA-V1 en la configuración del \textit{pipeline}, así como el resto de parámetros y el directorio de salida para los modelos.
+    \item Determinar la ubicación del conjunto de datos de CASIA-V1 en la configuración del \textit{pipeline}, así como el resto de parámetros y el directorio de salida para los modelos.
     \item Correr todas las celdas del proyecto en el orden definido en el proyecto para la creación de cada uno de los modelos.
     \item Abrir el \textit{notebook} \texttt{accuracy.ipynb}.
-    \item Establecer la ubicación del \textit{dataset} reservado para el testeo y del modelo a utilizar y lanzar todas las celdas del \textit{notebook}.
+    \item Establecer la ubicación del conjunto de datos reservado para el testeo y del modelo a utilizar y lanzar todas las celdas del \textit{notebook}.
 \end{itemize}
 
 \section{Pruebas del sistema}

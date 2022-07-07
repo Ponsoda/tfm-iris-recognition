@@ -10,20 +10,20 @@ Tal como se ha descrito en el capítulo \nameref{capitulo1}, la biometría es el
 
 El ojo se divide en tres capas principales, la capa externa llamada esclerótica, la capa intermedia llamada iris y la capa interna llamada retina. Entre la capa externa e intermedia se encuentra el borde límbico, mientras que, en la capa intermedia, el borde pupilar separa el iris de la pupila\footnote{Información accesible desde \url{https://www.cigna.com/es-us/individuals-families/health-wellness/hw/anatoma-y-funcin-del-ojo-hw121946}. 2022, 22 de junio}.
 Dichos bordes son cruciales a la hora de segmentar el iris, proceso que se describe en la sección \nameref{subsubsec:segmentacion}.
-Las partes del ojo han sido etiquetadas en la figura \ref{img:partes-ojo}.
+Las partes del ojo han sido etiquetadas en la Figura \ref{img:partes-ojo}.
 
 \imagen{img/15_partes_ojo.png}{Partes del ojo.}{Partes del ojo.}{img:partes-ojo}
 
-\subsection{\textit{Dataset} CASIA-IrisV1 }	\label{casia}
+\subsection{conjunto de datos CASIA-IrisV1 }	\label{casia}
 
-El \textit{dataset} CASIA-IrisV1 ha sido el utilizado en el proyecto para adaptar las redes neuronales. Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
+El conjunto de datos CASIA-IrisV1 ha sido el utilizado en el proyecto para adaptar las redes neuronales. Se trata de una base de datos que contiene 756 imágenes del iris de un total de 108 sujetos. 
 Dichas fotos fueron tomadas por el \href{http://www.cbsr.ia.ac.cn/english/index.asp}{\textit{Center for Biometrics and Security Research}} en dos sesiones, donde se tomaron 3 y 4 muestras respectivamente por cada individuo, con una resolución de $320 \times 280$. 
 La pupila fue automáticamente remplazada por la propia organización para evitar que en ella se reflejasen las luces de las fotografías\footnote{El proceso de la toma de muestras se describe en \url{http://www.cbsr.ia.ac.cn/IrisDatabase.htm}.}.
 
 \section{Inteligencia Artificial}
 
 La Real Academia Española define la inteligencia artificial como una disciplina cuyo objetivo principal es la creación de programas capaces de realizar funciones similares a los de la mente humana\footnote{En base a la definición de \url{https://dle.rae.es/inteligencia}.}. 
-En este proyecto ha sido utilizada principalmente para la segmentación del iris, definida en la sección \nameref{subsubsec:segmentacion}, y la adaptación de la red neuronal al \textit{dataset}.
+En este proyecto ha sido utilizada principalmente para la segmentación del iris, definida en la sección \nameref{subsubsec:segmentacion}, y la adaptación de la red neuronal al conjunto de datos.
 
 \subsection{\textit{Deep Learning}}
 
@@ -34,15 +34,15 @@ Al basarse en la experiencia, el \textit{deep learning} no necesita que se defin
 al basarlos en conceptos más fáciles de entender \cite{Goodfellow-et-al-2016}.
 
 En el \textit{deep learning}, la red neuronal cuenta con una capa de entrada y una capa de salida, y entre ellas cuenta con una o varias capas ocultas. 
-Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la figura \ref{img:red-neuronal}.
+Las capas están conectadas entre ellas por conexiones ponderadas, que determinan la importancia de cada elemento de la capa y que permite, en el caso de este proyecto, la identificación de individuos a través de su imagen ocular en la capa de salida. Este funcionamiento ha sido representado en la Figura \ref{img:red-neuronal}.
 
-\imagen{img/16_red_neuronal.png}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
+\imagen{img/16_red_neuronal.png}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href{https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit{How Deep Neural Networks Work}}.}{img:red-neuronal}
 
 \subsection{\textit{Pipeline}}
 
 Los \textit{pipelines} son secuencias de procesos encadenados, donde la salida del proceso anterior funciona como \textit{input} del siguiente proceso.
 
-Tomando como ejemplo la figura \ref{img:enfoque-normalizacion}, un primer proceso sería la segmentación, que tomaría como entrada el \textit{dataset} de CASIA y tendría como salida 
+Tomando como ejemplo la Figura \ref{img:enfoque-normalizacion}, un primer proceso sería la segmentación, que tomaría como entrada el conjunto de datos de CASIA y tendría como salida 
 las imágenes segmentadas. A su vez, estas imágenes segmentadas, serían la entrada del proceso de normalización, y así sucesivamente.
 
 La utilización de \textit{pipelines} en el proyecto ha permitido un mayor control de los distintos procesos, al poder establecer una configuración general en la cadena de procesos, y ha permitido modificar de forma más sencilla el orden de estos procesos, permitiendo así experimentar con nuevas combinaciones de los procesos.
@@ -51,7 +51,7 @@ La utilización de \textit{pipelines} en el proyecto ha permitido un mayor contr
 
 La utilización de técnicas de \textit{data augmentation} es un proceso común en el análisis de imágenes, y en general, en aquellos proyectos donde se utilicen procesos estadísticos. 
 
-El \textit{data augmentation} consiste en incrementar el tamaño del \textit{dataset} con la creación artificial de nuevas imágenes producidas a partir de imágenes del \textit{dataset} original.
+El \textit{data augmentation} consiste en incrementar el tamaño del conjunto de datos con la creación artificial de nuevas imágenes producidas a partir de imágenes del conjunto de datos original.
 
 Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido gaussiano o transformaciones geométricas de tipo afín, obteniendo como resultado una imagen que deriva de la original, pero que cuenta con ciertas diferencias, más o menos pronunciada dependiendo de las técnicas 
 de \textit{data augmentation} que se le apliquen, así como de los parámetros utilizados para realizar las modificaciones\footnote{Por ejemplo, si se rota una imagen 2 grados, la diferencia con la original será mucho menor que si se rota 180 grados.}.	
@@ -68,7 +68,7 @@ creación del modelo, lo cual le proporcionará una mejor actuación ante la apa
 \subsubsection{Ruido gaussiano}
 
 La primera de las técnicas de \textit{data augmentation} utilizadas es el ruido gaussiano. 
-También conocido como ruido blanco, esta técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la figura \ref{img:ruido-gaussiano} .
+También conocido como ruido blanco, esta técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la Figura \ref{img:ruido-gaussiano} .
 
 \imagen{img/03_rudio_gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{img:ruido-gaussiano}
 
@@ -96,7 +96,7 @@ Las transformaciones afines utilizadas en el proyecto han sido recogidas en la t
 La transformación de identidad es un tipo de transformación afín en el que la imagen se copia sin ningún otro cambio, y se utiliza para  
 la reutilización del conjunto de datos.
 
-\imagen{img/05_transformacion_identidad.png}{ejemplo de transformación de identidad.}{ejemplo de transformación de identidad.}{img:transformacion-identidad}
+\imagen{img/05_transformacion_identidad.png}{Ejemplo de transformación de identidad.}{Ejemplo de transformación de identidad.}{img:transformacion-identidad}
 
 \begin{gather}
 	Identidad:
@@ -116,7 +116,7 @@ la reutilización del conjunto de datos.
 
 Se trata de un mapeo aplicado a la imagen a partir de un eje.
 
-\imagen{img/06_transformacion_reflejo.png}{ejemplo de transformación por reflexión.}{ejemplo de transformación por reflexión.}{img:transformacion-reflejo}
+\imagen{img/06_transformacion_reflejo.png}{Ejemplo de transformación por reflexión.}{Ejemplo de transformación por reflexión.}{img:transformacion-reflejo}
 
 \begin{gather}
 	Reflexión:
@@ -134,7 +134,7 @@ Se trata de un mapeo aplicado a la imagen a partir de un eje.
 
 Esta transformación modifica la escala de la imagen original, ya sea ampliándola o disminuyéndola.
 
-\imagen{img/07_transformacion_escala.png}{ejemplo de transformación por escalamiento.}{ejemplo de transformación por escalamiento.}{img:transformacion-escalamiento}
+\imagen{img/07_transformacion_escala.png}{Ejemplo de transformación por escalamiento.}{Ejemplo de transformación por escalamiento.}{img:transformacion-escalamiento}
 
 
 \begin{gather}
@@ -153,7 +153,7 @@ Esta transformación modifica la escala de la imagen original, ya sea ampliándo
 
 La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni su forma, ni su orientación.
 
-\imagen{img/08_transformacion_traslacion.png}{ejemplo de transformación por traslación.}{ejemplo de transformación por traslación.}{img:transformacion-traslacion}
+\imagen{img/08_transformacion_traslacion.png}{Ejemplo de transformación por traslación.}{Ejemplo de transformación por traslación.}{img:transformacion-traslacion}
 
 \begin{gather}
 	Traducción:
@@ -171,7 +171,7 @@ La imagen cambia de plano de coordenadas, pero no se modifican ni su tamaño, ni
 
 Esta transformación aplica una transformación de $\theta$ grados del plano.
 
-\imagen{img/09_transformacion_rotacion.png}{ejemplo de transformación por rotación.}{ejemplo de transformación por rotación.}{img:transformacion-rotacion}
+\imagen{img/09_transformacion_rotacion.png}{Ejemplo de transformación por rotación.}{Ejemplo de transformación por rotación.}{img:transformacion-rotacion}
 
 
 \begin{gather}
@@ -201,22 +201,22 @@ En la fase de detección de los bordes \textit{límbico} y \textit{pupilar}\foot
 
 
 
-Una vez detectados los bordes, se procede a una binarización de la figura \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
+Una vez detectados los bordes, se procede a una binarización de la Figura \ref{img:segmentacion-binarizacion-ojo}, de forma que quede clara la división entre iris y resto del ojo.
 
 \imagen{img/11_segmentacion_binario_ojo.png}{Ejemplo de binarización del ojo durante la segmentación.}{Ejemplo de binarización del ojo durante la segmentación.}{img:segmentacion-binarizacion-ojo}
 
 
 \subsubsection{Normalización}\label{subsubsec:normalizacion}
 
-La normalización del iris se puede definir como la proyección del iris segmentado a coordenadas polares (figura \ref{img:normalizacion-ojo}), utilizando el método Daugman\footnote{Transforma el iris de coordenadas cartesianas a polares.} \cite{daugman_normalization_1993}. De esta manera, se igualen los tamaños de las diferentes imágenes y permiten su comparación.
+La normalización del iris se puede definir como la proyección del iris segmentado a coordenadas polares (Figura \ref{img:normalizacion-ojo}), utilizando el método Daugman\footnote{Transforma el iris de coordenadas cartesianas a polares.} \cite{daugman_normalization_1993}. De esta manera, se igualen los tamaños de las diferentes imágenes y permiten su comparación.
 
 \imagen{img/12_normalizacion_ojo.png}{Ejemplo de normalización del ojo.}{Ejemplo de normalización del ojo.}{img:normalizacion-ojo}
 
 
 \subsection{\textit{Fine-tuning}}\label{subsec:fine-tuning}
- Se basa en adaptar redes neuronales, que previamente han sido entrenadas para reconocer ciertos objetos, con el fin de que pasen a reconocer los objetos de un nuevo \textit{dataset}. 
+ Se basa en adaptar redes neuronales, que previamente han sido entrenadas para reconocer ciertos objetos, con el fin de que pasen a reconocer los objetos de un nuevo conjunto de datos. 
  Ello permite beneficiarse de las capacidades de la red neuronal a la hora de identificar objetos, teniendo que entrenar solamente las capas relacionadas con la identificación y el etiquetado final. 
  
- En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el \textit{dataset} de CASIA-Iris-V1 sin tener que crear una red neuronal desde cero, sino adaptando la red
+ En el caso de este proyecto, el \textit{fine-tuning} ha sido utilizado para obtener un clasificador de imágenes para el conjunto de datos de CASIA-Iris-V1 sin tener que crear una red neuronal desde cero, sino adaptando la red
   neuronal VGG16 para dicha función, algo que ha demostrado ser más eficiente \cite{boyd_deep_2020}.
 

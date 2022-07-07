@@ -70,6 +70,15 @@
 	\end{figure}
 }
 
+\newcommand{\imagenPequenya}[4]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=50mm]{#1}
+		\caption[{#3}]{#2}\label{#4}
+	\end{figure}
+	\FloatBarrier
+}
+
 
 
 % El comando \figura nos permite insertar figuras comodamente, y utilizando
@@ -457,7 +466,7 @@ D. Pedro Latorre Carmona
 La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un recurso ampliamente empleado en la actualidad. El iris es uno de los elementos biométricos que mayores dificultades presentan para su suplantación, y por ello, su utilización en este campo ha atraído la atención de la comunidad científica estas últimas dos décadas. 
 
 Las redes neuronales han demostrado ser útiles para extraer características del iris. Esta extracción se puede llevar a cabo no solo entrenando una red neuronal desde cero, sino también adaptando una ya pre-entrenada.
-Respecto a la utilización de técnicas de adaptación de la red neuronal se plantean dos preguntas. ¿Es necesario aislar el iris para llevar a cabo la adaptación de la red neuronal?¿Se puede aplicar también para conjuntos de datos pequeños?
+Respecto a la utilización de técnicas de adaptación de la red neuronal se plantean dos preguntas. ¿Es necesario aislar el iris para llevar a cabo la adaptación de la red neuronal? ¿Se puede aplicar también para conjuntos de datos pequeños?
 
 En este proyecto se han adaptado redes neuronales, inicialmente entrenadas para clasificar diversos objetos, para que sean capaces de identificar a un individuo utilizando su imagen ocular. 
 
@@ -465,7 +474,7 @@ Para ello, se han utilizado dos enfoques. En un primer enfoque, se han utilizado
 
 Además, se han utilizado técnicas de aumento del número de muestras del conjunto de datos original, para así poder contar con un mayor número de muestras de cada individuo y también, mejorar la robustez de las redes neuronales adaptadas.
 
-Los resultados muestran que las mejores tasas de clasificación se han dado en el enfoque donde se utilizaba la imagen ocular completa, sin que las técnicas de ampliación del \textit{dataset} hayan permitido mejorar la tasa de clasificación. 
+Los resultados muestran que las mejores tasas de clasificación se han dado en el enfoque donde se utilizaba la imagen ocular completa, sin que las técnicas de ampliación del conjunto de datos hayan permitido mejorar la tasa de clasificación. 
 
 Como futuras líneas de trabajo, se establecen la utilización de redes neuronales pre-entrenadas distintas, así como testear el modelo con imágenes realizadas fuera del entorno académico.
 
@@ -474,7 +483,7 @@ Como futuras líneas de trabajo, se establecen la utilización de redes neuronal
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-biometría, iris, redes neuronales
+biometría, iris, redes neuronales, imágenes oculares, \textit{fine-tuning}, \textit{data augmentation}, CASIA
 \end{abstract}
 
 \clearpage
