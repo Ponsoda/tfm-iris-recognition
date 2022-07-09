@@ -2,7 +2,7 @@
 
 \section{Introducción}
 
-En este apartado se determinará la forma de proceder para poder replicar el proyecto.
+En este apartado se determinará la forma de proceder para poder replicar el proyecto por parte de programadores. En el se explica la estructura de los directorios así como la función de las distintas partes del código.
 
 \section{Estructura de directorios}
 
@@ -41,8 +41,8 @@ las rutas en la configuración es lo que nos permite cambiar el orden de las sec
     \end{itemize}
     \item \textit{dataAugmentation}
     \begin{itemize}
-        \item \textit{gaussianNoise}, aplicación del ruido gaussiano [boolean].
-        \item \textit{stdGN}, valores de ruido gaussiano a aplicar en las imágenes [valores menores de 10].
+        \item \textit{gaussianNoise}, aplicación del ruido Gaussiano [boolean].
+        \item \textit{stdGN}, valores de ruido Gaussiano a aplicar en las imágenes [valores menores de 10].
         \item \textit{afinTransformation}, aplicación de transformaciones afines [boolean].
     \end{itemize}
     \item \textit{segmentation}
@@ -136,7 +136,7 @@ Las secciones con las que cuenta el \textit{pipeline} son las siguientes:
     \item \textit{data\_augmentation}
     \begin{itemize}
         \item Aplicación de transformaciones afines.
-        \item Aplicación del ruido gaussiano.
+        \item Aplicación del ruido Gaussiano.
     \end{itemize}
     \item \textit{segmentation}
     \begin{itemize}
@@ -241,7 +241,7 @@ Pasos para la ejecución del proyecto:
     \item Descargar el conjunto de datos de CASIA-V1. En el proyecto se ha utilizado el conjunto de datos a partir de \url{https://github.com/jaa0124/iris_classifier/tree/master/notebooks/CASIA-IrisV1}.
     \item Abrir el \textit{notebook} \texttt{pipelines.ipynb}.
     \item Determinar la ubicación del conjunto de datos de CASIA-V1 en la configuración del \textit{pipeline}, así como el resto de parámetros y el directorio de salida para los modelos.
-    \item Correr todas las celdas del proyecto en el orden definido en el proyecto para la creación de cada uno de los modelos.
+    \item Ejecutar todas las celdas del proyecto en el orden definido en el proyecto para la creación de cada uno de los modelos.
     \item Abrir el \textit{notebook} \texttt{accuracy.ipynb}.
     \item Establecer la ubicación del conjunto de datos reservado para el testeo y del modelo a utilizar y lanzar todas las celdas del \textit{notebook}.
 \end{itemize}

@@ -28,59 +28,45 @@ The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
 Warning--empty journal in abdullah_iris_2015
-Warning--empty year in abdullah_iris_2015
-Warning--empty journal in tfg_iris_2020
-Warning--empty year in tfg_iris_2020
-Warning--empty journal in dd_post-mortem_2020
-Warning--empty year in dd_post-mortem_2020
-Warning--empty journal in daugman_normalization_1993
-Warning--empty year in daugman_normalization_1993
-Warning--empty journal in liu_efficient_2021
-Warning--empty year in liu_efficient_2021
-Warning--empty year in lozej_end--end_2018
-Warning--empty journal in malgheet_iris_2021
-Warning--empty year in malgheet_iris_2021
-Warning--empty journal in szymkowski_iris-based_2021
-Warning--empty year in szymkowski_iris-based_2021
 You've used 10 entries,
             2118 wiz_defined-function locations,
-            559 strings with 6205 characters,
-and the built_in function-call counts, 3522 in all, are:
-= -- 315
+            570 strings with 6403 characters,
+and the built_in function-call counts, 3520 in all, are:
+= -- 332
 > -- 212
 < -- 2
 + -- 85
 - -- 74
-* -- 276
-:= -- 600
-add.period$ -- 31
+* -- 259
+:= -- 617
+add.period$ -- 32
 call.type$ -- 10
-change.case$ -- 66
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 118
-empty$ -- 243
+cite$ -- 11
+duplicate$ -- 116
+empty$ -- 240
 format.name$ -- 74
-if$ -- 695
+if$ -- 708
 int.to.chr$ -- 0
 int.to.str$ -- 10
-missing$ -- 10
-newline$ -- 53
+missing$ -- 9
+newline$ -- 54
 num.names$ -- 20
-pop$ -- 100
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 57
 quote$ -- 0
-skip$ -- 71
+skip$ -- 78
 stack$ -- 0
 substring$ -- 167
-swap$ -- 14
+swap$ -- 19
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 38
-warning$ -- 15
+warning$ -- 1
 while$ -- 31
 width$ -- 12
-write$ -- 95
-(There were 15 warnings)
+write$ -- 112
+(There was 1 warning)

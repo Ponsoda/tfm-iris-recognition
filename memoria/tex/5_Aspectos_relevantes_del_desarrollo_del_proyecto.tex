@@ -5,7 +5,7 @@ a \cite{tfg_iris_2020} para utilizarlo posteriormente en las fases de pre-proces
 Por otro lado, en la segunda fase se ha desarrollado la adaptación de la red neuronal VGG16 a los conjuntos de imágenes derivadas del conjunto de datos creadas en la primera fase.
 
 Los \textit{datasets} que utilizarán en la segunda fase, junto con el \textit{fine-tuning} para crear los modelos finales. Con ellos, se calculará la tasa de acierto relativa a su capacidad de clasificación.
-Estos cuatro datasets se reflejan en la tabla \ref{tabla:datasets}.
+Estos cuatro datasets se reflejan en la Tabla \ref{tabla:datasets}.
 
 \tablaSmall{\textit{Datasets} utilizados para el \textit{fine-tuning}.}{l c c}{datasets}
 { \multicolumn{1}{l}{conjunto de datos} & Pre-procesamiento &  \textit{Data augmentation}\\}{ 
@@ -38,11 +38,11 @@ Este código permite la creación de un segundo conjunto de datos que, sabiendo 
 
 El proceso de \textit{data augmentation} permite ampliar el número de imágenes y la robustez de los modelos entrenados con los dos \textit{datasets} anteriormente mencionados. Estos son el \textit{datasets} con las imágenes oculares completas y el conjunto de datos con imágenes del iris aislado. 
 
-Por lo tanto, este proceso utiliza las técnicas de ruido gaussiano y transformaciones afines, explicadas en la sección \ref{transformacionesafines} para crear dos nuevos conjuntos de datos. 
+Por lo tanto, este proceso utiliza las técnicas de ruido Gaussiano y transformaciones afines, explicadas en la sección \ref{transformacionesafines} para crear dos nuevos conjuntos de datos. 
 
-Para la aplicación del ruido gaussiano, se han aplicado aleatoriamente valores de la desviación estándar de 2.5, 5 y 7.5.
+Para la aplicación del ruido Gaussiano, se han aplicado aleatoriamente valores de la desviación estándar de 2.5, 5 y 7.5.
 
-Por su lado, las transformaciones afines se han aplicado de forma independiente al ruido gaussiano, es decir, una no es excluyente de la otra, ni las transformaciones afines son excluyentes entre ellas mismas. 
+Por su lado, las transformaciones afines se han aplicado de forma independiente al ruido Gaussiano, es decir, una no es excluyente de la otra, ni las transformaciones afines son excluyentes entre ellas mismas. 
 
 Como resultado del \textit{data augmentation}, los \textit{datasets}, que originalmente contaban con 756 imágenes, cuentan tras este proceso con 1158 imágenes.
 
@@ -56,7 +56,7 @@ Para ello, se ha encapsulado cada uno de los procesos del proyecto en funciones 
 
 Este diccionario es el único elemento de entrada y salida en la pipeline y permitía que en cada proceso se pudiese modificar o ampliar el diccionario, haciendo posible el cambio del orden de los procesos en el pipeline. 
 
-Los criterios de la configuración de la pipeline se muestran en la siguiente tabla \ref{tabla:configuracion-pipeline}. El \textit{pipeline} se explica más detalladamente en el Anexo \ref{anx:pipeline}.
+Los criterios de la configuración de la pipeline se muestran en la siguiente Tabla \ref{tabla:configuracion-pipeline}. El \textit{pipeline} se explica más detalladamente en el Anexo \ref{anx:pipeline}.
 
 \tablaSmall{Configuración del \textit{pipeline}}{l c }{configuracion-pipeline}
 { \multicolumn{1}{l}{Nombre} & Configuración \\}{ 
@@ -106,7 +106,7 @@ En el caso las imágenes normalizadas, antes de ser clasificadas, se les aplica 
 
 La tasa de acierto representa el número de veces que el modelo a determinado correctamente la clase de la imagen. O lo que es lo mismo, a que individuo pertenece cada imagen ocular.
 
-En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tasa de acierto que han tenido los modelos, a la hora de relacionar las imágenes
+En la siguiente Tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tasa de acierto que han tenido los modelos, a la hora de relacionar las imágenes
  con los individuos. El cálculo de este valor se explica detalladamente en el Anexo \ref{anx:accuracy}.
 
 \begin{table}[h!]
@@ -124,8 +124,8 @@ En la siguiente tabla \ref{tabla:tasa-acierto-modelos}, se puede observar la tas
 
 
 Estos resultados muestran, en primer lugar, que el \textit{data augmentation} no supone sino un decremento en la tasa de acierto, tanto en los casos donde se ha aislado el iris
-como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez, al calcularse este parámetro utilizando imágenes que no han surgido ningún tipo de transformación, puesto que han sido tomadas en un entorno controlado.
-Por lo tanto, la mejora de la clasificación cuando las imágenes cuenten con modificaciones respecto a las imágenes originales que se le presupone al \textit{data augmentation} no ha podido ser comprobada. No obstante, la mejora de la robustez previsiblemente
+como en los que no. Esto puede deberse a que, aunque el modelo sí tenga una mayor robustez frente a imágenes alteradas, el conjunto de datos de testeo no ha sufrido ninguna modificación.
+Por lo tanto, la mejora de la clasificación frente a imágenes con alteraciones, que se le presupone al \textit{data augmentation}, no ha podido ser comprobada. No obstante, la mejora de la robustez previsiblemente
 permitirá al sistema funcionar de forma más eficiente en un contexto no controlado.
 
 Por otro lado, en cuanto a los mejores resultados utilizando imágenes no pre-procesadas, se debe de tener en cuenta la forma en la que funcionan las redes neuronales,

@@ -53,7 +53,7 @@ La utilización de técnicas de \textit{data augmentation} es un proceso común 
 
 El \textit{data augmentation} consiste en incrementar el tamaño del conjunto de datos con la creación artificial de nuevas imágenes producidas a partir de imágenes del conjunto de datos original.
 
-Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido gaussiano o transformaciones geométricas de tipo afín, obteniendo como resultado una imagen que deriva de la original, pero que cuenta con ciertas diferencias, más o menos pronunciada dependiendo de las técnicas 
+Para ello, la imagen original se modifica, comúnmente con la aplicación de ruido Gaussiano o transformaciones geométricas de tipo afín, obteniendo como resultado una imagen que deriva de la original, pero que cuenta con ciertas diferencias, más o menos pronunciada dependiendo de las técnicas 
 de \textit{data augmentation} que se le apliquen, así como de los parámetros utilizados para realizar las modificaciones\footnote{Por ejemplo, si se rota una imagen 2 grados, la diferencia con la original será mucho menor que si se rota 180 grados.}.	
 
 En el caso de los procesos de entrenamiento de las redes neuronales, es común la utilización de técnicas de \textit{data augmentation} principalmente por dos situaciones, aunque estas no son limitantes:
@@ -65,26 +65,26 @@ significativos en la creación de una red neuronal.
 creación del modelo, lo cual le proporcionará una mejor actuación ante la aparición de nuevas complejidades.
 \end{itemize}
 
-\subsubsection{Ruido gaussiano}
+\subsubsection{Ruido Gaussiano}
 
-La primera de las técnicas de \textit{data augmentation} utilizadas es el ruido gaussiano. 
-También conocido como ruido blanco, esta técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la Figura \ref{img:ruido-gaussiano} .
+La primera de las técnicas de \textit{data augmentation} utilizadas es el ruido Gaussiano. 
+También conocido como ruido blanco, esta técnica provoca que los píxeles de una imagen cambien su valor siguiendo una distribución gaussiana, como se puede observar en la Figura \ref{img:ruido-Gaussiano} .
 
-\imagen{img/03_rudio_gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{Ejemplo de \textit{data augmentation} por ruido gaussiano.}{img:ruido-gaussiano}
+\imagen{img/03_rudio_Gaussiano.png}{Ejemplo de \textit{data augmentation} por ruido Gaussiano.}{Ejemplo de \textit{data augmentation} por ruido Gaussiano.}{img:ruido-Gaussiano}
 
 \subsubsection{Transformaciones afines} \label{transformacionesafines}
 
 Las transformaciones afines permiten aumentar el tamaño del dataset mediante la transformación de imágenes. Conservan el paralelismo de sus líneas rectas y paralelas y, de alguna forma, simulan una nueva perspectiva de la imagen original.
-Las transformaciones afines utilizadas en el proyecto han sido recogidas en la tabla \ref{tabla:transformaciones-afines} y se describen a continuación.
+Las transformaciones afines utilizadas en el proyecto han sido recogidas en la Tabla \ref{tabla:transformaciones-afines} y se describen a continuación.
 
 \begin{table}[h!]
 \begin{tabular}{ |p{2cm}|p{1.8cm}|p{2.2cm} |p{2cm}|p{2cm}|}
 	\hline
 	\multicolumn{5}{|c|}{Transformaciones afines}\\ 
 	\hline
-	Identidad & Reflexión &Escalamiento & Traslación  & Rotación\\
+	Identidad & Reflexión &escalado & Traslación  & Rotación\\
 	\hline
-	Figura \ref{img:transformacion-identidad} & Figura \ref{img:transformacion-reflejo}     & Figura \ref{img:transformacion-escalamiento} &   Figura \ref{img:transformacion-traslacion} &   Figura \ref{img:transformacion-rotacion}\\
+	Figura \ref{img:transformacion-identidad} & Figura \ref{img:transformacion-reflejo}     & Figura \ref{img:transformacion-escalado} &   Figura \ref{img:transformacion-traslacion} &   Figura \ref{img:transformacion-rotacion}\\
 	\hline
 \end{tabular}
 \caption{\label{tabla:transformaciones-afines}Transformaciones afines aplicadas en el trabajo.}
@@ -130,15 +130,15 @@ Se trata de un mapeo aplicado a la imagen a partir de un eje.
 	  \begin{bmatrix} x \\\ y \\ 1 \end{bmatrix}
 \end{gather}
 
-\paragraph{Escalamiento} 
+\paragraph{escalado} 
 
 Esta transformación modifica la escala de la imagen original, ya sea ampliándola o disminuyéndola.
 
-\imagen{img/07_transformacion_escala.png}{Ejemplo de transformación por escalamiento.}{Ejemplo de transformación por escalamiento.}{img:transformacion-escalamiento}
+\imagen{img/07_transformacion_escala.png}{Ejemplo de transformación por escalado.}{Ejemplo de transformación por escalado.}{img:transformacion-escalado}
 
 
 \begin{gather}
-	Escalamiento:
+	escalado:
 	\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
 	\equiv
 	 \begin{bmatrix}

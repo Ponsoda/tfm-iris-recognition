@@ -15,11 +15,11 @@
 \contentsline {subsection}{\textit {Deep Learning}}{13}{section*.11}%
 \contentsline {subsection}{\textit {Pipeline}}{14}{section*.12}%
 \contentsline {subsection}{\textit {Data augmentation}}{15}{section*.13}%
-\contentsline {subsubsection}{Ruido gaussiano}{15}{section*.14}%
+\contentsline {subsubsection}{Ruido Gaussiano}{15}{section*.14}%
 \contentsline {subsubsection}{Transformaciones afines}{16}{section*.15}%
 \contentsline {paragraph}{Identidad}{16}{section*.16}%
 \contentsline {paragraph}{Reflexión}{17}{section*.17}%
-\contentsline {paragraph}{Escalamiento}{18}{section*.18}%
+\contentsline {paragraph}{escalado}{18}{section*.18}%
 \contentsline {paragraph}{Traslación}{18}{section*.19}%
 \contentsline {paragraph}{Rotación}{19}{section*.20}%
 \contentsline {subsection}{Pre-procesamiento}{19}{section*.21}%
@@ -90,7 +90,7 @@
 \contentsline {section}{\numberline {C.1}Introducción}{51}{section.Alph3.1}%
 \contentsline {section}{\numberline {C.2}Diseño de datos}{51}{section.Alph3.2}%
 \contentsline {subsection}{conjunto de datos}{51}{section*.65}%
-\contentsline {subsection}{\textit {Notebooks}}{52}{section*.66}%
+\contentsline {subsection}{Jupyter \textit {Notebook}}{52}{section*.66}%
 \contentsline {section}{\numberline {C.3}Diseño procedimental}{52}{section.Alph3.3}%
 \contentsline {section}{\numberline {C.4}Diseño arquitectónico}{53}{section.Alph3.4}%
 \contentsline {appendix}{\chapternumberline {D}Documentación técnica de programación}{55}{appendix.Alph4}%

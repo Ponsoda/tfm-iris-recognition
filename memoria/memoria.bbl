@@ -4,16 +4,17 @@
 Dr~Hadeel~N Abdullah.
 \newblock Iris recognition using wavelet transform and artificial neural
   networks.
-\newblock page~13.
+\newblock page~13, 2015.
 
 \bibitem{tfg_iris_2020}
 Johnson~Bolívar Arrobo~Acaro.
 \newblock Sistema clasificador de iris.
+\newblock Trabajo final de grado, Universidad de Burgos, 2020.
 
 \bibitem{boyd_deep_2020}
 Aidan Boyd, Adam Czajka, and Kevin Bowyer.
 \newblock Deep learning-based feature extraction in iris recognition: Use
-  existing models, fine-tune or train from scratch?
+  existing models, fine-tune or train from scratch?, 2020.
 \newblock Number: {arXiv}:2002.08916.
 
 \bibitem{dd_post-mortem_2020}
@@ -22,13 +23,14 @@ Aidan Boyd, Shivangi Yadav, Thomas Swearingen, Andrey Kuehlkamp, Mateusz
   Patrick Flynn, Kevin Bowyer, and Adam Czajka.
 \newblock Post-mortem iris recognition—a survey and assessment of the state
   of the art.
-\newblock 8:136570--136593.
+\newblock {\em {IEEE} Access}, 8:136570--136593, 2020.
 
 \bibitem{daugman_normalization_1993}
 John~G. Daugman.
 \newblock High confidence visual recognition of persons by a test of
   statistical independ-ence.
-\newblock 15(11).
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  15(11), 1993.
 
 \bibitem{Goodfellow-et-al-2016}
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
@@ -40,23 +42,24 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 Guoyang Liu, Weidong Zhou, Lan Tian, Wei Liu, Yingjian Liu, and Hanwen Xu.
 \newblock An efficient and accurate iris recognition algorithm based on a novel
   condensed 2-ch deep convolutional neural network.
-\newblock 21(11):3721.
+\newblock {\em Sensors}, 21(11):3721, 2021.
 
 \bibitem{lozej_end--end_2018}
 Jus Lozej, Blaz Meden, Vitomir Struc, and Peter Peer.
 \newblock End-to-end iris segmentation using u-net.
 \newblock In {\em 2018 {IEEE} International Work Conference on Bioinspired
-  Intelligence ({IWOBI})}, pages 1--6. {IEEE}.
+  Intelligence ({IWOBI})}, pages 1--6. {IEEE}, 2018.
 
 \bibitem{malgheet_iris_2021}
 Jasem~Rahman Malgheet, Noridayu~Bt Manshor, and Lilly~Suriani Affendey.
 \newblock Iris recognition development techniques: A comprehensive review.
-\newblock 2021:1--32.
+\newblock {\em Complexity}, 2021:1--32, 2021.
 
 \bibitem{szymkowski_iris-based_2021}
 Maciej Szymkowski, Piotr Jasiński, and Khalid Saeed.
 \newblock Iris-based human identity recognition with machine learning methods
   and discrete fast fourier transform.
-\newblock 17(3):309--317.
+\newblock {\em Innovations in Systems and Software Engineering},
+  17(3):309--317, 2021.
 
 \end{thebibliography}
