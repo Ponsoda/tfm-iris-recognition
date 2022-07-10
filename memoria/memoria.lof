@@ -1,18 +1,19 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Segmentación de los bordes límbico y pupilar de forma clásica.}}{4}{figure.1.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Enfoque utilizando las imágenes sin preprocesamiento.}}{6}{figure.1.2}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Enfoque utilizando la normalización y segmentación del iris.}}{7}{figure.1.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Partes del ojo.}}{12}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href {https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit {How Deep Neural Networks Work}}.}}{14}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de \textit {data augmentation} por ruido Gaussiano.}}{16}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de transformación de identidad.}}{17}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de transformación por reflexión.}}{17}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplo de transformación por escalado.}}{18}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de transformación por traslación.}}{18}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Ejemplo de transformación por rotación.}}{19}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Ejemplo de binarización del ojo durante la segmentación.}}{20}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Ejemplo de normalización del ojo.}}{21}{figure.3.13}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Ejemplo de imágenes completas e imágenes con el iris aislado.}}{5}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Enfoque utilizando las imágenes sin preprocesamiento.}}{6}{figure.1.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Enfoque utilizando la normalización y segmentación del iris.}}{7}{figure.1.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Partes del ojo.}}{12}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Representación del funcionamiento de una red neuronal, inspirada en el vídeo, \href {https://www.youtube.com/watch?v=ILsA4nyG7I0}{\textit {How Deep Neural Networks Work}}.}}{14}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de \textit {data augmentation} por ruido Gaussiano.}}{16}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de transformación de identidad.}}{17}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplo de transformación por reflexión.}}{17}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de transformación por escalado.}}{18}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Ejemplo de transformación por traslación.}}{18}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Ejemplo de transformación por rotación.}}{19}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Ejemplo de binarización del ojo durante la segmentación.}}{20}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Ejemplo de normalización del ojo.}}{21}{figure.3.14}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

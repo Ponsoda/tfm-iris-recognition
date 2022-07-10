@@ -23,8 +23,11 @@ Con ello surgen dos preguntas:
 
 \imagen{img/10_segmentacion_ojo.png}{Segmentación de los bordes límbico y pupilar de forma clásica.}{Segmentación de los bordes límbico y pupilar de forma clásica.}{img:segmentacion-ojo}
 
-En este estudio, se ha adaptado una red neuronal pre-entrenada con el fin de identificar distintos objetos para que sea capaz de identificar de individuos a través de sus imágenes oculares. Para ello, proponemos dos enfoques distintos. Un primer enfoque donde la red neuronal se adapta con un conjunto de datos que contiene imágenes oculares completas y un segundo enfoque donde la red neuroanl se adapta con un conjunto de datos que únicamente contienen el iris. 
+En este estudio, se ha adaptado una red neuronal pre-entrenada con el fin de identificar distintos objetos para que sea capaz de identificar de individuos a través de sus imágenes oculares. Para ello, proponemos dos enfoques distintos. Un primer enfoque donde la red neuronal se adapta con un conjunto de datos que contiene imágenes oculares completas y un segundo enfoque donde la red neuronal se adapta con un conjunto de datos que únicamente contienen el iris. Ejemplos imágenes pertenecientes a cada conjunto de datos se pueden consultar en la Figura \ref{img:completa-vs-aislada}.   
 Además, para analizar el efecto de las técnicas de \textit{data augmentation} en la adaptación de los conjuntos de datos, en ambos casos, se han creado dos nuevos conjuntos de datos donde se utiliza esta técnica. Esto supondrá la creación de dos nuevos modelos de clasificación.
+
+\imagen{img/18_completo_vs_aislado.png}{Ejemplo de imágenes completas e imágenes con el iris aislado.}{Ejemplo de imágenes completas e imágenes con el iris aislado.}{img:completa-vs-aislada}
+
 
 Por otro lado, en ambos enfoques se ha empleado como red neuronal VGG16\footnote{Esta red neuronal cuenta con 16 capas y ha sido entrenada con más de un millón de imágenes.}, que ha sido pre-entrenada con ImageNet\footnote{ImageNet es un proyecto donde se proporciona 
 una gran base de datos de imágenes para usos no comerciales \url{https://www.image-net.org/}}. Esta red ha sido adaptada, aplicando técnicas de \textit{fine-tuning}\footnote{El \textit{fine-tuning} 

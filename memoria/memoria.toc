@@ -10,7 +10,7 @@
 \contentsline {chapter}{3. Conceptos teóricos}{11}{chapter*.8}%
 \contentsline {section}{\numberline {3.1}Biometría}{11}{section.3.1}%
 \contentsline {subsection}{Partes del ojo}{11}{section*.9}%
-\contentsline {subsection}{conjunto de datos CASIA-IrisV1 }{12}{section*.10}%
+\contentsline {subsection}{Conjunto de datos CASIA-IrisV1 }{12}{section*.10}%
 \contentsline {section}{\numberline {3.2}Inteligencia Artificial}{13}{section.3.2}%
 \contentsline {subsection}{\textit {Deep Learning}}{13}{section*.11}%
 \contentsline {subsection}{\textit {Pipeline}}{14}{section*.12}%
@@ -57,21 +57,21 @@
 \contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{41}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Introducción}{41}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Planificación temporal}{41}{section.Alph1.2}%
-\contentsline {subsection}{Sprint 1}{41}{section*.42}%
-\contentsline {subsection}{Sprint 2}{42}{section*.43}%
-\contentsline {subsection}{Sprint 3}{42}{section*.44}%
-\contentsline {subsection}{Sprint 4}{42}{section*.45}%
-\contentsline {subsection}{Sprint 5}{42}{section*.46}%
-\contentsline {subsection}{Sprint 6 y 7}{42}{section*.47}%
-\contentsline {subsection}{Sprint 8}{42}{section*.48}%
-\contentsline {subsection}{Sprint 9}{43}{section*.49}%
+\contentsline {subsection}{Sprint 1 (22/09/2021 - 15/09/2021)}{41}{section*.42}%
+\contentsline {subsection}{Sprint 2 (15/09/2021 - 06/10/2021)}{42}{section*.43}%
+\contentsline {subsection}{Sprint 3 (06/10/2021 - 20/10/2021)}{42}{section*.44}%
+\contentsline {subsection}{Sprint 4 (20/10/2021 - 03/11/2021)}{42}{section*.45}%
+\contentsline {subsection}{Sprint 5 (03/11/2021 - 11/11/2021)}{42}{section*.46}%
+\contentsline {subsection}{Sprint 6 y 7 (11/11/2021 - 09/12/2021)}{42}{section*.47}%
+\contentsline {subsection}{Sprint 8 (09/12/2021 - 28/12/2021)}{42}{section*.48}%
+\contentsline {subsection}{Sprint 9 (28/12/2021 - 10/03/2022)}{43}{section*.49}%
 \contentsline {section}{\numberline {A.3}Estudio de viabilidad}{43}{section.Alph1.3}%
 \contentsline {subsection}{Viabilidad económica}{43}{section*.50}%
 \contentsline {subsubsection}{\textit {Software}}{43}{section*.51}%
 \contentsline {subsubsection}{\textit {Hardware}}{43}{section*.52}%
 \contentsline {subsubsection}{Personal}{43}{section*.53}%
 \contentsline {subsection}{Gasto total}{44}{section*.54}%
-\contentsline {subsection}{Viabilidad legal}{45}{section*.55}%
+\contentsline {subsection}{Viabilidad legal}{44}{section*.55}%
 \contentsline {appendix}{\chapternumberline {B}Especificación de Requisitos}{47}{appendix.Alph2}%
 \contentsline {section}{\numberline {B.1}Introducción}{47}{section.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Objetivos generales}{47}{section.Alph2.2}%
