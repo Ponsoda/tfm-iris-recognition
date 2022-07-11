@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  10 JUL 2022 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.10.2)  11 JUL 2022 20:57
 entering extended mode
 **e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
 (e:/estudio/Master_Big_Data/03_TFM/04_GitHub_Master/iris_classifier-master/docs/memoria.tex
@@ -831,10 +831,10 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [1] [2
+ [1] [2] [3
 
-]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 518.
+] [4]
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 524.
  (C:\Users\na-ch\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -852,45 +852,50 @@ LaTeX Info: Redefining \% on input line 2.
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 (Font)              using `T1/lmr/bx/n' instead on input line 3.
 
+
+Overfull \hbox (0.16273pt too wide) detected at line 5
+ []
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 8.
-[3
+[5
 
 ])
-LaTeX Info: Redefining \. on input line 519.
-LaTeX Info: Redefining \% on input line 519.
+LaTeX Info: Redefining \. on input line 525.
+LaTeX Info: Redefining \% on input line 525.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 519.
+(in both cases you will find help in the memoir manual). on input line 525.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
- [4] (memoria.lof
+ [6] (memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-) [5
+) [7
 
 ] (memoria.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-) [6
+) [8
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.530 \part*{Memoria}
+l.536 \part*{Memoria}
                       [1
 
 
@@ -898,7 +903,7 @@ l.530 \part*{Memoria}
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.530 \part*{Memoria}
+l.536 \part*{Memoria}
                       [2]
 \openout2 = `./tex/1_Introduccion.aux'.
 
@@ -921,65 +926,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 E
-      xisten dos opciones a la hora de trabajar con las redes neuronales par... [3
+l.16 
+      [3
 
 
 ]
-<img/10_segmentacion_ojo.png, id=388, 390.86024pt x 175.25475pt>
+<img/10_segmentacion_ojo.png, id=395, 390.86024pt x 175.25475pt>
 File: img/10_segmentacion_ojo.png Graphic file (type png)
 <use img/10_segmentacion_ojo.png>
 Package pdftex.def Info: img/10_segmentacion_ojo.png  used on input line 24.
 (pdftex.def)             Requested size: 344.69766pt x 154.56158pt.
+<img/18_completo_vs_aislado.png, id=397, 663.47874pt x 185.69376pt>
+File: img/18_completo_vs_aislado.png Graphic file (type png)
+<use img/18_completo_vs_aislado.png>
+Package pdftex.def Info: img/18_completo_vs_aislado.png  used on input line 28.
+(pdftex.def)             Requested size: 344.69766pt x 96.47346pt.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 
-      [4 <./img/10_segmentacion_ojo.png>]
-<img/18_completo_vs_aislado.png, id=398, 663.47874pt x 185.69376pt>
-File: img/18_completo_vs_aislado.png Graphic file (type png)
-<use img/18_completo_vs_aislado.png>
-Package pdftex.def Info: img/18_completo_vs_aislado.png  used on input line 29.
-(pdftex.def)             Requested size: 344.69766pt x 96.47346pt.
-<img/14_enfoque_sin_normalizacion.png, id=408, 367.3725pt x 337.26pt>
+l.28 ...el iris aislado.}{img:completa-vs-aislada}
+                                                   [4 <./img/10_segmentacion_ojo.png>]
+<img/14_enfoque_sin_normalizacion.png, id=415, 367.3725pt x 337.26pt>
 File: img/14_enfoque_sin_normalizacion.png Graphic file (type png)
 <use img/14_enfoque_sin_normalizacion.png>
-Package pdftex.def Info: img/14_enfoque_sin_normalizacion.png  used on input line 39.
+Package pdftex.def Info: img/14_enfoque_sin_normalizacion.png  used on input line 37.
 (pdftex.def)             Requested size: 344.69766pt x 316.4635pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...esamiento.}{img:enfoque-sin-normalizacion}
+l.37 ...esamiento.}{img:enfoque-sin-normalizacion}
                                                    [5 <./img/18_completo_vs_aislado.png>]
-<img/13_enfoque_normalizacion.png, id=425, 768.8725pt x 337.26pt>
+<img/13_enfoque_normalizacion.png, id=433, 768.8725pt x 337.26pt>
 File: img/13_enfoque_normalizacion.png Graphic file (type png)
 <use img/13_enfoque_normalizacion.png>
-Package pdftex.def Info: img/13_enfoque_normalizacion.png  used on input line 44.
+Package pdftex.def Info: img/13_enfoque_normalizacion.png  used on input line 42.
 (pdftex.def)             Requested size: 344.69766pt x 151.19951pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 ...ión del iris.}{img:enfoque-normalizacion}
+l.42 ...ión del iris.}{img:enfoque-normalizacion}
                                                    [6 <./img/14_enfoque_sin_normalizacion.png>])
-LaTeX Info: Redefining \. on input line 533.
-LaTeX Info: Redefining \% on input line 533.
+LaTeX Info: Redefining \. on input line 539.
+LaTeX Info: Redefining \% on input line 539.
  [7 <./img/13_enfoque_normalizacion.png>]
-LaTeX Info: Redefining \. on input line 533.
-LaTeX Info: Redefining \% on input line 533.
+LaTeX Info: Redefining \. on input line 539.
+LaTeX Info: Redefining \% on input line 539.
  [8]
 \openout2 = `./tex/2_Objetivos_del_proyecto.aux'.
 
@@ -1006,7 +1011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 \T1/lmtt/m/n/10 com / es-[]us / individuals-[]families / health-[]wellness / hw /
  []
 
-<img/15_partes_ojo.png, id=467, 322.20375pt x 282.05376pt>
+<img/15_partes_ojo.png, id=474, 322.20375pt x 282.05376pt>
 File: img/15_partes_ojo.png Graphic file (type png)
 <use img/15_partes_ojo.png>
 Package pdftex.def Info: img/15_partes_ojo.png  used on input line 15.
@@ -1020,7 +1025,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  [12 <./img/15_partes_ojo.png>]
-<img/16_red_neuronal.png, id=494, 783.92876pt x 783.92876pt>
+<img/16_red_neuronal.png, id=502, 783.92876pt x 783.92876pt>
 File: img/16_red_neuronal.png Graphic file (type png)
 <use img/16_red_neuronal.png>
 Package pdftex.def Info: img/16_red_neuronal.png  used on input line 39.
@@ -1037,7 +1042,7 @@ Underfull \vbox (badness 2229) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
  [14 <./img/16_red_neuronal.png>]
-<img/03_rudio_Gaussiano.png, id=515, 479.99326pt x 207.77625pt>
+<img/03_rudio_Gaussiano.png, id=522, 479.99326pt x 207.77625pt>
 File: img/03_rudio_Gaussiano.png Graphic file (type png)
 <use img/03_rudio_Gaussiano.png>
 Package pdftex.def Info: img/03_rudio_Gaussiano.png  used on input line 73.
@@ -1049,7 +1054,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 73.
 LaTeX Info: Redefining \% on input line 73.
 [15]
-<img/05_transformacion_identidad.png, id=528, 300.52275pt x 139.11975pt>
+<img/05_transformacion_identidad.png, id=535, 300.52275pt x 139.11975pt>
 File: img/05_transformacion_identidad.png Graphic file (type png)
 <use img/05_transformacion_identidad.png>
 Package pdftex.def Info: img/05_transformacion_identidad.png  used on input line 99.
@@ -1061,7 +1066,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
 [16 <./img/03_rudio_Gaussiano.png>]
-<img/06_transformacion_reflejo.png, id=535, 304.7385pt x 130.086pt>
+<img/06_transformacion_reflejo.png, id=542, 304.7385pt x 130.086pt>
 File: img/06_transformacion_reflejo.png Graphic file (type png)
 <use img/06_transformacion_reflejo.png>
 Package pdftex.def Info: img/06_transformacion_reflejo.png  used on input line 119.
@@ -1073,7 +1078,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 131.
 
 LaTeX Warning: Command \' invalid in math mode on input line 131.
 
-<img/07_transformacion_escala.png, id=536, 298.716pt x 130.68825pt>
+<img/07_transformacion_escala.png, id=543, 298.716pt x 130.68825pt>
 File: img/07_transformacion_escala.png Graphic file (type png)
 <use img/07_transformacion_escala.png>
 Package pdftex.def Info: img/07_transformacion_escala.png  used on input line 137.
@@ -1081,7 +1086,7 @@ Package pdftex.def Info: img/07_transformacion_escala.png  used on input line 13
 LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
 [17 <./img/05_transformacion_identidad.png> <./img/06_transformacion_reflejo.png>]
-<img/08_transformacion_traslacion.png, id=547, 298.716pt x 130.68825pt>
+<img/08_transformacion_traslacion.png, id=555, 298.716pt x 130.68825pt>
 File: img/08_transformacion_traslacion.png Graphic file (type png)
 <use img/08_transformacion_traslacion.png>
 Package pdftex.def Info: img/08_transformacion_traslacion.png  used on input line 156.
@@ -1099,7 +1104,7 @@ Underfull \vbox (badness 1132) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 168.
 LaTeX Info: Redefining \% on input line 168.
  [18 <./img/07_transformacion_escala.png> <./img/08_transformacion_traslacion.png>]
-<img/09_transformacion_rotacion.png, id=555, 296.90926pt x 130.68825pt>
+<img/09_transformacion_rotacion.png, id=563, 296.90926pt x 130.68825pt>
 File: img/09_transformacion_rotacion.png Graphic file (type png)
 <use img/09_transformacion_rotacion.png>
 Package pdftex.def Info: img/09_transformacion_rotacion.png  used on input line 174.
@@ -1114,12 +1119,12 @@ LaTeX Warning: Command \' invalid in math mode on input line 187.
 LaTeX Info: Redefining \. on input line 204.
 LaTeX Info: Redefining \% on input line 204.
 [19 <./img/09_transformacion_rotacion.png>]
-<img/11_segmentacion_binario_ojo.png, id=580, 390.86024pt x 168.63pt>
+<img/11_segmentacion_binario_ojo.png, id=588, 390.86024pt x 168.63pt>
 File: img/11_segmentacion_binario_ojo.png Graphic file (type png)
 <use img/11_segmentacion_binario_ojo.png>
 Package pdftex.def Info: img/11_segmentacion_binario_ojo.png  used on input line 206.
 (pdftex.def)             Requested size: 344.69766pt x 148.71906pt.
-<img/12_normalizacion_ojo.png, id=584, 358.33875pt x 168.02776pt>
+<img/12_normalizacion_ojo.png, id=592, 358.33875pt x 168.02776pt>
 File: img/12_normalizacion_ojo.png Graphic file (type png)
 <use img/12_normalizacion_ojo.png>
 Package pdftex.def Info: img/12_normalizacion_ojo.png  used on input line 213.
@@ -1131,8 +1136,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 213.
 LaTeX Info: Redefining \% on input line 213.
 [20 <./img/11_segmentacion_binario_ojo.png>])
-LaTeX Info: Redefining \. on input line 535.
-LaTeX Info: Redefining \% on input line 535.
+LaTeX Info: Redefining \. on input line 541.
+LaTeX Info: Redefining \% on input line 541.
  [21 <./img/12_normalizacion_ojo.png>]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
@@ -1145,8 +1150,8 @@ LaTeX Info: Redefining \% on input line 535.
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
  [24])
-LaTeX Info: Redefining \. on input line 536.
-LaTeX Info: Redefining \% on input line 536.
+LaTeX Info: Redefining \. on input line 542.
+LaTeX Info: Redefining \% on input line 542.
  [25]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
@@ -1159,10 +1164,10 @@ LaTeX Info: Redefining \% on input line 536.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
  [28]
-Overfull \hbox (37.5555pt too wide) in paragraph at lines 73--73
+Overfull \hbox (73.78796pt too wide) in paragraph at lines 74--74
  [] 
  []
 
@@ -1172,7 +1177,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
 [29]
-Underfull \vbox (badness 7777) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
@@ -1192,8 +1197,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
 [31])
-LaTeX Info: Redefining \. on input line 537.
-LaTeX Info: Redefining \% on input line 537.
+LaTeX Info: Redefining \. on input line 543.
+LaTeX Info: Redefining \% on input line 543.
  [32]
 \openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
@@ -1206,14 +1211,14 @@ LaTeX Info: Redefining \% on input line 537.
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
  [34])
-LaTeX Info: Redefining \. on input line 538.
-LaTeX Info: Redefining \% on input line 538.
+LaTeX Info: Redefining \. on input line 544.
+LaTeX Info: Redefining \% on input line 544.
 
 
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 538.
+(in both cases you will find help in the memoir manual). on input line 544.
 
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
@@ -1227,8 +1232,8 @@ Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
 ]) [37]
-LaTeX Info: Redefining \. on input line 539.
-LaTeX Info: Redefining \% on input line 539.
+LaTeX Info: Redefining \. on input line 545.
+LaTeX Info: Redefining \% on input line 545.
  [38] [39
 
 
@@ -1256,11 +1261,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-LaTeX Info: Redefining \. on input line 551.
-LaTeX Info: Redefining \% on input line 551.
+LaTeX Info: Redefining \. on input line 557.
+LaTeX Info: Redefining \% on input line 557.
  [44]
-LaTeX Info: Redefining \. on input line 551.
-LaTeX Info: Redefining \% on input line 551.
+LaTeX Info: Redefining \. on input line 557.
+LaTeX Info: Redefining \% on input line 557.
  [45]
 \openout2 = `./tex/B_Requisitos.aux'.
 
@@ -1273,8 +1278,8 @@ LaTeX Info: Redefining \% on input line 551.
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
  [48])
-LaTeX Info: Redefining \. on input line 552.
-LaTeX Info: Redefining \% on input line 552.
+LaTeX Info: Redefining \. on input line 558.
+LaTeX Info: Redefining \% on input line 558.
  [49]
 \openout2 = `./tex/C_Diseno.aux'.
 
@@ -1284,7 +1289,7 @@ LaTeX Info: Redefining \% on input line 552.
 
 
 ]
-<img/17_CASIA_dir.png, id=856, 129.48375pt x 258.9675pt>
+<img/17_CASIA_dir.png, id=863, 129.48375pt x 258.9675pt>
 File: img/17_CASIA_dir.png Graphic file (type png)
 <use img/17_CASIA_dir.png>
 Package pdftex.def Info: img/17_CASIA_dir.png  used on input line 15.
@@ -1297,8 +1302,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
  [52 <./img/17_CASIA_dir.png>])
-LaTeX Info: Redefining \. on input line 553.
-LaTeX Info: Redefining \% on input line 553.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
  [53]
 \openout2 = `./tex/D_Manual_programador.aux'.
 
@@ -1335,8 +1340,8 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 LaTeX Info: Redefining \. on input line 242.
 LaTeX Info: Redefining \% on input line 242.
  [61])
-LaTeX Info: Redefining \. on input line 554.
-LaTeX Info: Redefining \% on input line 554.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
  [62] (memoria.bbl
 bibitemlist
 [63
@@ -1348,10 +1353,10 @@ bibitemlist
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 561.
+(in both cases you will find help in the memoir manual). on input line 567.
 
-LaTeX Info: Redefining \. on input line 561.
-LaTeX Info: Redefining \% on input line 561.
+LaTeX Info: Redefining \. on input line 567.
+LaTeX Info: Redefining \% on input line 567.
 [64]
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
@@ -1380,17 +1385,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 27 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16002 strings out of 479799
- 242911 string characters out of 2869723
- 996323 words of memory out of 3000000
- 31919 multiletter control sequences out of 15000+200000
- 671647 words of font info for 258 fonts, out of 3000000 for 9000
+ 16007 strings out of 479799
+ 242960 string characters out of 2869723
+ 996388 words of memory out of 3000000
+ 31920 multiletter control sequences out of 15000+200000
+ 671684 words of font info for 259 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,16n,72p,927b,2173s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/na-ch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on memoria.pdf (76 pages, 2555081 bytes).
+Output written on memoria.pdf (78 pages, 2556766 bytes).
 PDF statistics:
- 1190 PDF objects out of 1200 (max. 8388607)
- 367 named destinations out of 1000 (max. 500000)
+ 1197 PDF objects out of 1200 (max. 8388607)
+ 369 named destinations out of 1000 (max. 500000)
  76763 words of extra memory for PDF output out of 89155 (max. 10000000)
 

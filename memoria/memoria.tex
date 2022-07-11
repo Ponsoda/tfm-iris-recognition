@@ -463,20 +463,22 @@ D. Pedro Latorre Carmona
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un recurso ampliamente empleado en la actualidad. El iris es uno de los elementos biométricos que mayores dificultades presentan para su suplantación, y por ello, su utilización en este campo ha atraído la atención de la comunidad científica estas últimas dos décadas. 
 
-Las redes neuronales han demostrado ser útiles para extraer características del iris. Esta extracción se puede llevar a cabo no solo entrenando una red neuronal desde cero, sino también adaptando una ya pre-entrenada.
-Respecto a la utilización de técnicas de adaptación de la red neuronal se plantean dos preguntas. ¿Es necesario aislar el iris para llevar a cabo la adaptación de la red neuronal? ¿Se puede aplicar también para conjuntos de datos pequeños?
+La utilización de la biometría para mejorar la seguridad, principalmente en lo referente al acceso de dispositivos electrónicos, es un recurso ampliamente empleado en la actualidad, siendo el iris uno de los elementos biométricos que mayores dificultades presentan para la suplantación de identidad. 
 
-En este proyecto se han adaptado redes neuronales, inicialmente entrenadas para clasificar diversos objetos, para que sean capaces de identificar a un individuo utilizando su imagen ocular. 
+La identificación de personas a través del iris se lleva a cabo extrayendo sus características más relevantes, comúnmente utilizando técnicas empíricas. No obstante, las redes neuronales han demostrado ser útiles para extraer las características del iris. Esta extracción se puede llevar a cabo no solo entrenando una red neuronal desde cero, sino también adaptando una ya pre-entrenada con imágenes donde el iris ha sido aislado.
 
-Para ello, se han utilizado dos enfoques. En un primer enfoque, se han utilizado redes neuronales que se han adaptado para poder usar imágenes oculares completas. En el segundo enfoque, se ha se ha usado exclusivamente  la zona del iris, la cual es a priori la zona de la imagen ocular que mejor permite la identificación de individuos.
+Respecto a la segunda fórmula se plantean dos preguntas. En primer lugar, ¿Es necesario aislar el iris para llevar a cabo la adaptación de la red neuronal, o esta podría llevarse a cabo también de forma eficiente con las imágenes oculares completas? En segundo lugar, ¿una vez que se ha adaptado la red neuronal a el conjunto de datos, sería posible que esta llevase a cabo, no solo la extracción de características sino también la clasificación?
+
+En este proyecto se han adaptado redes neuronales que inicialmente habían sido entrenadas en el reconocimiento de objetos, para que sean capaces de identificar a un individuo utilizando su imagen ocular. 
+
+Para ello, se han utilizado dos enfoques. En un primer enfoque, se han adaptado las redes neuronales con imágenes oculares completas. En el segundo enfoque, se han adaptado las redes neuronales utilizando imágenes exclusivamente de la zona del iris, la cual es a priori la zona de la imagen ocular que mejor permite la identificación de individuos.
 
 Además, se han utilizado técnicas de aumento del número de muestras del conjunto de datos original, para así poder contar con un mayor número de muestras de cada individuo y también, mejorar la robustez de las redes neuronales adaptadas.
 
 Los resultados muestran que las mejores tasas de clasificación se han dado en el enfoque donde se utilizaba la imagen ocular completa, sin que las técnicas de ampliación del conjunto de datos hayan permitido mejorar la tasa de clasificación. 
 
-Como futuras líneas de trabajo, se establecen la utilización de redes neuronales pre-entrenadas distintas, así como testear el modelo con imágenes realizadas fuera del entorno académico.
+Como futuras líneas de trabajo, se establecen dos. Por un lado, la adaptación de nuevas redes neuronales pre-entrenadas para comprobar cual se adapta mejor a esta metodología. Por otro lado, verificar los modelos resultantes con imágenes que hayan sufrido alteraciones, para comprobar su robustez.
 
 
 \end{abstract}
@@ -492,18 +494,22 @@ biometría, iris, redes neuronales, imágenes oculares, \textit{fine-tuning}, \t
 \renewcommand*\abstractname{Abstract}
 \begin{abstract}
 
-  The use of biometrics to improve security, mainly in relation to access to electronic devices, is a widely used resource today. The iris is one of the biometric elements that present the greatest difficulties for its impersonation, and that is why its use in this field has attracted the attention of the scientific community in the last two decades.
+  The use of biometrics to improve security,
+  especially when it comes to access to electronic devices, it is a resource widely used today and, the iris is one of the biometric elements that present the greatest difficulties for identity fraud.
 
-  In this project, neural networks, initially trained to classify various objects, have been adapted to be able to identify an individual using their eye image.
+  The identification of people through the iris is carried out by extracting their most relevant characteristics, commonly using empirical techniques. Nonetheless, neural networks have proven useful for extracting features from the iris. This extraction can be carried out not only by training a neural network from scratch but also by adapting an already pre-trained one with images where the iris has been isolated.
 
-  To do this, two approaches have been used. In the first approach, the neural networks have been adapted using complete eye images, while, for the second approach, the same has been done, but the iris area has been isolated, which is a priori the area of the eye image that best allows the identification of individuals.
+  Regarding the second formula, two questions arise. First, is it necessary to isolate the iris to carry out the adaptation of the neural network, or could it also be carried out efficiently with full eye images? And secondly, once the neural network has been adapted to the dataset, would it be possible for it to perform not only feature extraction but also classification?
+  
+  In this project, neural networks that had initially been trained in object recognition have been adapted so that they are capable of identifying an individual using their eye image.
+  
+  To do this, two approaches have been used. In a first approach, neural networks have been adapted with whole eye images. In the second approach, the neural networks have been adapted using images exclusively of the iris area, which is a priori the area of the eye image that best allows the identification of individuals.
 
-  In addition, extension techniques of the original dataset have been used, in order to have a greater number of samples of each individual and also to improve the robustness of the adapted neural networks.
+  In addition, techniques have been used to increase the number of samples of the original data set, in order to have a greater number of samples from each individual and also improve the robustness of the adapted neural networks.
 
-  The results show that the best classification rates have occurred in the approach where the complete ocular image was used, without improvement in the classification rate by the datasets that had used data augmentation techniques.
+  The results show that the best classification rates have been given in the approach where the complete ocular image was used, without the techniques of enlarging the data set having allowed improving the classification rate.
 
-  In future lines of work, the use of different pre-trained neural networks is established, as well as testing the model with images taken outside the academic environment.
-
+  As future lines of work, two are established. On the one hand, the adaptation of new pre-trained neural networks to check which one best suits this methodology. On the other hand, verify the resulting models with images that have suffered alterations, to check their robustness.
   \end{abstract}
 
 \renewcommand*\abstractname{Keywords}
